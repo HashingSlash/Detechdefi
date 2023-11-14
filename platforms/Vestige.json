@@ -1,0 +1,29 @@
+{
+  "Swap Aggregator": {
+    "IDs": [
+      "1026089225"
+    ],
+    "functions": {
+      "Swap": {
+        "appArgs": [
+          "NhyEdw==",
+          "sogXLw==",
+          "Exz+tw=="
+        ]
+      }
+    }
+  },
+  "dApp Group Name 2": {
+    "IDs": [
+      "111",
+      "222"
+    ],
+    "functions": {
+      "Swap": {
+        "appArgs": [
+          ""
+        ]
+      }
+    }
+  }
+}

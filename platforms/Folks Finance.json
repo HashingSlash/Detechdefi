@@ -1,0 +1,158 @@
+{
+  "Folks Finance v1": {
+    "IDs": [
+      "694464549",
+      "695956892",
+      "694405065",
+      "696044550",
+      "686501760",
+      "700661782",
+      "686876641",
+      "694511513",
+      "694505855",
+      "747239433",
+      "751285119",
+      "747254560",
+      "686500029",
+      "686875498",
+      "686862190"
+    ],
+    "functions": {
+      "Deposit": {
+        "appArgs": [
+          "ZA=="
+        ]
+      },
+      "Withdrawal": {
+        "appArgs": [
+          "cg=="
+        ]
+      },
+      "Borrow": {
+        "appArgs": [
+          "Yg=="
+        ]
+      },
+      "Repay": {
+        "appArgs": [
+          "cmI="
+        ]
+      },
+      "Increase Borrow": {
+        "appArgs": [
+          "aWI="
+        ]
+      },
+      "Reduce Collateral": {
+        "appArgs": [
+          "cmM="
+        ]
+      },
+      "Lock & Earn": {
+        "appArgs": [
+          "cGw="
+        ]
+      },
+      "Rewards Instant": {
+        "appArgs": [
+          "aWU="
+        ]
+      },
+      "Rewards Staking": {
+        "appArgs": [
+          "ZQ=="
+        ]
+      },
+      "Claim": {
+        "appArgs": [
+          "Yw=="
+        ]
+      },
+      "Open Account": {
+        "appArgs": [
+          "YWU="
+        ]
+      }
+    }
+  },
+  "Swap Aggregator": {
+    "IDs": [
+      "1055897637"
+    ],
+    "functions": {
+      "Swap": {
+        "appArgs": [
+          "tTD7Hw=="
+        ]
+      }
+    }
+  },
+  "Folks Finance v2": {
+    "IDs": [
+      "971368268",
+      "971370097",
+      "971372237",
+      "971373361",
+      "971373611",
+      "971388781",
+      "971353536",
+      "1044267181",
+      "1060585819",
+      "971372700",
+      "1067289273",
+      "1067289481",
+      "1166977433",
+      "1166980669",
+      "1166982094",
+      "971388977",
+      "971389489"
+    ],
+    "functions": {
+      "Close Loan": {
+        "appArgs": [
+          "Iq24qQ=="
+        ]
+      },
+      "Deposit": {
+        "appArgs": [
+          "udVC+w=="
+        ]
+      },
+      "Borrow": {
+        "appArgs": [
+          "l9QG5g=="
+        ]
+      },
+      "Repay": {
+        "appArgs": [
+          "o8ijmA=="
+        ]
+      },
+      "Swap": {
+        "appArgs": [
+          "Q6azvA=="
+        ]
+      },
+      "Increase Borrow": {
+        "appArgs": [
+          "="
+        ]
+      },
+      "Move to Collateral": {
+        "appArgs": [
+          "YLBwBQ=="
+        ]
+      },
+      "Remove Collateral": {
+        "appArgs": [
+          "kXRHtw=="
+        ]
+      },
+      "Withdrawal": {
+        "appArgs": [
+          ""
+        ]
+      }
+    }
+  }
+}

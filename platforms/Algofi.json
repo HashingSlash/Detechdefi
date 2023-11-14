@@ -1,0 +1,329 @@
+{
+  "Lending Market v1": {
+    "IDs": [
+      "465818260"
+    ],
+    "functions": {
+      "Initialize Account": {
+        "appArgs": [
+          ""
+        ],
+        "onComplete": "optin"
+      },
+      "Mint to Collateral": {
+        "appArgs": [
+          "bXQ="
+        ]
+      },
+      "Remove Collateral": {
+        "appArgs": [
+          "cmN1"
+        ]
+      },
+      "Borrow": {
+        "appArgs": [
+          "Yg=="
+        ]
+      },
+      "Repay": {
+        "appArgs": [
+          "cmI="
+        ]
+      },
+      "ALGO Governance txn": {
+        "appArgs": [
+          "c2d0"
+        ]
+      },
+      "Claim Rewards": {
+        "appArgs": [
+          "Y3I="
+        ]
+      }
+    }
+  },
+  "Lending Market v2": {
+    "IDs": [
+      "818176933",
+      "818179346",
+      "818183964",
+      "818190205",
+      "818188286",
+      "841145020",
+      "879935316"
+    ],
+    "functions": {
+      "Initialize Account": {
+        "appArgs": [
+          "dW1vaQ=="
+        ],
+        "onComplete": "optin"
+      },
+      "Add to Collateral": {
+        "appArgs": [
+          "YXVj"
+        ]
+      },
+      "Remove Collateral": {
+        "appArgs": [
+          "cnVj"
+        ]
+      },
+      "Borrow": {
+        "appArgs": [
+          "Yg=="
+        ]
+      },
+      "Repay": {
+        "appArgs": [
+          "cmI="
+        ]
+      },
+      "ALGO Governance txn": {
+        "appArgs": [
+          ""
+        ]
+      },
+      "Claim Rewards": {
+        "appArgs": [
+          "Y3I="
+        ]
+      }
+    }
+  },
+  "Staking v1": {
+    "IDs": [
+      "482625868",
+      "485244022",
+      "485247444",
+      "553869413",
+      "553866305",
+      "611804624",
+      "611801333",
+      "611869320",
+      "635866213",
+      "635813909",
+      "635812850",
+      "637795072",
+      "639747739",
+      "639747119",
+      "635863793",
+      "635860537",
+      "647785804",
+      "647785158",
+      "641500474",
+      "641499935",
+      "674527132",
+      "674526408",
+      "705663269",
+      "705657303",
+      "661193019"
+    ],
+    "functions": {
+      "Initialize Account": {
+        "appArgs": [
+          ""
+        ],
+        "onComplete": "optin"
+      },
+      "Deposit Stake": {
+        "appArgs": [
+          "bXQ="
+        ]
+      },
+      "Withdraw Stake": {
+        "appArgs": [
+          "cmN1"
+        ]
+      },
+      "Claim Rewards": {
+        "appArgs": [
+          "Y3I="
+        ]
+      }
+    }
+  },
+  "Staking v2": {
+    "IDs": [
+      "900932886",
+      "962407544",
+      "919964086",
+      "919965630",
+      "919965019",
+      "919964388",
+      "821882927",
+      "821882730"
+    ],
+    "functions": {
+      "Initialize Account": {
+        "appArgs": [
+          ""
+        ],
+        "onComplete": "optin"
+      },
+      "Withdraw Stake": {
+        "appArgs": [
+          "dQ=="
+        ]
+      },
+      "Deposit Stake": {
+        "appArgs": [
+          "cw=="
+        ]
+      },
+      "Claim Rewards": {
+        "appArgs": [
+          "Y3I="
+        ]
+      },
+      "Update Target User": {
+        "appArgs": [
+          "dXR1"
+        ]
+      }
+    }
+  },
+  "Algofi Governance": {
+    "IDs": [
+      "900653165",
+      "900653388"
+    ],
+    "functions": {
+      "Initialize Account": {
+        "appArgs": [
+          ""
+        ],
+        "onComplete": "optin"
+      },
+      "Algofi Governance txn": {
+        "appArgs": [
+          "dm8="
+        ]
+      },
+      "Unlock":{
+        "appArgs": [
+          "dW5sb2Nr"
+        ]
+      },
+      "Claim":{
+        "appArgs": [
+          "Yw=="
+        ]
+      },
+      "Update Commitment Period":{
+        "appArgs": [
+          "dXZi"
+        ]
+      }
+    }
+  },
+  "AMM": {
+    "IDs": [
+      "658337046",
+      "607645439",
+      "635846127",
+      "607692965",
+      "607668243",
+      "704495955",
+      "635256627",
+      "607663981",
+      "619889051",
+      "611333481",
+      "607684957",
+      "624956175",
+      "613339906",
+      "1037244457",
+      "1037246753",
+      "658336870",
+      "605753404"
+    ],
+    "functions": {
+      "Swap (Sell)": {
+        "appArgs": [
+          "c2Vm"
+        ]
+      },
+      "Swap (Buy)": {
+        "appArgs": [
+          "c2Zl"
+        ]
+      },
+      "Add Liquidity": {
+        "appArgs": [
+          "cA=="
+        ]
+      },
+      "Remove Liquidity": {
+        "appArgs": [
+          "YmEybw=="
+        ]
+      }
+    }
+  },
+  "Nanoswap": {
+    "IDs": [],
+    "functions": {
+      "Swap (Sell)": {
+        "appArgs": [
+          ""
+        ]
+      },
+      "Swap (Buy)": {
+        "appArgs": [
+          ""
+        ]
+      },
+      "Add Liquidity": {
+        "appArgs": [
+          ""
+        ]
+      },
+      "Remove Liquidity": {
+        "appArgs": [
+          ""
+        ]
+      },
+      "Zap": {
+        "appArgs": [
+          "",
+          ""
+        ]
+      }
+    }
+  },
+  "Lending Pool": {
+    "IDs": [
+      "855716333",
+      "962367416",
+      "1037248737",
+      "1037247962",
+      "919950071",
+      "870150391",
+      "870143131",
+      "841170409"
+    ],
+    "functions": {
+      "Swap (Sell)": {
+        "appArgs": [
+          "c3dhcF9leGFjdF9mb3I="
+        ]
+      },
+      "Swap (Buy)": {
+        "appArgs": [
+          "c3dhcF9mb3JfZXhhY3Q="
+        ]
+      },
+      "Remove Liquidity": {
+        "appArgs": [
+          "YnVybl9zdGVwXzE="
+        ]
+      },
+      "Zap": {
+        "appArgs": [
+          "c3dhcF9zdGVwXzI=",
+          "cG9vbF9zdGVwXzI="
+        ]
+      }
+    }
+  }
+}

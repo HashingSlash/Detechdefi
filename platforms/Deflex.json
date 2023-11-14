@@ -1,0 +1,31 @@
+{
+  "Swap Aggregator": {
+    "IDs": [
+      "1049111131"
+    ],
+    "functions": {
+      "Swap": {
+        "appArgs": [
+          "tTD7Hw=="
+        ]
+      }
+    }
+  },
+  "Limit Orders": {
+    "IDs": [
+      "949209670"
+    ],
+    "functions": {
+      "Create Order": {
+        "appArgs": [
+          "Ai+ORg=="
+        ]
+      },
+      "Cancel Order": {
+        "appArgs": [
+          ""
+        ]
+      }
+    }
+  }
+}

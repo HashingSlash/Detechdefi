@@ -1,0 +1,91 @@
+{
+  "Tinyman AMM v1/1.1": {
+    "IDs": [
+      "350338509",
+      "552635992"
+    ],
+    "functions": {
+      "Swap (Sell)": {
+        "appArgs": [
+          "Zmk="
+        ]
+      },
+      "Swap (Buy)": {
+        "appArgs": [
+          "Zm8="
+        ]
+      },
+      "Add Liquidity": {
+        "appArgs": [
+          "bWludA=="
+        ]
+      },
+      "Remove Liquidity": {
+        "appArgs": [
+          "YnVybg=="
+        ]
+      },
+      "Redeem Slippage": {
+        "appArgs": [
+          "cmVkZWVt"
+        ]
+      }
+    }
+  },
+  "Tinyman AMM v2": {
+    "IDs": [
+      "1002541853"
+    ],
+    "functions": {
+      "Swap (Sell)": {
+        "appArgs": [
+          "Zml4ZWQtaW5wdXQ="
+        ]
+      },
+      "Swap (Buy)": {
+        "appArgs": [
+          "Zml4ZWQtb3V0cHV0"
+        ]
+      },
+      "Add initial Liquidity": {
+        "appArgs": [
+          "YWRkX2luaXRpYWxfbGlxdWlkaXR5"
+        ]
+      },
+      "Add Liquidity": {
+        "appArgs": [
+          "YWRkX2xpcXVpZGl0eQ=="
+        ]
+      },
+      "Remove Liquidity": {
+        "appArgs": [
+          "cmVtb3ZlX2xpcXVpZGl0eQ=="
+        ]
+      }
+    }
+  },
+  "Tinyman Staking": {
+    "IDs": [
+      "649588853"
+    ],
+    "functions": {
+      "Claim": {
+        "appArgs": [
+          "Y2xhaW0="
+        ]
+      }
+    }
+  },
+  "Tinygear Forge": {
+    "IDs": [
+      "1018638948"
+    ],
+    "functions": {
+      "Mint": {
+        "appArgs": [
+          "Y2xhaW1fbmZ0"
+        ]
+      }
+    }
+  }
+}

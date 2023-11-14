@@ -1,0 +1,46 @@
+{
+  "Staking": {
+    "IDs": [
+      "630147266",
+      "667424705",
+      "630101978",
+      "734103581",
+      "735275136"
+    ],
+    "functions": {
+      "Deposit": {
+        "appArgs": [
+          "Uw=="
+        ]
+      },
+      "Withdrawal": {
+        "appArgs": [
+          "Vw=="
+        ]
+      },
+      "Claim": {
+        "appArgs": [
+          "Qw=="
+        ]
+      }
+    }
+  },
+  "Governance": {
+    "IDs": [
+      "705672216"
+    ],
+    "functions": {
+      "Vote": {
+        "appArgs": [
+          "Vg=="
+        ]
+      },
+      "Opt in": {
+        "appArgs": [
+          ""
+        ],
+        "onComplete": "optin"
+      }
+    }
+  }
+}

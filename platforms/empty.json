@@ -1,0 +1,29 @@
+{
+  "dApp Group Name 1": {
+    "IDs": [
+      "111",
+      "222"
+    ],
+    "functions": {
+      "Swap": {
+        "appArgs": [
+          ""
+        ],
+        "onComplete":"closeout"
+      }
+    }
+  },
+  "dApp Group Name 2": {
+    "IDs": [
+      "111",
+      "222"
+    ],
+    "functions": {
+      "Swap": {
+        "appArgs": [
+          ""
+        ]
+      }
+    }
+  }
+}
