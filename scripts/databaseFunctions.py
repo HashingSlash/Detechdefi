@@ -6,6 +6,8 @@ import csv
 
 
 def appendToEmbeddedList(list, entry):
+    #im sure there is a more affective way to do this
+    #however this saved a lot of redundancy for now
     if entry not in list:
         list.append(entry)
     return list
@@ -115,6 +117,7 @@ def initAssetDB(tempAssetDB):
     return tempAssetDB
 
 def initMainDB():
+    #either load previous database or build a new one
     try:
         inFile = open('resources/db.json', 'r')
         tempDB = json.load(inFile)
@@ -127,20 +130,15 @@ def initMainDB():
     #   Using db as a main dictionary to hold all relevant data as sub-dictionaries.
         print('Init new database')
         tempDB = {'wallet':input('Paste wallet address: '),     #str    - wallet public key (address)
-            'rawTxns': {},                          #dict   - {transaction id : raw/'on-chain' transaction data}
-            'txnRounds': {},
-            'groups': {},
-            'assets': initAssetDB({}),
-            'apps': initAppDB({})}
-
-        #tempDB['apps'] = requestFunctions.requestAMMPools(tempDB['apps'], tempDB['assets'])
+            'rawTxns': {},             #transaction id : raw/'on-chain' transaction data}
+            'txnRounds': {},           #
+            'groups': {},              #group txn data, for automated group txn identifaction
+            'assets': initAssetDB({}), #Mainnet asset data such as tickers, IDs, names, decimals.
+            'apps': initAppDB({})}     #mainnet app IDs. This helps identify some txn groups
         
+        #below script checks and adds current popular assets via Vestige API calls
         tempDB['assets'] = requestFunctions.requestManyAssets(tempDB['assets'])
         print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
-        
-    
-    
-    
 
     return tempDB
 
