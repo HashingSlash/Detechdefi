@@ -13,48 +13,53 @@ def appendToEmbeddedList(list, entry):
     return list
 
 def createDatabases(tempDB):
+    #This function fills the main DB with data from transactions
     txnTypeDetail = transactionFunctions.returnTxnTypeInfo()
     rawTxnDB = tempDB['rawTxns']
     txnOrder = []
     for txnID in rawTxnDB:
         txn = rawTxnDB[txnID]
-        #Transaction variables
+        #set Transaction variables
         txnType = txn['tx-type']
         txnSpecs = txn[txnTypeDetail[txnType][0]]
         txnRound = str(txn['confirmed-round'])
 
         #txnRound
+        #make an entry for each txn round that appears in the processed txns. Not all will be needed.
+        #txnOrder is also used to help keep txn groups in order, as they will all share a txn round number.
         txnOrder.insert(0, txnID)
         if txnRound not in tempDB['txnRounds']:
             tempDB['txnRounds'][txnRound] = {}
 
         #txnGroup
-
+        #make a txn group database entry
         if 'group' in txn:
             txnGroupID = txn['group']
             if txn['group'] not in tempDB['groups']:
                 tempDB['groups'][txnGroupID] = {'txns' : [], 'platform':'', 'action': '', 'appGroup' : '', 'round-time' : txn['round-time']}
-
+            #add the txn ids to txn group entry. Not all will be needed.
             if txnID not in tempDB['groups'][txnGroupID]['txns']:
                 tempDB['groups'][txnGroupID]['txns'].insert(0, txnID)
 
-
         #txnAsset
+        #create a database entry for each Asset that appears in the processed transactions
         if txnType == 'axfer':
             txnAssetID = str(txnSpecs['asset-id'])
             if txnAssetID not in tempDB['assets']:
                 tempDB['assets'][txnAssetID] = {}
-
+        #also check for assets in inner txns. Sometimes an asset may be utilized without even appearing in a axfer txn.
+        #one example of this is with swap routers, as capital may flow through an asset the account never deals with other wise.
+        #this may all be abstracted away into inner txns.
         if 'inner-txns' in txn:
             for innerTxn in txn['inner-txns']:
                 if innerTxn['tx-type'] == 'axfer':
                     txnAssetID = str(innerTxn['asset-transfer-transaction']['asset-id'])
                     if txnAssetID not in tempDB['assets']:
                         tempDB['assets'][txnAssetID] = {}
-                #else: print(innerTxn['tx-type'])
 
     tempDB['txnOrder'] = txnOrder
 
+    #for each blank asset entry, get its details from AlgoNode
     for assetID in tempDB['assets']:
         if tempDB['assets'][str(assetID)] == {}:
             tempDB['assets'][str(assetID)] = requestFunctions.requestSingleAsset(str(assetID))
