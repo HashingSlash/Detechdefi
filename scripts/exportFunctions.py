@@ -13,7 +13,7 @@ def outputRows(function, mainDB, soloPrint):
     
     roundOrder = list(mainDB['txnRounds'].keys())
     roundOrder.sort()
-    fileName = 'detechdefi - ' + mainDB['wallet'][:5]
+    fileName = 'detechdefi'# - ' + mainDB['wallet'][:5]
     
     if function == 'csv':
         file = open('output/' + fileName + '.csv', 'w', newline='', encoding='utf-8')
