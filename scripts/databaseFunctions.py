@@ -68,10 +68,12 @@ def createDatabases(tempDB):
     return tempDB
 
 def fetchTxns(node, network, tempDB):
+    #init variables
     fetchComplete = False
     tempResponse = requestFunctions.requestTxns(node, network, tempDB['wallet'], '')
     response = tempResponse.json()
 
+    #this loop should keep adding new txns to the database until it hits a repeated
     while fetchComplete == False and str(tempResponse) == '<Response [200]>':
         for txn in response['transactions']:
             if txn['id'] not in tempDB['rawTxns']: #New txns only
@@ -82,7 +84,7 @@ def fetchTxns(node, network, tempDB):
                 break
         #Exit txn fetching unless there are more to request
         if fetchComplete == True: break
-        if 'next-token' in response: #This means there may be more txns to request
+        if 'next-token' in response: #May be more txns to request.
             tempResponse = requestFunctions.requestTxns(node, network, tempDB['wallet'], response['next-token'])
             response = tempResponse.json()
         else: break #Should have all transactions now.
