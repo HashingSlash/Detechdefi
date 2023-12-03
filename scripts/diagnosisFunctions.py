@@ -95,6 +95,7 @@ def diagDBParse(mainDB, groupID, diagDB):
                             if testPlatform not in IDMatches: IDMatches.append(testPlatform)
                     #check each action within each app group.
 
+                    #If the app IDs from the group are found in this diagDB platform entry, check through that platforms entries
                     if len(IDMatches) >= 1:        
                         for testAction in diagDB[testPlatform][testAppGroup]['functions']:
                             actionCriteria = diagDB[testPlatform][testAppGroup]['functions'][testAction]
@@ -104,11 +105,12 @@ def diagDBParse(mainDB, groupID, diagDB):
                                     if testArg in tempDB['groupAppArgs']:
                                         #if len(IDMatches) == 0: print(groupID)
                                         if testAppGroup not in appGroupMatches: appGroupMatches.append(testAppGroup)
-                                        if testAction not in actionMatches: actionMatches.append(testAction)                                      
+                                        if testAction not in actionMatches: actionMatches.append(testAction)  
+                            #does this Diag entry require txn on-complete data to match                                    
                             if 'onComplete' in actionCriteria and actionCriteria['onComplete'] in tempDB['groupOnComplete'] :
                                 if testAppGroup not in appGroupMatches: appGroupMatches.append(testAppGroup)
                                 if testAction not in actionMatches: actionMatches.append(testAction)
-                            
+                            #some txn groups require matching l-s-d info for a decent match. say hello to hoffman
                             if 'local-state-delta' in actionCriteria and 'local-state-delta' in txn: 
                                 for entry in txn['local-state-delta']:
                                     if 'delta' in entry: # and 'key' in entry['delta']:
@@ -119,15 +121,13 @@ def diagDBParse(mainDB, groupID, diagDB):
 
                                 
 
-
+                            #add any matches from this interation of the diag platform to the larger group data tracker
                             for IDMatch in IDMatches:
                                 tempDB['groupPlatforms'] = databaseFunctions.appendToEmbeddedList(tempDB['groupPlatforms'], IDMatch)
                             for groupAppMatch in appGroupMatches:
                                 tempDB['groupAppGroups'] = databaseFunctions.appendToEmbeddedList(tempDB['groupAppGroups'], groupAppMatch)
                             for groupActionMatch in actionMatches:
                                 tempDB['groupActions'] = databaseFunctions.appendToEmbeddedList(tempDB['groupActions'], groupActionMatch)
-
-
 
     return tempDB
 
@@ -144,16 +144,17 @@ def appDBParse(tempDB, appDB):
 def parseGroups(mainDB, testing):
     print('Parsing Groups')
     #Vars
-
+    #testing here can be used to load only 1 platform into the diag script.
+    #helps save time/compute/power while developing platform entries for the diag.
     if type(testing) == str: soloPlatform = testing
     else: soloPlatform = ''
     diagDB = buildPlatformDiagDB(soloPlatform)
 
-
+    #for each group in the maindatabase, run it through the diag system.
+    #then match against entries in the app database
     for groupID in mainDB['groups']:
         tempDB = diagDBParse(mainDB, groupID, diagDB)
         tempDB = appDBParse(tempDB, mainDB['apps'])
-
 
         platformStr = ''
         actionStr = ''
@@ -174,14 +175,7 @@ def parseGroups(mainDB, testing):
         mainDB['groups'][groupID]['platform'] = platformStr
         mainDB['groups'][groupID]['action'] = actionStr
         mainDB['groups'][groupID]['appGroup'] = appStr
-
-
-    
-    
-    
-
-
-
+    #return an updated main database
     return mainDB
 
 
