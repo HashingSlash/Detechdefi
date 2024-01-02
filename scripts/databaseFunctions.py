@@ -134,6 +134,10 @@ def initMainDB():
         print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
         inFile.close()
 
+        if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
+            tempDB['assets'] = requestFunctions.requestManyAssets(tempDB['assets'])
+            tempDB['apps'] = requestFunctions.requestAMMPools(tempDB['apps'], tempDB['assets'])
+
     except IOError: #database load failed. prompt user to input wallet address to init new database
     ####                Init db
     #   Using db as a main dictionary to hold all relevant data as sub-dictionaries.
