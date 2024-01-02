@@ -68,12 +68,12 @@ def createDatabases(tempDB):
     return tempDB
 
 def fetchTxns(node, network, tempDB):
-    #init variables
+    #set some intial variables
     fetchComplete = False
     tempResponse = requestFunctions.requestTxns(node, network, tempDB['wallet'], '')
     response = tempResponse.json()
 
-    #this loop should keep adding new txns to the database until it hits a repeated
+    #use a loop to keep checking for txns until all received.
     while fetchComplete == False and str(tempResponse) == '<Response [200]>':
         for txn in response['transactions']:
             if txn['id'] not in tempDB['rawTxns']: #New txns only
@@ -84,13 +84,14 @@ def fetchTxns(node, network, tempDB):
                 break
         #Exit txn fetching unless there are more to request
         if fetchComplete == True: break
-        if 'next-token' in response: #May be more txns to request.
+        if 'next-token' in response: #This means there may be more txns to request
             tempResponse = requestFunctions.requestTxns(node, network, tempDB['wallet'], response['next-token'])
             response = tempResponse.json()
         else: break #Should have all transactions now.
     return tempDB
 
 def initAppDB(tempAppDB):
+    #this loads the appIDs csv file in /resources into the programs main database
     try:
         inFile = open('resources/appIDs.csv', 'r', encoding='utf-8')
         reader = csv.reader(inFile)
@@ -107,6 +108,7 @@ def initAppDB(tempAppDB):
     return tempAppDB
 
 def initAssetDB(tempAssetDB):
+    #this loads the assets csv file in /resources into the programs main database
     try:
         inFile = open('resources/assets.csv', 'r', encoding='utf-8')
         reader = csv.reader(inFile)
@@ -150,7 +152,7 @@ def initMainDB():
     return tempDB
 
 def countMatchedGroups(groupDB, testing):
-    ##count matches
+    ##this function counts txn group matches
     counts = {}
     matchedGroups = 0
 
@@ -163,9 +165,6 @@ def countMatchedGroups(groupDB, testing):
         else: counts[str(groupPlatform)][str(groupAction)] += 1
 
         if groupPlatform != '': matchedGroups += 1
-
-
-
 
     #print counts
     if testing != False:

@@ -7,7 +7,7 @@ def buildPlatformDiagDB(requestedPlatform):
     #this builds the diag dictionary used for parsing group txn entries.
     #platform files are managed individually for readability
     #Platform files to load
-    platforms = ['Algofi', 'Yieldly', 'AlgoFund', 'Folks Finance', 'Pact', 'Tinyman', 'Vestige', 'Deflex']
+    platforms = ['Algofi', 'Yieldly', 'AlgoFund', 'Folks Finance', 'Pact', 'Tinyman', 'Vestige', 'Deflex', 'Orange Meme']
     diagDB = {}
     #This allows for working on only a single Platform. Saves compute while testing.
     if requestedPlatform in platforms:

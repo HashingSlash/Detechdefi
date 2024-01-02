@@ -1,0 +1,14 @@
+{
+  "ORA Mining": {
+    "IDs": [
+      "1284326447"
+    ],
+    "functions": {
+      "Mining Txns": {
+        "appArgs": [
+          "qyNwzA=="
+        ]
+      }
+    }
+  }
+}
