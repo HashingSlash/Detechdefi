@@ -109,9 +109,9 @@ def buildGroupRow(groupID, mainDB):
     for txn in groupTxnList:
 
         if txn['sentQuantity'] != 0:
-            #if combinedTxn['sentQuantity'] != 0:
-            comboTxnList.append(combinedTxn)
-            combinedTxn = returnEmptyTxn()
+            if combinedTxn['sentQuantity'] != 0:
+                comboTxnList.append(combinedTxn)
+                combinedTxn = returnEmptyTxn()
             #
             combinedTxn['description'] = description
             combinedTxn['time'] = groupTime
@@ -120,9 +120,9 @@ def buildGroupRow(groupID, mainDB):
             combinedTxn['sentCurrency'] = txn['sentCurrency']
 
         if txn['receivedQuantity'] != 0:
-            #if combinedTxn['receivedQuantity'] != 0:
-            comboTxnList.append(combinedTxn)
-            combinedTxn = returnEmptyTxn()
+            if combinedTxn['receivedQuantity'] != 0:
+                comboTxnList.append(combinedTxn)
+                combinedTxn = returnEmptyTxn()
             #
             combinedTxn['description'] = description
             combinedTxn['time'] = groupTime
