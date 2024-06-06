@@ -88,7 +88,7 @@ def buildGroupRow(groupID, mainDB):
 
     txnNumber = 0
     for txnID in groupEntry['txns']:
-        skip = False
+
         txnSpecs = mainDB['rawTxns'][txnID][txnTypeDetail[mainDB['rawTxns'][txnID]['tx-type']][0]] 
         txnNumber += 1
 
@@ -98,50 +98,37 @@ def buildGroupRow(groupID, mainDB):
 
 
 
-        if skip == False:
-            for txn in buildSingleRow(mainDB['rawTxns'][txnID], mainDB, description + ' '):
+        for txn in buildSingleRow(mainDB['rawTxns'][txnID], mainDB, description + ' '):
+            if txn['sentQuantity'] != 0 or txn['receivedQuantity'] != 0 or txn['feeQuantity'] != 0:
                 groupTxnList.append(txn)
 
     ####-------------------------------------------
 
-    combinedTxn = returnEmptyTxn()
-
-    for txn in groupTxnList:
-
-        if txn['sentQuantity'] != 0:
-            if combinedTxn['sentQuantity'] != 0:
-                comboTxnList.append(combinedTxn)
-                combinedTxn = returnEmptyTxn()
-            #
-            combinedTxn['description'] = description
-            combinedTxn['time'] = groupTime
-            combinedTxn['id'] = 'Combo ' + str(len(comboTxnList) + 2) + ' ' + groupID
-            combinedTxn['sentQuantity'] = txn['sentQuantity']
-            combinedTxn['sentCurrency'] = txn['sentCurrency']
-
-        if txn['receivedQuantity'] != 0:
-            if combinedTxn['receivedQuantity'] != 0:
-                comboTxnList.append(combinedTxn)
-                combinedTxn = returnEmptyTxn()
-            #
-            combinedTxn['description'] = description
-            combinedTxn['time'] = groupTime
-            combinedTxn['id'] = 'Combo ' + str(len(comboTxnList) + 2) + ' ' + groupID
-            combinedTxn['receivedQuantity'] = txn['receivedQuantity']
-            combinedTxn['receivedCurrency'] = txn['receivedCurrency']
-
-
-    groupTxn['sentQuantity'] = combinedTxn['sentQuantity']
-    groupTxn['sentCurrency'] = combinedTxn['sentCurrency']
-    groupTxn['receivedQuantity'] = combinedTxn['receivedQuantity']
-    groupTxn['receivedCurrency'] = combinedTxn['receivedCurrency']
-
-
-    comboTxnList.insert(0,groupTxn)
     
 
+    #for txn in groupTxnList:
+    #    combinedTxn = returnEmptyTxn()
+    #    combinedTxn['description'] = description
+    #    combinedTxn['time'] = groupTime
+    #    combinedTxn['id'] = 'Group txn ' + str(len(comboTxnList) + 1) + ': ' + groupID
+#
+#        combinedTxn['sentQuantity'] = txn['sentQuantity']
+#        combinedTxn['sentCurrency'] = txn['sentCurrency']
+#
+#
+#        combinedTxn['receivedQuantity'] = txn['receivedQuantity']
+#        combinedTxn['receivedCurrency'] = txn['receivedCurrency']
+#
+#
+#        combinedTxn['feeQuantity'] = txn['feeQuantity']
+#        combinedTxn['feeCurrency'] = txn['feeCurrency']
 
-    return comboTxnList
+
+        
+#        comboTxnList.append(combinedTxn)
+
+
+    return groupTxnList
 
 def buildSingleRow(rawTxn, mainDB, description):
     txnTypeDetail = returnTxnTypeInfo()
@@ -149,24 +136,31 @@ def buildSingleRow(rawTxn, mainDB, description):
 
     singleTxn = returnAssetMovements(rawTxn, txnSpecs, mainDB['wallet'], returnEmptyTxn())
 
+    if 'group' in rawTxn: 
+        group = True
+        singleTxn['id'] = 'G-' + str(rawTxn['group'][:5]) + ' - ' + rawTxn['id']
+    else:
+        group = False
+        singleTxn['id'] = rawTxn['id']
+
     if rawTxn['sender'] == mainDB['wallet'] and 'receiver' in txnSpecs and txnSpecs['receiver'] == mainDB['wallet']:
         description = 'Asset Opt in/out'
 
     elif rawTxn['sender'] == mainDB['wallet']:
-        description = description + 'Sender'
+        if group == False: description = description + 'Sender'
         if rawTxn['fee'] > 0:
             singleTxn['feeCurrency'] = 'ALGO'
             singleTxn['feeQuantity'] = rawTxn['fee']
 
     elif 'receiver' in txnSpecs and txnSpecs['receiver'] == mainDB['wallet']:
-        description = description + 'Receiver'
+        if group == False: description = description + 'Receiver'
 
     innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description)
 
 
     singleTxn['time'] = str(datetime.datetime.fromtimestamp(rawTxn['round-time']))
     singleTxn['description'] = description
-    singleTxn['id'] = rawTxn['id']
+    
 
     
 

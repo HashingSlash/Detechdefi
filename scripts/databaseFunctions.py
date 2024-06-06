@@ -179,7 +179,7 @@ def countMatchedGroups(groupDB, testing):
                 print(action + ': ' + str(counts[platform][action]))
 
     if matchedGroups != 0:
-        print('\nMatched Groups: ' + str(matchedGroups) + '\nUnmatched Groups: ' + str(len(groupDB)) + '\nMatched %: ' + str(round(matchedGroups / len(groupDB)*100, 2)))
+        print('\nMatched Groups: ' + str(matchedGroups) + '\nTotal # Groups: ' + str(len(groupDB)) + '\nMatched %: ' + str(round(matchedGroups / len(groupDB)*100, 2)))
 
 
     return counts
