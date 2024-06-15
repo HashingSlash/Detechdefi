@@ -12,7 +12,8 @@ def returnEmptyTxn():
                 'feeCurrency' : '',
                 'feeQuantity' : 0,
                 'id' : '',
-                'description' : ''}
+                'description' : '',
+                'txn partner' : ''}
     return emptyTxn
 
 def returnTxnTypeInfo():
@@ -138,7 +139,7 @@ def buildSingleRow(rawTxn, mainDB, description):
 
     if 'group' in rawTxn: 
         group = True
-        singleTxn['id'] = 'G-' + str(rawTxn['group'][:5]) + ' - ' + rawTxn['id']
+        singleTxn['id'] = '(Group- ' + str(rawTxn['group'][:5]) + '...) - ' + rawTxn['id']
     else:
         group = False
         singleTxn['id'] = rawTxn['id']
@@ -148,11 +149,13 @@ def buildSingleRow(rawTxn, mainDB, description):
 
     elif rawTxn['sender'] == mainDB['wallet']:
         if group == False: description = description + 'Sender'
+        if 'receiver' in txnSpecs: singleTxn['txn partner'] = str(txnSpecs['receiver'][:7]) + '...'
         if rawTxn['fee'] > 0:
             singleTxn['feeCurrency'] = 'ALGO'
             singleTxn['feeQuantity'] = rawTxn['fee']
 
     elif 'receiver' in txnSpecs and txnSpecs['receiver'] == mainDB['wallet']:
+        singleTxn['txn partner'] = str(rawTxn['sender'][:7]) + '...'
         if group == False: description = description + 'Receiver'
 
     innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description)
@@ -160,7 +163,7 @@ def buildSingleRow(rawTxn, mainDB, description):
 
     singleTxn['time'] = str(datetime.datetime.fromtimestamp(rawTxn['round-time']))
     singleTxn['description'] = description
-    
+    singleTxn['type'] = rawTxn['tx-type']
 
     
 
