@@ -55,7 +55,7 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description):
             processedInner = returnAssetMovements(innerTxn, innerDetails, walletID, returnEmptyTxn())
 
             processedInner['time'] = str(datetime.datetime.fromtimestamp(rawTxn['round-time']))
-            processedInner['id'] = 'InnerTxn - ' + refID
+            processedInner['id'] = 'InnerTxn - ' + refID + '...'
             processedInner['description'] = description
 
             if processedInner['sentQuantity'] + processedInner['receivedQuantity'] !=0:
@@ -85,8 +85,6 @@ def buildGroupRow(groupID, mainDB):
 
     comboTxnList = []
 
-
-
     txnNumber = 0
     for txnID in groupEntry['txns']:
 
@@ -97,36 +95,9 @@ def buildGroupRow(groupID, mainDB):
             groupTxn['feeQuantity'] = groupTxn['feeQuantity'] + mainDB['rawTxns'][txnID]['fee']
             groupTxn['feeCurrency'] = 'ALGO'
 
-
-
         for txn in buildSingleRow(mainDB['rawTxns'][txnID], mainDB, description + ' '):
             if txn['sentQuantity'] != 0 or txn['receivedQuantity'] != 0 or txn['feeQuantity'] != 0:
                 groupTxnList.append(txn)
-
-    ####-------------------------------------------
-
-    
-
-    #for txn in groupTxnList:
-    #    combinedTxn = returnEmptyTxn()
-    #    combinedTxn['description'] = description
-    #    combinedTxn['time'] = groupTime
-    #    combinedTxn['id'] = 'Group txn ' + str(len(comboTxnList) + 1) + ': ' + groupID
-#
-#        combinedTxn['sentQuantity'] = txn['sentQuantity']
-#        combinedTxn['sentCurrency'] = txn['sentCurrency']
-#
-#
-#        combinedTxn['receivedQuantity'] = txn['receivedQuantity']
-#        combinedTxn['receivedCurrency'] = txn['receivedCurrency']
-#
-#
-#        combinedTxn['feeQuantity'] = txn['feeQuantity']
-#        combinedTxn['feeCurrency'] = txn['feeCurrency']
-
-
-        
-#        comboTxnList.append(combinedTxn)
 
 
     return groupTxnList
@@ -144,10 +115,9 @@ def buildSingleRow(rawTxn, mainDB, description):
         group = False
         singleTxn['id'] = rawTxn['id']
 
-    if rawTxn['sender'] == mainDB['wallet'] and 'receiver' in txnSpecs and txnSpecs['receiver'] == mainDB['wallet']:
-        description = 'Asset Opt in/out'
+    singleTxn['type'] = rawTxn['tx-type']
 
-    elif rawTxn['sender'] == mainDB['wallet']:
+    if rawTxn['sender'] == mainDB['wallet']:
         if group == False: description = description + 'Sender'
         if 'receiver' in txnSpecs: singleTxn['txn partner'] = str(txnSpecs['receiver'][:7]) + '...'
         if rawTxn['fee'] > 0:
@@ -158,17 +128,56 @@ def buildSingleRow(rawTxn, mainDB, description):
         singleTxn['txn partner'] = str(rawTxn['sender'][:7]) + '...'
         if group == False: description = description + 'Receiver'
 
+    if rawTxn['sender'] == mainDB['wallet'] and 'receiver' in txnSpecs and txnSpecs['receiver'] == mainDB['wallet']:
+        description = 'Asset Opt in/out'
+        singleTxn['type'] = 'Fee'
+        singleTxn['txn partner'] = 'Algorand Network'
+
     innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description)
 
 
     singleTxn['time'] = str(datetime.datetime.fromtimestamp(rawTxn['round-time']))
     singleTxn['description'] = description
-    singleTxn['type'] = rawTxn['tx-type']
+    if rawTxn['tx-type'] == 'appl':
+        singleTxn['type'] = 'Fee'
+        singleTxn['txn partner'] = 'Algorand Network'
+
+  
 
     
 
     txnList = [singleTxn]
 
+
+    rewardsTxn = None
+    if rawTxn['sender'] == mainDB['wallet'] and rawTxn['sender-rewards'] != 0:
+        rewardsTxn = returnEmptyTxn()
+        rewardsTxn['time'] = singleTxn['time']
+        rewardsTxn['type'] = 'Rewards'
+        rewardsTxn['receivedCurrency'] = 'ALGO'
+        rewardsTxn['receivedQuantity'] = rawTxn['sender-rewards']
+        if 'group' not in rawTxn:
+            rewardsTxn['id'] = 'Sender Rewards - ' + str(rawTxn['id'])
+        else:
+            rewardsTxn['id'] = '(Group- ' + str(rawTxn['group'][:5]) + '...) - Rewards - ' + str(rawTxn['id'])
+        rewardsTxn['description'] = 'Network Participation Rewards'
+        rewardsTxn['txn partner'] = 'Algorand Foundation'
+
+    elif 'receiver' in txnSpecs and txnSpecs['receiver'] == mainDB['wallet'] and rawTxn['receiver-rewards'] != 0:
+        rewardsTxn = returnEmptyTxn()
+        rewardsTxn['time'] = singleTxn['time']
+        rewardsTxn['type'] = 'Rewards'
+        rewardsTxn['receivedCurrency'] = 'ALGO'
+        rewardsTxn['receivedQuantity'] = rawTxn['receiver-rewards']
+        if 'group' not in rawTxn:
+            rewardsTxn['id'] = 'Receiver Rewards - ' + str(rawTxn['id'])
+        else:
+            rewardsTxn['id'] = '(Group- ' + str(rawTxn['group'][:5]) + '...) - Rewards - ' + str(rawTxn['id'])    
+        rewardsTxn['description'] = 'Network Participation Rewards'
+        rewardsTxn['txn partner'] = 'Algorand Foundation'
+
+    if rewardsTxn != None:
+        txnList.append(rewardsTxn)
 
 
 

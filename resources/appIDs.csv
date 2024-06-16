@@ -343,6 +343,7 @@ ID,platform,appName
 1213116486,Humble Swap,GOLD$/ALGO Liquidity Pool
 1213121856,Humble Swap,SILVER$/ALGO Liquidity Pool
 1216477532,Pact,SHS/ALGO Liquidity Pool
+1217735319,Humble Swap,X-NFT/ALGO Liquidity Pool
 1218696792,Humble Swap,SHS/ALGO Liquidity Pool
 1227389320,Humble Swap,DEATHOS/ALGO Liquidity Pool
 1228845900,Pact,PRSMS/ALGO Liquidity Pool
@@ -384,7 +385,9 @@ ID,platform,appName
 1390817541,Pact,Max/ALGO Liquidity Pool
 1398644228,Humble Swap,EURS/ALGO Liquidity Pool
 1402290318,Pact,OUTSYDE/ALGO Liquidity Pool
+1403971448,Pact,Hsed/ALGO Liquidity Pool
 1423064897,Pact,BPM/ALGO Liquidity Pool
+1435274482,Humble Swap,TLP/ALGO Liquidity Pool
 1450388322,Humble Swap,PURR/ALGO Liquidity Pool
 1450405653,Pact,PURR/ALGO Liquidity Pool
 1612986302,Pact,OUTSYDE/ALGO Liquidity Pool
