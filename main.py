@@ -23,7 +23,7 @@ def main():
     exportFunctions.saveDB(db)
     exportFunctions.exportDictionaryToCSV(db['apps'], 'resources/appIDs.csv', ['ID','platform','appName'])
     exportFunctions.exportDictionaryToCSV(db['assets'], 'resources/assets.csv', ['ID', 'name', 'unit name', 'decimals'])
-
+    exportFunctions.exportDictionaryToCSV(db['addressBook'], 'resources/addressBook.csv', ['address', 'name'])
 
     ####                Sort through
     ##testing can be bool or a platform name as a string

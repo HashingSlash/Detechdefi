@@ -29,20 +29,23 @@ def returnTxnTypeInfo():
 def returnAssetMovements(rawTxn, txnSpecs, walletID, txnToReturn):
 
     if rawTxn['sender'] == walletID:
-        if rawTxn['tx-type'] in ['pay', 'axfer']:
+        if rawTxn['tx-type'] in ['pay', 'axfer'] and txnSpecs['amount'] != 0:
             txnToReturn['sentQuantity'] = txnSpecs['amount']
             if rawTxn['tx-type'] == 'pay':
                 txnToReturn['sentCurrency'] = 'ALGO'
             elif rawTxn['tx-type'] == 'axfer':
                 txnToReturn['sentCurrency'] = txnSpecs['asset-id']
+            txnToReturn['type'] = 'Send'
 
         
     elif 'receiver' in txnSpecs and txnSpecs['receiver'] == walletID:
-            txnToReturn['receivedQuantity'] = txnSpecs['amount']
-            if rawTxn['tx-type'] == 'pay':
-                txnToReturn['receivedCurrency'] = 'ALGO'
-            elif rawTxn['tx-type'] == 'axfer':
-                txnToReturn['receivedCurrency'] = txnSpecs['asset-id']
+            if txnSpecs['amount'] != 0:
+                txnToReturn['receivedQuantity'] = txnSpecs['amount']
+                if rawTxn['tx-type'] == 'pay':
+                    txnToReturn['receivedCurrency'] = 'ALGO'
+                elif rawTxn['tx-type'] == 'axfer':
+                    txnToReturn['receivedCurrency'] = txnSpecs['asset-id']
+                txnToReturn['type'] = 'Receive'
 
 
     return txnToReturn
@@ -97,7 +100,8 @@ def buildGroupRow(groupID, mainDB):
 
         for txn in buildSingleRow(mainDB['rawTxns'][txnID], mainDB, description + ' '):
             if txn['sentQuantity'] != 0 or txn['receivedQuantity'] != 0 or txn['feeQuantity'] != 0:
-                groupTxnList.append(txn)
+                if txn['type'] != 'Rewards': groupTxnList.insert(0, txn)
+                else: groupTxnList.append(txn)
 
 
     return groupTxnList
@@ -115,7 +119,7 @@ def buildSingleRow(rawTxn, mainDB, description):
         group = False
         singleTxn['id'] = rawTxn['id']
 
-    singleTxn['type'] = rawTxn['tx-type']
+    if singleTxn['type'] == '': singleTxn['type'] = rawTxn['tx-type']
 
     if rawTxn['sender'] == mainDB['wallet']:
         if group == False: description = description + 'Sender'
@@ -125,7 +129,8 @@ def buildSingleRow(rawTxn, mainDB, description):
             singleTxn['feeQuantity'] = rawTxn['fee']
 
     elif 'receiver' in txnSpecs and txnSpecs['receiver'] == mainDB['wallet']:
-        singleTxn['txn partner'] = str(rawTxn['sender'][:7]) + '...'
+        if rawTxn['sender'] in mainDB['addressBook']: singleTxn['txn partner'] = mainDB['addressBook'][rawTxn['sender']]['name']
+        else: singleTxn['txn partner'] = rawTxn['sender']
         if group == False: description = description + 'Receiver'
 
     if rawTxn['sender'] == mainDB['wallet'] and 'receiver' in txnSpecs and txnSpecs['receiver'] == mainDB['wallet']:
@@ -142,11 +147,15 @@ def buildSingleRow(rawTxn, mainDB, description):
         singleTxn['type'] = 'Fee'
         singleTxn['txn partner'] = 'Algorand Network'
 
-  
-
-    
-
     txnList = [singleTxn]
+
+
+    i = 0
+    for innerTxn in innerTxns:
+        i += 1
+        innerTxn['id'] = 'in' + str(i) + ' ' + innerTxn['id']
+        txnList.append(innerTxn)
+  
 
 
     rewardsTxn = None
@@ -178,15 +187,6 @@ def buildSingleRow(rawTxn, mainDB, description):
 
     if rewardsTxn != None:
         txnList.append(rewardsTxn)
-
-
-
-    i = 0
-    for innerTxn in innerTxns:
-        i += 1
-        innerTxn['id'] = 'in' + str(i) + ' ' + innerTxn['id']
-        txnList.append(innerTxn)
-  
 
 
     return txnList

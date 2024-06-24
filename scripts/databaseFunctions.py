@@ -125,29 +125,55 @@ def initAssetDB(tempAssetDB):
 
     return tempAssetDB
 
+def initAddressDB(tempAddressDB):
+    #this loads the assets csv file in /resources into the programs main database
+    try:
+        inFile = open('resources/addressBook.csv', 'r', encoding='utf-8')
+        reader = csv.reader(inFile)
+        headerLine = True
+        for line in reader:
+            if headerLine == True:
+                headerLine = False
+                continue
+            if str(line[0]) not in tempAddressDB:
+                tempAddressDB[str(line[0])] = {'name': line[1]}
+        print('Loaded Address Book: resources/addressBook.csv')
+    except:
+        print('Fresh address book')
+
+    return tempAddressDB
+
 def initMainDB():
     #either load previous database or build a new one
+    tempDB = None
     try:
-        inFile = open('resources/db.json', 'r')
-        tempDB = json.load(inFile)
-        print('Loaded main database')
-        print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
-        inFile.close()
+        if input('Load wallet? (Y/N): ').upper() == 'Y':
+            inFile = open('resources/db.json', 'r')
+            tempDB = json.load(inFile)
+            print('Loaded main database')
+            print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
+            inFile.close()
 
-        if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
-            tempDB['assets'] = requestFunctions.requestManyAssets(tempDB['assets'])
-            tempDB['apps'] = requestFunctions.requestAMMPools(tempDB['apps'], tempDB['assets'])
+            if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
+                tempDB['assets'] = requestFunctions.requestManyAssets(tempDB['assets'])
+                tempDB['apps'] = requestFunctions.requestAMMPools(tempDB['apps'], tempDB['assets'])
 
     except IOError: #database load failed. prompt user to input wallet address to init new database
-    ####                Init db
-    #   Using db as a main dictionary to hold all relevant data as sub-dictionaries.
+        pass
+
+    if tempDB == None or input('Rebuild DB? (Y/N): ').upper() == 'Y':
+        if tempDB != None: walletID = tempDB['wallet']
+        else: walletID = input('Paste wallet address: ')
+        ####                Init db
+        #   Using db as a main dictionary to hold all relevant data as sub-dictionaries.
         print('Init new database')
-        tempDB = {'wallet':input('Paste wallet address: '),     #str    - wallet public key (address)
+        tempDB = {'wallet':walletID,     #str    - wallet public key (address)
             'rawTxns': {},             #transaction id : raw/'on-chain' transaction data}
             'txnRounds': {},           #
             'groups': {},              #group txn data, for automated group txn identifaction
             'assets': initAssetDB({}), #Mainnet asset data such as tickers, IDs, names, decimals.
-            'apps': initAppDB({})}     #mainnet app IDs. This helps identify some txn groups
+            'apps': initAppDB({}),
+            'addressBook': initAddressDB({})}     #mainnet app IDs. This helps identify some txn groups
         
         #below script checks and adds current popular assets via Vestige API calls
         tempDB['assets'] = requestFunctions.requestManyAssets(tempDB['assets'])
