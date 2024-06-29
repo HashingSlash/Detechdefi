@@ -75,8 +75,6 @@ def buildGroupRow(groupID, mainDB):
     groupTxnList = []
     txnTypeDetail = returnTxnTypeInfo()
 
-    
-
     if groupEntry['platform'] != '':
         description = description + str(groupEntry['platform']) + ' : ' + groupEntry['appGroup'] + ' : ' + str(groupEntry['action'])
 
@@ -100,8 +98,8 @@ def buildGroupRow(groupID, mainDB):
 
         for txn in buildSingleRow(mainDB['rawTxns'][txnID], mainDB, description + ' '):
             if txn['sentQuantity'] != 0 or txn['receivedQuantity'] != 0 or txn['feeQuantity'] != 0:
-                if txn['type'] != 'Rewards': groupTxnList.insert(0, txn)
-                else: groupTxnList.append(txn)
+                if txn['type'] != 'Rewards': groupTxnList.append(txn)
+                else: groupTxnList.insert(-1,txn)
 
 
     return groupTxnList
@@ -122,6 +120,7 @@ def buildSingleRow(rawTxn, mainDB, description):
     if singleTxn['type'] == '': singleTxn['type'] = rawTxn['tx-type']
 
     if rawTxn['sender'] == mainDB['wallet']:
+        singleTxn['type'] = 'Send'
         if group == False: description = description + 'Sender'
         if 'receiver' in txnSpecs: singleTxn['txn partner'] = str(txnSpecs['receiver'][:7]) + '...'
         if rawTxn['fee'] > 0:
@@ -129,6 +128,7 @@ def buildSingleRow(rawTxn, mainDB, description):
             singleTxn['feeQuantity'] = rawTxn['fee']
 
     elif 'receiver' in txnSpecs and txnSpecs['receiver'] == mainDB['wallet']:
+        singleTxn['type'] = 'Receive'
         if rawTxn['sender'] in mainDB['addressBook']: singleTxn['txn partner'] = mainDB['addressBook'][rawTxn['sender']]['name']
         else: singleTxn['txn partner'] = rawTxn['sender']
         if group == False: description = description + 'Receiver'
