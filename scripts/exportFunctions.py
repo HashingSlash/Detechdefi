@@ -36,7 +36,10 @@ def outputRows(function, mainDB, soloPrint):
                         for key in txnToOutput:
                             if firstRow == True: header.append(key)
                             cell = str(txnToOutput[key])
-                            row.append(cell.rstrip('0'))
+                            if key in ['sentQuantity', 'receivedQuantity', 'feeQuantity']:
+                                row.append(cell.rstrip('0'))
+                            else: row.append(cell)
+                            
                         if firstRow == True:
                             writer.writerow(header)
                             firstRow = False

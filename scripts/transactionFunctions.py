@@ -36,6 +36,7 @@ def returnAssetMovements(rawTxn, txnSpecs, walletID, txnToReturn):
             elif rawTxn['tx-type'] == 'axfer':
                 txnToReturn['sentCurrency'] = txnSpecs['asset-id']
             txnToReturn['type'] = 'Send'
+            txnToReturn['txn partner'] = txnSpecs['receiver']
 
         
     elif 'receiver' in txnSpecs and txnSpecs['receiver'] == walletID:
@@ -46,6 +47,7 @@ def returnAssetMovements(rawTxn, txnSpecs, walletID, txnToReturn):
                 elif rawTxn['tx-type'] == 'axfer':
                     txnToReturn['receivedCurrency'] = txnSpecs['asset-id']
                 txnToReturn['type'] = 'Receive'
+                txnToReturn['txn partner'] = rawTxn['sender']
 
 
     return txnToReturn
@@ -59,6 +61,8 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description):
 
             processedInner['time'] = str(datetime.datetime.fromtimestamp(rawTxn['round-time']))
             processedInner['id'] = 'InnerTxn - ' + refID + '...'
+            if 'group' in rawTxn: 
+                processedInner['id'] = '(Group- ' + str(rawTxn['group'][:5]) + '...) - ' + processedInner['id']
             processedInner['description'] = description
 
             if processedInner['sentQuantity'] + processedInner['receivedQuantity'] !=0:
@@ -69,6 +73,7 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description):
     return innerTxns
 
 def buildGroupRow(groupID, mainDB):
+    combineRows = True
     groupTxn = returnEmptyTxn()
     groupEntry = mainDB['groups'][groupID]
     description = str(len(groupEntry['txns'])) + ' txns. '
@@ -150,10 +155,7 @@ def buildSingleRow(rawTxn, mainDB, description):
     txnList = [singleTxn]
 
 
-    i = 0
     for innerTxn in innerTxns:
-        i += 1
-        innerTxn['id'] = 'in' + str(i) + ' ' + innerTxn['id']
         txnList.append(innerTxn)
   
 
