@@ -75,6 +75,7 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description):
 def buildGroupRow(groupID, mainDB):
     combineRows = True
     groupTxn = returnEmptyTxn()
+    comboRow = returnEmptyTxn()
     groupEntry = mainDB['groups'][groupID]
     description = str(len(groupEntry['txns'])) + ' txns. '
     groupTxnList = []
@@ -85,9 +86,13 @@ def buildGroupRow(groupID, mainDB):
 
 
     groupTime = str(datetime.datetime.fromtimestamp(groupEntry['round-time']))
-    groupTxn['time'] = groupTime
-    groupTxn['id'] = groupID
-    groupTxn['description'] = description
+    comboRow['time'] = groupTime
+    comboRow['description'] = description
+    comboRow['id'] = 'Group - ' + groupID
+    comboFeeRow = comboRow
+    comboFeeRow['type'] = 'Fee'
+    comboFeeRow['id'] = 'Group Combined Fees - ' + groupID
+    comboFeeRow['txn partner'] = 'Algorand Network'
 
     comboTxnList = []
 
@@ -97,15 +102,26 @@ def buildGroupRow(groupID, mainDB):
         txnSpecs = mainDB['rawTxns'][txnID][txnTypeDetail[mainDB['rawTxns'][txnID]['tx-type']][0]] 
         txnNumber += 1
 
-        if mainDB['rawTxns'][txnID]['sender'] == mainDB['wallet'] and mainDB['rawTxns'][txnID]['fee'] > 0:
-            groupTxn['feeQuantity'] = groupTxn['feeQuantity'] + mainDB['rawTxns'][txnID]['fee']
-            groupTxn['feeCurrency'] = 'ALGO'
-
         for txn in buildSingleRow(mainDB['rawTxns'][txnID], mainDB, description + ' '):
             if txn['sentQuantity'] != 0 or txn['receivedQuantity'] != 0 or txn['feeQuantity'] != 0:
-                if txn['type'] != 'Rewards': groupTxnList.append(txn)
-                else: groupTxnList.insert(-1,txn)
 
+                if combineRows == False:
+                    if txn['type'] != 'Rewards': groupTxnList.append(txn)
+                    else: groupTxnList.insert(-1,txn)
+
+                elif combineRows == True:
+                    
+                    if txn['feeQuantity'] != 0:
+                        comboFeeRow['feeQuantity'] = comboFeeRow['feeQuantity'] + txn['feeQuantity']
+                        comboFeeRow['feeCurrency'] = 'ALGO'
+                        txn['feeQuantity'] = 0
+                        txn['feeCurrency'] = ''
+                    if txn['sentQuantity'] != 0 or txn['receivedQuantity'] != 0 or txn['feeQuantity'] != 0:    
+                        if txn['type'] != 'Rewards': groupTxnList.append(txn)
+                        else: groupTxnList.insert(-1,txn)
+
+    if comboFeeRow['feeQuantity'] != 0:
+        groupTxnList.insert(-1,comboFeeRow)
 
     return groupTxnList
 
@@ -127,7 +143,9 @@ def buildSingleRow(rawTxn, mainDB, description):
     if rawTxn['sender'] == mainDB['wallet']:
         singleTxn['type'] = 'Send'
         if group == False: description = description + 'Sender'
-        if 'receiver' in txnSpecs: singleTxn['txn partner'] = str(txnSpecs['receiver'][:7]) + '...'
+        if 'receiver' in txnSpecs:
+            singleTxn['txn partner'] = str(txnSpecs['receiver'])
+            if txnSpecs['receiver'] in mainDB['addressBook']: singleTxn['txn partner'] = mainDB['addressBook'][txnSpecs['receiver']]['name']
         if rawTxn['fee'] > 0:
             singleTxn['feeCurrency'] = 'ALGO'
             singleTxn['feeQuantity'] = rawTxn['fee']
