@@ -73,7 +73,7 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description):
     return innerTxns
 
 def buildGroupRow(groupID, mainDB):
-    combineRows = True
+    combineRows = False
     groupTxn = returnEmptyTxn()
     comboRow = returnEmptyTxn()
     groupEntry = mainDB['groups'][groupID]
@@ -120,7 +120,7 @@ def buildGroupRow(groupID, mainDB):
                         if txn['type'] != 'Rewards': groupTxnList.append(txn)
                         else: groupTxnList.insert(-1,txn)
 
-    if comboFeeRow['feeQuantity'] != 0:
+    if combineRows == True and comboFeeRow['feeQuantity'] != 0:
         groupTxnList.insert(-1,comboFeeRow)
 
     return groupTxnList
