@@ -72,8 +72,7 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description):
 
     return innerTxns
 
-def buildGroupRow(groupID, mainDB):
-    combineRows = False
+def buildGroupRow(groupID, mainDB, combineRows):
     groupTxn = returnEmptyTxn()
     comboRow = returnEmptyTxn()
     groupEntry = mainDB['groups'][groupID]
@@ -145,7 +144,8 @@ def buildSingleRow(rawTxn, mainDB, description):
         if group == False: description = description + 'Sender'
         if 'receiver' in txnSpecs:
             singleTxn['txn partner'] = str(txnSpecs['receiver'])
-            if txnSpecs['receiver'] in mainDB['addressBook']: singleTxn['txn partner'] = mainDB['addressBook'][txnSpecs['receiver']]['name']
+            if txnSpecs['receiver'] in mainDB['addressBook']:
+                singleTxn['txn partner'] = str(mainDB['addressBook'][txnSpecs['receiver']]['name'] + ' - ' + mainDB['addressBook'][txnSpecs['receiver']]['usage'])
         if rawTxn['fee'] > 0:
             singleTxn['feeCurrency'] = 'ALGO'
             singleTxn['feeQuantity'] = rawTxn['fee']
@@ -227,7 +227,10 @@ def assembleTransactions(mainDB, testing):
     #prices that most cryto-places can derive
     commonPrices = ['ALGO', '31566704', '312769']
     pricesToCheck = {'total':0}
-    
+
+    if input('compress groups?: ').upper() == 'Y':
+        combineRows = True
+    else: combineRows = False    
 
     for txnID in mainDB['txnOrder']:
         rawTxn = mainDB['rawTxns'][txnID]
@@ -237,7 +240,7 @@ def assembleTransactions(mainDB, testing):
 
             
         elif rawTxn['group'] not in processedGroups:
-            roundRows = buildGroupRow(rawTxn['group'], mainDB)
+            roundRows = buildGroupRow(rawTxn['group'], mainDB, combineRows)
             processedGroups.append(rawTxn['group'])
         
 

@@ -57,7 +57,11 @@ def requestManyAssets(assetDB):
     return assetDB
 
 
-def requestAMMPools(appDB, assetDB):
+def requestAMMPools(tempDB):
+
+    assetDB = tempDB['assets']
+    appDB = tempDB['apps']
+    addressDB = tempDB['addressBook']
 
     print('Sending Pool data request to Vestige')
     providersResponse = requests.get("https://free-api.vestige.fi/providers").json()
@@ -97,8 +101,14 @@ def requestAMMPools(appDB, assetDB):
                 appDB[str(pool['application_id'])] = {"platform":providerName,"appName":str(str(asset1) + '/' + str(asset2) + ' Liquidity Pool')}
                 #print(appDB[str(pool['application_id'])])
 
+            if str(pool['address']) not in addressDB:
+                addressDB[str(pool['address'])] = {"name":providerName,'usage':str(str(asset1) + '/' + str(asset2) + ' Liquidity Pool')}
+
+    tempDB['assets'] = assetDB
+    tempDB['apps'] = appDB
+    tempDB['addressBook'] = addressDB
 
     print('AMM Pool data request to Vestige: Complete\n')
-    return appDB
+    return tempDB
 
 

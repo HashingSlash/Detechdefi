@@ -136,7 +136,7 @@ def initAddressDB(tempAddressDB):
                 headerLine = False
                 continue
             if str(line[0]) not in tempAddressDB:
-                tempAddressDB[str(line[0])] = {'name': line[1]}
+                tempAddressDB[str(line[0])] = {'name': line[1], 'usage':line[2]}
         print('Loaded Address Book: resources/addressBook.csv')
     except:
         print('Fresh address book')
@@ -153,10 +153,6 @@ def initMainDB():
             print('Loaded main database')
             print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
             inFile.close()
-
-            if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
-                tempDB['assets'] = requestFunctions.requestManyAssets(tempDB['assets'])
-                tempDB['apps'] = requestFunctions.requestAMMPools(tempDB['apps'], tempDB['assets'])
 
     except IOError: #database load failed. prompt user to input wallet address to init new database
         pass
@@ -178,6 +174,8 @@ def initMainDB():
         #below script checks and adds current popular assets via Vestige API calls
         tempDB['assets'] = requestFunctions.requestManyAssets(tempDB['assets'])
         print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
+        if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
+                tempDB = requestFunctions.requestAMMPools(tempDB)
 
     return tempDB
 
