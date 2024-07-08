@@ -60,7 +60,7 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description):
             processedInner = returnAssetMovements(innerTxn, innerDetails, walletID, returnEmptyTxn())
 
             processedInner['time'] = str(datetime.datetime.fromtimestamp(rawTxn['round-time']))
-            processedInner['id'] = 'InnerTxn - ' + refID + '...'
+            processedInner['id'] = 'InnerTxn #' + str(len(innerTxns) + 1) + ' - ' + refID + '...'
             if 'group' in rawTxn: 
                 processedInner['id'] = '(Group- ' + str(rawTxn['group'][:5]) + '...) - ' + processedInner['id']
             processedInner['description'] = description
@@ -120,7 +120,7 @@ def buildGroupRow(groupID, mainDB, combineRows):
                         else: groupTxnList.insert(-1,txn)
 
     if combineRows == True and comboFeeRow['feeQuantity'] != 0:
-        groupTxnList.insert(-1,comboFeeRow)
+        groupTxnList.append(comboFeeRow)
 
     return groupTxnList
 
@@ -152,7 +152,7 @@ def buildSingleRow(rawTxn, mainDB, description):
 
     elif 'receiver' in txnSpecs and txnSpecs['receiver'] == mainDB['wallet']:
         singleTxn['type'] = 'Receive'
-        if rawTxn['sender'] in mainDB['addressBook']: singleTxn['txn partner'] = mainDB['addressBook'][rawTxn['sender']]['name']
+        if rawTxn['sender'] in mainDB['addressBook']: singleTxn['txn partner'] = mainDB['addressBook'][rawTxn['sender']]['name'] + ' - ' + mainDB['addressBook'][rawTxn['sender']]['usage']
         else: singleTxn['txn partner'] = rawTxn['sender']
         if group == False: description = description + 'Receiver'
 
@@ -160,9 +160,6 @@ def buildSingleRow(rawTxn, mainDB, description):
         description = 'Asset Opt in/out'
         singleTxn['type'] = 'Fee'
         singleTxn['txn partner'] = 'Algorand Network'
-
-    innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description)
-
 
     singleTxn['time'] = str(datetime.datetime.fromtimestamp(rawTxn['round-time']))
     singleTxn['description'] = description
@@ -173,8 +170,14 @@ def buildSingleRow(rawTxn, mainDB, description):
     txnList = [singleTxn]
 
 
+    innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description)
     for innerTxn in innerTxns:
         txnList.append(innerTxn)
+
+    
+
+
+    
   
 
 
@@ -228,9 +231,7 @@ def assembleTransactions(mainDB, testing):
     commonPrices = ['ALGO', '31566704', '312769']
     pricesToCheck = {'total':0}
 
-    if input('compress groups?: ').upper() == 'Y':
-        combineRows = True
-    else: combineRows = False    
+    combineRows = mainDB['combineRows']   
 
     for txnID in mainDB['txnOrder']:
         rawTxn = mainDB['rawTxns'][txnID]

@@ -145,25 +145,33 @@ def initAddressDB(tempAddressDB):
 
 def initMainDB():
     #either load previous database or build a new one
-    tempDB = None
+    walletID = None
     try:
-        if input('Load wallet? (Y/N): ').upper() == 'Y':
-            inFile = open('resources/db.json', 'r')
-            tempDB = json.load(inFile)
-            print('Loaded main database')
-            print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
-            inFile.close()
-
+        inFile = open('resources/db.json', 'r')
+        tempDB = json.load(inFile)
+        #print('Loaded main database')
+        #print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
+        inFile.close()
+        if input('Use wallet ' + tempDB['wallet'][:7] + ' ? (Y/N): ').upper() == 'Y':
+            walletID = tempDB['wallet']
+        else:
+            tempDB = None
     except IOError: #database load failed. prompt user to input wallet address to init new database
-        pass
+        tempDB = None
 
+    if walletID == None:
+        walletID = input('Paste wallet address: ')
     if tempDB == None or input('Rebuild DB? (Y/N): ').upper() == 'Y':
-        if tempDB != None: walletID = tempDB['wallet']
-        else: walletID = input('Paste wallet address: ')
+
+        if input('Compress groups?(Y/N): ').upper() == 'Y':
+            combineRows = True
+        else: combineRows = False    
+
         ####                Init db
         #   Using db as a main dictionary to hold all relevant data as sub-dictionaries.
         print('Init new database')
         tempDB = {'wallet':walletID,     #str    - wallet public key (address)
+            'combineRows': combineRows,
             'rawTxns': {},             #transaction id : raw/'on-chain' transaction data}
             'txnRounds': {},           #
             'groups': {},              #group txn data, for automated group txn identifaction
@@ -173,9 +181,9 @@ def initMainDB():
         
         #below script checks and adds current popular assets via Vestige API calls
         tempDB['assets'] = requestFunctions.requestManyAssets(tempDB['assets'])
-        print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
+        #print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
         if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
-                tempDB = requestFunctions.requestAMMPools(tempDB)
+            tempDB = requestFunctions.requestAMMPools(tempDB)
 
     return tempDB
 
