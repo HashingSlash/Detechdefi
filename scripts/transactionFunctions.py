@@ -1,5 +1,6 @@
 import datetime
 import scripts.diagnosisFunctions as diagnosisFunctions
+import scripts.groupCombiningFunctions as groupCombiningFunctions
 import math
 
 def returnEmptyTxn():
@@ -73,7 +74,6 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description):
     return innerTxns
 
 def buildGroupRow(groupID, mainDB, combineRows):
-    groupTxn = returnEmptyTxn()
     comboRow = returnEmptyTxn()
     groupEntry = mainDB['groups'][groupID]
     description = str(len(groupEntry['txns'])) + ' txns. '
@@ -116,11 +116,19 @@ def buildGroupRow(groupID, mainDB, combineRows):
                         txn['feeQuantity'] = 0
                         txn['feeCurrency'] = ''
                     if txn['sentQuantity'] != 0 or txn['receivedQuantity'] != 0 or txn['feeQuantity'] != 0:    
-                        if txn['type'] != 'Rewards': groupTxnList.append(txn)
-                        else: groupTxnList.insert(-1,txn)
+                        groupTxnList.append(txn)
 
-    if combineRows == True and comboFeeRow['feeQuantity'] != 0:
-        groupTxnList.append(comboFeeRow)
+    if combineRows == True:
+        if comboFeeRow['feeQuantity'] != 0:
+            comboRow = comboFeeRow
+
+        returnedList = groupCombiningFunctions.specificGroupHandler(groupTxnList, comboRow)
+        groupTxnList = returnedList[0]
+        comboRow = returnedList[1]
+
+        if comboRow['sentQuantity'] != 0 or comboRow['receivedQuantity'] != 0 or comboRow['feeQuantity'] != 0:
+            groupTxnList.append(comboRow)
+
 
     return groupTxnList
 
