@@ -87,13 +87,11 @@ def buildGroupRow(groupID, mainDB, combineRows):
     groupTime = str(datetime.datetime.fromtimestamp(groupEntry['round-time']))
     comboRow['time'] = groupTime
     comboRow['description'] = description
-    comboRow['id'] = 'Group - ' + groupID
+    comboRow['id'] = 'Combined Group - ' + groupID
     comboFeeRow = comboRow
-    comboFeeRow['type'] = 'Fee'
-    comboFeeRow['id'] = 'Group Combined Fees - ' + groupID
-    comboFeeRow['txn partner'] = 'Algorand Network'
+    
 
-    comboTxnList = []
+    specialTxnList = []
 
     txnNumber = 0
     for txnID in groupEntry['txns']:
@@ -111,24 +109,34 @@ def buildGroupRow(groupID, mainDB, combineRows):
                 elif combineRows == True:
                     
                     if txn['feeQuantity'] != 0:
-                        comboFeeRow['feeQuantity'] = comboFeeRow['feeQuantity'] + txn['feeQuantity']
-                        comboFeeRow['feeCurrency'] = 'ALGO'
+                        comboRow['feeQuantity'] = comboRow['feeQuantity'] + txn['feeQuantity']
+                        comboRow['feeCurrency'] = 'ALGO'
                         txn['feeQuantity'] = 0
                         txn['feeCurrency'] = ''
                     if txn['sentQuantity'] != 0 or txn['receivedQuantity'] != 0 or txn['feeQuantity'] != 0:    
-                        groupTxnList.append(txn)
+                        if txn['description'] == 'Network Participation Rewards':
+                            specialTxnList.append(txn)
+                        else:
+                            groupTxnList.append(txn)
 
     if combineRows == True:
-        if comboFeeRow['feeQuantity'] != 0:
-            comboRow = comboFeeRow
+        
 
         returnedList = groupCombiningFunctions.specificGroupHandler(groupTxnList, comboRow)
         groupTxnList = returnedList[0]
         comboRow = returnedList[1]
 
         if comboRow['sentQuantity'] != 0 or comboRow['receivedQuantity'] != 0 or comboRow['feeQuantity'] != 0:
+            if comboRow['sentQuantity'] == 0 and comboRow['receivedQuantity'] == 0:
+                comboRow['type'] = 'Fee'
+                comboRow['id'] = 'Group Combined Fees - ' + groupID
+                comboRow['txn partner'] = 'Algorand Network'
             groupTxnList.append(comboRow)
 
+
+    if len(specialTxnList) > 0:
+        for specialTxn in specialTxnList:
+            groupTxnList.append(specialTxn)
 
     return groupTxnList
 

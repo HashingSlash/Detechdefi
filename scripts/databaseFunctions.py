@@ -182,8 +182,14 @@ def initMainDB():
         #below script checks and adds current popular assets via Vestige API calls
         tempDB['assets'] = requestFunctions.requestManyAssets(tempDB['assets'])
         #print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
+
+
         if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
             tempDB = requestFunctions.requestAMMPools(tempDB)
+
+    else:
+        tempDB['txnRounds'] = {}
+        tempDB['groups'] = {}
 
     return tempDB
 

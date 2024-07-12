@@ -15,7 +15,8 @@ def main():
     node = 'Algonode'
     network = 'Mainnet'
     #fetchTxns returns the main database with all txns in raw format for later processing
-    db = databaseFunctions.fetchTxns(node, network, db)
+    if input('Request transactions? (Y/N): ').upper() == 'Y':
+        db = databaseFunctions.fetchTxns(node, network, db)
     #createDatabases returns the main database, using stored txns to fill out some subdictionaries.
     db = databaseFunctions.createDatabases(db)
 
@@ -46,7 +47,7 @@ def main():
 
     #print('Asset prices to find: ' + str(db['prices']['total']))
 
-    print('\nxoxo,\n    Detechdefi\n')
+    print('\nxoxo,\n    Detechdefi\nPossible thanks to Algonode/Nodely and Vestige APIs.\n')
     
 
 main()

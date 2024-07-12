@@ -341,6 +341,7 @@ ID,platform,appName
 1206981291,Humble Swap,1137071163/ALGO Liquidity Pool
 1209609707,Humble Swap,F!ya/ALGO Liquidity Pool
 1211038470,Humble Swap,PURRS/ALGO Liquidity Pool
+1211924623,Humble Swap,LAGOS/ALGO Liquidity Pool
 1212639926,Pact,ADAO/ALGO Liquidity Pool
 1213116486,Humble Swap,GOLD$/ALGO Liquidity Pool
 1213121856,Humble Swap,SILVER$/ALGO Liquidity Pool
@@ -521,6 +522,7 @@ ID,platform,appName
 613211274,Algofi,226265212/ALGO Liquidity Pool
 613217007,Algofi,USDt/ALGO Liquidity Pool
 613218975,Algofi,TREES/ALGO Liquidity Pool
+613228734,Algofi,SCOUT/ALGO Liquidity Pool
 613229380,Algofi,ALGF/ALGO Liquidity Pool
 613230784,Algofi,2751733/ALGO Liquidity Pool
 613234692,Algofi,403499324/ALGO Liquidity Pool
