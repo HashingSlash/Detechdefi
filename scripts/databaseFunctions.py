@@ -161,7 +161,7 @@ def initMainDB():
 
     if walletID == None:
         walletID = input('Paste wallet address: ')
-    if tempDB == None or input('Rebuild DB? (Y/N): ').upper() == 'Y':
+    if tempDB == None:
 
         if input('Compress groups?(Y/N): ').upper() == 'Y':
             combineRows = True

@@ -15,7 +15,7 @@ def main():
     node = 'Algonode'
     network = 'Mainnet'
     #fetchTxns returns the main database with all txns in raw format for later processing
-    if input('Request transactions? (Y/N): ').upper() == 'Y':
+    if db['rawTxns'] == {} or input('Update stored transactions? (Y/N): ').upper() == 'Y':
         db = databaseFunctions.fetchTxns(node, network, db)
     #createDatabases returns the main database, using stored txns to fill out some subdictionaries.
     db = databaseFunctions.createDatabases(db)
