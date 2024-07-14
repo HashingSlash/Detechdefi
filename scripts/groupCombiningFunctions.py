@@ -1,6 +1,7 @@
 import scripts.diagnosisFunctions as diagnosisFunctions
 
-def swapGroup(sellRow, buyRow, feeRowList, platform, comboRow):
+def swapGroup(sellRow, buyRow, feeRowList, platform, comboRow, completeGroupRows):
+    processedGroupRows = completeGroupRows
     comboRow['txn partner'] = platform
     comboRow['type'] = 'Trade'
     comboRow['sentQuantity'] = sellRow['sentQuantity']
@@ -9,8 +10,13 @@ def swapGroup(sellRow, buyRow, feeRowList, platform, comboRow):
     comboRow['receivedCurrency'] = buyRow['receivedCurrency']
     for feeRow in feeRowList:
         comboRow['feeQuantity'] = comboRow['feeQuantity'] + feeRow['sentQuantity']
+        processedGroupRows.remove(feeRow)
 
-    return comboRow
+    processedGroupRows.remove(sellRow)
+    processedGroupRows.remove(buyRow)
+    processedGroupRows.append(comboRow)
+
+    return processedGroupRows
 
 def addLiquidity(addRowList, poolReceiptRow, feeRowList, platform, comboRow):
     comboRow['txn partner'] = platform
@@ -40,9 +46,31 @@ def removeLiquidity(receiveRowList, poolReceiptRow, feeRowList, platform, comboR
 
     return [comboRow, receiveRowList]
 
+def claimRewards(rewardsRows, feeRows, platform, type, comboRow, completeGroupRows):
+    rowsToReturn = completeGroupRows
+    comboRow['txn partner'] = platform
+    comboRow['type'] = type
+    initComboRow = comboRow
+
+    if feeRows != None:
+        for feeTxn in feeRows:
+            if feeTxn['sentQuantity'] > 0 and feeTxn['sentCurrency'] == "ALGO":
+                comboRow['feeQuantity'] = comboRow['feeQuantity'] + feeTxn['sentQuantity']
+
+    for rewardsTxn in rewardsRows:
+        if rewardsTxn['receivedQuantity'] > 0:
+            if comboRow['receivedQuantity'] > 0:
+                rowsToReturn.append(comboRow)
+                comboRow = initComboRow
+            comboRow['receivedQuantity'] = rewardsTxn['receivedQuantity']
+            comboRow['receivedCurrency'] = rewardsTxn['receivedCurrency']
+
+    rowsToReturn.append(comboRow)
+    return rowsToReturn
+
 ####                This is going to be a mess
 
-def specificGroupHandler(groupTxnList, comboRow):
+def specificGroupHandler(groupTxnList, comboRow, groupID):
     removeQue = []
     fastProcess = False
     try:
@@ -54,20 +82,16 @@ def specificGroupHandler(groupTxnList, comboRow):
     ####                SWAPS
     if len(groupTxnList) > 2 and groupDescription in ['4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Buy) ',
                             '4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Sell) '] :
-        comboRow = swapGroup(groupTxnList[1], groupTxnList[2], [groupTxnList[0]], 'Tinyman', comboRow)
-        removeQue = [groupTxnList[1], groupTxnList[2], groupTxnList[0]]
+        groupTxnList = swapGroup(groupTxnList[1], groupTxnList[2], [groupTxnList[0]], 'Tinyman', comboRow, groupTxnList)
         fastProcess = True
     elif len(groupTxnList) == 2 and groupDescription == '2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ':
-        comboRow = swapGroup(groupTxnList[0], groupTxnList[1], [], 'Tinyman', comboRow)
-        removeQue = [groupTxnList[0], groupTxnList[1]]
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], [], 'Tinyman', comboRow, groupTxnList)
         fastProcess = True
     elif groupDescription == '3 txns. Pact : Pact Swap : Swap ':
-        comboRow = swapGroup(groupTxnList[0], groupTxnList[1], [], 'Pact', comboRow)
-        removeQue = [groupTxnList[0], groupTxnList[1]]
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], [], 'Pact', comboRow, groupTxnList)
         fastProcess = True
     elif groupDescription == '4 txns. Algofi : AMM : Swap (Buy) ':
-        comboRow = swapGroup(groupTxnList[0], groupTxnList[1], [], 'AlgoFi', comboRow)
-        removeQue = [groupTxnList[0], groupTxnList[1]]
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], [], 'AlgoFi', comboRow, groupTxnList)
         fastProcess = True
 
     ####                LIQUIDITY
@@ -80,17 +104,7 @@ def specificGroupHandler(groupTxnList, comboRow):
         groupTxnList = liqudityCombo[1]
         fastProcess = True
 
-    elif groupDescription == '4 txns. Tinyman : Tinyman AMM v2 : Add initial Liquidity ':
-        liqudityCombo = addLiquidity(addRowList=[groupTxnList[0], groupTxnList[1]],
-                                     poolReceiptRow=groupTxnList[2],
-                                     feeRowList=[[]],
-                                     platform='Tinyman', comboRow=comboRow)
-        comboRow = liqudityCombo[0]
-        groupTxnList = liqudityCombo[1]
-        fastProcess = True
-
-    elif groupDescription in ['2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ',
-                              '3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ']:
+    elif 'txns. Tinyman : Tinyman AMM v2 : Add ' in groupDescription:
         if len(groupTxnList) ==  2:
             sendList = [groupTxnList[0]]
             receiptRow = groupTxnList[1]
@@ -127,6 +141,14 @@ def specificGroupHandler(groupTxnList, comboRow):
         groupTxnList = liqudityCombo[1]
         fastProcess = True
 
+
+
+
+    ####                Claim rewards
+
+    elif groupDescription == '2 txns. Tinyman : Tinyman Staking : Claim ':
+        groupTxnList = claimRewards(rewardsRows=[groupTxnList[0]], feeRows=None, platform='Tinyman', type='Rewards',comboRow=comboRow, completeGroupRows=[])
+        fastProcess = True
 
 
     ####Slow solve    
@@ -200,9 +222,18 @@ def specificGroupHandler(groupTxnList, comboRow):
 
 
 
-    for removeTxn in removeQue:
+    if removeQue != []:
+        for removeTxn in removeQue:
             groupTxnList.remove(removeTxn)
 
-    comboPack = [groupTxnList, comboRow]
-    return comboPack
+    if comboRow['sentQuantity'] != 0 or comboRow['receivedQuantity'] != 0 or comboRow['feeQuantity'] != 0:
+            if comboRow['sentQuantity'] == 0 and comboRow['receivedQuantity'] == 0:
+                comboRow['type'] = 'Fee'
+                comboRow['id'] = 'Group Combined Fees - ' + groupID
+                comboRow['txn partner'] = 'Algorand Network'
+            groupTxnList.append(comboRow)
+
+
+
+    return groupTxnList
     

@@ -122,16 +122,7 @@ def buildGroupRow(groupID, mainDB, combineRows):
     if combineRows == True:
         
 
-        returnedList = groupCombiningFunctions.specificGroupHandler(groupTxnList, comboRow)
-        groupTxnList = returnedList[0]
-        comboRow = returnedList[1]
-
-        if comboRow['sentQuantity'] != 0 or comboRow['receivedQuantity'] != 0 or comboRow['feeQuantity'] != 0:
-            if comboRow['sentQuantity'] == 0 and comboRow['receivedQuantity'] == 0:
-                comboRow['type'] = 'Fee'
-                comboRow['id'] = 'Group Combined Fees - ' + groupID
-                comboRow['txn partner'] = 'Algorand Network'
-            groupTxnList.append(comboRow)
+        groupTxnList = groupCombiningFunctions.specificGroupHandler(groupTxnList, comboRow, groupID)
 
 
     if len(specialTxnList) > 0:
