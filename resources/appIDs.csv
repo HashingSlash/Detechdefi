@@ -361,6 +361,7 @@ ID,platform,appName
 1246622676,Pact,SKYE/ALGO Liquidity Pool
 1249013378,Humble Swap,NAM/ALGO Liquidity Pool
 1249311784,Pact,EURS/ALGO Liquidity Pool
+1249312710,Pact,EURS/ALGO Liquidity Pool
 1255068964,Humble Swap,1251405644/ALGO Liquidity Pool
 1255141311,Humble Swap,SPRT/ALGO Liquidity Pool
 1256328668,Pact,RDINI/ALGO Liquidity Pool
@@ -535,6 +536,7 @@ ID,platform,appName
 613236122,Algofi,251014570/ALGO Liquidity Pool
 613272542,Algofi,300208676/ALGO Liquidity Pool
 613275177,Algofi,AGNR/ALGO Liquidity Pool
+613324698,Algofi,TinyLock/ALGO Liquidity Pool
 613339906,Algofi,329110405/ALGO Liquidity Pool
 617179069,Algofi,388502764/ALGO Liquidity Pool
 617707129,Yieldly,YLDY > DPANDA Staking

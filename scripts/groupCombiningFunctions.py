@@ -3,7 +3,7 @@ import scripts.diagnosisFunctions as diagnosisFunctions
 def swapGroup(sellRow, buyRow, feeRowList, platform, comboRow, completeGroupRows):
     processedGroupRows = completeGroupRows
     comboRow['txn partner'] = platform
-    comboRow['type'] = 'Trade'
+    comboRow['type'] = 'Swap'
     comboRow['sentQuantity'] = sellRow['sentQuantity']
     comboRow['sentCurrency'] = sellRow['sentCurrency']
     comboRow['receivedQuantity'] = buyRow['receivedQuantity']
@@ -19,35 +19,39 @@ def swapGroup(sellRow, buyRow, feeRowList, platform, comboRow, completeGroupRows
     return processedGroupRows
 
 def addLiquidity(addRowList, poolReceiptRow, feeRowList, platform, comboRow):
+    processedGroupRows = []
     comboRow['txn partner'] = platform
-    comboRow['type'] = 'Add Liquidity'
+    comboRow['type'] = 'Receive LP Tokens'
     for addRow in addRowList:
         addRow['type'] = 'Add Liquidity'
         addRow['txn partner'] = platform
+        processedGroupRows.append(addRow)
     if feeRowList != [[]]:
         for feeRow in feeRowList:
             comboRow['feeQuantity'] = comboRow['feeQuantity'] + feeRow['sentQuantity']
     comboRow['receivedQuantity'] = poolReceiptRow['receivedQuantity']
     comboRow['receivedCurrency'] = poolReceiptRow['receivedCurrency']
-
-    return [comboRow, addRowList]
+    processedGroupRows.append(comboRow)
+    return processedGroupRows
 
 def removeLiquidity(receiveRowList, poolReceiptRow, feeRowList, platform, comboRow):
+    processedGroupRows = []
     comboRow['txn partner'] = platform
-    comboRow['type'] = 'Remove Liquidity'
+    comboRow['type'] = 'Return LP Tokens'
     for receiveRow in receiveRowList:
         receiveRow['type'] = 'Remove Liquidity'
         receiveRow['txn partner'] = platform
+        processedGroupRows.append(receiveRow)
     if feeRowList != [[]]:
         for feeRow in feeRowList:
             comboRow['feeQuantity'] = comboRow['feeQuantity'] + feeRow['sentQuantity']
     comboRow['sentQuantity'] = poolReceiptRow['sentQuantity']
     comboRow['sentCurrency'] = poolReceiptRow['sentCurrency']
+    processedGroupRows.append(comboRow)
+    return processedGroupRows
 
-    return [comboRow, receiveRowList]
-
-def claimRewards(rewardsRows, feeRows, platform, type, comboRow, completeGroupRows):
-    rowsToReturn = completeGroupRows
+def claimAssets(receiveRows, feeRows, platform, type, comboRow, groupToProcess):
+    processedGroupRows = groupToProcess
     comboRow['txn partner'] = platform
     comboRow['type'] = type
     initComboRow = comboRow
@@ -57,18 +61,39 @@ def claimRewards(rewardsRows, feeRows, platform, type, comboRow, completeGroupRo
             if feeTxn['sentQuantity'] > 0 and feeTxn['sentCurrency'] == "ALGO":
                 comboRow['feeQuantity'] = comboRow['feeQuantity'] + feeTxn['sentQuantity']
 
-    for rewardsTxn in rewardsRows:
-        if rewardsTxn['receivedQuantity'] > 0:
+    for receiveTxn in receiveRows:
+        if receiveTxn['receivedQuantity'] > 0:
             if comboRow['receivedQuantity'] > 0:
-                rowsToReturn.append(comboRow)
+                processedGroupRows.append(comboRow)
                 comboRow = initComboRow
-            comboRow['receivedQuantity'] = rewardsTxn['receivedQuantity']
-            comboRow['receivedCurrency'] = rewardsTxn['receivedCurrency']
+            comboRow['receivedQuantity'] = receiveTxn['receivedQuantity']
+            comboRow['receivedCurrency'] = receiveTxn['receivedCurrency']
 
-    rowsToReturn.append(comboRow)
-    return rowsToReturn
+    processedGroupRows.append(comboRow)
+    return processedGroupRows
+
+def depositAssets(depositRows, feeRows, platform, type, comboRow, groupToProcess):
+    processedGroupRows = groupToProcess
+    comboRow['txn partner'] = platform
+    comboRow['type'] = type
+    initComboRow = comboRow
+
+    if feeRows != None:
+        for feeTxn in feeRows:
+            if feeTxn['sentQuantity'] > 0 and feeTxn['sentCurrency'] == "ALGO":
+                comboRow['feeQuantity'] = comboRow['feeQuantity'] + feeTxn['sentQuantity']
+
+    for depositTxn in depositRows:
+        if depositTxn['receivedQuantity'] > 0:
+            if comboRow['receivedQuantity'] > 0:
+                processedGroupRows.append(comboRow)
+                comboRow = initComboRow
+            comboRow['receivedQuantity'] = depositTxn['receivedQuantity']
+            comboRow['receivedCurrency'] = depositTxn['receivedCurrency']
+
 
 ####                This is going to be a mess
+#                   Its getting better in here
 
 def specificGroupHandler(groupTxnList, comboRow, groupID):
     removeQue = []
@@ -79,7 +104,10 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
     except:
         groupDescription = ''
     ####                Fast solve
-    ####                SWAPS
+
+
+
+    ####                single SWAPS
     if len(groupTxnList) > 2 and groupDescription in ['4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Buy) ',
                             '4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Sell) '] :
         groupTxnList = swapGroup(groupTxnList[1], groupTxnList[2], [groupTxnList[0]], 'Tinyman', comboRow, groupTxnList)
@@ -94,14 +122,18 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
         groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], [], 'AlgoFi', comboRow, groupTxnList)
         fastProcess = True
 
+    ####                Manual Slippage Claims
+    elif groupDescription == '3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage ':
+        groupTxnList = claimAssets(receiveRows=[groupTxnList[1]], feeRows=[groupTxnList[0]], platform='Tinyman', type='Receive',comboRow=comboRow, groupToProcess=[])
+        fastProcess = True
+
+
     ####                LIQUIDITY
     elif groupDescription == '5 txns. Tinyman : Tinyman AMM v1/1.1 : Add Liquidity ':
-        liqudityCombo = addLiquidity(addRowList=[groupTxnList[1], groupTxnList[2]],
+        groupTxnList = addLiquidity(addRowList=[groupTxnList[1], groupTxnList[2]],
                                      poolReceiptRow=groupTxnList[3],
                                      feeRowList=[groupTxnList[0]],
                                      platform='Tinyman', comboRow=comboRow)
-        comboRow = liqudityCombo[0]
-        groupTxnList = liqudityCombo[1]
         fastProcess = True
 
     elif 'txns. Tinyman : Tinyman AMM v2 : Add ' in groupDescription:
@@ -111,21 +143,17 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
         elif len(groupTxnList) == 3:
             sendList = [groupTxnList[0],groupTxnList[1]]
             receiptRow = groupTxnList[2]
-        liqudityCombo = addLiquidity(addRowList=sendList,
+        groupTxnList = addLiquidity(addRowList=sendList,
                                      poolReceiptRow=receiptRow,
                                      feeRowList=[[]],
                                      platform='Tinyman', comboRow=comboRow)
-        comboRow = liqudityCombo[0]
-        groupTxnList = liqudityCombo[1]
         fastProcess = True
 
     elif groupDescription == '5 txns. Tinyman : Tinyman AMM v1/1.1 : Remove Liquidity ':
-        liqudityCombo = removeLiquidity(receiveRowList=[groupTxnList[1], groupTxnList[2]],
+        groupTxnList = removeLiquidity(receiveRowList=[groupTxnList[1], groupTxnList[2]],
                                      poolReceiptRow=groupTxnList[3],
                                      feeRowList=[groupTxnList[0]],
                                      platform='Tinyman', comboRow=comboRow)
-        comboRow = liqudityCombo[0]
-        groupTxnList = liqudityCombo[1]
         fastProcess = True
 
     elif groupDescription == '2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ':
@@ -133,22 +161,23 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
             receiveList = [groupTxnList[1]]
         elif len(groupTxnList) == 3:
             receiveList = [groupTxnList[1],groupTxnList[2]]
-        liqudityCombo = removeLiquidity(receiveRowList=receiveList,
+        groupTxnList = removeLiquidity(receiveRowList=receiveList,
                                      poolReceiptRow=groupTxnList[0],
                                      feeRowList=[[]],
                                      platform='Tinyman', comboRow=comboRow)
-        comboRow = liqudityCombo[0]
-        groupTxnList = liqudityCombo[1]
         fastProcess = True
-
-
 
 
     ####                Claim rewards
-
     elif groupDescription == '2 txns. Tinyman : Tinyman Staking : Claim ':
-        groupTxnList = claimRewards(rewardsRows=[groupTxnList[0]], feeRows=None, platform='Tinyman', type='Rewards',comboRow=comboRow, completeGroupRows=[])
+        groupTxnList = claimAssets(receiveRows=[groupTxnList[0]], feeRows=None, platform='Tinyman', type='Staking',comboRow=comboRow, groupToProcess=[])
         fastProcess = True
+
+
+
+
+
+
 
 
     ####Slow solve    
@@ -156,23 +185,6 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
         for txn in groupTxnList:
             if txn == groupTxnList[0]:
                 groupDescription = txn['description']
-            ####                Tinyman
-            ####                V1/1.1
-
-            if True == False:
-                pass
-
-            elif groupDescription == '3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage ':
-                ####   Network Fee, Return
-                comboRow['type'] = 'Receive'
-                comboRow['txn partner'] = 'Tinyman'
-                if txn == groupTxnList[0]:
-                    comboRow['feeQuantity'] = comboRow['feeQuantity'] + txn['sentQuantity']
-                    removeQue.append(txn)
-                elif txn == groupTxnList[1]:
-                    comboRow['receivedQuantity'] = txn['receivedQuantity']
-                    comboRow['receivedCurrency'] = txn['receivedCurrency']
-                    removeQue.append(txn)
         
         
             ####                Yieldly
