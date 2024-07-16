@@ -119,7 +119,7 @@ def buildGroupRow(groupID, mainDB, combineRows):
                         else:
                             groupTxnList.append(txn)
 
-    if combineRows == True:
+    if combineRows == True:# and len(groupTxnList) > 0:
         
 
         groupTxnList = groupCombiningFunctions.specificGroupHandler(groupTxnList, comboRow, groupID)
@@ -174,7 +174,12 @@ def buildSingleRow(rawTxn, mainDB, description):
         singleTxn['type'] = 'Fee'
         singleTxn['txn partner'] = 'Algorand Network'
 
-    txnList = [singleTxn]
+    if singleTxn['type'] == 'Receive' and singleTxn['txn partner'] in ['Algorand Faucet Drops - Airdrop wallet',
+                                                                       'AlgoStake - Airdrop wallet',
+                                                                       'AKITA - Airdrop wallet']:
+        singleTxn['type'] = 'Airdrop'
+    elif singleTxn['type'] == 'Receive' and singleTxn['txn partner'] == 'D13 - Scam Warning Bot': singleTxn['type'] = 'Spam'
+    txnList = [singleTxn] 
 
 
     innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description)

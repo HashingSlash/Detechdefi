@@ -90,19 +90,34 @@ def requestAMMPools(tempDB):
                 asset1 = assetDB[str(pool['asset_1_id'])]['ticker']
             elif pool['asset_1_id'] == None:
                 asset1 = 'ALGO'
-            else: asset1 = pool['asset_1_id']
+            else:
+                asset1Details = requestSingleAsset(pool['asset_1_id'])
+                assetDB[str(pool['asset_1_id'])] = asset1Details
+                asset1 = asset1Details['ticker']
             if str(pool['asset_2_id']) in assetDB:
                 asset2 = assetDB[str(pool['asset_2_id'])]['ticker']
             elif pool['asset_2_id'] == None:
                 asset2 = 'ALGO'
-            else: asset2 = pool['asset_2_id']
+            else:
+                asset2Details = requestSingleAsset(pool['asset_2_id'])
+                assetDB[str(pool['asset_2_id'])] = asset2Details
+                asset2 = asset2Details['ticker']
+
+            poolName = str(str(asset1) + '/' + str(asset2) + ' Liquidity Pool')
 
             if str(pool['application_id']) not in appDB:
-                appDB[str(pool['application_id'])] = {"platform":providerName,"appName":str(str(asset1) + '/' + str(asset2) + ' Liquidity Pool')}
+                appDB[str(pool['application_id'])] = {"platform":providerName,"appName":poolName}
                 #print(appDB[str(pool['application_id'])])
 
             if str(pool['address']) not in addressDB:
-                addressDB[str(pool['address'])] = {"name":providerName,'usage':str(str(asset1) + '/' + str(asset2) + ' Liquidity Pool')}
+                addressDB[str(pool['address'])] = {"name":providerName,'usage':poolName}
+
+            if str(pool['token_id']) not in assetDB:
+                poolTokenDetails = requestSingleAsset(str(pool['token_id']))
+                poolTokenDetails['ticker'] = str(str(asset1) + '/' + str(asset2) + ' LP Token')
+                if poolTokenDetails['name'] == str(pool['token_id']):
+                    poolTokenDetails['name'] = providerName + ' - ' + str(asset1) + '/' + str(asset2) + ' LP Token'
+                assetDB[str(pool['token_id'])] = poolTokenDetails
 
     tempDB['assets'] = assetDB
     tempDB['apps'] = appDB

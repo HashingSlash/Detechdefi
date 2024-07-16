@@ -32,7 +32,7 @@ def main():
     #this returns the main database after filling out the txn groups subdictionary.
     db = diagnosisFunctions.parseGroups(db, testing)
     #this returns a dictionary counting up the results of the parsing, and stores it in the mainDB
-    db['counts'] = databaseFunctions.countMatchedGroups(db['groups'], testing)
+    #db['counts'] = databaseFunctions.countMatchedGroups(db['groups'], testing)
 
     #build rows
     #this convert raw txndata into conventional txn spreadsheet rows
@@ -42,8 +42,9 @@ def main():
     exportFunctions.saveDB(db)
 
     #this exports the stored txn rows. currently supports 'csv' and 'print'
-    exportFunctions.outputRows('csv', db, 'Tinyman')
+    exportFunctions.outputRows('csv', db, '')
     
+
 
     #print('Asset prices to find: ' + str(db['prices']['total']))
 

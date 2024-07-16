@@ -62,9 +62,8 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-05-05 19:57:04,Fee,,,,,ALGO,0.003,Group Combined Fees - AJ3jz9+SErIO2Ww8tzchmi45+VVA8ixEnQPqekmD4Ec=,2 txns. Algofi : Lending Market v2 : Add to Collateral,Algorand Network
 2023-05-20 11:13:03,Receive,,,ALGO,10.000024,,,(Group- b93eF...) - InnerTxn #1 - PQY22...,1 txns. Algofi : Lending Market v2 : Remove Collateral ,A3SPTZUKQS53TPM5UHXIZMNUJYCZ4YAKJBFWW2U7ZSUG5AP5JJRVTG5D64
 2023-05-20 11:13:03,Fee,,,,,ALGO,0.004,Group Combined Fees - b93eFMysKwqpDRVLLvjI8SyHD/cp7GQ2QkW55C7JUE4=,1 txns. Algofi : Lending Market v2 : Remove Collateral,Algorand Network
-2023-05-20 11:14:45,Send,ALGO,10.,,,,,(Group- CIS1A...) - UNDFHEV5GY3CJ65B2HRBN74QLQZGFGIJMVK63D32MD4DNBTDNV4A,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-05-20 11:14:45,Receive,,,TMPOOL2,34.763861,,,(Group- CIS1A...) - InnerTxn #1 - QX2CZ...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-05-20 11:14:45,Fee,,,,,ALGO,0.005,Group Combined Fees - CIS1ArJZSI+T9SspCIzNvYEpYZWH/gZ3EDlrz4HC/1M=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-05-20 11:14:45,Add Liquidity,ALGO,10.,,,,,(Group- CIS1A...) - UNDFHEV5GY3CJ65B2HRBN74QLQZGFGIJMVK63D32MD4DNBTDNV4A,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-05-20 11:14:45,Receive LP Tokens,,,COOP/ALGO LP Token,34.763861,ALGO,0.005,Combined Group - CIS1ArJZSI+T9SspCIzNvYEpYZWH/gZ3EDlrz4HC/1M=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-05-21 08:06:51,Fee,,,,,ALGO,0.001,4HIYTO36XYTG5YISY7MKJX5F4Q6YXNYZIF4ZFXBDSHVU5NIBRB6Q,Asset Opt in/out,Algorand Network
 2023-05-21 08:07:06,Fee,,,,,ALGO,0.001,XYRVWGTEHLI63BI7XZCMS4I35K5EQF2ENK6TI3EGV4J44VFBX72A,Asset Opt in/out,Algorand Network
 2023-05-21 09:54:58,Receive,,,ALGO,10.000001,,,(Group- 7gQcH...) - InnerTxn #1 - AQPKV...,1 txns. Algofi : Lending Market v2 : Remove Collateral ,A3SPTZUKQS53TPM5UHXIZMNUJYCZ4YAKJBFWW2U7ZSUG5AP5JJRVTG5D64
@@ -89,16 +88,14 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-05-21 10:34:48,Receive,,,COOP,169.,,,T4VOFWHYX42UQKPRAYUNQ5WPKXVGNAWNIO3MZSUTZZ5IEJ2PRJPQ,Receiver,NXI7MODRDUOVA7XQK2P3HVP325P26BOBWTADLGJUUEQ7ALMOVIQBIAURWM
 2023-05-21 10:46:15,Send,ALGO,5.328401,,,,,(Group- HdVEX...) - ZBPN5LUME6JLAFKCRWKWNTW44DTJZPM2PWEHVHI252OJFFCH3ZRA,4 txns. Pact : Pact Swap : Add Liquidity ,Pact - COOP/ALGO Liquidity Pool
 2023-05-21 10:46:15,Send,COOP,169.,,,,,(Group- HdVEX...) - LWJGTRXYAJMSFFHSGKXBOS24IWWCDBAQXDGBEIVTUW45SF3CW5FA,4 txns. Pact : Pact Swap : Add Liquidity ,Pact - COOP/ALGO Liquidity Pool
-2023-05-21 10:46:15,Receive,,,PLP,2.081083,,,(Group- HdVEX...) - InnerTxn #1 - VA32P...,4 txns. Pact : Pact Swap : Add Liquidity ,6XBAPDENLNGLVANCMNI5LMPSCK3J6NSWIJSW43KZ4JVVOT3X5ZQAYHZGCQ
+2023-05-21 10:46:15,Receive,,,COOP/ALGO LP Token,2.081083,,,(Group- HdVEX...) - InnerTxn #1 - VA32P...,4 txns. Pact : Pact Swap : Add Liquidity ,6XBAPDENLNGLVANCMNI5LMPSCK3J6NSWIJSW43KZ4JVVOT3X5ZQAYHZGCQ
 2023-05-21 10:46:15,Receive,,,COOP,0.174911,,,(Group- HdVEX...) - InnerTxn #2 - VA32P...,4 txns. Pact : Pact Swap : Add Liquidity ,6XBAPDENLNGLVANCMNI5LMPSCK3J6NSWIJSW43KZ4JVVOT3X5ZQAYHZGCQ
 2023-05-21 10:46:15,Fee,,,,,ALGO,0.006,Group Combined Fees - HdVEXHmFaX5l6ih4rlY3ZFW0k+Su5TFdjR7Ecb1+Eu8=,4 txns. Pact : Pact Swap : Add Liquidity,Algorand Network
 2023-05-21 10:47:19,Send,COOP,0.174911,,,ALGO,0.001,D5I2UH4VYRM6MIKUB335SBUW4MZCDV2P2WTMLSKNCIJZ6BB7KC3Q,Sender,Pact - COOP/ALGO Liquidity Pool
-2023-05-21 10:50:34,Send,TMPOOL2,34.763861,,,,,(Group- 8O5lq...) - WIY7B7HSLREIDTAJAZ2RHX3TRID6U67IGM5U545AK6GMBBANBVTA,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-05-21 10:50:34,Receive,,,COOP,439.278344,,,(Group- 8O5lq...) - InnerTxn #1 - KPDZK...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-05-21 10:50:34,Fee,,,,,ALGO,0.004,Group Combined Fees - 8O5lqx6BOk3BPbN2apY+dugXCD9EKA1eOfd+adeItkM=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2023-05-21 11:28:45,Send,COOP,508.278344,,,,,(Group- /wl3Y...) - MAAQHWV2HHZHY4T25T4KYSHHNICSLSP5QFYHITRIYMCJD2EXOE7A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-05-21 11:28:45,Receive,,,TMPOOL2,42.240577,,,(Group- /wl3Y...) - InnerTxn #1 - GYBAH...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-05-21 11:28:45,Fee,,,,,ALGO,0.004,Group Combined Fees - /wl3Yrq44jWGIWFVJYWUy7VNxYA+Hv+zA4u0eRp9BrM=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-05-21 10:50:34,Remove Liquidity,,,COOP,439.278344,,,(Group- 8O5lq...) - InnerTxn #1 - KPDZK...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-05-21 10:50:34,Return LP Tokens,COOP/ALGO LP Token,34.763861,,,ALGO,0.004,Combined Group - 8O5lqx6BOk3BPbN2apY+dugXCD9EKA1eOfd+adeItkM=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
+2023-05-21 11:28:45,Add Liquidity,COOP,508.278344,,,,,(Group- /wl3Y...) - MAAQHWV2HHZHY4T25T4KYSHHNICSLSP5QFYHITRIYMCJD2EXOE7A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-05-21 11:28:45,Receive LP Tokens,,,COOP/ALGO LP Token,42.240577,ALGO,0.004,Combined Group - /wl3Yrq44jWGIWFVJYWUy7VNxYA+Hv+zA4u0eRp9BrM=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-05-21 11:29:22,Send,ALGO,2.423431,,,,,(Group- uQXQh...) - 32P7GSSHUAQIYVKY2CYN7ALRMQZWPSYKF476PIRRF6YFX3DGE3VA,2 txns. Tinyman : Tinyman AMM v2 : Swap (Buy) ,Tinyman - COOP/ALGO Liquidity Pool
 2023-05-21 11:29:22,Receive,,,ALGO,0.012056,,,(Group- uQXQh...) - InnerTxn #1 - AP6HZ...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Buy) ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
 2023-05-21 11:29:22,Receive,,,COOP,69.,,,(Group- uQXQh...) - InnerTxn #2 - AP6HZ...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Buy) ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
@@ -131,10 +128,9 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-05-21 11:39:21,Send,AF-POOL,13.11384,,,,,(Group- spP6/...) - 2ROSUDDUHFDIZ6YUPPO462BOKU2HU42QQ3M3DQC72Q7XOSBQAPMA,3 txns. Algofi : Staking v2 : Deposit Stake ,5LHWUSIXJFLF2TEVC4I4AWTDEBPTX3ZIFDEMK5W2TNLFQRQT4YABMAWG54
 2023-05-21 11:39:21,Fee,,,,,ALGO,0.004,Group Combined Fees - spP6/ksQDXO4bWBtib+aPzD62eft3G4fx/e4PfnqHcw=,3 txns. Algofi : Staking v2 : Deposit Stake,Algorand Network
 2023-05-21 12:55:59,Receive,,,COOP,10.,,,E44UOOHBNQ7VXX7Z7LWK6QJUXXKFWFNYB66CZR3L6AGFBNBRRO6Q,Receiver,C7FVVLZVOIWFSJUXRZIWWBJUYEZ2R22IX35A33XG5UDVCXXCX52NTC5QRE
-2023-05-21 13:12:16,Send,COOP,10.,,,,,(Group- Gsl5J...) - H3HNWEMGXK3TBPABWDFXLDTYMUK6KLTDTUTUHQUPEUZX6T4GQTCQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-05-21 13:12:16,Send,ALGO,0.325694,,,,,(Group- Gsl5J...) - YD2IDW4RQUP6GWMHAEVX4L6K5KNKZNUOFKRRRD4PS24FLHAWQ4MQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-05-21 13:12:16,Receive,,,TMPOOL2,1.608595,,,(Group- Gsl5J...) - InnerTxn #1 - ZGPZE...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-05-21 13:12:16,Fee,,,,,ALGO,0.005,Group Combined Fees - Gsl5JC0fyQqkwSPIlkJFfGlkJtSN53EMJETri1hArNU=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-05-21 13:12:16,Add Liquidity,COOP,10.,,,,,(Group- Gsl5J...) - H3HNWEMGXK3TBPABWDFXLDTYMUK6KLTDTUTUHQUPEUZX6T4GQTCQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-05-21 13:12:16,Add Liquidity,ALGO,0.325694,,,,,(Group- Gsl5J...) - YD2IDW4RQUP6GWMHAEVX4L6K5KNKZNUOFKRRRD4PS24FLHAWQ4MQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-05-21 13:12:16,Receive LP Tokens,,,COOP/ALGO LP Token,1.608595,ALGO,0.005,Combined Group - Gsl5JC0fyQqkwSPIlkJFfGlkJtSN53EMJETri1hArNU=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-05-21 13:26:27,Receive,,,ALGO,80.,,,SSOMQ5TW4R65UQQCXB7MGWX2RUST4UDGSANK57YERAST5FUK6QSQ,Receiver,F4MY7F4A3RNJT3UEX7JU6QKDB5VGYVGGXBLQVMRHJRBLR3YESFEOORNWHA
 2023-05-21 13:30:34,Send,ALGO,4.2,,,,,(Group- PICBB...) - 77DOAUBJMHKWISRPW7665I7GC2GMQZ65L27WRBWHP45PQXP6B7YA,3 txns.  ,U6NIKB6URSFUTDZQEIGUPKM7FY3ZW5HJBWZWYUOBTBSAMKGD3CRAK3D65U
 2023-05-21 13:30:34,Fee,,,,,ALGO,0.003,Group Combined Fees - PICBBLSrJSh8v3uA0FoyMfk/3uJEPcjY+sI96Xh+Jd0=,3 txns. ,Algorand Network
@@ -143,7 +139,7 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-05-22 09:18:32,Receive,,,COOP,74.020801,,,(Group- HK0pR...) - InnerTxn #1 - PE575...,"5 txns. Pact : Pact Swap : Swap, Add Liquidity ",6XBAPDENLNGLVANCMNI5LMPSCK3J6NSWIJSW43KZ4JVVOT3X5ZQAYHZGCQ
 2023-05-22 09:18:32,Send,ALGO,3.98091,,,,,(Group- HK0pR...) - YFJI5X4O3IDOGMTH62VMSADMII2RB3I2LH4S5RIRFNJWB244H3EQ,"5 txns. Pact : Pact Swap : Swap, Add Liquidity ",Pact - COOP/ALGO Liquidity Pool
 2023-05-22 09:18:32,Send,COOP,74.0208,,,,,(Group- HK0pR...) - GO5GE4DBBHJGQOQM4OXIIAXXALSOWT2SDLUAAKPA5IPQ6WPONQAQ,"5 txns. Pact : Pact Swap : Swap, Add Liquidity ",Pact - COOP/ALGO Liquidity Pool
-2023-05-22 09:18:32,Receive,,,PLP,1.171252,,,(Group- HK0pR...) - InnerTxn #1 - 2I52V...,"5 txns. Pact : Pact Swap : Swap, Add Liquidity ",6XBAPDENLNGLVANCMNI5LMPSCK3J6NSWIJSW43KZ4JVVOT3X5ZQAYHZGCQ
+2023-05-22 09:18:32,Receive,,,COOP/ALGO LP Token,1.171252,,,(Group- HK0pR...) - InnerTxn #1 - 2I52V...,"5 txns. Pact : Pact Swap : Swap, Add Liquidity ",6XBAPDENLNGLVANCMNI5LMPSCK3J6NSWIJSW43KZ4JVVOT3X5ZQAYHZGCQ
 2023-05-22 09:18:32,Receive,,,ALGO,0.000001,,,(Group- HK0pR...) - InnerTxn #2 - 2I52V...,"5 txns. Pact : Pact Swap : Swap, Add Liquidity ",6XBAPDENLNGLVANCMNI5LMPSCK3J6NSWIJSW43KZ4JVVOT3X5ZQAYHZGCQ
 2023-05-22 09:18:32,Fee,,,,,ALGO,0.008,Group Combined Fees - HK0pR/3bMURBqiZhaFD/1+5NMvs0wYJDCTX7oaSsqOY=,"5 txns. Pact : Pact Swap : Swap, Add Liquidity",Algorand Network
 2023-05-22 16:10:18,Send,ALGO,6.101111,,,,,(Group- u5e6V...) - KVQKSGZGO45JFDN4PDCFF6DWRXEP4C2C6I4W22SHDV36RBK7IW6A,2 txns. Tinyman : Tinyman AMM v2 : Swap (Buy) ,Tinyman - COOP/ALGO Liquidity Pool
@@ -160,22 +156,17 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-05-22 16:13:58,Fee,,,,,ALGO,0.004,Group Combined Fees - t0s7CCxFte7wZxBOSKyA3KpeTI2O1OBNhiBnpu+MjCg=,1 txns. Algofi : Lending Market v2 : Remove Collateral,Algorand Network
 2023-05-22 16:14:27,Send,ALGO,0.6075,,,,,(Group- zUUPX...) - 3JZX3IGCJDU3M4CJE45DWPUGT4YMU6TDETH4TLCFLKH7QOJKWVNA,5 txns. Algofi : Algofi Governance : Initialize Account ,JRUS2735O45PBKEYT3OT4DJR2ZCYMKAJIWC27GRO7ISEKN5PSFBGTFM2IM
 2023-05-22 16:14:27,Fee,,,,,ALGO,0.004,Group Combined Fees - zUUPXyRtUx3p4KTyxMjRDbnh5wVvDl4kQbfjFlyz6pQ=,5 txns. Algofi : Algofi Governance : Initialize Account,Algorand Network
-2023-05-24 05:40:18,Send,TMPOOL2,43.849172,,,,,(Group- xaWiF...) - UIF5JCH6NNZRVNNQFHOEIIOMYOMZWETBIUVFR4UZHBJYID37GNTA,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-05-24 05:40:18,Receive,,,COOP,343.256409,,,(Group- xaWiF...) - InnerTxn #1 - NVVEC...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-05-24 05:40:18,Fee,,,,,ALGO,0.004,Group Combined Fees - xaWiFM7w/HUEjwMjl1FerabZdNxztrXA/50UG2MbnlY=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2023-05-24 15:12:55,Send,PLP,3.252335,,,ALGO,0.001,TELV26BXL3VVXRKPQLJFWADEQ2VLVDSL7HKYFMM77LZDJOTKWGZQ,Sender,COOPVAULTMTZQXVEFFDU7QPTEYT7OSEX56H37MJFF3OTIR7ZMNMSIGHVOE
-2023-05-28 20:56:30,Send,COOP,138.,,,,,(Group- m6OjS...) - NGSZN37WKJC63N7T53EBXRUU33FN4N55DZ6KP6PVGKZYXSP5SG7A,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,CILWVDBTFXY6MPJ6JAKEBCVVM3DYA2EIK2TJ75YF7Z6MOWR5X2PAQIXPUA
-2023-05-28 20:56:30,Receive,,,TMPOOL2,527.521529,,,(Group- m6OjS...) - InnerTxn #1 - JG5ZW...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,CILWVDBTFXY6MPJ6JAKEBCVVM3DYA2EIK2TJ75YF7Z6MOWR5X2PAQIXPUA
-2023-05-28 20:56:30,Fee,,,,,ALGO,0.005,Group Combined Fees - m6OjSpTNqZ9GTTLRSX9h0dkzPtO9X5vJ65TUnrFbEdQ=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-05-28 20:57:38,Send,COOP,138.,,,,,(Group- EHhGk...) - 5RGYPLVXHUOOY4X7LCAM5N7265OPRGDBDDMWKSGQOVAADHKWT6HA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,SEDS5NAIHPQYHS353GM4LPLRUR5HVYMHBTNKT4J4RFYJD4446LW7WW4JFQ
-2023-05-28 20:57:38,Receive,,,TMPOOL2,439.247987,,,(Group- EHhGk...) - InnerTxn #1 - TP34P...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,SEDS5NAIHPQYHS353GM4LPLRUR5HVYMHBTNKT4J4RFYJD4446LW7WW4JFQ
-2023-05-28 20:57:38,Fee,,,,,ALGO,0.005,Group Combined Fees - EHhGkg63XRiCkRqHxgbTZ6bL7TufVTGOcYUisV2Jwtc=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-05-28 20:58:35,Send,COOP,136.676409,,,,,(Group- PhkHW...) - DBPCTPS5XW2ISO7BINQ7C7RGNFI373BJU6FJD43WYA35ELIJMCVA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,ET3D2HAUXEOG2Q2IEKJV3BWCSCBFZ5XGMIF3EPURQRY4IUERJZHOTHM3TQ
-2023-05-28 20:58:35,Receive,,,TMPOOL2,6.603121,,,(Group- PhkHW...) - InnerTxn #1 - XHTKG...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,ET3D2HAUXEOG2Q2IEKJV3BWCSCBFZ5XGMIF3EPURQRY4IUERJZHOTHM3TQ
-2023-05-28 20:58:35,Fee,,,,,ALGO,0.005,Group Combined Fees - PhkHWMKdENiNJvto8miZcBwtDafQDhq5EHUT6WF7QN8=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-05-28 21:00:29,Send,COOP,31.,,,,,(Group- 1kV1B...) - BTUVYF25BPMG4DCVK744N2JDEV7CYNWG3LRFR4DQL7ZEHJODGMOQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,MYQPZBSDTMOEI42B2P4RT65U37QC6D3DCMWJSIEWIDHPKLLXU4R2S24IPM
-2023-05-28 21:00:29,Receive,,,TMPOOL2,17.326531,,,(Group- 1kV1B...) - InnerTxn #1 - YNKDH...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,MYQPZBSDTMOEI42B2P4RT65U37QC6D3DCMWJSIEWIDHPKLLXU4R2S24IPM
-2023-05-28 21:00:29,Fee,,,,,ALGO,0.005,Group Combined Fees - 1kV1B8zTM9kImEDzwRKc56VvR7XGnaDfbV6ZjpyKqy0=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-05-24 05:40:18,Remove Liquidity,,,COOP,343.256409,,,(Group- xaWiF...) - InnerTxn #1 - NVVEC...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-05-24 05:40:18,Return LP Tokens,COOP/ALGO LP Token,43.849172,,,ALGO,0.004,Combined Group - xaWiFM7w/HUEjwMjl1FerabZdNxztrXA/50UG2MbnlY=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
+2023-05-24 15:12:55,Send,COOP/ALGO LP Token,3.252335,,,ALGO,0.001,TELV26BXL3VVXRKPQLJFWADEQ2VLVDSL7HKYFMM77LZDJOTKWGZQ,Sender,COOPVAULTMTZQXVEFFDU7QPTEYT7OSEX56H37MJFF3OTIR7ZMNMSIGHVOE
+2023-05-28 20:56:30,Add Liquidity,COOP,138.,,,,,(Group- m6OjS...) - NGSZN37WKJC63N7T53EBXRUU33FN4N55DZ6KP6PVGKZYXSP5SG7A,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-05-28 20:56:30,Receive LP Tokens,,,TMPOOL2,527.521529,ALGO,0.005,Combined Group - m6OjSpTNqZ9GTTLRSX9h0dkzPtO9X5vJ65TUnrFbEdQ=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-05-28 20:57:38,Add Liquidity,COOP,138.,,,,,(Group- EHhGk...) - 5RGYPLVXHUOOY4X7LCAM5N7265OPRGDBDDMWKSGQOVAADHKWT6HA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-05-28 20:57:38,Receive LP Tokens,,,TMPOOL2,439.247987,ALGO,0.005,Combined Group - EHhGkg63XRiCkRqHxgbTZ6bL7TufVTGOcYUisV2Jwtc=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-05-28 20:58:35,Add Liquidity,COOP,136.676409,,,,,(Group- PhkHW...) - DBPCTPS5XW2ISO7BINQ7C7RGNFI373BJU6FJD43WYA35ELIJMCVA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-05-28 20:58:35,Receive LP Tokens,,,TMPOOL2,6.603121,ALGO,0.005,Combined Group - PhkHWMKdENiNJvto8miZcBwtDafQDhq5EHUT6WF7QN8=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-05-28 21:00:29,Add Liquidity,COOP,31.,,,,,(Group- 1kV1B...) - BTUVYF25BPMG4DCVK744N2JDEV7CYNWG3LRFR4DQL7ZEHJODGMOQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-05-28 21:00:29,Receive LP Tokens,,,TMPOOL2,17.326531,ALGO,0.005,Combined Group - 1kV1B8zTM9kImEDzwRKc56VvR7XGnaDfbV6ZjpyKqy0=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-06-03 14:52:25,Send,TMPOOL2,6.603121,,,,,(Group- FrXxr...) - LH7WTAHI5V64BLTGNELJURMHSUBJJYFXOL4P7EIY3TJR2LFBBB2Q,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,ET3D2HAUXEOG2Q2IEKJV3BWCSCBFZ5XGMIF3EPURQRY4IUERJZHOTHM3TQ
 2023-06-03 14:52:25,Receive,,,COOP,43.800361,,,(Group- FrXxr...) - InnerTxn #1 - RYQEW...,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,ET3D2HAUXEOG2Q2IEKJV3BWCSCBFZ5XGMIF3EPURQRY4IUERJZHOTHM3TQ
 2023-06-03 14:52:25,Receive,,,Tacos,1115187.,,,(Group- FrXxr...) - InnerTxn #2 - RYQEW...,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,ET3D2HAUXEOG2Q2IEKJV3BWCSCBFZ5XGMIF3EPURQRY4IUERJZHOTHM3TQ
@@ -191,17 +182,14 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-06-03 14:55:04,Send,TMPOOL2,17.326531,,,,,(Group- 6cIXq...) - IIHRGIUBQ23DJ7YUKDTN4HZ3CPXGVVBHNUOHEPK3T2ZLOCBOEWSA,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,MYQPZBSDTMOEI42B2P4RT65U37QC6D3DCMWJSIEWIDHPKLLXU4R2S24IPM
 2023-06-03 14:55:04,Receive,,,VEST,67.016589,,,(Group- 6cIXq...) - InnerTxn #1 - CZEMC...,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,MYQPZBSDTMOEI42B2P4RT65U37QC6D3DCMWJSIEWIDHPKLLXU4R2S24IPM
 2023-06-03 14:55:04,Fee,,,,,ALGO,0.005,Group Combined Fees - 6cIXq1RO0NIach3PkD/hFjT3YOi+7mzN+hDoDL0PxH4=,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2023-06-03 16:18:49,Send,COOP,130.357166,,,,,(Group- ltPcc...) - FGBFR2A4X3Y2LS22EFZT7J2VU5UOV7BOHODTE4SJQLTLPYQVBLVQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,4XLYOMPXFJ3WCLOBX5JR2B6A5VRSXJHZ5WOTDMXLADR64CQDHYH3JXIXPQ
-2023-06-03 16:18:49,Receive,,,TMPOOL2,307.837763,,,(Group- ltPcc...) - InnerTxn #1 - PDLA5...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,4XLYOMPXFJ3WCLOBX5JR2B6A5VRSXJHZ5WOTDMXLADR64CQDHYH3JXIXPQ
-2023-06-03 16:18:49,Fee,,,,,ALGO,0.005,Group Combined Fees - ltPccXbxqxOAlzosykiKKGBYZc9hISt4D2/YhD2Vmd8=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-06-03 16:18:49,Add Liquidity,COOP,130.357166,,,,,(Group- ltPcc...) - FGBFR2A4X3Y2LS22EFZT7J2VU5UOV7BOHODTE4SJQLTLPYQVBLVQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-06-03 16:18:49,Receive LP Tokens,,,TMPOOL2,307.837763,ALGO,0.005,Combined Group - ltPccXbxqxOAlzosykiKKGBYZc9hISt4D2/YhD2Vmd8=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-06-04 08:20:05,Send,TMPOOL2,307.837763,,,,,(Group- kiLvw...) - 2KFQUXZ652YPXUDKWZGVZCWL4VYUFCKVF6T3Y5ZE4FUINIZLN7UQ,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,4XLYOMPXFJ3WCLOBX5JR2B6A5VRSXJHZ5WOTDMXLADR64CQDHYH3JXIXPQ
 2023-06-04 08:20:05,Receive,,,COOP,46.845341,,,(Group- kiLvw...) - InnerTxn #1 - ZJFSG...,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,4XLYOMPXFJ3WCLOBX5JR2B6A5VRSXJHZ5WOTDMXLADR64CQDHYH3JXIXPQ
 2023-06-04 08:20:05,Receive,,,DEFLY,2060.361229,,,(Group- kiLvw...) - InnerTxn #2 - ZJFSG...,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,4XLYOMPXFJ3WCLOBX5JR2B6A5VRSXJHZ5WOTDMXLADR64CQDHYH3JXIXPQ
 2023-06-04 08:20:05,Fee,,,,,ALGO,0.005,Group Combined Fees - kiLvw4DeWCmOmYY2YESOHNxL7rKKcaz1gYzr6SvChM8=,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2023-06-04 13:17:30,Send,COOP,15.845341,,,,,(Group- 2vOHj...) - 5SPIJARS346ZDX7PJ6SSNOAGRM3YZLMNHU3APOZIV22VOJ7RHQEQ,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,Tinyman - COOP/ALGO Liquidity Pool
-2023-06-04 13:17:30,Receive,,,ALGO,8.579458,,,(Group- 2vOHj...) - InnerTxn #1 - 5TYK3...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-06-04 13:17:30,Fee,,,,,ALGO,0.003,Group Combined Fees - 2vOHj401Liokdtd4O1orsFxKVdq7lL4ag7y8fcsFcqM=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
-2023-06-04 13:17:37,Send,ALGO,0.033604,,,ALGO,0.001,NQ6UPLOBNFNCA4PYWBQBQVHPWL5UZFMXGKJUGDDGRNS3UBLY6HRA,Sender,Defly - Fee Sink
+2023-06-04 13:17:30,Swap,COOP,15.845341,ALGO,8.579458,ALGO,0.003,Combined Group - 2vOHj401Liokdtd4O1orsFxKVdq7lL4ag7y8fcsFcqM=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
+2023-06-04 13:17:37,Send,ALGO,0.033604,,,ALGO,0.001,NQ6UPLOBNFNCA4PYWBQBQVHPWL5UZFMXGKJUGDDGRNS3UBLY6HRA,Sender,YWXUJAXOTCSHTIUFHTVP5P47VHJ4GOWTLPVOQHOPV7K3RWU5T2ZCFSOYM4
 2023-06-04 13:18:41,Send,ALGO,7.356166,,,,,(Group- lpelc...) - KUJO7HQ3PWKSBNMA3IEELBU3GPYJXMP2LJSLKYHQL5L5HAGDQEFA,"4 txns. Algofi : Lending Pool : Swap (Buy), Zap ",6OQK32Y6HTXAWTSNMNJBLHQ4RQBFMHUG7UWW7KZEFCTNX4PT6LDUWHOHK4
 2023-06-04 13:18:41,Receive,,,ALGO,0.036593,,,(Group- lpelc...) - InnerTxn #1 - K6V4K...,"4 txns. Algofi : Lending Pool : Swap (Buy), Zap ",6OQK32Y6HTXAWTSNMNJBLHQ4RQBFMHUG7UWW7KZEFCTNX4PT6LDUWHOHK4
 2023-06-04 13:18:41,Receive,,,STBL2,1.103441,,,(Group- lpelc...) - InnerTxn #2 - K6V4K...,"4 txns. Algofi : Lending Pool : Swap (Buy), Zap ",6OQK32Y6HTXAWTSNMNJBLHQ4RQBFMHUG7UWW7KZEFCTNX4PT6LDUWHOHK4
@@ -210,10 +198,8 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-06-04 13:19:18,Receive,,,STBL2,0.001104,,,(Group- 6Slqz...) - InnerTxn #1 - 2S7AH...,2 txns. Algofi : Lending Market v2 : Repay ,AY4WNUDHKIS7Q4WNF2RUYQDJN3WY5D57UOBRSFZTLJ22ZXGNMMJ6GC4XZ4
 2023-06-04 13:19:18,Fee,,,,,ALGO,0.004,Group Combined Fees - 6SlqzkJyLQLh92UbguEv5k6Ktea5jU0enTD0efaG5kM=,2 txns. Algofi : Lending Market v2 : Repay,Algorand Network
 2023-06-10 10:39:43,Fee,,,,,ALGO,0.001,EEYYDTQCXTORHF7V3BIXDKC4BWSSJP6QMAKDG4GABWE7A4PPWJLQ,Asset Opt in/out,Algorand Network
-2023-06-10 10:39:50,Send,COOP,6.9,,,,,(Group- eGUP6...) - AJO5EKSHSSWZLSHULDDXZDR5LTSXLRQ6FTAHY4OODD7VEES2H7AQ,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,CU7TPJDUSP2PGTQA6CH2CYIL7B7P5E4YRHAI4E33C2DOLVSSAADIYWHVBM
-2023-06-10 10:39:50,Receive,,,OPUL,4.56709036,,,(Group- eGUP6...) - InnerTxn #1 - 6BYNK...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,CU7TPJDUSP2PGTQA6CH2CYIL7B7P5E4YRHAI4E33C2DOLVSSAADIYWHVBM
-2023-06-10 10:39:50,Fee,,,,,ALGO,0.003,Group Combined Fees - eGUP6opj11/etRF70yFqbDlKgWY+XfAg7ZipoRp5DvY=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
-2023-06-10 10:39:58,Send,ALGO,0.028341,,,ALGO,0.001,2LDYXHVONBDAE3YKZSKLIUVT4HUJCSGEADQDIIKX5IDFLC6S6ZPA,Sender,Defly - Fee Sink
+2023-06-10 10:39:50,Swap,COOP,6.9,OPUL,4.56709036,ALGO,0.003,Combined Group - eGUP6opj11/etRF70yFqbDlKgWY+XfAg7ZipoRp5DvY=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
+2023-06-10 10:39:58,Send,ALGO,0.028341,,,ALGO,0.001,2LDYXHVONBDAE3YKZSKLIUVT4HUJCSGEADQDIIKX5IDFLC6S6ZPA,Sender,YWXUJAXOTCSHTIUFHTVP5P47VHJ4GOWTLPVOQHOPV7K3RWU5T2ZCFSOYM4
 2023-06-10 12:14:09,Receive,,,ALGO,70.240566,,,(Group- ItRLr...) - InnerTxn #1 - Inner BGYGQ...,1 txns. Folks Finance : Folks Finance v2 : Withdrawal  ,2ZPNLKXWCOUJ2ONYWZEIWOUYRXL36VCIBGJ4ZJ2AAGET5SIRTHKSNFDJJ4
 2023-06-10 12:14:09,Fee,,,,,ALGO,0.006,Group Combined Fees - OkO+j8xHqvgjuA+NgZg+srJ3RZzPnLYIei5rm9A6mTo=,1 txns. Folks Finance : Folks Finance v2 : Withdrawal,Algorand Network
 2023-06-10 12:16:47,Send,ALGO,46.25,,,,,(Group- ECf3J...) - UGX5MC6KLAU4AA6NJUKQLWL5H45FRVD55O3BNRGKNRYQWEWUJX7Q,5 txns.  ,KUMIZFY4LPRQLBNU27TS6RY4SHWAXOGXLJEGS6AN4SVQQ7CI23FIVB6CVQ
@@ -228,42 +214,31 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-06-11 10:52:23,Send,BANK,33.763269,,,,,(Group- w6tCA...) - 425KWE2HO4LQCXEZ6PMYK3OK4WXTU5BLV7QIC2BVLGZPUMH4D4PQ,4 txns. Algofi : Staking v2 : Update Target User ,Y7WO5IVHUYU6J7OA2EOLRXNYVOE2IUXJCARUCOWIOJ5BMCIL6VZ63CX4WU
 2023-06-11 10:52:23,Fee,,,,,ALGO,0.006,Group Combined Fees - w6tCALiTdeI5LAkGUBujikCVy5POICQ0ZWpF57khiRQ=,4 txns. Algofi : Staking v2 : Update Target User,Algorand Network
 2023-06-11 17:55:31,Fee,,,,,ALGO,0.001,EOCZHQCOX7EFUPUBVMU3S6J6ACMJCDZ2UQR4XGJPT3S6TU5CCJSA,Asset Opt in/out,Algorand Network
-2023-06-11 17:55:38,Send,COOP,6.942,,,,,(Group- PtxMM...) - 6SMNMHF3SLYYGJBMDGGKF7T2XZ5BI7YNABBENUGY4ISEWWFGI7FQ,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,WHXEMYUM3QHIQRUMO5VKSJM4LRWGYHD4QLOVGETO7USDQVHDNG2KKAQCHY
-2023-06-11 17:55:38,Receive,,,OCTO,3.869691,,,(Group- PtxMM...) - InnerTxn #1 - RZHE5...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,WHXEMYUM3QHIQRUMO5VKSJM4LRWGYHD4QLOVGETO7USDQVHDNG2KKAQCHY
-2023-06-11 17:55:38,Fee,,,,,ALGO,0.003,Group Combined Fees - PtxMMQibpGdGQmAD02YgMRrGODJHVhpAe8Q2Z/AmpFc=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
-2023-06-11 17:55:46,Send,ALGO,0.028194,,,ALGO,0.001,QWSEOC7576UWNY6KH5XYJQGHJOEPMKVN2TGVQYMHNMM6U34N6FEA,Sender,Defly - Fee Sink
+2023-06-11 17:55:38,Swap,COOP,6.942,OCTO,3.869691,ALGO,0.003,Combined Group - PtxMMQibpGdGQmAD02YgMRrGODJHVhpAe8Q2Z/AmpFc=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
+2023-06-11 17:55:46,Send,ALGO,0.028194,,,ALGO,0.001,QWSEOC7576UWNY6KH5XYJQGHJOEPMKVN2TGVQYMHNMM6U34N6FEA,Sender,YWXUJAXOTCSHTIUFHTVP5P47VHJ4GOWTLPVOQHOPV7K3RWU5T2ZCFSOYM4
 2023-06-15 04:20:52,Fee,,,,,ALGO,0.001,JOCGTU4TJJEC3W6HII3PDICML6ZGZ5235ACQP6SFHD7QZ3HSM33A,Asset Opt in/out,Algorand Network
 2023-06-15 05:24:37,Receive,,,WIND,47152.,,,6YB3VOH5ZTGCKJAK2WUDUEPB4HKB7GQYDKEF3RUA44XHDMYPN5YA,Receiver,S27JZG776Q7D5SGTYQHPBNUR3XVQJ6DM7W5FDL55IRRPNFDSJR5M4LVXXI
-2023-06-15 05:51:48,Send,WIND,47152.,,,,,(Group- XedbV...) - XEFTG7UBSUN7YJUJCFA4UK7EA53JVCIARNFD4DX4X4PPZOTLSTNA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - WIND/ALGO Liquidity Pool
-2023-06-15 05:51:48,Receive,,,TMPOOL2,39.950655,,,(Group- XedbV...) - InnerTxn #1 - PYY6R...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,XHQ3MAAK5PKU2MOAV5J7OSMHAWE6VIRQOSIBWPLM56ICOYSQH7O5KRXC6Q
-2023-06-15 05:51:48,Fee,,,,,ALGO,0.005,Group Combined Fees - XedbVD6npP28MGY7e3Pd+lr5FGpnZ0KRkloqLeXOf/k=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-06-16 06:43:02,Send,TMPOOL2,39.950655,,,,,(Group- dpA//...) - RHUF7M2P5VJTGS2AQKBVMN3CPI7D2ACN6DE2E43EYBSJFTKTAVYQ,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - WIND/ALGO Liquidity Pool
-2023-06-16 06:43:02,Receive,,,WIND,59715.898,,,(Group- dpA//...) - InnerTxn #1 - ISI33...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,XHQ3MAAK5PKU2MOAV5J7OSMHAWE6VIRQOSIBWPLM56ICOYSQH7O5KRXC6Q
-2023-06-16 06:43:02,Fee,,,,,ALGO,0.004,Group Combined Fees - dpA//hQ6g6VgsbQnCVztjnEsCU0JQ5K0kK1jQTOjNKQ=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2023-06-17 19:45:05,Send,WIND,59715.898,,,,,(Group- OuDLe...) - JNW4XYNJVDEIIEU74GQPELKP5XGLIAPKTHCFN4YP4BTXLLUCPB5Q,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,SBW6RZZ4YL5UA6VYRAC4AYK344YUMJSFBPHDK3N74BDVMEZJODKY2UMFXQ
-2023-06-17 19:45:05,Receive,,,TMPOOL2,51.926459,,,(Group- OuDLe...) - InnerTxn #1 - DV56Z...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,SBW6RZZ4YL5UA6VYRAC4AYK344YUMJSFBPHDK3N74BDVMEZJODKY2UMFXQ
-2023-06-17 19:45:05,Fee,,,,,ALGO,0.005,Group Combined Fees - OuDLe0AZVvtkWDB06vmY5GPiFi/uI5bcHNhuyluNlhI=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-06-17 19:45:51,Send,COOP,86.158,,,,,(Group- DwfYr...) - Q6KWC7FAMLCSCQWMZ2BGG3DNS4PMABOO6SCQ5AHLUOEUIDTFNMMA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,SBW6RZZ4YL5UA6VYRAC4AYK344YUMJSFBPHDK3N74BDVMEZJODKY2UMFXQ
-2023-06-17 19:45:51,Receive,,,TMPOOL2,23.436892,,,(Group- DwfYr...) - InnerTxn #1 - CGLC2...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,SBW6RZZ4YL5UA6VYRAC4AYK344YUMJSFBPHDK3N74BDVMEZJODKY2UMFXQ
-2023-06-17 19:45:51,Fee,,,,,ALGO,0.004,Group Combined Fees - DwfYrRJeid73eDJtDmkUWpKLUI5ZoXUCCiFjsmwCIak=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-06-18 05:56:26,Send,TMPOOL2,75.363351,,,,,(Group- /vdEv...) - LVMTSP5DSEZ4K5UMX2RPDHWN2B7VEVUDN6FT4HVL7BKVONZASUDA,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,SBW6RZZ4YL5UA6VYRAC4AYK344YUMJSFBPHDK3N74BDVMEZJODKY2UMFXQ
-2023-06-18 05:56:26,Receive,,,WIND,36287.396,,,(Group- /vdEv...) - InnerTxn #1 - R3ULJ...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,SBW6RZZ4YL5UA6VYRAC4AYK344YUMJSFBPHDK3N74BDVMEZJODKY2UMFXQ
-2023-06-18 05:56:26,Receive,,,COOP,165.565268,,,(Group- /vdEv...) - InnerTxn #2 - R3ULJ...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,SBW6RZZ4YL5UA6VYRAC4AYK344YUMJSFBPHDK3N74BDVMEZJODKY2UMFXQ
-2023-06-18 05:56:26,Fee,,,,,ALGO,0.004,Group Combined Fees - /vdEv77yeP17wYntdIEhloVz5x0dQfL0ekQbSyZB/6w=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2023-06-18 05:57:14,Send,COOP,165.565268,,,,,(Group- mHS1j...) - HJXO5W2L37EAFVF5WPEWFUAH4CPNK2XNWGI5IPWSJW74T6BOTEAA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-06-18 05:57:14,Receive,,,TMPOOL2,50.57826,,,(Group- mHS1j...) - InnerTxn #1 - LFQHY...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-06-18 05:57:14,Fee,,,,,ALGO,0.004,Group Combined Fees - mHS1jQJzP1/niK8k29HrZuj9Ynk5kqL1OCGnDnm4Uhc=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-06-18 05:57:51,Send,WIND,36287.396,,,,,(Group- 6rsbY...) - RQ3PTMZUXTXII5LSXUT7UYMIDGAZPHPZMDE5GFEP52TTKIPLQ2JQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - WIND/ALGO Liquidity Pool
-2023-06-18 05:57:51,Receive,,,TMPOOL2,28.063833,,,(Group- 6rsbY...) - InnerTxn #1 - 65PSO...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,XHQ3MAAK5PKU2MOAV5J7OSMHAWE6VIRQOSIBWPLM56ICOYSQH7O5KRXC6Q
-2023-06-18 05:57:51,Fee,,,,,ALGO,0.004,Group Combined Fees - 6rsbYBquRYpwEg2kU54y6wHAIoUxlty4z4r1x0Bzlk8=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-06-20 04:44:53,Send,TMPOOL2,28.063833,,,,,(Group- HXItd...) - MMZKJHW6V4SCW4B7MEONFY4UWGJ3FO5RXCTMAQY2474C4EF6K75A,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - WIND/ALGO Liquidity Pool
-2023-06-20 04:44:53,Receive,,,WIND,23755.415,,,(Group- HXItd...) - InnerTxn #1 - GOSBB...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,XHQ3MAAK5PKU2MOAV5J7OSMHAWE6VIRQOSIBWPLM56ICOYSQH7O5KRXC6Q
-2023-06-20 04:44:53,Receive,,,ALGO,36.725631,,,(Group- HXItd...) - InnerTxn #2 - GOSBB...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,XHQ3MAAK5PKU2MOAV5J7OSMHAWE6VIRQOSIBWPLM56ICOYSQH7O5KRXC6Q
-2023-06-20 04:44:53,Fee,,,,,ALGO,0.004,Group Combined Fees - HXItd52K8J3tTHm+zD2XvyuYKRGGX8xnz7AyqdYVQPI=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2023-06-20 04:45:11,Send,TMPOOL2,50.57826,,,,,(Group- 3l1M9...) - I4W7IU54STPGQRBMINKRP2E4NXR5YHXAULTKTVX3UKTC5S73XL6A,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-06-20 04:45:11,Receive,,,COOP,96.530005,,,(Group- 3l1M9...) - InnerTxn #1 - LBVJL...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-06-20 04:45:11,Receive,,,ALGO,41.403898,,,(Group- 3l1M9...) - InnerTxn #2 - LBVJL...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-06-20 04:45:11,Fee,,,,,ALGO,0.004,Group Combined Fees - 3l1M9a/ESk4t9oWljJD6APw+nKwGDCNUp6xAXoYbyPE=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
+2023-06-15 05:51:48,Add Liquidity,WIND,47152.,,,,,(Group- XedbV...) - XEFTG7UBSUN7YJUJCFA4UK7EA53JVCIARNFD4DX4X4PPZOTLSTNA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-06-15 05:51:48,Receive LP Tokens,,,WIND/ALGO LP Token,39.950655,ALGO,0.005,Combined Group - XedbVD6npP28MGY7e3Pd+lr5FGpnZ0KRkloqLeXOf/k=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-06-16 06:43:02,Remove Liquidity,,,WIND,59715.898,,,(Group- dpA//...) - InnerTxn #1 - ISI33...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-06-16 06:43:02,Return LP Tokens,WIND/ALGO LP Token,39.950655,,,ALGO,0.004,Combined Group - dpA//hQ6g6VgsbQnCVztjnEsCU0JQ5K0kK1jQTOjNKQ=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
+2023-06-17 19:45:05,Add Liquidity,WIND,59715.898,,,,,(Group- OuDLe...) - JNW4XYNJVDEIIEU74GQPELKP5XGLIAPKTHCFN4YP4BTXLLUCPB5Q,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-06-17 19:45:05,Receive LP Tokens,,,TMPOOL2,51.926459,ALGO,0.005,Combined Group - OuDLe0AZVvtkWDB06vmY5GPiFi/uI5bcHNhuyluNlhI=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-06-17 19:45:51,Add Liquidity,COOP,86.158,,,,,(Group- DwfYr...) - Q6KWC7FAMLCSCQWMZ2BGG3DNS4PMABOO6SCQ5AHLUOEUIDTFNMMA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-06-17 19:45:51,Receive LP Tokens,,,TMPOOL2,23.436892,ALGO,0.004,Combined Group - DwfYrRJeid73eDJtDmkUWpKLUI5ZoXUCCiFjsmwCIak=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-06-18 05:56:26,Remove Liquidity,,,WIND,36287.396,,,(Group- /vdEv...) - InnerTxn #1 - R3ULJ...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-06-18 05:56:26,Remove Liquidity,,,COOP,165.565268,,,(Group- /vdEv...) - InnerTxn #2 - R3ULJ...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-06-18 05:56:26,Return LP Tokens,TMPOOL2,75.363351,,,ALGO,0.004,Combined Group - /vdEv77yeP17wYntdIEhloVz5x0dQfL0ekQbSyZB/6w=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
+2023-06-18 05:57:14,Add Liquidity,COOP,165.565268,,,,,(Group- mHS1j...) - HJXO5W2L37EAFVF5WPEWFUAH4CPNK2XNWGI5IPWSJW74T6BOTEAA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-06-18 05:57:14,Receive LP Tokens,,,COOP/ALGO LP Token,50.57826,ALGO,0.004,Combined Group - mHS1jQJzP1/niK8k29HrZuj9Ynk5kqL1OCGnDnm4Uhc=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-06-18 05:57:51,Add Liquidity,WIND,36287.396,,,,,(Group- 6rsbY...) - RQ3PTMZUXTXII5LSXUT7UYMIDGAZPHPZMDE5GFEP52TTKIPLQ2JQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-06-18 05:57:51,Receive LP Tokens,,,WIND/ALGO LP Token,28.063833,ALGO,0.004,Combined Group - 6rsbYBquRYpwEg2kU54y6wHAIoUxlty4z4r1x0Bzlk8=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-06-20 04:44:53,Remove Liquidity,,,WIND,23755.415,,,(Group- HXItd...) - InnerTxn #1 - GOSBB...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-06-20 04:44:53,Remove Liquidity,,,ALGO,36.725631,,,(Group- HXItd...) - InnerTxn #2 - GOSBB...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-06-20 04:44:53,Return LP Tokens,WIND/ALGO LP Token,28.063833,,,ALGO,0.004,Combined Group - HXItd52K8J3tTHm+zD2XvyuYKRGGX8xnz7AyqdYVQPI=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
+2023-06-20 04:45:11,Remove Liquidity,,,COOP,96.530005,,,(Group- 3l1M9...) - InnerTxn #1 - LBVJL...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-06-20 04:45:11,Remove Liquidity,,,ALGO,41.403898,,,(Group- 3l1M9...) - InnerTxn #2 - LBVJL...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-06-20 04:45:11,Return LP Tokens,COOP/ALGO LP Token,50.57826,,,ALGO,0.004,Combined Group - 3l1M9a/ESk4t9oWljJD6APw+nKwGDCNUp6xAXoYbyPE=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
 2023-06-24 08:52:08,Fee,,,,,ALGO,0.001,Group Combined Fees - IU7StN6zLv97ZWUUcVMlyzf+f8O1xcHq6qKU0s1NNrw=,1 txns. ,Algorand Network
 2023-06-24 08:52:16,Fee,,,,,ALGO,0.001,VCYSECXYBL7CPEWBKR7SV2AYYCJWSZ2ES3U3J3D44SCYFMG4TO7A,Sender,Algorand Network
 2023-06-24 08:52:23,Send,COOP,96.530005,,,,,(Group- lKrqO...) - 5VL6RLQBMTXC2WU37FSYW6C2YMII5PEQIARACLF5EY7HDIC2CPZQ,2 txns. Cometa : appDB match : COOP > META ,IN3O5H2TF2LDFO7UINLZOFMRJDCVODZAFAHKOURO566F5MKW7F6WA3PFGY
@@ -310,29 +285,22 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-07-13 20:07:29,Fee,,,,,ALGO,0.005,Group Combined Fees - X7XijOAZs+6oq+dz84joEn+EbZh6TSHZDOp5zNMN6J8=,3 txns. Folks Finance : Folks Finance v2 : Deposit,Algorand Network
 2023-07-16 12:37:34,Receive,,,ALGO,45.,,,(Group- dC6af...) - InnerTxn #1 - Inner IQNIH...,1 txns. Folks Finance : Folks Finance v2 : Withdrawal  ,2ZPNLKXWCOUJ2ONYWZEIWOUYRXL36VCIBGJ4ZJ2AAGET5SIRTHKSNFDJJ4
 2023-07-16 12:37:34,Fee,,,,,ALGO,0.006,Group Combined Fees - 7u195HtWbaZBdWVIjX8DL61oq0mvgirZi7TSqjYXX/s=,1 txns. Folks Finance : Folks Finance v2 : Withdrawal,Algorand Network
-2023-07-16 12:39:47,Send,ALGO,49.586568,,,,,(Group- yukYW...) - 4EGRIR3MODNJ7UDNRXYU7ZLRTFTAYGZVECXTESKLS63YCD76GLGA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-07-16 12:39:47,Receive,,,TMPOOL2,41.536098,,,(Group- yukYW...) - InnerTxn #1 - QXRJY...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-07-16 12:39:47,Fee,,,,,ALGO,0.004,Group Combined Fees - yukYWUjb58To45BwT1Q9ClVj735vAARLvt7+kCcmGFA=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-07-16 12:39:47,Add Liquidity,ALGO,49.586568,,,,,(Group- yukYW...) - 4EGRIR3MODNJ7UDNRXYU7ZLRTFTAYGZVECXTESKLS63YCD76GLGA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-07-16 12:39:47,Receive LP Tokens,,,COOP/ALGO LP Token,41.536098,ALGO,0.004,Combined Group - yukYWUjb58To45BwT1Q9ClVj735vAARLvt7+kCcmGFA=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-07-16 12:40:18,Fee,,,,,ALGO,0.001,7PJLOKAQK7TNLM4B4FDNR2HD7QRKUDMW2JDAGXJJ5KL5VOGDHIMQ,Sender,Algorand Network
 2023-07-16 12:41:06,Fee,,,,,ALGO,0.001,RD523VDJF3HGJFRENLR56BGJ6B3CE3FZCPCRHJR45XILQ6NHZHDA,Sender,Algorand Network
-2023-07-18 16:57:29,Receive,,,ALGO,0.09601,,,(Group- elCxz...) - GIYZLAHEUYU7BPY3VVKWDN75LBOSF7YEZLMTJI4YF6V3LIGKNYZA,2 txns. Tinyman : Tinyman Staking : Claim ,PIESEM6TYRTY4U3RSOJBVSLKDBZHR56OXIIO5YSRTTY45TTWG26Z33HQFY
-2023-07-18 16:57:29,Fee,,,,,ALGO,0.002,Group Combined Fees - elCxz+lteO1ddGTBbTP+I6zTjclRuFu0pG/6L7F3++s=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-07-18 16:57:32,Receive,,,COOP,0.134861,,,(Group- edzgt...) - WFPAOFK7Y3BYBGHQRI3EPONL3FF755WRQ6CDZS6IWFB2PO6X4F2A,2 txns. Tinyman : Tinyman Staking : Claim ,XWL675I7MLTP6UFEJFFLANILS2UOWX5MKMWSYIAX5O2IWAZX336CVB3W7U
-2023-07-18 16:57:32,Fee,,,,,ALGO,0.002,Group Combined Fees - edzgtYyNCNP4nALBwoHgy/fb+t/EkUzmR2fMG3MxO50=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-07-18 16:58:34,Send,COOP,0.134861,,,,,(Group- JuUwi...) - X7II2CH6SNHHGJASQV5NH3F7ZGEBF3RQRJQL4VUMOIXNY2GSID5Q,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-07-18 16:58:34,Send,ALGO,0.08501,,,,,(Group- JuUwi...) - ZG4IS7ZJLPYSTEIMDV2OGNATWFMGPY5GKRZWUYIIP76YRDTXPPKQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-07-18 16:58:34,Receive,,,TMPOOL2,0.096388,,,(Group- JuUwi...) - InnerTxn #1 - PAPRU...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-07-18 16:58:34,Fee,,,,,ALGO,0.005,Group Combined Fees - JuUwipVLcZLqIDugecnlujJO+n99dh4Ndp0iKNOnkn8=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-07-18 16:57:29,Staking Rewards,,,ALGO,0.09601,ALGO,0.002,Combined Group - elCxz+lteO1ddGTBbTP+I6zTjclRuFu0pG/6L7F3++s=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-07-18 16:57:32,Staking Rewards,,,COOP,0.134861,ALGO,0.002,Combined Group - edzgtYyNCNP4nALBwoHgy/fb+t/EkUzmR2fMG3MxO50=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-07-18 16:58:34,Add Liquidity,COOP,0.134861,,,,,(Group- JuUwi...) - X7II2CH6SNHHGJASQV5NH3F7ZGEBF3RQRJQL4VUMOIXNY2GSID5Q,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-07-18 16:58:34,Add Liquidity,ALGO,0.08501,,,,,(Group- JuUwi...) - ZG4IS7ZJLPYSTEIMDV2OGNATWFMGPY5GKRZWUYIIP76YRDTXPPKQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-07-18 16:58:34,Receive LP Tokens,,,COOP/ALGO LP Token,0.096388,ALGO,0.005,Combined Group - JuUwipVLcZLqIDugecnlujJO+n99dh4Ndp0iKNOnkn8=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-07-18 16:59:08,Fee,,,,,ALGO,0.001,73R2R5IYD4FNWZJTCOIBFEDNI5RW7T7KMPUCKXNNKD4TY56QS2YA,Sender,Algorand Network
 2023-07-18 16:59:32,Fee,,,,,ALGO,0.001,K2S4H5EP3U6LFG5WVSLPBWW7QAWCZXCMPYKVYVYJJBY3TYZCI3GA,Sender,Algorand Network
-2023-07-22 21:39:22,Receive,,,ALGO,0.371686,,,(Group- 7v8pf...) - HSBO46LBCALHOOJUW7ZVFQ3NGQHEUSJWKGUEQASTYMOESRGP3NBA,2 txns. Tinyman : Tinyman Staking : Claim ,PIESEM6TYRTY4U3RSOJBVSLKDBZHR56OXIIO5YSRTTY45TTWG26Z33HQFY
-2023-07-22 21:39:22,Fee,,,,,ALGO,0.002,Group Combined Fees - 7v8pfei3X8laTY97uC3hQmt5xJZ4YBQwqF4TfYQxUEo=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-07-22 21:39:46,Receive,,,COOP,0.545196,,,(Group- qTpwa...) - V32IF7Y4VIY4QOPYBUQTCRNOA7ERBJBYZW5NK35JKNV66SXJJFSQ,2 txns. Tinyman : Tinyman Staking : Claim ,XWL675I7MLTP6UFEJFFLANILS2UOWX5MKMWSYIAX5O2IWAZX336CVB3W7U
-2023-07-22 21:39:46,Fee,,,,,ALGO,0.002,Group Combined Fees - qTpwaUhtpbPw4c9zYOn9++0/Kl8RMjYpSCTP7rdPgzg=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-07-22 21:40:20,Send,COOP,0.545196,,,,,(Group- HRb70...) - TZK3JEBYITHJIVQ3KNYA2YWGRPCB2GVP2BDV3YELRDIFA4CALU4A,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-07-22 21:40:20,Send,ALGO,0.371686,,,,,(Group- HRb70...) - STZC5OET3VOAZ5GWAFBVXIMKDBETQLMSXB7DMTHJ76AUMGNEOKFA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-07-22 21:40:20,Receive,,,TMPOOL2,0.422776,,,(Group- HRb70...) - InnerTxn #1 - CGGJJ...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-07-22 21:40:20,Fee,,,,,ALGO,0.005,Group Combined Fees - HRb70TNV2xSDNkxN6dfJT0v/4UckXbKUEK/Q7OX9tDQ=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-07-22 21:39:22,Staking Rewards,,,ALGO,0.371686,ALGO,0.002,Combined Group - 7v8pfei3X8laTY97uC3hQmt5xJZ4YBQwqF4TfYQxUEo=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-07-22 21:39:46,Staking Rewards,,,COOP,0.545196,ALGO,0.002,Combined Group - qTpwaUhtpbPw4c9zYOn9++0/Kl8RMjYpSCTP7rdPgzg=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-07-22 21:40:20,Add Liquidity,COOP,0.545196,,,,,(Group- HRb70...) - TZK3JEBYITHJIVQ3KNYA2YWGRPCB2GVP2BDV3YELRDIFA4CALU4A,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-07-22 21:40:20,Add Liquidity,ALGO,0.371686,,,,,(Group- HRb70...) - STZC5OET3VOAZ5GWAFBVXIMKDBETQLMSXB7DMTHJ76AUMGNEOKFA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-07-22 21:40:20,Receive LP Tokens,,,COOP/ALGO LP Token,0.422776,ALGO,0.005,Combined Group - HRb70TNV2xSDNkxN6dfJT0v/4UckXbKUEK/Q7OX9tDQ=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-07-22 21:40:50,Fee,,,,,ALGO,0.001,ACUSI3SVCZ2Y4H57I3MOSRVXSSI7S7AIYWLEVOSKSUESOV5XL3AQ,Sender,Algorand Network
 2023-07-22 21:41:28,Fee,,,,,ALGO,0.001,6PUNUBPWH3Y3OWJMRTYOMU4ARRNUQPEGERMF56UQYN6B2FMQCFEQ,Sender,Algorand Network
 2023-07-23 11:30:40,Send,DEFLY,2000.,,,,,(Group- vOl1o...) - BCI7QQF5P52EEZUPMN2MXQYXOU4KSE272BJL2A4E4TYVOWEKDO5Q,15 txns. Algofi : Staking v1 : Deposit Stake ,HNZCZYTROWA5Q7EOBGLVYRS5QR22W26OCCO2BVHGBHCRIUGG2ZSCZLRZNM
@@ -411,20 +379,18 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-07-30 19:34:04,Receive,,,WE ARE ,1.,,,PKUDH6EYPWSUUW5DLKCW4INWFAIC5SM26B5QG7U2EAHSR274DJ5Q,Receiver,HSY2V6IMWVOTZB6I6X7DULB7VD6N7MU65QQMN4TVOJCJ4K2DD2KN2J6ZIU
 2023-08-03 11:13:11,Receive,,,PLAUS,1.,,,(Group- 6q6YE...) - InnerTxn #1 - EMJXC...,3 txns.  ,ADKIKWR34HYSBSFFJKOBRZHHQUXNYSEF52RJHJWVSB3A236ZWDDBNWTL4Q
 2023-08-03 11:13:11,Fee,,,,,ALGO,0.003,Group Combined Fees - 6q6YETClMatKHRf1Xk1EYXhEgqDEaQGfcGVssw0nXms=,3 txns. ,Algorand Network
-2023-08-04 17:19:44,Receive,,,ALGO,1.023227,,,(Group- 3vLo0...) - EXJ2S26OWGHB3L5X6GT6UH7RNXHETTMTD5I6CF5VRXJDOEXNYIMA,2 txns. Tinyman : Tinyman Staking : Claim ,PIESEM6TYRTY4U3RSOJBVSLKDBZHR56OXIIO5YSRTTY45TTWG26Z33HQFY
-2023-08-04 17:19:44,Fee,,,,,ALGO,0.002,Group Combined Fees - 3vLo0MFtCz9bMH0Q5lejA224Cng24BR1dgGN7NN95ao=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-08-04 17:19:48,Receive,,,COOP,1.519965,,,(Group- ovJ/i...) - 4THW3ACGOFR77ULRLJVRBSGMT72FU6VTRSV3J4SYSG4ZRJZLPJGQ,2 txns. Tinyman : Tinyman Staking : Claim ,XWL675I7MLTP6UFEJFFLANILS2UOWX5MKMWSYIAX5O2IWAZX336CVB3W7U
-2023-08-04 17:19:48,Fee,,,,,ALGO,0.002,Group Combined Fees - ovJ/ikn3tIhoWz0QAdng742PdR9aeha45fN/wi0FkQE=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
+2023-08-04 17:19:44,Staking Rewards,,,ALGO,1.023227,ALGO,0.002,Combined Group - 3vLo0MFtCz9bMH0Q5lejA224Cng24BR1dgGN7NN95ao=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-08-04 17:19:48,Staking Rewards,,,COOP,1.519965,ALGO,0.002,Combined Group - ovJ/ikn3tIhoWz0QAdng742PdR9aeha45fN/wi0FkQE=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
 2023-08-04 17:22:01,Send,ALGO,0.5,,,,,(Group- lFxUb...) - MPOXNJPBVVR7OT2BDDNCXH2VSD5JVL7RA5OK5J7MPL4QFIOOJEKA,2 txns. Pact : Pact Swap : Swap ,Pact - COOP/ALGO Liquidity Pool
 2023-08-04 17:22:01,Receive,,,COOP,2.636455,,,(Group- lFxUb...) - InnerTxn #1 - 4EYNP...,2 txns. Pact : Pact Swap : Swap ,6XBAPDENLNGLVANCMNI5LMPSCK3J6NSWIJSW43KZ4JVVOT3X5ZQAYHZGCQ
 2023-08-04 17:22:01,Fee,,,,,ALGO,0.004,Group Combined Fees - lFxUbPW7bz0KyGdCFZXFtR8u8xePygmvUhYbeJezrVU=,2 txns. Pact : Pact Swap : Swap,Algorand Network
 2023-08-04 17:22:48,Send,ALGO,0.780384,,,,,(Group- QlHG/...) - KEDV6P52RPF4C7NQWWC3RLW377GMQNUVYUFVTK64Y7EE6HCVHYZQ,3 txns. Pact : Pact Swap : Add Liquidity ,Pact - COOP/ALGO Liquidity Pool
 2023-08-04 17:22:48,Send,COOP,4.15642,,,,,(Group- QlHG/...) - QUDLBCUWABTF4KMS5E3WICKS4PG535PTCQPSXKLKNAE5E53OJ7ZA,3 txns. Pact : Pact Swap : Add Liquidity ,Pact - COOP/ALGO Liquidity Pool
-2023-08-04 17:22:48,Receive,,,PLP,0.096685,,,(Group- QlHG/...) - InnerTxn #1 - HN335...,3 txns. Pact : Pact Swap : Add Liquidity ,6XBAPDENLNGLVANCMNI5LMPSCK3J6NSWIJSW43KZ4JVVOT3X5ZQAYHZGCQ
+2023-08-04 17:22:48,Receive,,,COOP/ALGO LP Token,0.096685,,,(Group- QlHG/...) - InnerTxn #1 - HN335...,3 txns. Pact : Pact Swap : Add Liquidity ,6XBAPDENLNGLVANCMNI5LMPSCK3J6NSWIJSW43KZ4JVVOT3X5ZQAYHZGCQ
 2023-08-04 17:22:48,Fee,,,,,ALGO,0.005,Group Combined Fees - QlHG/eCgwdFe/sD9pmU6TPWgixG62Xk8DdUNsBk4u10=,3 txns. Pact : Pact Swap : Add Liquidity,Algorand Network
 2023-08-04 17:23:05,Send,ALGO,0.2,,,,,(Group- 8YhV6...) - 4ZL2KUMQVOHFXKVUBLB4Y462LPY4FRNNGR4B5W7P3EEI3UF2E3MQ,"3 txns. Pact : Farms : Create Farm, Stake LP Tokens ",RK5A725EAHS2Y5EPS4SRSQ7EQSEIGTBJG7SZB66LJJKZ3VHPSBWGPWPGZI
 2023-08-04 17:23:05,Fee,,,,,ALGO,0.007,Group Combined Fees - 8YhV6Zjplr7i7z/vWbPi0lbPUz9ci6iBD0anF3xhfn0=,"3 txns. Pact : Farms : Create Farm, Stake LP Tokens",Algorand Network
-2023-08-04 17:23:19,Send,PLP,0.096685,,,,,(Group- eAZw2...) - B3LOWJ5IIH44BVYYSIQAWTYXGQDJZAGY7N4QHXSKK7EQXEDA447Q,3 txns. Pact : Farms : Stake LP Tokens ,PW2WDV65JXXHGY5RO77EONQXAIFK2U4W5YYOKS4ETQLSSGJULDKP4D6FME
+2023-08-04 17:23:19,Send,COOP/ALGO LP Token,0.096685,,,,,(Group- eAZw2...) - B3LOWJ5IIH44BVYYSIQAWTYXGQDJZAGY7N4QHXSKK7EQXEDA447Q,3 txns. Pact : Farms : Stake LP Tokens ,PW2WDV65JXXHGY5RO77EONQXAIFK2U4W5YYOKS4ETQLSSGJULDKP4D6FME
 2023-08-04 17:23:19,Fee,,,,,ALGO,0.006,Group Combined Fees - eAZw2sZDgrldALOQaHiiyrT2hNY01k0ktJjfBL+OJus=,3 txns. Pact : Farms : Stake LP Tokens,Algorand Network
 2023-08-04 17:26:16,Fee,,,,,ALGO,0.001,4IYIFRPW4CESWT3KRJVMEHIBDWMHVBSXPSPOTLR6WPRJBK7T4CWQ,Asset Opt in/out,Algorand Network
 2023-08-04 17:26:33,Fee,,,,,ALGO,0.001,T2K3HWN3TQUIHNQY4R6WWEDQHILQTIXHBRQNWUTRYI7C6VQDRASQ,Asset Opt in/out,Algorand Network
@@ -436,21 +402,18 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-08-06 19:25:06,Receive,,,PLAUS,1.,,,(Group- l41ku...) - InnerTxn #1 - QJBRL...,3 txns.  ,HADDOMKOKFFP2HCI7YBW5GFDXQTUU6FK2HAHVXAWJFS3KTBKLTSXZEGNAU
 2023-08-06 19:25:06,Fee,,,,,ALGO,0.003,Group Combined Fees - l41ku0cUrv1TBUJv4mquWqMBaD6s/sXqQjhTcIyP8uc=,3 txns. ,Algorand Network
 2023-08-06 19:41:08,Fee,,,,,ALGO,0.001,KDBOV44BZ6Z2MRRGSMYLQ4O4TGDWF5NEIGAVDZ7HNCNUHN3KSFBA,Sender,Algorand Network
-2023-08-06 19:41:14,Trade,STBL2,0.688154,ALGO,6.2778,ALGO,0.004,Combined Group - HOchiLNejGQK/j5OP5X/08+AOsspOz3kpBnCg/9wLVE=,4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Sell),Tinyman
-2023-08-06 19:41:21,Send,ALGO,0.03141,,,ALGO,0.001,YLYWD5IZEIFUQWVZRPYNCYGJXCQILNSV7F77DXFAZNOTOHN4I3AA,Sender,Defly - Fee Sink
+2023-08-06 19:41:14,Swap,STBL2,0.688154,ALGO,6.2778,ALGO,0.004,Combined Group - HOchiLNejGQK/j5OP5X/08+AOsspOz3kpBnCg/9wLVE=,4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Sell),Tinyman
+2023-08-06 19:41:21,Send,ALGO,0.03141,,,ALGO,0.001,YLYWD5IZEIFUQWVZRPYNCYGJXCQILNSV7F77DXFAZNOTOHN4I3AA,Sender,YWXUJAXOTCSHTIUFHTVP5P47VHJ4GOWTLPVOQHOPV7K3RWU5T2ZCFSOYM4
 2023-08-06 19:41:21,Receive,,,ALGO,0.063417,ALGO,0.003,Combined Group - 39yXhzqoDDpZBAZKFgnNvARu5ffsuITnGZs+Az0rAII=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
-2023-08-06 20:18:15,Send,AKTA,4606.896233,,,,,(Group- nQIbk...) - QMOR3W4NL57OQHZ4F3ZGSSG5CDCAVMZR7RUQ5VIPGBJSOM23FA4A,2 txns. Humble Swap : appDB match : 523683256/ALGO Liquidity Pool ,Humble Swap - AKTA/ALGO Liquidity Pool
-2023-08-06 20:18:15,Receive,,,ALGO,17.650963,,,(Group- nQIbk...) - InnerTxn #1 - 3RI6F...,2 txns. Humble Swap : appDB match : 523683256/ALGO Liquidity Pool ,YMV2DOZNRKISJ46BQITC5ICHLEA5L2SYEGZEHDKBCNLR4OLQUBNW4Q4W3M
-2023-08-06 20:18:15,Fee,,,,,ALGO,0.003,Group Combined Fees - nQIbkNWotlcfNrfVebnq4Ge3e58LpSbh/+An3sfWGCE=,2 txns. Humble Swap : appDB match : 523683256/ALGO Liquidity Pool,Algorand Network
-2023-08-06 20:18:22,Send,ALGO,0.042632,,,ALGO,0.001,VXCMLA5BNA3TKPRTVE62S2O2OB2BRFBEULPQSMKVDHS4Q6HDDW2A,Sender,Defly - Fee Sink
-2023-08-06 20:19:06,Receive,,,COOP,0.218617,,,(Group- y7/Uk...) - O2TTIF4OLRHER5F2EZEBP43FNSOGF4BE27WDSKLDKHHW5G3JS75Q,2 txns. Tinyman : Tinyman Staking : Claim ,XWL675I7MLTP6UFEJFFLANILS2UOWX5MKMWSYIAX5O2IWAZX336CVB3W7U
-2023-08-06 20:19:06,Fee,,,,,ALGO,0.002,Group Combined Fees - y7/Uk11SbaOf4SVz3G/YOKvQYSldlITL+7st956a6UE=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-08-06 20:19:16,Receive,,,ALGO,0.141652,,,(Group- d+g8/...) - 62B37V3IUS46XX3JCDJGJNRQ7KOVC6JZOT5X3GFKNFCUIYNGIQKA,2 txns. Tinyman : Tinyman Staking : Claim ,PIESEM6TYRTY4U3RSOJBVSLKDBZHR56OXIIO5YSRTTY45TTWG26Z33HQFY
-2023-08-06 20:19:16,Fee,,,,,ALGO,0.002,Group Combined Fees - d+g8/v96W979pDAgqlGl7xFYfrLkyzmMDU+xtI8//V4=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-08-06 20:19:47,Send,TMPOOL2,42.055262,,,,,(Group- 98SG4...) - NRHV6JCJ3D7WOU6HEMYB72EUODNASGFZYCDJAFSDD4GMBUT34K2Q,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-08-06 20:19:47,Receive,,,COOP,124.538236,,,(Group- 98SG4...) - InnerTxn #1 - 7UBET...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-08-06 20:19:47,Receive,,,ALGO,23.55507,,,(Group- 98SG4...) - InnerTxn #2 - 7UBET...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-08-06 20:19:47,Fee,,,,,ALGO,0.004,Group Combined Fees - 98SG4QAZYibYAJouUheUGHzCMRp2MKT1iRP+VJBtDv8=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
+2023-08-06 20:18:15,Send,AKTA,4606.896233,,,,,(Group- nQIbk...) - QMOR3W4NL57OQHZ4F3ZGSSG5CDCAVMZR7RUQ5VIPGBJSOM23FA4A,2 txns. Humble Swap : appDB match : AKTA/ALGO Liquidity Pool ,Humble Swap - AKTA/ALGO Liquidity Pool
+2023-08-06 20:18:15,Receive,,,ALGO,17.650963,,,(Group- nQIbk...) - InnerTxn #1 - 3RI6F...,2 txns. Humble Swap : appDB match : AKTA/ALGO Liquidity Pool ,YMV2DOZNRKISJ46BQITC5ICHLEA5L2SYEGZEHDKBCNLR4OLQUBNW4Q4W3M
+2023-08-06 20:18:15,Fee,,,,,ALGO,0.003,Group Combined Fees - nQIbkNWotlcfNrfVebnq4Ge3e58LpSbh/+An3sfWGCE=,2 txns. Humble Swap : appDB match : AKTA/ALGO Liquidity Pool,Algorand Network
+2023-08-06 20:18:22,Send,ALGO,0.042632,,,ALGO,0.001,VXCMLA5BNA3TKPRTVE62S2O2OB2BRFBEULPQSMKVDHS4Q6HDDW2A,Sender,YWXUJAXOTCSHTIUFHTVP5P47VHJ4GOWTLPVOQHOPV7K3RWU5T2ZCFSOYM4
+2023-08-06 20:19:06,Staking Rewards,,,COOP,0.218617,ALGO,0.002,Combined Group - y7/Uk11SbaOf4SVz3G/YOKvQYSldlITL+7st956a6UE=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-08-06 20:19:16,Staking Rewards,,,ALGO,0.141652,ALGO,0.002,Combined Group - d+g8/v96W979pDAgqlGl7xFYfrLkyzmMDU+xtI8//V4=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-08-06 20:19:47,Remove Liquidity,,,COOP,124.538236,,,(Group- 98SG4...) - InnerTxn #1 - 7UBET...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-08-06 20:19:47,Remove Liquidity,,,ALGO,23.55507,,,(Group- 98SG4...) - InnerTxn #2 - 7UBET...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-08-06 20:19:47,Return LP Tokens,COOP/ALGO LP Token,42.055262,,,ALGO,0.004,Combined Group - 98SG4QAZYibYAJouUheUGHzCMRp2MKT1iRP+VJBtDv8=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
 2023-08-06 20:23:21,Send,ALGO,46.5,,,,,(Group- na5PW...) - HOM2CYEJYOVLK5IPICG5XKIFRNCSGTEAK7J7KXHGU5V5VRV6VSNQ,5 txns.  ,SAFUM7ZWGA3V77RCTRPLNOVOLD7UZHHTYBHFI75NG3YRN36PRQVGLG5GBI
 2023-08-06 20:23:21,Send,ALGO,2.5,,,,,(Group- na5PW...) - 7V6Z4N3NGXNQ6XDB22U7HGVMD6ILWSRVF7L5LX46BB5HVLFGS5CA,5 txns.  ,AKCTRDK4OWNWHTPH4XPKLNWNLZ333VE35SKQ4FGQK3ZJA4FIHCLTRG3PFI
 2023-08-06 20:23:21,Send,ALGO,1.,,,,,(Group- na5PW...) - YLH55YIVOXOYS4KIOIDT7QGFJ37HCL7PALOTV62OMGE5HEEHWI7A,5 txns.  ,ATWDHYB5TLHKSEMNJ73CPLMUBRFUNTITTPWQGO6WYXJK47TXHV7FSADF3E
@@ -480,110 +443,76 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-08-29 04:44:43,Receive,,,ALGO,50.,,,(Group- qCExd...) - InnerTxn #1 - 7C2JX...,2 txns.  ,PV4AU43FDUUXAGTGEEVG3RJPSVPBICC6FKRRFOT2CRPHHW2DNA5ZJXKKRU
 2023-08-29 04:44:43,Send,ERAP5,2.,,,,,(Group- qCExd...) - 4R4WATBUJ5CTFP65F5EKKMIYKO64NEZFN575IYTGGBW5NCKBEAKQ,2 txns.  ,PV4AU43FDUUXAGTGEEVG3RJPSVPBICC6FKRRFOT2CRPHHW2DNA5ZJXKKRU
 2023-08-29 04:44:43,Fee,,,,,ALGO,0.003,Group Combined Fees - qCExdAyxJUz1KSy0Oroni/YJLT4g4ANm3tLyc7np3X4=,2 txns. ,Algorand Network
-2023-09-01 16:51:09,Send,COOP,124.756853,,,,,(Group- xWTqI...) - ZWXRPIWQ2YM5HAI7PWCGBY67DTHHZ6QUMU6NDWR3R6VQFSDIZLEA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-09-01 16:51:09,Send,ALGO,50.,,,,,(Group- xWTqI...) - DGZS2ITALWACS2MPNVDVDBSTZ47XMNBZGFICYFGSG73LOYKDL7MQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-09-01 16:51:09,Receive,,,TMPOOL2,65.106813,,,(Group- xWTqI...) - InnerTxn #1 - DFD22...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-09-01 16:51:09,Fee,,,,,ALGO,0.005,Group Combined Fees - xWTqIsEd2FKnkoC6j6QMo+lGQyWFdZxE2jZxZx5KINk=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-09-01 16:51:09,Add Liquidity,COOP,124.756853,,,,,(Group- xWTqI...) - ZWXRPIWQ2YM5HAI7PWCGBY67DTHHZ6QUMU6NDWR3R6VQFSDIZLEA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-09-01 16:51:09,Add Liquidity,ALGO,50.,,,,,(Group- xWTqI...) - DGZS2ITALWACS2MPNVDVDBSTZ47XMNBZGFICYFGSG73LOYKDL7MQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-09-01 16:51:09,Receive LP Tokens,,,COOP/ALGO LP Token,65.106813,ALGO,0.005,Combined Group - xWTqIsEd2FKnkoC6j6QMo+lGQyWFdZxE2jZxZx5KINk=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-09-01 16:51:36,Fee,,,,,ALGO,0.001,QVG76J3MHVMKPVJJ74V6BFZS33HXWBWAM4MUNX2DBEAX3F42RVEQ,Sender,Algorand Network
 2023-09-01 16:52:03,Fee,,,,,ALGO,0.001,UEXWI25MRHWSDNRQVSHHNOAXJ3ST4DJAKKCBOWNPWXTPKCOGZD3Q,Sender,Algorand Network
-2023-09-21 16:29:15,Receive,,,ALGO,1.361345,,,(Group- ax4ZR...) - ZZ6QWMK6RGUWN5YJ3B3JPCPCDZ6QZOPBUTJDH62AZXJVBTFMOTPQ,2 txns. Tinyman : Tinyman Staking : Claim ,PIESEM6TYRTY4U3RSOJBVSLKDBZHR56OXIIO5YSRTTY45TTWG26Z33HQFY
-2023-09-21 16:29:15,Fee,,,,,ALGO,0.002,Group Combined Fees - ax4ZROqozBkcmwpKorT1MCfLx2AfZa3zwuxcVj/l/vU=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-09-21 16:29:15,Receive,,,COOP,1.945037,,,(Group- 0orq2...) - OX7R4CULPTAZK5F5DS3WDJHE3ELP24EAN6Y27TKIHNWEMIJYLK4Q,2 txns. Tinyman : Tinyman Staking : Claim ,XWL675I7MLTP6UFEJFFLANILS2UOWX5MKMWSYIAX5O2IWAZX336CVB3W7U
-2023-09-21 16:29:15,Fee,,,,,ALGO,0.002,Group Combined Fees - 0orq2MxY6R2oRBV4/3ckLu5b8ai4dBlgT8KZPT+XFQM=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-09-21 16:30:58,Send,COOP,1.945037,,,,,(Group- /hDxm...) - U3KAITLNP6WGI3HDCI7LTVWQXZ23Y5LSZNY3JKKNZTW5OMM4IEMA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-09-21 16:30:58,Send,ALGO,1.37,,,,,(Group- /hDxm...) - GFUIKD2YMH5TVQWFWJZ22ZLQKQAND3MLO32WNZY7F42S3CQSAR3Q,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-09-21 16:30:58,Receive,,,TMPOOL2,1.626338,,,(Group- /hDxm...) - InnerTxn #1 - JCO2J...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-09-21 16:30:58,Fee,,,,,ALGO,0.005,Group Combined Fees - /hDxmtMTiWukt/DmgeMIB+RzxEC2yFuRwaP9NCFcXs8=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-09-21 16:29:15,Staking Rewards,,,ALGO,1.361345,ALGO,0.002,Combined Group - ax4ZROqozBkcmwpKorT1MCfLx2AfZa3zwuxcVj/l/vU=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-09-21 16:29:15,Staking Rewards,,,COOP,1.945037,ALGO,0.002,Combined Group - 0orq2MxY6R2oRBV4/3ckLu5b8ai4dBlgT8KZPT+XFQM=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-09-21 16:30:58,Add Liquidity,COOP,1.945037,,,,,(Group- /hDxm...) - U3KAITLNP6WGI3HDCI7LTVWQXZ23Y5LSZNY3JKKNZTW5OMM4IEMA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-09-21 16:30:58,Add Liquidity,ALGO,1.37,,,,,(Group- /hDxm...) - GFUIKD2YMH5TVQWFWJZ22ZLQKQAND3MLO32WNZY7F42S3CQSAR3Q,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-09-21 16:30:58,Receive LP Tokens,,,COOP/ALGO LP Token,1.626338,ALGO,0.005,Combined Group - /hDxmtMTiWukt/DmgeMIB+RzxEC2yFuRwaP9NCFcXs8=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-09-21 16:31:49,Fee,,,,,ALGO,0.001,RGTDO7ZQR6YOU5ZYTZOLGZ2TM6QQL2J2Y4JRGJ6MVMMBVYH2QBPQ,Sender,Algorand Network
 2023-09-21 16:32:09,Fee,,,,,ALGO,0.001,6UDLLGHTX2J6UKKTUOF4NSIIGWUYEHXL7552HTUXWWAE673YAUUA,Sender,Algorand Network
 2023-09-23 12:25:31,Send,ALGO,0.003,,,,,(Group- 3n096...) - RVBZLTDC5GXMZNKXDHDBRXKWEETKM6NM43JV4NN3P3ERIJBEGXRQ,9 txns. NFDomains : appDB match : Registry ,ABHE544MXL2CWMIZONAIUBNVELWYMKYKWBDNRLOEFQJN3LNF2ZWSMDEKBQ
 2023-09-23 12:25:31,Send,ALGO,0.1417,,,,,(Group- 3n096...) - HZKZGSYPG7BDMLWZDZH6EVLJHUDGLP2G6DHGDPDMOAPX5CVR265Q,9 txns. NFDomains : appDB match : Registry ,6JMLVJO4XFFRZFN3GTKAGBI6PCY5BJGV5JS4WM3PIBUJHVU4EZGVVS42IA
 2023-09-23 12:25:31,Send,ALGO,0.0836,,,,,(Group- 3n096...) - OT7SHATV4UYLJYALGPJSWVGIS5JPX3BJ65QRRFLWXSF7ZZ3JP3XA,9 txns. NFDomains : appDB match : Registry ,OMXLQTI5ZSMWTCIZA3O3YBW74BTCOI67SZTOEDHK3ZEDZ34Z3DEOQD4PW4
 2023-09-23 12:25:31,Fee,,,,,ALGO,0.005,Group Combined Fees - 3n096iYwPMOAaHYDO6+zBMH0DqqAHEtbwEZebb2rcS4=,9 txns. NFDomains : appDB match : Registry,Algorand Network
-2023-10-13 20:07:33,Receive,,,COOP,2.076063,,,(Group- XL/9G...) - PJHCFD7AOCCGZ62CBPMPSOBULZYQ5NGI7NOC3WRSI4HA7JGFDYEQ,2 txns. Tinyman : Tinyman Staking : Claim ,XWL675I7MLTP6UFEJFFLANILS2UOWX5MKMWSYIAX5O2IWAZX336CVB3W7U
-2023-10-13 20:07:33,Fee,,,,,ALGO,0.002,Group Combined Fees - XL/9Guc2BeKhCUcLW5yu9C+j96RSclS9hH1psQXRbBg=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-10-13 20:07:36,Receive,,,ALGO,1.52622,,,(Group- hmuz2...) - WGKFCD4WUNDRFUDGFCJRKYC4RXREBQN3P3ZZRPHEI37Q6RSIZLVA,2 txns. Tinyman : Tinyman Staking : Claim ,PIESEM6TYRTY4U3RSOJBVSLKDBZHR56OXIIO5YSRTTY45TTWG26Z33HQFY
-2023-10-13 20:07:36,Fee,,,,,ALGO,0.002,Group Combined Fees - hmuz2Ns0DUS5H3jABVW90LzRRoeyE6rF7Vneqj6xrbo=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-10-13 20:08:13,Send,TMPOOL2,66.733151,,,,,(Group- smqhJ...) - D2RNEKZY4UGAGSMP2YNM6HD3FJ72QVZ53GQWLMEWZTURTURCRERQ,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - COOP/ALGO Liquidity Pool
-2023-10-13 20:08:13,Receive,,,COOP,488.681333,,,(Group- smqhJ...) - InnerTxn #1 - S55JC...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,IUUZ66NGBEKKTZ2RW7CAUOGEIBOFTYNUNMMEUSS3K5CSJAMGDY747F5KIA
-2023-10-13 20:08:13,Fee,,,,,ALGO,0.004,Group Combined Fees - smqhJ65NRhzbFvJbFeMEu+1FRr+jcd69VPKFwe05Yb0=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2023-10-13 20:08:54,Send,COOP,245.378698,,,,,(Group- /o7p0...) - U4ZDJEHYQTS5TO46S3UR2CZB457AT43KNNTWPWBRM6VQ3JKMCYNA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,4PIGM5L32GJMNH7VJROMD2GFE4GEJ6OYTUHKYH3CY3UAVESUVXIOCSUHGM
-2023-10-13 20:08:54,Receive,,,TMPOOL2,3.278346,,,(Group- /o7p0...) - InnerTxn #1 - MCXEE...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,4PIGM5L32GJMNH7VJROMD2GFE4GEJ6OYTUHKYH3CY3UAVESUVXIOCSUHGM
-2023-10-13 20:08:54,Fee,,,,,ALGO,0.005,Group Combined Fees - /o7p0NOguLeRXrThVxji3PUJxDmuM7BZDkQSegMqkM4=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-10-13 20:07:33,Staking Rewards,,,COOP,2.076063,ALGO,0.002,Combined Group - XL/9Guc2BeKhCUcLW5yu9C+j96RSclS9hH1psQXRbBg=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-10-13 20:07:36,Staking Rewards,,,ALGO,1.52622,ALGO,0.002,Combined Group - hmuz2Ns0DUS5H3jABVW90LzRRoeyE6rF7Vneqj6xrbo=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-10-13 20:08:13,Remove Liquidity,,,COOP,488.681333,,,(Group- smqhJ...) - InnerTxn #1 - S55JC...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2023-10-13 20:08:13,Return LP Tokens,COOP/ALGO LP Token,66.733151,,,ALGO,0.004,Combined Group - smqhJ65NRhzbFvJbFeMEu+1FRr+jcd69VPKFwe05Yb0=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
+2023-10-13 20:08:54,Add Liquidity,COOP,245.378698,,,,,(Group- /o7p0...) - U4ZDJEHYQTS5TO46S3UR2CZB457AT43KNNTWPWBRM6VQ3JKMCYNA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-10-13 20:08:54,Receive LP Tokens,,,TMPOOL2,3.278346,ALGO,0.005,Combined Group - /o7p0NOguLeRXrThVxji3PUJxDmuM7BZDkQSegMqkM4=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-10-13 20:09:18,Fee,,,,,ALGO,0.001,BD5ATLTWJMVZZKLWQQAEDKYWCIJO3P2DD7Y3BQIYS22XTAAHJ6ZQ,Sender,Algorand Network
-2023-10-13 20:09:52,Send,COOP,245.378698,,,,,(Group- QmKEI...) - 34EVITCGBJZPCPT4GUYQCF3QLW5V2JE3JGQWZQP2KXCJSLATMCFQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,DZHNWHVP35VGQRW4VTZXFU2JWZIIK2ZSNHHO7L77QGI2SX6G3YRKAPH6BQ
-2023-10-13 20:09:52,Receive,,,TMPOOL2,0.768222,,,(Group- QmKEI...) - InnerTxn #1 - 4CICK...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,DZHNWHVP35VGQRW4VTZXFU2JWZIIK2ZSNHHO7L77QGI2SX6G3YRKAPH6BQ
-2023-10-13 20:09:52,Fee,,,,,ALGO,0.005,Group Combined Fees - QmKEIUEM4z3FCyaGr/VR1FkwXfELxTT3yUAarRiRkbw=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-10-13 20:09:52,Add Liquidity,COOP,245.378698,,,,,(Group- QmKEI...) - 34EVITCGBJZPCPT4GUYQCF3QLW5V2JE3JGQWZQP2KXCJSLATMCFQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-10-13 20:09:52,Receive LP Tokens,,,TMPOOL2,0.768222,ALGO,0.005,Combined Group - QmKEIUEM4z3FCyaGr/VR1FkwXfELxTT3yUAarRiRkbw=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-10-13 20:10:12,Fee,,,,,ALGO,0.001,BBOC66Y4DXQ7VNFPKE2CXEMSUXSPUULDW4ENGDJHQFM5UG3SOHXQ,Sender,Algorand Network
 2023-10-13 20:12:25,Receive,,,DEFLY,2000.,,,(Group- U3Mrb...) - InnerTxn #1 - TJLXL...,14 txns. Algofi : Staking v1 : Withdraw Stake ,HNZCZYTROWA5Q7EOBGLVYRS5QR22W26OCCO2BVHGBHCRIUGG2ZSCZLRZNM
 2023-10-13 20:12:25,Fee,,,,,ALGO,0.016,Group Combined Fees - U3Mrbsebcf2b5dnF8SxzKkhxt33l8VL6DgUEZRZwT9E=,14 txns. Algofi : Staking v1 : Withdraw Stake,Algorand Network
 2023-10-13 20:12:32,Receive,,,DEFLY,20.018151,,,(Group- gocDu...) - InnerTxn #1 - VE2GG...,13 txns. Algofi : Staking v1 : Claim Rewards ,DHXB5GQTMKJ6L2MFB5VGZ5LWD6GVJ6WJMJAQXWK75SEFZFO5YYCGCBSTZA
 2023-10-13 20:12:32,Fee,,,,,ALGO,0.016,Group Combined Fees - gocDu+dTG/nNSRSLHCbuodJKY+Tj+1ZYebS6K+fzblc=,13 txns. Algofi : Staking v1 : Claim Rewards,Algorand Network
-2023-10-13 20:13:26,Send,DEFLY,2082.474689,,,,,(Group- tLT6B...) - HKQABFSWWHWFGZEPQOTUKNMACEQHUT3XI7I2RXC7RA7Q3ZS4U3PA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - DEFLY/ALGO Liquidity Pool
-2023-10-13 20:13:26,Receive,,,TMPOOL2,118.632358,,,(Group- tLT6B...) - InnerTxn #1 - O5AZC...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,DJIP7MVWAAJKTPDG7SEH64OD4QIZMRHOH5LYHY4YXWRZRG6YMD2ERJ4C2Q
-2023-10-13 20:13:26,Fee,,,,,ALGO,0.005,Group Combined Fees - tLT6BOhr6yNz74ZIbxvwcZz8Ar0bhQr7puWGFfAl054=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-10-13 20:13:26,Add Liquidity,DEFLY,2082.474689,,,,,(Group- tLT6B...) - HKQABFSWWHWFGZEPQOTUKNMACEQHUT3XI7I2RXC7RA7Q3ZS4U3PA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-10-13 20:13:26,Receive LP Tokens,,,DEFLY/ALGO LP Token,118.632358,ALGO,0.005,Combined Group - tLT6BOhr6yNz74ZIbxvwcZz8Ar0bhQr7puWGFfAl054=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-10-13 20:13:43,Fee,,,,,ALGO,0.001,6AA3XMKIFCITGQKYM32T4HTW4LMVLF6AYW6ZIEUW6IDKMN2ZNG2Q,Sender,Algorand Network
 2023-10-13 20:14:17,Fee,,,,,ALGO,0.001,OY56GGUJDZWSVQHAMWRL42CVOGKY6HUD6GEB4HDROIZ3GQY5AABQ,Sender,Algorand Network
-2023-10-22 08:07:00,Receive,,,COOP,3.822658,,,(Group- kdq5M...) - 6GTHFQRAQZTA5D2Y6KE4HW5ORES6CJO2EKJQ7TTUG4VFO2NPM4HQ,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-10-22 08:07:00,Fee,,,,,ALGO,0.002,Group Combined Fees - kdq5MTYiZlOEftD+kmys+hyAA7b5VV1ZXJ3hK/A6TKo=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-10-22 08:07:03,Receive,,,COOP,1.644406,,,(Group- l+5iH...) - 6DRZL4OESEUE4UAYREKBIT3OWIGAOAVIH5PAFGRGAFE3H32KBS7Q,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-10-22 08:07:03,Fee,,,,,ALGO,0.002,Group Combined Fees - l+5iHnA4aBgZOohGD+1SGnPhhCyQoRnAOJO/NIv06zo=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-10-22 08:07:48,Send,COOP,5.467064,,,,,(Group- KF5LZ...) - FM6AOTFMWDUXQNWW4BSDN2BF5KS34OSUKIITHNJTA5OY4UOWSRHQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-10-22 08:07:48,Receive,,,TMPOOL2,0.035949,,,(Group- KF5LZ...) - InnerTxn #1 - ZGAM4...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-10-22 08:07:48,Fee,,,,,ALGO,0.005,Group Combined Fees - KF5LZYZDcK3JHx9tRAr0TlhnX8nnvvTZtyEVm67jr14=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-10-22 08:11:42,Send,WIND,23755.415,,,,,(Group- sAroz...) - UC7BKLFKPMYS6RUPP2UTUTQHLTOKGUNGEVEJGO7HW4XZEINHFHTA,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,SBW6RZZ4YL5UA6VYRAC4AYK344YUMJSFBPHDK3N74BDVMEZJODKY2UMFXQ
-2023-10-22 08:11:42,Receive,,,COOP,10.666701,,,(Group- sAroz...) - InnerTxn #1 - RQATM...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,SBW6RZZ4YL5UA6VYRAC4AYK344YUMJSFBPHDK3N74BDVMEZJODKY2UMFXQ
-2023-10-22 08:11:42,Fee,,,,,ALGO,0.003,Group Combined Fees - sAroz72TuWhCRHcfMdzb4PthiX/yAJd1Zs4Ytu521dI=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
-2023-10-22 08:11:49,Send,ALGO,0.02631,,,ALGO,0.001,EJ3VVAESMYVUYXANALDXP2ISFM6SM4WNHBTS7YMSDRVZTUYNWFGQ,Sender,Defly - Fee Sink
-2023-10-22 08:13:51,Send,COOP,10.666701,,,,,(Group- xqKPe...) - 3IGEI7LZKI7Z665LIUYAU6N4GF2XICYJ43C4HCGCWA4NLG2IC5LA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-10-22 08:13:51,Receive,,,TMPOOL2,0.070136,,,(Group- xqKPe...) - InnerTxn #1 - V6P6P...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-10-22 08:13:51,Fee,,,,,ALGO,0.004,Group Combined Fees - xqKPeDpuseodMnE0c5wJR3cNw22yLntvSLcjzZ2d34o=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-10-29 07:34:24,Receive,,,COOP,3.491431,,,(Group- IsJOl...) - GHGSOUCRB54L5YNGWTUHHDOUUUR72AFFYIOB5DNVAFUIH44KO3BA,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-10-29 07:34:24,Fee,,,,,ALGO,0.002,Group Combined Fees - IsJOlJKNw9Cc+/Zg0MXvFz6h53jZ3Cvu6yU9tNTs4Q8=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-10-29 07:34:27,Receive,,,COOP,1.673756,,,(Group- xmOhF...) - 4RXDQT7K52POMHDN3ZHMHH4K5HJF42L5GSIV67OJITQFPKDDOCJA,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-10-29 07:34:27,Fee,,,,,ALGO,0.002,Group Combined Fees - xmOhFP/RtxlCt+opNYmXg0hlQ0mkTXY36FpwShLFZ3M=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-10-29 07:35:04,Send,COOP,5.165187,,,,,(Group- CHzgl...) - UMFBXGAOUXGDOPIO4BZ4CRFIDBC6KX2PIQUXLLGVTFAG4K6ELF3A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-10-29 07:35:04,Receive,,,TMPOOL2,0.035495,,,(Group- CHzgl...) - InnerTxn #1 - NGZGP...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-10-29 07:35:04,Fee,,,,,ALGO,0.004,Group Combined Fees - CHzglYIz/o15LPSxKv9c8uyJpn+lLr/o34P/mLhmFlE=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-10-22 08:07:00,Staking Rewards,,,COOP,3.822658,ALGO,0.002,Combined Group - kdq5MTYiZlOEftD+kmys+hyAA7b5VV1ZXJ3hK/A6TKo=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-10-22 08:07:03,Staking Rewards,,,COOP,1.644406,ALGO,0.002,Combined Group - l+5iHnA4aBgZOohGD+1SGnPhhCyQoRnAOJO/NIv06zo=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-10-22 08:07:48,Add Liquidity,COOP,5.467064,,,,,(Group- KF5LZ...) - FM6AOTFMWDUXQNWW4BSDN2BF5KS34OSUKIITHNJTA5OY4UOWSRHQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-10-22 08:07:48,Receive LP Tokens,,,TMPOOL2,0.035949,ALGO,0.005,Combined Group - KF5LZYZDcK3JHx9tRAr0TlhnX8nnvvTZtyEVm67jr14=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-10-22 08:11:42,Swap,WIND,23755.415,COOP,10.666701,ALGO,0.003,Combined Group - sAroz72TuWhCRHcfMdzb4PthiX/yAJd1Zs4Ytu521dI=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
+2023-10-22 08:11:49,Send,ALGO,0.02631,,,ALGO,0.001,EJ3VVAESMYVUYXANALDXP2ISFM6SM4WNHBTS7YMSDRVZTUYNWFGQ,Sender,YWXUJAXOTCSHTIUFHTVP5P47VHJ4GOWTLPVOQHOPV7K3RWU5T2ZCFSOYM4
+2023-10-22 08:13:51,Add Liquidity,COOP,10.666701,,,,,(Group- xqKPe...) - 3IGEI7LZKI7Z665LIUYAU6N4GF2XICYJ43C4HCGCWA4NLG2IC5LA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-10-22 08:13:51,Receive LP Tokens,,,TMPOOL2,0.070136,ALGO,0.004,Combined Group - xqKPeDpuseodMnE0c5wJR3cNw22yLntvSLcjzZ2d34o=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-10-29 07:34:24,Staking Rewards,,,COOP,3.491431,ALGO,0.002,Combined Group - IsJOlJKNw9Cc+/Zg0MXvFz6h53jZ3Cvu6yU9tNTs4Q8=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-10-29 07:34:27,Staking Rewards,,,COOP,1.673756,ALGO,0.002,Combined Group - xmOhFP/RtxlCt+opNYmXg0hlQ0mkTXY36FpwShLFZ3M=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-10-29 07:35:04,Add Liquidity,COOP,5.165187,,,,,(Group- CHzgl...) - UMFBXGAOUXGDOPIO4BZ4CRFIDBC6KX2PIQUXLLGVTFAG4K6ELF3A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-10-29 07:35:04,Receive LP Tokens,,,TMPOOL2,0.035495,ALGO,0.004,Combined Group - CHzglYIz/o15LPSxKv9c8uyJpn+lLr/o34P/mLhmFlE=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-10-29 07:35:24,Fee,,,,,ALGO,0.001,VERQRCUM7P4LHO54VXTT3JGL75T2NQFBHZWSIDQSBTLKWAIFE54Q,Sender,Algorand Network
 2023-11-10 11:08:12,Receive,,,SVTC006C,19.,,,ROFR3OY743EYVR7BEY5UMMZGEDPY5ZBR677CEG543NXG2VAWH6IQ,Receiver,5AAAMVCIMDKRVD5LYCPDQIARP6LIL4XN5D5LYOFJUNCLKRDRDKTGPBPCLE
-2023-11-17 18:58:27,Receive,,,COOP,5.651007,,,(Group- 6Lmmc...) - LGCMASLEBPT5HVH4UZFLTADDUALYR6VTJAHFH7TR544J77SPWTCA,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-11-17 18:58:27,Fee,,,,,ALGO,0.002,Group Combined Fees - 6LmmczvlyOzCzwLk1u3J+4OqKxQ/UjgXzCkK1t+dO+A=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-11-17 18:58:30,Receive,,,COOP,8.01768,,,(Group- m0W2I...) - SCPX2G3AOCGSFLCSMFLCRGNTLQ4IA4PLVP2AKWA7KIFVW43BWBHQ,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-11-17 18:58:30,Fee,,,,,ALGO,0.002,Group Combined Fees - m0W2IFcky4RiaEZ5Y+4tSO+6BdyhYo45UEASuZesQHM=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-11-17 18:58:40,Receive,,,COOP,0.61615,,,(Group- nLEKk...) - JFOX46CA5EOWBOGBDDJUUWGOTMVS4PBMLFLOKPXXFAUTFTZ43T2Q,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-11-17 18:58:40,Fee,,,,,ALGO,0.002,Group Combined Fees - nLEKkIZbrok6/nm0bBRmScTbJolpWS/yHtSg/ZcQmCY=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-11-17 18:59:04,Send,COOP,14.284837,,,,,(Group- 2Ai2v...) - Z5N7SJZ63DJQQVI5ZI5ORC5JV5GKSQ7G34KTXHETBB3LJQ253GRQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-11-17 18:59:04,Receive,,,TMPOOL2,0.099343,,,(Group- 2Ai2v...) - InnerTxn #1 - A2NDG...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-11-17 18:59:04,Fee,,,,,ALGO,0.004,Group Combined Fees - 2Ai2v6IMG6fdptX6zRXx+w5LC6n6PHJmsQ18qow8FeM=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-11-17 18:58:27,Staking Rewards,,,COOP,5.651007,ALGO,0.002,Combined Group - 6LmmczvlyOzCzwLk1u3J+4OqKxQ/UjgXzCkK1t+dO+A=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-11-17 18:58:30,Staking Rewards,,,COOP,8.01768,ALGO,0.002,Combined Group - m0W2IFcky4RiaEZ5Y+4tSO+6BdyhYo45UEASuZesQHM=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-11-17 18:58:40,Staking Rewards,,,COOP,0.61615,ALGO,0.002,Combined Group - nLEKkIZbrok6/nm0bBRmScTbJolpWS/yHtSg/ZcQmCY=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-11-17 18:59:04,Add Liquidity,COOP,14.284837,,,,,(Group- 2Ai2v...) - Z5N7SJZ63DJQQVI5ZI5ORC5JV5GKSQ7G34KTXHETBB3LJQ253GRQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-11-17 18:59:04,Receive LP Tokens,,,TMPOOL2,0.099343,ALGO,0.004,Combined Group - 2Ai2v6IMG6fdptX6zRXx+w5LC6n6PHJmsQ18qow8FeM=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-11-17 18:59:34,Fee,,,,,ALGO,0.001,K4U6AR6LKE22K3WZVXW26XCJHPQCVMZEF2OOGVUSGULBLB5WXJQQ,Sender,Algorand Network
-2023-11-21 19:14:30,Receive,,,COOP,1.070437,,,(Group- DDnxV...) - 55FTSNRZH2JQLSQ2RVLOGYV2HYASOHW3ZFGSMXRRHVK2RJMK46ZQ,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-11-21 19:14:30,Fee,,,,,ALGO,0.002,Group Combined Fees - DDnxVMjzBiTyYke65QXfn4Nrn47WpEI9oGkeSE7zQuc=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-11-21 19:14:33,Receive,,,COOP,1.123603,,,(Group- w657w...) - CPISDRLKLIEBT5XCABBDYNY2OBXD6IHPRN2PYYQZ4WHC7BREQAGA,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-11-21 19:14:33,Fee,,,,,ALGO,0.002,Group Combined Fees - w657w6GmWKZ08Qdb6IlJlQfCGacqJcC6TQ0Aw24cbd8=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-11-21 19:15:04,Send,COOP,2.19404,,,,,(Group- 75C1T...) - LG4HC24YXOZ7SB3MIOEXYY52KGDKC5AXPUYS7CRJUHTXPRDEBLBA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-11-21 19:15:04,Receive,,,TMPOOL2,0.01484,,,(Group- 75C1T...) - InnerTxn #1 - MG6BU...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-11-21 19:15:04,Fee,,,,,ALGO,0.004,Group Combined Fees - 75C1TFzvYBU38kKk7/gAdD6hDl4eeZxUKFQoRawSEqE=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-11-21 19:14:30,Staking Rewards,,,COOP,1.070437,ALGO,0.002,Combined Group - DDnxVMjzBiTyYke65QXfn4Nrn47WpEI9oGkeSE7zQuc=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-11-21 19:14:33,Staking Rewards,,,COOP,1.123603,ALGO,0.002,Combined Group - w657w6GmWKZ08Qdb6IlJlQfCGacqJcC6TQ0Aw24cbd8=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-11-21 19:15:04,Add Liquidity,COOP,2.19404,,,,,(Group- 75C1T...) - LG4HC24YXOZ7SB3MIOEXYY52KGDKC5AXPUYS7CRJUHTXPRDEBLBA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-11-21 19:15:04,Receive LP Tokens,,,TMPOOL2,0.01484,ALGO,0.004,Combined Group - 75C1TFzvYBU38kKk7/gAdD6hDl4eeZxUKFQoRawSEqE=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-11-21 19:15:34,Fee,,,,,ALGO,0.001,A2SNFHCLMVUNUUYHI2RMVTYKCI3GSG6LWDA3ATA44C3R6RU7KH7Q,Sender,Algorand Network
-2023-12-02 09:54:25,Receive,,,COOP,3.036306,,,(Group- 5Wa6i...) - YCZOSSHSMHBMWNBFE32P7W3HVRLAQHV3ZT35TFRYKHTF2G7JXPOA,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-12-02 09:54:25,Fee,,,,,ALGO,0.002,Group Combined Fees - 5Wa6i2s473GCES6x/ohrtzZeE8Qs+//yt/DEzOs6KCE=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-12-02 09:54:28,Receive,,,COOP,2.337743,,,(Group- rYsSi...) - IYNFU2SMHK3YIIO533CD7ICHIYPS62KRTTNLMLDFHXDMU4YNN2JQ,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-12-02 09:54:28,Fee,,,,,ALGO,0.002,Group Combined Fees - rYsSiEAQ5GDtULuIDHedI8QlEKcq9mcEKo46WVjopzc=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-12-02 09:55:06,Receive,,,COOP,0.562968,,,(Group- RohFs...) - 7RDELLLWXRFCNUVSXV7DQLVU4EOVXDPXW74P7BI63T73JHZGOK2Q,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-12-02 09:55:06,Fee,,,,,ALGO,0.002,Group Combined Fees - RohFspt4c+FbBoh4LrV1Gh4YrMbsER0zkDBFyBXS+ic=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-12-02 09:55:40,Send,COOP,5.937017,,,,,(Group- I0jPW...) - HREOHNC4HVEMAZ6DT7KK37JVNVVTFF2APZ2J6ZLVXIRWNM4RBYBQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-12-02 09:55:40,Receive,,,TMPOOL2,0.04545,,,(Group- I0jPW...) - InnerTxn #1 - 4QK7X...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-12-02 09:55:40,Fee,,,,,ALGO,0.004,Group Combined Fees - I0jPWJ5NOKQ4lRiqer1llkk7/AvKX4fYAGPs4H5oxTk=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2023-12-07 17:07:00,Receive,,,COOP,1.483484,,,(Group- LHPfN...) - EZO422QNIJX5DCB2U2RCD32OPW3ZFEMPWQQ5BDHEK6ADLKKJCOAA,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-12-07 17:07:00,Fee,,,,,ALGO,0.002,Group Combined Fees - LHPfNwU0HGHBEDGIQRTCtO1LPjV4Z3DbAza7UJF4PfQ=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-12-07 17:07:03,Receive,,,COOP,1.009874,,,(Group- 0bSF3...) - TYSX4SM2CZIWYODQA5L3XMTMQP7EL7FSEU5HM3AQMCHTOVMEUJHQ,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-12-07 17:07:03,Fee,,,,,ALGO,0.002,Group Combined Fees - 0bSF3kITklJ2PNjuuO2sVEiFcrH7taFdOAHQzse8Rew=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2023-12-07 17:07:30,Send,COOP,1.483484,,,,,(Group- jqFmM...) - XCOIACZ5RPHF5BLZKPXEEUDDNNWT6IKOT4SYQK5SMGHVFBR3X52A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-12-07 17:07:30,Receive,,,TMPOOL2,0.011768,,,(Group- jqFmM...) - InnerTxn #1 - 7NHMZ...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-12-07 17:07:30,Fee,,,,,ALGO,0.004,Group Combined Fees - jqFmMUWQEiLCjpTF0NYJ20x0tUjoVaC0q5G57DzuHT0=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-12-02 09:54:25,Staking Rewards,,,COOP,3.036306,ALGO,0.002,Combined Group - 5Wa6i2s473GCES6x/ohrtzZeE8Qs+//yt/DEzOs6KCE=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-12-02 09:54:28,Staking Rewards,,,COOP,2.337743,ALGO,0.002,Combined Group - rYsSiEAQ5GDtULuIDHedI8QlEKcq9mcEKo46WVjopzc=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-12-02 09:55:06,Staking Rewards,,,COOP,0.562968,ALGO,0.002,Combined Group - RohFspt4c+FbBoh4LrV1Gh4YrMbsER0zkDBFyBXS+ic=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-12-02 09:55:40,Add Liquidity,COOP,5.937017,,,,,(Group- I0jPW...) - HREOHNC4HVEMAZ6DT7KK37JVNVVTFF2APZ2J6ZLVXIRWNM4RBYBQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-12-02 09:55:40,Receive LP Tokens,,,TMPOOL2,0.04545,ALGO,0.004,Combined Group - I0jPWJ5NOKQ4lRiqer1llkk7/AvKX4fYAGPs4H5oxTk=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2023-12-07 17:07:00,Staking Rewards,,,COOP,1.483484,ALGO,0.002,Combined Group - LHPfNwU0HGHBEDGIQRTCtO1LPjV4Z3DbAza7UJF4PfQ=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-12-07 17:07:03,Staking Rewards,,,COOP,1.009874,ALGO,0.002,Combined Group - 0bSF3kITklJ2PNjuuO2sVEiFcrH7taFdOAHQzse8Rew=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2023-12-07 17:07:30,Add Liquidity,COOP,1.483484,,,,,(Group- jqFmM...) - XCOIACZ5RPHF5BLZKPXEEUDDNNWT6IKOT4SYQK5SMGHVFBR3X52A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-12-07 17:07:30,Receive LP Tokens,,,TMPOOL2,0.011768,ALGO,0.004,Combined Group - jqFmMUWQEiLCjpTF0NYJ20x0tUjoVaC0q5G57DzuHT0=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-12-07 17:07:50,Fee,,,,,ALGO,0.001,E23ERVOO2LJNY7TYYG4OAFENFT3SOQDGMDXE7HHRT6JOGNECNPUA,Sender,Algorand Network
-2023-12-13 06:19:23,Receive,,,COOP,1.452228,,,(Group- aAOJL...) - KQD4GJK5ACYZCB5GKPG6LXJBNFIVTLLMJOOLQIFCCUM7B53BOJ7A,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2023-12-13 06:19:23,Fee,,,,,ALGO,0.002,Group Combined Fees - aAOJLb3NYsqNKzZY9mmaSxRuLknMcvS+ZAUX0P8h6bc=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
+2023-12-13 06:19:23,Staking Rewards,,,COOP,1.452228,ALGO,0.002,Combined Group - aAOJLb3NYsqNKzZY9mmaSxRuLknMcvS+ZAUX0P8h6bc=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
 2023-12-13 11:25:48,Send,COOP,0.1,,,ALGO,0.001,NLIPDNWYNEMHFGJRH5MMBRSI6S4J53G52IHGQDWB75FB7S6ZDMXQ,Sender,GYET4OG2L3PIMYSEJV5GNACHFA6ZHFJXUOM7NFR2CDFWEPS2XJRTS45YMQ
 2023-12-18 07:29:28,Send,COOP,0.1,,,ALGO,0.001,VJ5MO3C5RSOKSCEXGCP75KU6GKBMCQKPS4HYJRBMUCFMYZAGR2SQ,Sender,DZ6ZKA6STPVTPCTGN2DO5J5NUYEETWOIB7XVPSJ4F3N2QZQTNS3Q7VIXCM
 2023-12-18 07:32:56,Receive,,,COOP,0.001,,,(Group- MNwVe...) - NAOVURERCZIA53Y5KXRTQ6JWBNLVOTZQYE6IC2KKKUGVZEVY7B3A,1 txns.  ,AENCK6AVVGCOQM6XGSGTSMZXVHV34QDAHH7RDH226GLD55U34BLT6YP5L4
@@ -635,9 +564,8 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-12-18 16:49:14,Send,COOP,0.001,,,,,(Group- zc2oL...) - NNLBO3LXN53BIUSJZQHMMY53RVU6VMCHV7U3Z4MNGQD2O4PFUPCQ,2 txns.  ,DZ6ZKA6STPVTPCTGN2DO5J5NUYEETWOIB7XVPSJ4F3N2QZQTNS3Q7VIXCM
 2023-12-18 16:49:14,Send,COOP,0.001,,,,,(Group- zc2oL...) - EYCTUA4ZR2U2KO4JLCIK5TIONX5KT4HRA5FLSXYKBQC5VUOH654Q,2 txns.  ,UYL2TLTSAU4X3TWZX5WHHXYETXDTNL4IQFIVA567RAJNIGYPCMD4NTR7FQ
 2023-12-18 16:49:14,Fee,,,,,ALGO,0.002,Group Combined Fees - zc2oLzi1+NeaGquhFtRydL8gL6aJAA+rBDG5PUNfIug=,2 txns. ,Algorand Network
-2023-12-18 20:31:09,Send,COOP,1.736102,,,,,(Group- TkcKc...) - ISNJFJMPH5Q6Z2JCF5KXHGWOUT455WCGXPG26TIM3LM6GL3YFHZA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-12-18 20:31:09,Receive,,,TMPOOL2,0.017713,,,(Group- TkcKc...) - InnerTxn #1 - 6LNSG...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2023-12-18 20:31:09,Fee,,,,,ALGO,0.004,Group Combined Fees - TkcKc1WRO+0qCnxYaV146LhTe/QBb+FCIfcr0nq20P0=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2023-12-18 20:31:09,Add Liquidity,COOP,1.736102,,,,,(Group- TkcKc...) - ISNJFJMPH5Q6Z2JCF5KXHGWOUT455WCGXPG26TIM3LM6GL3YFHZA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2023-12-18 20:31:09,Receive LP Tokens,,,TMPOOL2,0.017713,ALGO,0.004,Combined Group - TkcKc1WRO+0qCnxYaV146LhTe/QBb+FCIfcr0nq20P0=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2023-12-27 17:18:56,Send,ALGO,0.1,,,,,(Group- 686Du...) - KGOZS53S7LF6D4DRZ5UERYMIKFU57SJ332FZK5IEKRUXTPE4JLAA,3 txns.  ,UHW334OJR6IZJM7GUAUVI35ZA243MVFCDJWEIOCVOPX56YWABBP4G7FVZ4
 2023-12-27 17:18:56,Send,PEPE,42069.,,,,,(Group- 686Du...) - 7A6IMP67E6LON2MRS42PSFEGS7KE5IXIMVH35E336OLVFI2K7KNQ,3 txns.  ,UHW334OJR6IZJM7GUAUVI35ZA243MVFCDJWEIOCVOPX56YWABBP4G7FVZ4
 2023-12-27 17:18:56,Fee,,,,,ALGO,0.004,Group Combined Fees - 686DuRAB3mRUyXc55kaVQdUxqjLp5nk7KQXqCEr3U9w=,3 txns. ,Algorand Network
@@ -749,20 +677,18 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2023-12-30 14:10:16,Send,ALGO,0.1,,,,,(Group- 4Uatl...) - NUO7ANDZU466RXSCI3TUBEHDYAGIDT2FKCGNLXMJKWULG56IXGBA,3 txns.  ,XY2XBY5DPMXMZMNWBH4RJBIQLC6NHYV7VVJNWMHMEYYFL43V7REV32LJF4
 2023-12-30 14:10:16,Send,Tacos,1000000.,,,,,(Group- 4Uatl...) - NIUJ2JTY255JQ52JOF2BORDGPNSOA3F232TOKZUYOSPYXTSURK3Q,3 txns.  ,XY2XBY5DPMXMZMNWBH4RJBIQLC6NHYV7VVJNWMHMEYYFL43V7REV32LJF4
 2023-12-30 14:10:16,Fee,,,,,ALGO,0.004,Group Combined Fees - 4UatlcaZEOrPj3xNPUC5F/Z8a078TrAlO8YNpkEFWlo=,3 txns. ,Algorand Network
-2023-12-30 14:24:54,Send,TMPOOL2,118.632358,,,ALGO,0.001,2NKTPWFOYSEY7CDNL43LZ5NZA3NF53RCFYTJ24ZYG7ADYLJTN23Q,Sender,W5TXHCV7FNC2SEXBE3ZHLLRHYM4FMT4Z7BED5YGYPIQOASWXLW7KZECZ5A
+2023-12-30 14:24:54,Send,DEFLY/ALGO LP Token,118.632358,,,ALGO,0.001,2NKTPWFOYSEY7CDNL43LZ5NZA3NF53RCFYTJ24ZYG7ADYLJTN23Q,Sender,W5TXHCV7FNC2SEXBE3ZHLLRHYM4FMT4Z7BED5YGYPIQOASWXLW7KZECZ5A
 2023-12-30 14:25:31,Send,TMPOOL2,3.278346,,,ALGO,0.001,NJVTW6ZXDOW6I2G4B4R7YV7OAPIGUHZSEFXJQ6XPN2YTN6VGJP2A,Sender,W5TXHCV7FNC2SEXBE3ZHLLRHYM4FMT4Z7BED5YGYPIQOASWXLW7KZECZ5A
 2023-12-30 14:25:51,Send,TMPOOL2,0.768222,,,ALGO,0.001,ME3ZAWGOYWBDDPRYF25O3EBE27M4ZWZRZTGFRVMB3YTVKJZ2DESA,Sender,W5TXHCV7FNC2SEXBE3ZHLLRHYM4FMT4Z7BED5YGYPIQOASWXLW7KZECZ5A
 2023-12-30 14:26:27,Send,TMPOOL2,0.330694,,,ALGO,0.001,H3R2RH2ZA6SZB7SHWZ2GYJ34L5PIV23YWQPI25VZJCAV7SOIL4IA,Sender,W5TXHCV7FNC2SEXBE3ZHLLRHYM4FMT4Z7BED5YGYPIQOASWXLW7KZECZ5A
 2024-03-25 11:33:13,Fee,,,,,ALGO,0.001,OEJ3NBQMKW2PH6B7BKCPXWH4KVBZJG5LYCXX3PG3YVPRCAIS5EWQ,Asset Opt in/out,Algorand Network
-2024-03-25 11:33:18,Send,ALGO,1.,,,,,(Group- meUW9...) - 5R6DIX3JM5JZAS6H2YAFPWJKFZJ2VFAMNGELGXKWBSFVTWVGOQHA,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-03-25 11:33:18,Receive,,,NIKO,265.891679,,,(Group- meUW9...) - InnerTxn #1 - IDVNF...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,7IMFEQHIZ4VKBEY2Y4QFJQU7IQ6ZTBEJK5VEVV3ZPHDPA4MH6UFRFRK5SQ
-2024-03-25 11:33:18,Fee,,,,,ALGO,0.003,Group Combined Fees - meUW9SAG1DVijaCenOuMx1JNuxMqvzzffssb8wakz3U=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
-2024-03-25 11:33:24,Send,ALGO,0.026,,,ALGO,0.001,CWQB2NPPUDUIL7M2C3S62UUVHHTEXHN47IV75R3TZM44UJ27EXYA,Sender,Defly - Fee Sink
+2024-03-25 11:33:18,Swap,ALGO,1.,NIKO,265.891679,ALGO,0.003,Combined Group - meUW9SAG1DVijaCenOuMx1JNuxMqvzzffssb8wakz3U=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
+2024-03-25 11:33:24,Send,ALGO,0.026,,,ALGO,0.001,CWQB2NPPUDUIL7M2C3S62UUVHHTEXHN47IV75R3TZM44UJ27EXYA,Sender,YWXUJAXOTCSHTIUFHTVP5P47VHJ4GOWTLPVOQHOPV7K3RWU5T2ZCFSOYM4
 2024-03-25 11:35:17,Send,ALGO,0.1,,,,,(Group- w3amI...) - 2DBCTCMWP4TJQFIP3QXZLCC5ZS5UK2TQM4ZBFVPD5X5HL24SVUQQ,3 txns.  ,6JMLVJO4XFFRZFN3GTKAGBI6PCY5BJGV5JS4WM3PIBUJHVU4EZGVVS42IA
 2024-03-25 11:35:17,Send,NIKO,265.891679,,,,,(Group- w3amI...) - NF23GRG2K2XMNZ2WRDLZBJTHKWTMLFPRPOOXTV6NPYHW23XNF6MQ,3 txns.  ,6JMLVJO4XFFRZFN3GTKAGBI6PCY5BJGV5JS4WM3PIBUJHVU4EZGVVS42IA
 2024-03-25 11:35:17,Fee,,,,,ALGO,0.004,Group Combined Fees - w3amI49kLplCwVSWKMCs+NAalbgHNObv6yvCU/De8fo=,3 txns. ,Algorand Network
 2024-03-25 11:38:22,Receive,,,ALGO,0.000095,,,(Group- hIW9C...) - DH3AFDTIVMAMBRBLITEKSYI255WSVONGJP52QTNNY5STFTKLZIJA,1 txns.  ,SKOJ4WCLQ3LKE3YAVX7O5PYOY45OEKKQYZAXTW3N675VCHWVO6WUASHDRU
-2024-03-25 11:38:28,Receive,,,ALGO,0.000013,,,F2WI7IV24NUMK77WCNRYWYG426A3HXO6AJ2FYD3YF4E56GIUOBBA,Receiver,D13 - Scam Warning
+2024-03-25 11:38:28,Spam,,,ALGO,0.000013,,,F2WI7IV24NUMK77WCNRYWYG426A3HXO6AJ2FYD3YF4E56GIUOBBA,Receiver,D13 - Scam Warning Bot
 2024-04-01 12:32:10,Fee,,,,,ALGO,0.002,L4AYYWYQHFLWVMEXPBQJ3Z323N2RPUYS6G3XDNXHAO3ZELW63SEQ,Sender,Algorand Network
 2024-04-01 12:32:51,Fee,,,,,ALGO,0.002,IWVGCMQJBVLCNODR6RVCZNXAM5IHQ3QFMFFMZGI72LCVX77F6VEQ,Sender,Algorand Network
 2024-04-21 19:27:13,Fee,,,,,ALGO,0.002,CONKCBBBPVSF4DVRDZIOMOIRVGPQSYTLSEQQXN77XMH7DWHY3RFA,Sender,Algorand Network
@@ -820,160 +746,106 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2024-04-22 15:02:06,Send,A200,915.749,,,,,(Group- yke2a...) - AWXUTY7IWTGJHHCATBAIKYLX6IMYQE66NYYZ5JD7MZIZ2BLJKMZA,2 txns. Alammex : appDB match : Swap ,G2QORAZT2JGNTLYKSDDEMMFKA74UYWM353EYYZBSRVXEFJI3IOYIEDLEPY
 2024-04-22 15:02:06,Receive,,,ALGO,90.473682,,,(Group- yke2a...) - InnerTxn #1 - GNKAS...,2 txns. Alammex : appDB match : Swap ,G2QORAZT2JGNTLYKSDDEMMFKA74UYWM353EYYZBSRVXEFJI3IOYIEDLEPY
 2024-04-22 15:02:06,Fee,,,,,ALGO,0.047,Group Combined Fees - yke2aqhL31gmeBKrtdCOeDGA4Xma2UW4gPxvFA4ej7Q=,2 txns. Alammex : appDB match : Swap,Algorand Network
-2024-04-22 15:02:38,Send,SWIFHAT,50.,,,,,(Group- LmWiQ...) - HNU3MYS5ZTGQLPPCH6OLL5T2SM2JK6BOMMLSFXFHHNUEG5YUG45A,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,Tinyman - SWIFHAT/ALGO Liquidity Pool
-2024-04-22 15:02:38,Receive,,,ALGO,4.643316,,,(Group- LmWiQ...) - InnerTxn #1 - RDRQO...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,5BSEY2KQDHAKFTS54I2HSWVD75XKFWCVZTLXGCOW6KWYIC7H5DPOTBNBCI
-2024-04-22 15:02:38,Fee,,,,,ALGO,0.003,Group Combined Fees - LmWiQiAOflhvqGg1ocMUJ7RDUATcXFBXueu3TbL95jE=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
-2024-04-22 15:02:43,Send,ALGO,0.029662,,,ALGO,0.001,TWXVSZOFKKRCHZEGROBQFNWGJ4QIEMF2Z43V35QUVN2MVE6FGRFA,Sender,Defly - Fee Sink
+2024-04-22 15:02:38,Swap,SWIFHAT,50.,ALGO,4.643316,ALGO,0.003,Combined Group - LmWiQiAOflhvqGg1ocMUJ7RDUATcXFBXueu3TbL95jE=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
+2024-04-22 15:02:43,Send,ALGO,0.029662,,,ALGO,0.001,TWXVSZOFKKRCHZEGROBQFNWGJ4QIEMF2Z43V35QUVN2MVE6FGRFA,Sender,YWXUJAXOTCSHTIUFHTVP5P47VHJ4GOWTLPVOQHOPV7K3RWU5T2ZCFSOYM4
 2024-04-22 19:50:43,Send,RWA,14828.962519,,,,,(Group- dHqDU...) - L6TNMJQRYATGFDLXYBFL5EY42YNJTOEPJP2XAHYYDYQHU6RNGOZA,2 txns. Alammex : appDB match : Swap ,G2QORAZT2JGNTLYKSDDEMMFKA74UYWM353EYYZBSRVXEFJI3IOYIEDLEPY
 2024-04-22 19:50:43,Receive,,,ALGO,16.881619,,,(Group- dHqDU...) - InnerTxn #1 - AW6P2...,2 txns. Alammex : appDB match : Swap ,G2QORAZT2JGNTLYKSDDEMMFKA74UYWM353EYYZBSRVXEFJI3IOYIEDLEPY
 2024-04-22 19:50:43,Fee,,,,,ALGO,0.037,Group Combined Fees - dHqDUtd7zkN4a87PoVwwYsr7E5ODCkWCyTqUVu9Yeo4=,2 txns. Alammex : appDB match : Swap,Algorand Network
-2024-04-22 19:52:15,Send,ALGO,100.,,,,,(Group- qfH5e...) - SUU4ZZFNB6JHS6HVHC45KW6C5EDIYN7XI2TTQF6PJLJS2P7V4ALQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - OTSDGFKD/ALGO Liquidity Pool
-2024-04-22 19:52:15,Receive,,,TMPOOL2,4065.535962,,,(Group- qfH5e...) - InnerTxn #1 - X4RDZ...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,XTX2ZALKUVHUTMGQXHEMD6WXOBZQ47LIHKJ3D3KO63LVJEFFD4GZLL4BMA
-2024-04-22 19:52:15,Fee,,,,,ALGO,0.005,Group Combined Fees - qfH5eLvJqfdXjH5UvcKfKtIH+/mrRLHZQWKlBS8QBTw=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-04-22 19:52:15,Add Liquidity,ALGO,100.,,,,,(Group- qfH5e...) - SUU4ZZFNB6JHS6HVHC45KW6C5EDIYN7XI2TTQF6PJLJS2P7V4ALQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-22 19:52:15,Receive LP Tokens,,,OTSDGFKD/ALGO LP Token,4065.535962,ALGO,0.005,Combined Group - qfH5eLvJqfdXjH5UvcKfKtIH+/mrRLHZQWKlBS8QBTw=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-04-22 19:52:41,Fee,,,,,ALGO,0.001,E3BPOEVXAULIQZJS4AQFTCDEND4DA6ASDZWMDNRYKDEVAYXXCZQQ,Sender,Algorand Network
 2024-04-22 19:53:13,Fee,,,,,ALGO,0.001,YCSDU3WBOHXLLZUX4SLUDVXR7MM3DUDNATLAESBJ5ZIUVD3ODTKQ,Sender,Algorand Network
-2024-04-22 19:53:39,Receive,,,COOP,6.986087,,,(Group- /Crtf...) - 5WFU4KXQTV4266H2SYF2KY4CVMYQBLYSOA6RNQTTZZVIMTJBK6TQ,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2024-04-22 19:53:39,Fee,,,,,ALGO,0.002,Group Combined Fees - /Crtf+UWBM30LNJk8kDeB/84ufq9JjNHbDP6YoyRk4w=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-22 19:53:42,Receive,,,COOP,1.000813,,,(Group- xcx1M...) - DSHAEK4JVHVLK3VVYQHJSDWWOTVLIUIOKN6ZBBAYMPQXODIZ5WNA,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2024-04-22 19:53:42,Fee,,,,,ALGO,0.002,Group Combined Fees - xcx1M245RyeS0W5iccbEe3lPsU5Vm9t6AHQfQ0ha+Zg=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-22 19:53:44,Receive,,,COOP,4.547237,,,(Group- Ak6VT...) - FAV7OSH4JAGUDKTBZ4KTEXDQYO2KKM6XMVOANKRHMDK2HTKTSS7A,2 txns. Tinyman : Tinyman Staking : Claim ,XU5HTYXFGPQETHNAKR26TZXYU2E4QUSQWCBLS2WI3KHZIPLQAWOABUPV5E
-2024-04-22 19:53:44,Fee,,,,,ALGO,0.002,Group Combined Fees - Ak6VT/wCuLn2Y6183blk1suM+yinYpnn6TNcAXdlMsU=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-22 19:53:47,Receive,,,DEFLY,63.923295,,,(Group- POVyT...) - OUSYAERNRY7UCYLUF6HM6EJWEWZS3OWT6ZCBLT36VDQEO4MUZYYQ,2 txns. Tinyman : Tinyman Staking : Claim ,L2ZO7OA25S5YVDJ4TDKSM2ZRSJKOL5DH4JJMAE6ZTH6RYWFGS5XAYXMQDQ
-2024-04-22 19:53:47,Fee,,,,,ALGO,0.002,Group Combined Fees - POVyT/aKm92gGpSTJHXpJ6sbl8QjRl3xb+2rwb9buLM=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-22 19:53:56,Receive,,,ALGO,0.856705,,,(Group- QdPqv...) - 6VAKMC4RPMMP4CI35G5OST5R3JATTYAXXHZJ7AM55Q4C54XZ5SYQ,2 txns. Tinyman : Tinyman Staking : Claim ,C7F3OYHCOAMZ5XLCCNSG35A6VZOB575J5RPGOEF5JOG7R2D5XBHATMTQKM
-2024-04-22 19:53:56,Fee,,,,,ALGO,0.002,Group Combined Fees - QdPqvll97Fn7YeGgEu409oK2KB0zeZ9s3UDyRTlE7S8=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
+2024-04-22 19:53:39,Staking Rewards,,,COOP,6.986087,ALGO,0.002,Combined Group - /Crtf+UWBM30LNJk8kDeB/84ufq9JjNHbDP6YoyRk4w=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-22 19:53:42,Staking Rewards,,,COOP,1.000813,ALGO,0.002,Combined Group - xcx1M245RyeS0W5iccbEe3lPsU5Vm9t6AHQfQ0ha+Zg=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-22 19:53:44,Staking Rewards,,,COOP,4.547237,ALGO,0.002,Combined Group - Ak6VT/wCuLn2Y6183blk1suM+yinYpnn6TNcAXdlMsU=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-22 19:53:47,Staking Rewards,,,DEFLY,63.923295,ALGO,0.002,Combined Group - POVyT/aKm92gGpSTJHXpJ6sbl8QjRl3xb+2rwb9buLM=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-22 19:53:56,Staking Rewards,,,ALGO,0.856705,ALGO,0.002,Combined Group - QdPqvll97Fn7YeGgEu409oK2KB0zeZ9s3UDyRTlE7S8=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
 2024-04-22 19:54:16,Fee,,,,,ALGO,0.001,HTSYA6PEROCVQI5S3JI4XXTK73DKH4EINERGCUL7YKHQRH2TV2VA,Sender,Algorand Network
-2024-04-24 18:41:59,Receive,,,RWA,174.682141,,,(Group- yYyFw...) - Z7LJNM6VBS2QHDQORPIZMXFOPI7Y75OH5TAZXQKNDJFT2ZJVGTWA,2 txns. Tinyman : Tinyman Staking : Claim ,4HGYV2NV6JBMKSG3OCUBVFN5O2E2FIQPWO5P4TAMJ3TYYCYCQJA27PE6RE
-2024-04-24 18:41:59,Fee,,,,,ALGO,0.002,Group Combined Fees - yYyFwBWIRXISb4cQmoEy8ggU8dDTu7wDtGSKQ7w1kLE=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-24 18:42:02,Receive,,,NIKO,19.429918,,,(Group- D6M4u...) - RICRN37Z6UKMBCGETGQXSI4DJBIXH3JF2KZHEGTCAVU24CWQCOTA,2 txns. Tinyman : Tinyman Staking : Claim ,PBO6R6I2GYPTQNHOMOTWLNOCSGKLYYPE6HXUULZA4DGRCHWA6OFXENTP7U
-2024-04-24 18:42:02,Fee,,,,,ALGO,0.002,Group Combined Fees - D6M4uy6/p5svdYywjGPXlUS+g1XWhE3MgDPmD43WNjI=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-24 18:42:07,Receive,,,COOP,0.389927,,,(Group- 2fXXP...) - 4PTKG5S7SRF6XTY6V7PAOSNEXU6KJD7FL37AA6XE4FSORWNDO7HA,2 txns. Tinyman : Tinyman Staking : Claim ,ZPS2P2643BPJAZ7YJ65ESLKPEAUCJKT7KJYVHUHQMYG7XKGPGGY3N4VUAE
-2024-04-24 18:42:07,Fee,,,,,ALGO,0.002,Group Combined Fees - 2fXXP76op8/DYfuW8rL4OjeUsjMK3hwvWUrY3+F1Vic=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-24 18:43:46,Send,COOP,12.924064,,,,,(Group- DT2Ku...) - SNXLJOVKTJ67RM6CJFPFTRR44AMT7OPXTHZZTMAB73OZKZDXAHWA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-04-24 18:43:46,Receive,,,TMPOOL2,0.141696,,,(Group- DT2Ku...) - InnerTxn #1 - R76QM...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-04-24 18:43:46,Fee,,,,,ALGO,0.004,Group Combined Fees - DT2KutGgWl/fbeQ53qaOgDLeRcRz4hHfXzzy9oEa8OQ=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2024-04-24 18:44:47,Send,NIKO,19.429918,,,,,(Group- ei5AN...) - WIH3GX25NPHMBFYAB4FBIYYW6QNMK2YSEYAR3CVFLJS4M3F43JCQ,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-04-24 18:44:47,Send,ALGO,0.077059,,,,,(Group- ei5AN...) - FFFQVRXT7BDAQSSBHF5J43S6C5T7APOQVQKTXUUH4I23CZGHADCA,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-04-24 18:44:47,Receive,,,TMPOOL2,1.04633,,,(Group- ei5AN...) - InnerTxn #1 - 5OB7K...,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,7IMFEQHIZ4VKBEY2Y4QFJQU7IQ6ZTBEJK5VEVV3ZPHDPA4MH6UFRFRK5SQ
-2024-04-24 18:44:47,Fee,,,,,ALGO,0.006,Group Combined Fees - ei5ANMZBG4vGeHQERT4vfrivawXd6f7FzA2uLElUmR4=,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2024-04-24 18:46:14,Send,RWA,174.682142,,,,,(Group- p3WnW...) - 24CFXD5HWKPIXI3KNPMOUHYTFUEPCN6TF76LIHW4LUC7T75P2KLA,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - RWA/ALGO Liquidity Pool
-2024-04-24 18:46:14,Send,ALGO,0.131792,,,,,(Group- p3WnW...) - LS5OA255SODE4MJINAFBNS5E3HOCP56HMDFN2IY3NIW7TNLSY5XQ,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - RWA/ALGO Liquidity Pool
-2024-04-24 18:46:14,Receive,,,TMPOOL2,4.373188,,,(Group- p3WnW...) - InnerTxn #1 - IUHXI...,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,BUVR5SLDE3LNKNTT6RL72HW2HS2YLB72XONEJQA2C3VOZXQG3PZYCBP65M
-2024-04-24 18:46:14,Fee,,,,,ALGO,0.006,Group Combined Fees - p3WnWIrTZ2QgiY0v4LyNb2gZdpFSE43uxJ++v0qrwpM=,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-04-24 18:41:59,Staking Rewards,,,RWA,174.682141,ALGO,0.002,Combined Group - yYyFwBWIRXISb4cQmoEy8ggU8dDTu7wDtGSKQ7w1kLE=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-24 18:42:02,Staking Rewards,,,NIKO,19.429918,ALGO,0.002,Combined Group - D6M4uy6/p5svdYywjGPXlUS+g1XWhE3MgDPmD43WNjI=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-24 18:42:07,Staking Rewards,,,COOP,0.389927,ALGO,0.002,Combined Group - 2fXXP76op8/DYfuW8rL4OjeUsjMK3hwvWUrY3+F1Vic=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-24 18:43:46,Add Liquidity,COOP,12.924064,,,,,(Group- DT2Ku...) - SNXLJOVKTJ67RM6CJFPFTRR44AMT7OPXTHZZTMAB73OZKZDXAHWA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-24 18:43:46,Receive LP Tokens,,,TMPOOL2,0.141696,ALGO,0.004,Combined Group - DT2KutGgWl/fbeQ53qaOgDLeRcRz4hHfXzzy9oEa8OQ=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2024-04-24 18:44:47,Add Liquidity,NIKO,19.429918,,,,,(Group- ei5AN...) - WIH3GX25NPHMBFYAB4FBIYYW6QNMK2YSEYAR3CVFLJS4M3F43JCQ,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-24 18:44:47,Add Liquidity,ALGO,0.077059,,,,,(Group- ei5AN...) - FFFQVRXT7BDAQSSBHF5J43S6C5T7APOQVQKTXUUH4I23CZGHADCA,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-24 18:44:47,Receive LP Tokens,,,NIKO/ALGO LP Token,1.04633,ALGO,0.006,Combined Group - ei5ANMZBG4vGeHQERT4vfrivawXd6f7FzA2uLElUmR4=,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2024-04-24 18:46:14,Add Liquidity,RWA,174.682142,,,,,(Group- p3WnW...) - 24CFXD5HWKPIXI3KNPMOUHYTFUEPCN6TF76LIHW4LUC7T75P2KLA,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-24 18:46:14,Add Liquidity,ALGO,0.131792,,,,,(Group- p3WnW...) - LS5OA255SODE4MJINAFBNS5E3HOCP56HMDFN2IY3NIW7TNLSY5XQ,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-24 18:46:14,Receive LP Tokens,,,RWA/ALGO LP Token,4.373188,ALGO,0.006,Combined Group - p3WnWIrTZ2QgiY0v4LyNb2gZdpFSE43uxJ++v0qrwpM=,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-04-24 18:46:46,Fee,,,,,ALGO,0.001,3SEFYLBYMFV46PT4HHJ6SS4A6KEGMYDFQQIRY55KMA6SRI56YLCQ,Sender,Algorand Network
 2024-04-24 18:47:20,Fee,,,,,ALGO,0.001,5P3NQN6GPUCBXAX2UQCHGGVDWNVPCJSKFRVDEFBWRANVOQCM6JZA,Sender,Algorand Network
 2024-04-24 18:47:49,Fee,,,,,ALGO,0.001,E3WA3IIL5R7AQEPLABIOS2FCV6T2G5JOT3HC4VC57NENVRWYQFTA,Sender,Algorand Network
 2024-04-24 18:48:18,Fee,,,,,ALGO,0.001,JX3PWXQT4T2EQYUQNFOQY2SZ55NZ3C5SLQPNOXMO3PJHLXGQUFCQ,Sender,Algorand Network
-2024-04-25 08:41:56,Receive,,,COOP,0.358593,,,(Group- ybxIy...) - 4S3WIVIO22RDRJ6LLY6AQK7AAU7WIM6OQY2Q7YFN2QYTCI5LV7RQ,2 txns. Tinyman : Tinyman Staking : Claim ,ZPS2P2643BPJAZ7YJ65ESLKPEAUCJKT7KJYVHUHQMYG7XKGPGGY3N4VUAE
-2024-04-25 08:41:56,Fee,,,,,ALGO,0.002,Group Combined Fees - ybxIyk59cKI4Fs3yJ255DzjPUaco9Hh8iBKs4EkawAg=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-25 08:41:59,Receive,,,NIKO,17.868573,,,(Group- ym/HO...) - CBA63WLNDRT47P5MD7ZSBL3AXCQDRUIESGYI7LKNXMUOUHJ77GWA,2 txns. Tinyman : Tinyman Staking : Claim ,PBO6R6I2GYPTQNHOMOTWLNOCSGKLYYPE6HXUULZA4DGRCHWA6OFXENTP7U
-2024-04-25 08:41:59,Fee,,,,,ALGO,0.002,Group Combined Fees - ym/HOvbEroo1aKV6/q1ONh+ZLsD5ZlZ0H0hw9jmxsAk=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-25 08:42:02,Receive,,,RWA,160.657856,,,(Group- Nv2aF...) - Q645IW5FQHA4ZYBGR32345TOIQFIAP24P2KM4PVCGJEZIG3FOK6Q,2 txns. Tinyman : Tinyman Staking : Claim ,4HGYV2NV6JBMKSG3OCUBVFN5O2E2FIQPWO5P4TAMJ3TYYCYCQJA27PE6RE
-2024-04-25 08:42:02,Fee,,,,,ALGO,0.002,Group Combined Fees - Nv2aFEwDtc8nvYWFcgKc84OgeVCO0tNtKcRN3awO1rc=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-25 08:42:30,Send,NIKO,17.868573,,,,,(Group- rhNGc...) - EONWIXKGN3VW2SQWOHJEM47YFNSWGX5YG63HJ3B2GXQ3NSN43F2A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-04-25 08:42:30,Receive,,,TMPOOL2,0.468453,,,(Group- rhNGc...) - InnerTxn #1 - T7OCK...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,7IMFEQHIZ4VKBEY2Y4QFJQU7IQ6ZTBEJK5VEVV3ZPHDPA4MH6UFRFRK5SQ
-2024-04-25 08:42:30,Fee,,,,,ALGO,0.004,Group Combined Fees - rhNGcklEc1d/pGY93a2fDiOTnph1SrZrcLxnbUXwXXY=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-04-25 08:41:56,Staking Rewards,,,COOP,0.358593,ALGO,0.002,Combined Group - ybxIyk59cKI4Fs3yJ255DzjPUaco9Hh8iBKs4EkawAg=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-25 08:41:59,Staking Rewards,,,NIKO,17.868573,ALGO,0.002,Combined Group - ym/HOvbEroo1aKV6/q1ONh+ZLsD5ZlZ0H0hw9jmxsAk=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-25 08:42:02,Staking Rewards,,,RWA,160.657856,ALGO,0.002,Combined Group - Nv2aFEwDtc8nvYWFcgKc84OgeVCO0tNtKcRN3awO1rc=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-25 08:42:30,Add Liquidity,NIKO,17.868573,,,,,(Group- rhNGc...) - EONWIXKGN3VW2SQWOHJEM47YFNSWGX5YG63HJ3B2GXQ3NSN43F2A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-25 08:42:30,Receive LP Tokens,,,NIKO/ALGO LP Token,0.468453,ALGO,0.004,Combined Group - rhNGcklEc1d/pGY93a2fDiOTnph1SrZrcLxnbUXwXXY=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-04-25 08:42:53,Fee,,,,,ALGO,0.001,53ELU3EESURYE5EVDMNRPVB76LMOJH6HJNLTERBSMM2C3IVSJNHQ,Sender,Algorand Network
 2024-04-25 08:43:19,Fee,,,,,ALGO,0.001,MV4POSJF7TDUMGRXRFLJZAJDO4V6LUG3CAN2TIFFNFDNGSYWEWGQ,Sender,Algorand Network
-2024-04-25 08:43:53,Send,COOP,0.358593,,,,,(Group- T1K56...) - A2U5XJ3KGIN7VO27FQZR27JDWTBYIFUHJIWAQTVB74WKWB7NDXMA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-04-25 08:43:53,Receive,,,TMPOOL2,0.003784,,,(Group- T1K56...) - InnerTxn #1 - R537P...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-04-25 08:43:53,Fee,,,,,ALGO,0.004,Group Combined Fees - T1K56t90CEyma5VB93IRiPBNP2NgGy4QwHn6wHQbw30=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-04-25 08:43:53,Add Liquidity,COOP,0.358593,,,,,(Group- T1K56...) - A2U5XJ3KGIN7VO27FQZR27JDWTBYIFUHJIWAQTVB74WKWB7NDXMA,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-25 08:43:53,Receive LP Tokens,,,TMPOOL2,0.003784,ALGO,0.004,Combined Group - T1K56t90CEyma5VB93IRiPBNP2NgGy4QwHn6wHQbw30=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-04-25 08:44:13,Fee,,,,,ALGO,0.001,C6SLB64W5BRQIV2TA23NC5FQH64IUIGJPJCAUGRHAP66DKYVFY2A,Sender,Algorand Network
 2024-04-25 08:44:35,Fee,,,,,ALGO,0.001,ZHGS3IYYXWGR6MJ3XM2FDGBCWB7465ZAXWTVEAH6LBDCENT57EZQ,Sender,Algorand Network
-2024-04-26 08:08:44,Receive,,,COOP,0.339749,,,(Group- HEFBf...) - QHKPV7GNWX6XYE3FQMJ4JQM62TE2JMTLCCOH6FLSRGXMZDCER3ZA,2 txns. Tinyman : Tinyman Staking : Claim ,ZPS2P2643BPJAZ7YJ65ESLKPEAUCJKT7KJYVHUHQMYG7XKGPGGY3N4VUAE
-2024-04-26 08:08:44,Fee,,,,,ALGO,0.002,Group Combined Fees - HEFBf0Ktab/kWNqFFZZYK3nSKVgWrikvrCO3WmW6Fyc=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-26 08:08:47,Receive,,,NIKO,16.929559,,,(Group- JDYAw...) - MJ4SHRUFILNAOP47YTNF3HRHZ6637AYSRXRWEY5W226FPDHY6T5Q,2 txns. Tinyman : Tinyman Staking : Claim ,PBO6R6I2GYPTQNHOMOTWLNOCSGKLYYPE6HXUULZA4DGRCHWA6OFXENTP7U
-2024-04-26 08:08:47,Fee,,,,,ALGO,0.002,Group Combined Fees - JDYAw3ncTKo9EktU5NfBkWrXFuA5DVZLs1e+NLaro0o=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-26 08:08:50,Receive,,,RWA,152.222387,,,(Group- pfv41...) - AAPRTHIXGCBOSSLR76C66BTTTGUYIXHJJAYNWUJIQQU4FG4PXDJQ,2 txns. Tinyman : Tinyman Staking : Claim ,4HGYV2NV6JBMKSG3OCUBVFN5O2E2FIQPWO5P4TAMJ3TYYCYCQJA27PE6RE
-2024-04-26 08:08:50,Fee,,,,,ALGO,0.002,Group Combined Fees - pfv41DT7nRMiMs6oqfNHBInauAa5Fyn9obbU6oEMWB4=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-26 08:09:22,Receive,,,RWA,5.556182,,,(Group- SftYc...) - HTVHS2SZ3RSOPXRH3JGVAPJ5QJVRATTLOXNCOMBPZXVZDPY4UGDQ,2 txns. Tinyman : Tinyman Staking : Claim ,UAABM22A2V4AZY5NX2SZTRP2WFGEPTSNJQXFOX3DO7ZNFCF6WEHQYG6O5I
-2024-04-26 08:09:22,Fee,,,,,ALGO,0.002,Group Combined Fees - SftYcmyljvc5yowBPl08lQeoXLdikUQs0hgi3I5TdoQ=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-26 08:09:24,Receive,,,COOP,0.015557,,,(Group- O7k4k...) - XWQBY2ZTFBPB72IBOQNFVYWQIP5OYCA73NOSTWYNLSPQKY3W7GWQ,2 txns. Tinyman : Tinyman Staking : Claim ,ZTM6SGI2R5TKFYZAQEXE2WAQGJC6JDQD2RBBG7PP7SFAQMK3L6GOHUTX4I
-2024-04-26 08:09:24,Fee,,,,,ALGO,0.002,Group Combined Fees - O7k4kZJ/Z3WLbo4Y1OC+MZfry202JZOLVcCTh+dk1AM=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-26 08:09:27,Receive,,,ALGO,0.000028,,,(Group- Y8xiX...) - YTAJ3LQUOYWC5BSAWZRKSUUKG37JWPZNABZZJSWLX7IF3THA3DGA,2 txns. Tinyman : Tinyman Staking : Claim ,CAXKMSK27S3UBFF6DAQR7MWGCKYSJKNN3NE6OHLEECSLK7MJYKS6D6Y6FQ
-2024-04-26 08:09:27,Fee,,,,,ALGO,0.002,Group Combined Fees - Y8xiXA1mulCHRdikd/PwwSmG44N436NSnd7k7YawL48=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-26 08:09:56,Send,NIKO,16.929559,,,,,(Group- A2Xqm...) - F55XF7BGP7X7XQP6YEWMXMX25SXIW5VXLFFO2MEEI6ZLPAJYVWHQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-04-26 08:09:56,Receive,,,TMPOOL2,0.426173,,,(Group- A2Xqm...) - InnerTxn #1 - P37AH...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,7IMFEQHIZ4VKBEY2Y4QFJQU7IQ6ZTBEJK5VEVV3ZPHDPA4MH6UFRFRK5SQ
-2024-04-26 08:09:56,Fee,,,,,ALGO,0.004,Group Combined Fees - A2Xqm9SMFsu4sydeCbH4S6euOBFm6dOI40c29WzoMnM=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-04-26 08:08:44,Staking Rewards,,,COOP,0.339749,ALGO,0.002,Combined Group - HEFBf0Ktab/kWNqFFZZYK3nSKVgWrikvrCO3WmW6Fyc=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-26 08:08:47,Staking Rewards,,,NIKO,16.929559,ALGO,0.002,Combined Group - JDYAw3ncTKo9EktU5NfBkWrXFuA5DVZLs1e+NLaro0o=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-26 08:08:50,Staking Rewards,,,RWA,152.222387,ALGO,0.002,Combined Group - pfv41DT7nRMiMs6oqfNHBInauAa5Fyn9obbU6oEMWB4=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-26 08:09:22,Staking Rewards,,,RWA,5.556182,ALGO,0.002,Combined Group - SftYcmyljvc5yowBPl08lQeoXLdikUQs0hgi3I5TdoQ=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-26 08:09:24,Staking Rewards,,,COOP,0.015557,ALGO,0.002,Combined Group - O7k4kZJ/Z3WLbo4Y1OC+MZfry202JZOLVcCTh+dk1AM=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-26 08:09:27,Staking Rewards,,,ALGO,0.000028,ALGO,0.002,Combined Group - Y8xiXA1mulCHRdikd/PwwSmG44N436NSnd7k7YawL48=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-26 08:09:56,Add Liquidity,NIKO,16.929559,,,,,(Group- A2Xqm...) - F55XF7BGP7X7XQP6YEWMXMX25SXIW5VXLFFO2MEEI6ZLPAJYVWHQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-26 08:09:56,Receive LP Tokens,,,NIKO/ALGO LP Token,0.426173,ALGO,0.004,Combined Group - A2Xqm9SMFsu4sydeCbH4S6euOBFm6dOI40c29WzoMnM=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-04-26 08:10:16,Fee,,,,,ALGO,0.001,Q4XWYD2NH4QYWUHEAD7OHBOXJSQWMKKXWEFIJ7JWS3GP5Z5BDJIQ,Sender,Algorand Network
 2024-04-26 08:10:44,Fee,,,,,ALGO,0.001,BPL3OSTSYM73C3APMEHPO2GGEXRL5WCEMMUIK43YYT7BSMHRV6OQ,Sender,Algorand Network
-2024-04-26 08:11:13,Send,COOP,0.355306,,,,,(Group- m9o6W...) - LRSNQIUVR2YRNTM5SWYBDN6CFQWRWSUPG34VDZDHPGPH7ZMD2Z7A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-04-26 08:11:13,Receive,,,TMPOOL2,0.003656,,,(Group- m9o6W...) - InnerTxn #1 - FYEET...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-04-26 08:11:13,Fee,,,,,ALGO,0.004,Group Combined Fees - m9o6Wa2r97K1PP26fIXqJyhJVLh0uUeZlLJfK+CGlM8=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-04-26 08:11:13,Add Liquidity,COOP,0.355306,,,,,(Group- m9o6W...) - LRSNQIUVR2YRNTM5SWYBDN6CFQWRWSUPG34VDZDHPGPH7ZMD2Z7A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-26 08:11:13,Receive LP Tokens,,,TMPOOL2,0.003656,ALGO,0.004,Combined Group - m9o6Wa2r97K1PP26fIXqJyhJVLh0uUeZlLJfK+CGlM8=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-04-26 08:11:38,Fee,,,,,ALGO,0.001,GD5L3YVE5P7ECFNJIGLCR5QNA6BJPVE5HATUIKGICPLPOB3TOC4Q,Sender,Algorand Network
 2024-04-26 08:11:55,Fee,,,,,ALGO,0.001,GW67TLG36O5DGQUMAZKGGZISZ2YGH5UCKZ7SKFKVSVJD5MUREIOA,Sender,Algorand Network
-2024-04-26 08:12:21,Send,RWA,318.436425,,,,,(Group- d0eeC...) - YS27XWLJ54QWBPYSIIWMOWOTQ2TO2HACBBW5RX5JY7CP74A7C7MQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - RWA/ALGO Liquidity Pool
-2024-04-26 08:12:21,Send,ALGO,0.217881,,,,,(Group- d0eeC...) - TKVIUA2LQQWCPCWPDIZA75QYMUOXTM4NFIDXWMJ4O443Y72DVFFA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - RWA/ALGO Liquidity Pool
-2024-04-26 08:12:21,Receive,,,TMPOOL2,7.587883,,,(Group- d0eeC...) - InnerTxn #1 - ACVZ7...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,BUVR5SLDE3LNKNTT6RL72HW2HS2YLB72XONEJQA2C3VOZXQG3PZYCBP65M
-2024-04-26 08:12:21,Fee,,,,,ALGO,0.005,Group Combined Fees - d0eeCYg4kSHkS09m+F/yo2eXSWRfJwiRDIDv8xH2Q14=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2024-04-28 08:53:16,Receive,,,COOP,0.675156,,,(Group- cVrgE...) - PZOSO26552ADQTYBQDF37BVMV2J6QAM2FND6DU7HXVXPKL6HWJCQ,2 txns. Tinyman : Tinyman Staking : Claim ,ZPS2P2643BPJAZ7YJ65ESLKPEAUCJKT7KJYVHUHQMYG7XKGPGGY3N4VUAE
-2024-04-28 08:53:16,Fee,,,,,ALGO,0.002,Group Combined Fees - cVrgEhlg2x4SOukgvIJoz1ksUtREL3Fpny6u2j3IOXQ=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-28 08:53:19,Receive,,,NIKO,33.642793,,,(Group- nOSG6...) - UZOO4F6FXEKMAMBP4JTDZ4XFGAYIFBNSFODSEVRO6B3CJIBUPQ6Q,2 txns. Tinyman : Tinyman Staking : Claim ,PBO6R6I2GYPTQNHOMOTWLNOCSGKLYYPE6HXUULZA4DGRCHWA6OFXENTP7U
-2024-04-28 08:53:19,Fee,,,,,ALGO,0.002,Group Combined Fees - nOSG6uOcQaMVa11GCxh4fAgR/8hqEPzGHq6HDMkf010=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-28 08:53:21,Receive,,,RWA,302.044739,,,(Group- tKv/2...) - J72LMJJQFVXLNWN4NWAASO5BHHKLSR7MUZZL6IWOPT2CIS5DTSNA,2 txns. Tinyman : Tinyman Staking : Claim ,4HGYV2NV6JBMKSG3OCUBVFN5O2E2FIQPWO5P4TAMJ3TYYCYCQJA27PE6RE
-2024-04-28 08:53:21,Fee,,,,,ALGO,0.002,Group Combined Fees - tKv/2ssohrZ/8Qk8jLap0U0hi+OtRZxXxa7Pc46qJIw=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-28 08:53:24,Receive,,,ALGO,0.000091,,,(Group- Tmirj...) - QYC3W5WJGTQUS5RPMYE42MPQPEGIAISZ3PEZKODLJ7LZ37CFS6TA,2 txns. Tinyman : Tinyman Staking : Claim ,CAXKMSK27S3UBFF6DAQR7MWGCKYSJKNN3NE6OHLEECSLK7MJYKS6D6Y6FQ
-2024-04-28 08:53:24,Fee,,,,,ALGO,0.002,Group Combined Fees - TmirjrvrbHub6V4QdcioFQgK7tWbM/8wIFRjc8Je8Pg=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-28 08:53:33,Receive,,,NIKO,0.183036,,,(Group- o20ht...) - SMWWYYHUR3F5IQPDWUPMZNUA4IQ5I77DR233EW3EXXCGU4GMVRIQ,2 txns. Tinyman : Tinyman Staking : Claim ,3MMC7JEOKPAT6M3WOZ6OAQD3BASIM2XVHPJHWIEAAUZOWOPYFBF2HX5JOM
-2024-04-28 08:53:33,Fee,,,,,ALGO,0.002,Group Combined Fees - o20htRgEwPYIxZ8LaG/Krk6tKwd+btD7zmu7JnErirk=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-28 08:53:36,Receive,,,COOP,0.031155,,,(Group- aJy9T...) - NGOZQO4LRB4X5KKG4JT6EAISVVHHSXXUT6OHRJ7IRW5B2BWYMYLA,2 txns. Tinyman : Tinyman Staking : Claim ,ZTM6SGI2R5TKFYZAQEXE2WAQGJC6JDQD2RBBG7PP7SFAQMK3L6GOHUTX4I
-2024-04-28 08:53:36,Fee,,,,,ALGO,0.002,Group Combined Fees - aJy9TSb0ApgcifYWhxXZZpiE8h6BJPt/IeOLSI3fkJo=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-28 08:53:45,Receive,,,RWA,11.127421,,,(Group- NCJqU...) - S7XY6AFIQRV376KLJUPZSMONLWLCH36Z4WQ3ALRXYGPNOZJIJZ4Q,2 txns. Tinyman : Tinyman Staking : Claim ,UAABM22A2V4AZY5NX2SZTRP2WFGEPTSNJQXFOX3DO7ZNFCF6WEHQYG6O5I
-2024-04-28 08:53:45,Fee,,,,,ALGO,0.002,Group Combined Fees - NCJqUik+X+05HzntLoV5zzRygnT1IBgvjs+qVDsdkLE=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-04-28 08:54:11,Send,NIKO,33.825829,,,,,(Group- c/e6q...) - 7Z7F4K4AE2XHAAMQLUNRV3YLDL7IJF3IQWCENSTUQMWRTRHUSI7A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-04-28 08:54:11,Receive,,,TMPOOL2,0.804439,,,(Group- c/e6q...) - InnerTxn #1 - 4WL7U...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,7IMFEQHIZ4VKBEY2Y4QFJQU7IQ6ZTBEJK5VEVV3ZPHDPA4MH6UFRFRK5SQ
-2024-04-28 08:54:11,Fee,,,,,ALGO,0.004,Group Combined Fees - c/e6qhAdXjZn7ZbPtWym51y85clb/4Q21AgFJuDDRg0=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2024-04-28 08:54:34,Send,RWA,313.17216,,,,,(Group- 2LMGw...) - LPLUU2XTWELVG3LXI3L63Q4QKAJXKTMAK57LVTR5CSGVMRC55ARQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - RWA/ALGO Liquidity Pool
-2024-04-28 08:54:34,Receive,,,TMPOOL2,3.545444,,,(Group- 2LMGw...) - InnerTxn #1 - 5AQKV...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,BUVR5SLDE3LNKNTT6RL72HW2HS2YLB72XONEJQA2C3VOZXQG3PZYCBP65M
-2024-04-28 08:54:34,Fee,,,,,ALGO,0.004,Group Combined Fees - 2LMGwmTS769/lGy6F3A6wMx1eO9Oz13Viv8CmaPmiTE=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2024-04-28 08:55:15,Send,COOP,0.706311,,,,,(Group- AnMiQ...) - DKKDZ5ODH3AGTMQE76I2KTFHCDISWEB7B7BUOIOLRIZBU55GTK3A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-04-28 08:55:15,Receive,,,TMPOOL2,0.007094,,,(Group- AnMiQ...) - InnerTxn #1 - XIQZI...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-04-28 08:55:15,Fee,,,,,ALGO,0.004,Group Combined Fees - AnMiQRtJS/L+beoUKDujkuECdsjEqdJj60NmoYjXgz0=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-04-26 08:12:21,Add Liquidity,RWA,318.436425,,,,,(Group- d0eeC...) - YS27XWLJ54QWBPYSIIWMOWOTQ2TO2HACBBW5RX5JY7CP74A7C7MQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-26 08:12:21,Add Liquidity,ALGO,0.217881,,,,,(Group- d0eeC...) - TKVIUA2LQQWCPCWPDIZA75QYMUOXTM4NFIDXWMJ4O443Y72DVFFA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-26 08:12:21,Receive LP Tokens,,,RWA/ALGO LP Token,7.587883,ALGO,0.005,Combined Group - d0eeCYg4kSHkS09m+F/yo2eXSWRfJwiRDIDv8xH2Q14=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2024-04-28 08:53:16,Staking Rewards,,,COOP,0.675156,ALGO,0.002,Combined Group - cVrgEhlg2x4SOukgvIJoz1ksUtREL3Fpny6u2j3IOXQ=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-28 08:53:19,Staking Rewards,,,NIKO,33.642793,ALGO,0.002,Combined Group - nOSG6uOcQaMVa11GCxh4fAgR/8hqEPzGHq6HDMkf010=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-28 08:53:21,Staking Rewards,,,RWA,302.044739,ALGO,0.002,Combined Group - tKv/2ssohrZ/8Qk8jLap0U0hi+OtRZxXxa7Pc46qJIw=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-28 08:53:24,Staking Rewards,,,ALGO,0.000091,ALGO,0.002,Combined Group - TmirjrvrbHub6V4QdcioFQgK7tWbM/8wIFRjc8Je8Pg=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-28 08:53:33,Staking Rewards,,,NIKO,0.183036,ALGO,0.002,Combined Group - o20htRgEwPYIxZ8LaG/Krk6tKwd+btD7zmu7JnErirk=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-28 08:53:36,Staking Rewards,,,COOP,0.031155,ALGO,0.002,Combined Group - aJy9TSb0ApgcifYWhxXZZpiE8h6BJPt/IeOLSI3fkJo=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-28 08:53:45,Staking Rewards,,,RWA,11.127421,ALGO,0.002,Combined Group - NCJqUik+X+05HzntLoV5zzRygnT1IBgvjs+qVDsdkLE=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-04-28 08:54:11,Add Liquidity,NIKO,33.825829,,,,,(Group- c/e6q...) - 7Z7F4K4AE2XHAAMQLUNRV3YLDL7IJF3IQWCENSTUQMWRTRHUSI7A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-28 08:54:11,Receive LP Tokens,,,NIKO/ALGO LP Token,0.804439,ALGO,0.004,Combined Group - c/e6qhAdXjZn7ZbPtWym51y85clb/4Q21AgFJuDDRg0=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2024-04-28 08:54:34,Add Liquidity,RWA,313.17216,,,,,(Group- 2LMGw...) - LPLUU2XTWELVG3LXI3L63Q4QKAJXKTMAK57LVTR5CSGVMRC55ARQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-28 08:54:34,Receive LP Tokens,,,RWA/ALGO LP Token,3.545444,ALGO,0.004,Combined Group - 2LMGwmTS769/lGy6F3A6wMx1eO9Oz13Viv8CmaPmiTE=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2024-04-28 08:55:15,Add Liquidity,COOP,0.706311,,,,,(Group- AnMiQ...) - DKKDZ5ODH3AGTMQE76I2KTFHCDISWEB7B7BUOIOLRIZBU55GTK3A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-04-28 08:55:15,Receive LP Tokens,,,TMPOOL2,0.007094,ALGO,0.004,Combined Group - AnMiQRtJS/L+beoUKDujkuECdsjEqdJj60NmoYjXgz0=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-04-28 08:56:01,Fee,,,,,ALGO,0.001,TPM2I62ZPBNN4OCDXOG2PRGHYAPQV5OET74FFUXJEUMF33STZ2TA,Sender,Algorand Network
 2024-04-28 08:56:21,Fee,,,,,ALGO,0.001,GEQIM7WPPBOFINUX4Q6Z67NDSKFFEDJ6DA62HICQRGPLNWMOUGWA,Sender,Algorand Network
 2024-04-28 08:56:53,Fee,,,,,ALGO,0.001,HZWYT4E22PKLOV2S3EPJS3TUBVEDCDHLDGMWFZ2CQSAOF7CVNAJA,Sender,Algorand Network
 2024-04-28 08:57:17,Fee,,,,,ALGO,0.001,2IJKY7PB24COFB3OPOS4JZM5EIY23XURKUBDXM2IUYZBFNTN7NFQ,Sender,Algorand Network
-2024-05-01 17:52:02,Receive,,,COOP,1.055355,,,(Group- xQhlL...) - XVJ72M4YP6WELEYNGBIONUNIMGCNFSV3O3Q27CPYKXLSJL2CNKJA,2 txns. Tinyman : Tinyman Staking : Claim ,ZPS2P2643BPJAZ7YJ65ESLKPEAUCJKT7KJYVHUHQMYG7XKGPGGY3N4VUAE
-2024-05-01 17:52:02,Fee,,,,,ALGO,0.002,Group Combined Fees - xQhlLzolRH2Mcy4z9/D1q4gN60uYQ92hDGgWnzVBlXk=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-01 17:52:02,Receive,,,NIKO,52.576489,,,(Group- Rr35h...) - ML3X6X6GYZECSHFW5PAUJQAIFJQWHGWXNGBSRV47SYIUOZYSAN4Q,2 txns. Tinyman : Tinyman Staking : Claim ,PBO6R6I2GYPTQNHOMOTWLNOCSGKLYYPE6HXUULZA4DGRCHWA6OFXENTP7U
-2024-05-01 17:52:02,Fee,,,,,ALGO,0.002,Group Combined Fees - Rr35hS3VCau0dylwgU+4Calv91uylEJ5C0cADuVyFlg=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-01 17:52:08,Receive,,,RWA,471.636932,,,(Group- itEI+...) - YKKE3FRFC7DQYLVOSAD7H4ECHCU4WPNOF5W5MUQGXWLDO2YUV6EA,2 txns. Tinyman : Tinyman Staking : Claim ,4HGYV2NV6JBMKSG3OCUBVFN5O2E2FIQPWO5P4TAMJ3TYYCYCQJA27PE6RE
-2024-05-01 17:52:08,Fee,,,,,ALGO,0.002,Group Combined Fees - itEI+YD8HG2iX3acuXr7ke9+LDYO9/2CkS+Om4OHMAQ=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-01 17:52:11,Receive,,,ALGO,0.0002,,,(Group- lPsr8...) - ZVNPCCCZXMMYAN3BZWD2CPIFRHLUWGNCBNERZU4ZIIEYL2ULRMVQ,2 txns. Tinyman : Tinyman Staking : Claim ,CAXKMSK27S3UBFF6DAQR7MWGCKYSJKNN3NE6OHLEECSLK7MJYKS6D6Y6FQ
-2024-05-01 17:52:11,Fee,,,,,ALGO,0.002,Group Combined Fees - lPsr8qK6CsD2LabQLffPqruVo+y0kaa2hPO/33Xealg=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-01 17:52:16,Receive,,,NIKO,0.305823,,,(Group- zkyq5...) - SNXO64M44QC7XJRZTV2MYPU5HNKSB5FITDJD5W3E7WAHAXNNT6GQ,2 txns. Tinyman : Tinyman Staking : Claim ,3MMC7JEOKPAT6M3WOZ6OAQD3BASIM2XVHPJHWIEAAUZOWOPYFBF2HX5JOM
-2024-05-01 17:52:16,Fee,,,,,ALGO,0.002,Group Combined Fees - zkyq52M8gTdmjzYFvvv6NjMvvpqcrlae1WtnVRp502Y=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-01 17:52:25,Receive,,,RWA,16.817891,,,(Group- +aSNP...) - YVCKM2UJFQM757GZ6QJNUBSOXN5RA3M4NB2XK3ICICT4TYR24DXA,2 txns. Tinyman : Tinyman Staking : Claim ,UAABM22A2V4AZY5NX2SZTRP2WFGEPTSNJQXFOX3DO7ZNFCF6WEHQYG6O5I
-2024-05-01 17:52:25,Fee,,,,,ALGO,0.002,Group Combined Fees - +aSNPyaIxZ3z25Hb/wLn9tbsP6ObNyqB0tGTnBH0ZU8=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-01 17:52:31,Receive,,,COOP,0.047088,,,(Group- Lo0lw...) - 3IJ3EK33DXBGGV56HCFPPHUUZPBXZSXAXAVTIBG4LO6O7RZ6UZAQ,2 txns. Tinyman : Tinyman Staking : Claim ,ZTM6SGI2R5TKFYZAQEXE2WAQGJC6JDQD2RBBG7PP7SFAQMK3L6GOHUTX4I
-2024-05-01 17:52:31,Fee,,,,,ALGO,0.002,Group Combined Fees - Lo0lwb0z8+Ob2e5Lte7/L5Eq8MRyiL8YiN5odM2Axss=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-01 17:53:05,Send,COOP,1.055355,,,,,(Group- a2twf...) - KEPVV2CH34E3QLFKF4CUPHERI6YFE62AP4V4R2ZFYVT2KGAJEVVQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-05-01 17:53:05,Receive,,,TMPOOL2,0.010047,,,(Group- a2twf...) - InnerTxn #1 - EPLXB...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-05-01 17:53:05,Fee,,,,,ALGO,0.004,Group Combined Fees - a2twfp6RPc05qeqUCCt2B9D6XXAZwWs0GOQVugbUXFg=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-05-01 17:52:02,Staking Rewards,,,COOP,1.055355,ALGO,0.002,Combined Group - xQhlLzolRH2Mcy4z9/D1q4gN60uYQ92hDGgWnzVBlXk=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-01 17:52:02,Staking Rewards,,,NIKO,52.576489,ALGO,0.002,Combined Group - Rr35hS3VCau0dylwgU+4Calv91uylEJ5C0cADuVyFlg=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-01 17:52:08,Staking Rewards,,,RWA,471.636932,ALGO,0.002,Combined Group - itEI+YD8HG2iX3acuXr7ke9+LDYO9/2CkS+Om4OHMAQ=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-01 17:52:11,Staking Rewards,,,ALGO,0.0002,ALGO,0.002,Combined Group - lPsr8qK6CsD2LabQLffPqruVo+y0kaa2hPO/33Xealg=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-01 17:52:16,Staking Rewards,,,NIKO,0.305823,ALGO,0.002,Combined Group - zkyq52M8gTdmjzYFvvv6NjMvvpqcrlae1WtnVRp502Y=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-01 17:52:25,Staking Rewards,,,RWA,16.817891,ALGO,0.002,Combined Group - +aSNPyaIxZ3z25Hb/wLn9tbsP6ObNyqB0tGTnBH0ZU8=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-01 17:52:31,Staking Rewards,,,COOP,0.047088,ALGO,0.002,Combined Group - Lo0lwb0z8+Ob2e5Lte7/L5Eq8MRyiL8YiN5odM2Axss=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-01 17:53:05,Add Liquidity,COOP,1.055355,,,,,(Group- a2twf...) - KEPVV2CH34E3QLFKF4CUPHERI6YFE62AP4V4R2ZFYVT2KGAJEVVQ,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-01 17:53:05,Receive LP Tokens,,,TMPOOL2,0.010047,ALGO,0.004,Combined Group - a2twfp6RPc05qeqUCCt2B9D6XXAZwWs0GOQVugbUXFg=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-05-01 17:53:25,Fee,,,,,ALGO,0.001,ZMIMVBIOT5CUEMTB7IY5BBKI2D45K6YYO5Q5ZS5ZGMWEMMALZIUA,Sender,Algorand Network
 2024-05-01 17:53:45,Fee,,,,,ALGO,0.001,APK4ZGFQA3M62MGHCKAKXRN2F5X64U4DAVN3VHCUYJMW4KXQMC6Q,Sender,Algorand Network
-2024-05-01 17:54:17,Send,RWA,488.454823,,,,,(Group- qH0UA...) - GYH4JE5TVQNHISOPUU7UGXRLCIBBHYHCGHTYLGZTLFX4SBME47HQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - RWA/ALGO Liquidity Pool
-2024-05-01 17:54:17,Send,ALGO,0.244651,,,,,(Group- qH0UA...) - 4ELAKY6ERMXSVTKDGTA7KKRLZOBHE7DV3ZRTCPJCYPKHZKQL2W4A,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - RWA/ALGO Liquidity Pool
-2024-05-01 17:54:17,Receive,,,TMPOOL2,9.945731,,,(Group- qH0UA...) - InnerTxn #1 - 3IKIL...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,BUVR5SLDE3LNKNTT6RL72HW2HS2YLB72XONEJQA2C3VOZXQG3PZYCBP65M
-2024-05-01 17:54:17,Fee,,,,,ALGO,0.005,Group Combined Fees - qH0UAL84YrtgHfkpct4bj4w/yf9/rv4zhYYNDsYemS8=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2024-05-01 17:54:45,Send,NIKO,52.882312,,,,,(Group- 6dVYT...) - G2LUC77QDSX62SOJZOUGDM4YZNOEFJE3UH6HVHCQIHAE3XSKZ4PQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-05-01 17:54:45,Send,ALGO,0.152313,,,,,(Group- 6dVYT...) - 5ZADQUUWGUCG7PRBW3UE43RX4QFNSH5SEBYXJDY7D52X4GZEM5HQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-05-01 17:54:45,Receive,,,TMPOOL2,2.423187,,,(Group- 6dVYT...) - InnerTxn #1 - FHPMB...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,7IMFEQHIZ4VKBEY2Y4QFJQU7IQ6ZTBEJK5VEVV3ZPHDPA4MH6UFRFRK5SQ
-2024-05-01 17:54:45,Fee,,,,,ALGO,0.005,Group Combined Fees - 6dVYTdSvYpFbVdArhwTotNALl3qkLgkM1t4a0PaDdYc=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-05-01 17:54:17,Add Liquidity,RWA,488.454823,,,,,(Group- qH0UA...) - GYH4JE5TVQNHISOPUU7UGXRLCIBBHYHCGHTYLGZTLFX4SBME47HQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-01 17:54:17,Add Liquidity,ALGO,0.244651,,,,,(Group- qH0UA...) - 4ELAKY6ERMXSVTKDGTA7KKRLZOBHE7DV3ZRTCPJCYPKHZKQL2W4A,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-01 17:54:17,Receive LP Tokens,,,RWA/ALGO LP Token,9.945731,ALGO,0.005,Combined Group - qH0UAL84YrtgHfkpct4bj4w/yf9/rv4zhYYNDsYemS8=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2024-05-01 17:54:45,Add Liquidity,NIKO,52.882312,,,,,(Group- 6dVYT...) - G2LUC77QDSX62SOJZOUGDM4YZNOEFJE3UH6HVHCQIHAE3XSKZ4PQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-01 17:54:45,Add Liquidity,ALGO,0.152313,,,,,(Group- 6dVYT...) - 5ZADQUUWGUCG7PRBW3UE43RX4QFNSH5SEBYXJDY7D52X4GZEM5HQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-01 17:54:45,Receive LP Tokens,,,NIKO/ALGO LP Token,2.423187,ALGO,0.005,Combined Group - 6dVYTdSvYpFbVdArhwTotNALl3qkLgkM1t4a0PaDdYc=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-05-01 17:55:10,Fee,,,,,ALGO,0.001,25C5DX6GM4DVYB6GVT7NYOLUTS66G2V4A3OTN5B3QKA5GHSRKSAA,Sender,Algorand Network
 2024-05-01 17:55:42,Fee,,,,,ALGO,0.001,HWG63BHPMD2JSG65CNDFEI7OMA4UJWPZF6TZSP5NECHQNIDPJ4MQ,Sender,Algorand Network
-2024-05-04 07:57:23,Receive,,,COOP,0.704808,,,(Group- 1+j6X...) - SPFNDZYV7LDRKFU5EM6BKTXYULOY7FK7AK27KGP6CKKKWODZF2HQ,2 txns. Tinyman : Tinyman Staking : Claim ,ZPS2P2643BPJAZ7YJ65ESLKPEAUCJKT7KJYVHUHQMYG7XKGPGGY3N4VUAE
-2024-05-04 07:57:23,Fee,,,,,ALGO,0.002,Group Combined Fees - 1+j6XzDCr4yjG8cqgB3CXnuNyfuGlooB6r17z/jJNPE=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 07:57:31,Receive,,,NIKO,35.116056,,,(Group- IDImf...) - YMRDZHC5DYJIRUQELD5HOKUKDDYUC73ZYGYMU7LCSJ5HNL2FPULA,2 txns. Tinyman : Tinyman Staking : Claim ,PBO6R6I2GYPTQNHOMOTWLNOCSGKLYYPE6HXUULZA4DGRCHWA6OFXENTP7U
-2024-05-04 07:57:31,Fee,,,,,ALGO,0.002,Group Combined Fees - IDImfE5RIRgVpMb0e02hKwJujxffhbYiBmffKvFjCoA=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 07:57:40,Receive,,,ALGO,0.00021,,,(Group- w75it...) - M7TITX4PERH3BKQT5KMEGOVWLIVKRHS2CTFMLPKLUAZH2F4EUGEQ,2 txns. Tinyman : Tinyman Staking : Claim ,CAXKMSK27S3UBFF6DAQR7MWGCKYSJKNN3NE6OHLEECSLK7MJYKS6D6Y6FQ
-2024-05-04 07:57:40,Fee,,,,,ALGO,0.002,Group Combined Fees - w75iteNd5sWj33ZJUhU6sw9AR/aSH1MJmtIODleGzOw=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 07:57:51,Receive,,,NIKO,0.319247,,,(Group- B8Cqn...) - YG5HKMM63NGHBJW6ESN4XFCAZLQOAFEM4YUSERY244SAIR2LQPOQ,2 txns. Tinyman : Tinyman Staking : Claim ,3MMC7JEOKPAT6M3WOZ6OAQD3BASIM2XVHPJHWIEAAUZOWOPYFBF2HX5JOM
-2024-05-04 07:57:51,Fee,,,,,ALGO,0.002,Group Combined Fees - B8CqnxR8R0JH3MAfryR5nXSJiB/P09xKqWFlDaOVM6Q=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 07:58:02,Receive,,,COOP,0.03385,,,(Group- pu52Q...) - KXWQDW6C5EAKY57H2H2XDUUOOBV6ZVRNPRA5OEXS3J2HSHCFSKVA,2 txns. Tinyman : Tinyman Staking : Claim ,ZTM6SGI2R5TKFYZAQEXE2WAQGJC6JDQD2RBBG7PP7SFAQMK3L6GOHUTX4I
-2024-05-04 07:58:02,Fee,,,,,ALGO,0.002,Group Combined Fees - pu52QMVmfNkHIFT9S+vR/kjPDEuYjwyVjus2gcJJiN0=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 07:58:05,Receive,,,RWA,12.089811,,,(Group- fm999...) - IONMISOTD2PS7VIEDKLYINKROR3RKOIOOWYVT4CHLX7GDLURQUXQ,2 txns. Tinyman : Tinyman Staking : Claim ,UAABM22A2V4AZY5NX2SZTRP2WFGEPTSNJQXFOX3DO7ZNFCF6WEHQYG6O5I
-2024-05-04 07:58:05,Fee,,,,,ALGO,0.002,Group Combined Fees - fm999iVGmXqxh7SNK/E0Y8iOgnefeBtnA/dm8ugn4is=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
+2024-05-04 07:57:23,Staking Rewards,,,COOP,0.704808,ALGO,0.002,Combined Group - 1+j6XzDCr4yjG8cqgB3CXnuNyfuGlooB6r17z/jJNPE=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 07:57:31,Staking Rewards,,,NIKO,35.116056,ALGO,0.002,Combined Group - IDImfE5RIRgVpMb0e02hKwJujxffhbYiBmffKvFjCoA=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 07:57:40,Staking Rewards,,,ALGO,0.00021,ALGO,0.002,Combined Group - w75iteNd5sWj33ZJUhU6sw9AR/aSH1MJmtIODleGzOw=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 07:57:51,Staking Rewards,,,NIKO,0.319247,ALGO,0.002,Combined Group - B8CqnxR8R0JH3MAfryR5nXSJiB/P09xKqWFlDaOVM6Q=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 07:58:02,Staking Rewards,,,COOP,0.03385,ALGO,0.002,Combined Group - pu52QMVmfNkHIFT9S+vR/kjPDEuYjwyVjus2gcJJiN0=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 07:58:05,Staking Rewards,,,RWA,12.089811,ALGO,0.002,Combined Group - fm999iVGmXqxh7SNK/E0Y8iOgnefeBtnA/dm8ugn4is=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
 2024-05-04 13:44:27,Fee,,,,,ALGO,0.001,D3OIIR6Q2HK5V5G2IHAILFVNXAAPVLTPNBU3T7MOS2NX352BDVWA,Asset Opt in/out,Algorand Network
 2024-05-04 16:35:24,Receive,,,ALGO,1.108,,,(Group- 5VO1r...) - 5LYFSQ7M3BAONTLDCW6W2ZFMBNJTMTW7BJACFXPUTVXRIKOCN3XQ,1 txns.  ,TESTPHIZRBL47D27FUCLKUDKGI4MXK62WMRNIE76SY6UPXAZKDSLLGJ3Y4
 2024-05-04 16:35:44,Send,ALGO,1.,,,,,(Group- gouSS...) - EGUI4QCDKTUUQSVCXWFGKTEB7VOCJ2DOLXPCPXGOGUXRKC3PFAAQ,3 txns.  ,IHOYZJJSJ2UJKGDVJANCOTJ7UITBU3AYAOQSGSKYQ5I4XOE4IRMMUDKRSM
@@ -1053,76 +925,50 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2024-05-04 17:03:24,Fee,,,,,ALGO,0.001,7KJTGYZTNDRFF4FRUN72FKG5VSLS3JFIJJBEU6GQB3NEAWWNMYAQ,Asset Opt in/out,Algorand Network
 2024-05-04 17:03:50,Send,ALGO,10.,,,,,(Group- HQHqk...) - OX4S2N5VXC5NCSHNOLLNG5HRAP5KEUDOS2QM2BMONTYXTFKXUUUA,2 txns.  ,G6B5L2B3GSLJQTC5THSGSJMTJ4EN3SBF3IW5PI7XEEKYH6WXN6UGY4XAXQ
 2024-05-04 17:03:50,Fee,,,,,ALGO,0.002,Group Combined Fees - HQHqkEyH9ZsnPKaoy+/c97+1Tnts9mJN7m6weA6hUV0=,2 txns. ,Algorand Network
-2024-05-04 17:06:58,Receive,,,COOP,0.364954,,,(Group- bhwF7...) - ZYV5R44YVVSE54LRMWCIRHOYCOFKMLEJLGY5VCPEYSEHENYJ3CSQ,2 txns. Tinyman : Tinyman Staking : Claim ,ZPS2P2643BPJAZ7YJ65ESLKPEAUCJKT7KJYVHUHQMYG7XKGPGGY3N4VUAE
-2024-05-04 17:06:58,Fee,,,,,ALGO,0.002,Group Combined Fees - bhwF7s46iupTrq61qXpYAaPlUvX0+c4Da47s/sPHOTs=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 17:06:58,Receive,,,NIKO,18.185342,,,(Group- rEHeM...) - IBKJCCGLH5I7Z7N57CW32SEHFF26FXZO5W5KPBG5GLZJR2ACYGRQ,2 txns. Tinyman : Tinyman Staking : Claim ,PBO6R6I2GYPTQNHOMOTWLNOCSGKLYYPE6HXUULZA4DGRCHWA6OFXENTP7U
-2024-05-04 17:06:58,Fee,,,,,ALGO,0.002,Group Combined Fees - rEHeMMNvc6upBdDzXqfPji0AVSRx4oRz6Q1SagI/5VI=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 17:07:01,Receive,,,RWA,478.048101,,,(Group- imI/Y...) - E4WAXFJ3EMJZM27AQFYB6ZA6OL3KTRVGSBFSKVKQGL25L6IENV3Q,2 txns. Tinyman : Tinyman Staking : Claim ,4HGYV2NV6JBMKSG3OCUBVFN5O2E2FIQPWO5P4TAMJ3TYYCYCQJA27PE6RE
-2024-05-04 17:07:01,Fee,,,,,ALGO,0.002,Group Combined Fees - imI/YLKR7M4ayH97Bfoq19Kr5bcf+w+0y8gD+8+H8lg=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 17:07:03,Receive,,,ALGO,0.000137,,,(Group- IcAQY...) - QQVXPR7BLT2HL35FON2KMI7D34OVB6EGGY3TARX4UCRGZ2C6KEEQ,2 txns. Tinyman : Tinyman Staking : Claim ,CAXKMSK27S3UBFF6DAQR7MWGCKYSJKNN3NE6OHLEECSLK7MJYKS6D6Y6FQ
-2024-05-04 17:07:03,Fee,,,,,ALGO,0.002,Group Combined Fees - IcAQYurdC8VS4InEXlArlTofGw4HkZJW9gonmHKz9fs=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 17:07:15,Receive,,,NIKO,0.210053,,,(Group- Et9pS...) - A4ISSYRTC4CEQBTBMRLY4OQHDMNTUH6PGYT6ZHCDWM4SPLMH2RUA,2 txns. Tinyman : Tinyman Staking : Claim ,3MMC7JEOKPAT6M3WOZ6OAQD3BASIM2XVHPJHWIEAAUZOWOPYFBF2HX5JOM
-2024-05-04 17:07:15,Fee,,,,,ALGO,0.002,Group Combined Fees - Et9pSg9nY6/IJTievaTvpda4xS3FXoz/KGtlfm4Q1yo=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 17:07:18,Receive,,,COOP,0.017437,,,(Group- KUvrU...) - NJKWUUBLFGZWL4M7QCO6SKVHEDW3GMZD577HFYBZI2I43Z7UZOWA,2 txns. Tinyman : Tinyman Staking : Claim ,ZTM6SGI2R5TKFYZAQEXE2WAQGJC6JDQD2RBBG7PP7SFAQMK3L6GOHUTX4I
-2024-05-04 17:07:18,Fee,,,,,ALGO,0.002,Group Combined Fees - KUvrU+VcYqab/8WI8yfw/oQzcqO6AONonLPa1mVKPSI=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 17:07:21,Receive,,,RWA,6.227613,,,(Group- YAPfM...) - UF2DQ2DMOBX6E6Z7DGRFSN5HBLY5R63DUGITGDDFHWF4QR3IN6VA,2 txns. Tinyman : Tinyman Staking : Claim ,UAABM22A2V4AZY5NX2SZTRP2WFGEPTSNJQXFOX3DO7ZNFCF6WEHQYG6O5I
-2024-05-04 17:07:21,Fee,,,,,ALGO,0.002,Group Combined Fees - YAPfMa/k4c67wPOcQFC3XqdMf0C+LP5cKPfCihhAhjo=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-04 17:07:52,Send,NIKO,53.830698,,,,,(Group- O3bFr...) - PXJ5T4DLWPT2MORKCWDKITXQZOHSSMSCH7673KPRVNRZYLHGZVPQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-05-04 17:07:52,Send,ALGO,0.198718,,,,,(Group- O3bFr...) - FPIW5EOA3W6YK3OBJ376EAACVOVIG63SVJYKBB62MHR4ZT2YP4OA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-05-04 17:07:52,Receive,,,TMPOOL2,2.790401,,,(Group- O3bFr...) - InnerTxn #1 - JM5WU...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,7IMFEQHIZ4VKBEY2Y4QFJQU7IQ6ZTBEJK5VEVV3ZPHDPA4MH6UFRFRK5SQ
-2024-05-04 17:07:52,Fee,,,,,ALGO,0.005,Group Combined Fees - O3bFrdYIKrHhrYDGCRwMWsFVawUV1uQBImhRQtZtwjI=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-05-04 17:06:58,Staking Rewards,,,COOP,0.364954,ALGO,0.002,Combined Group - bhwF7s46iupTrq61qXpYAaPlUvX0+c4Da47s/sPHOTs=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 17:06:58,Staking Rewards,,,NIKO,18.185342,ALGO,0.002,Combined Group - rEHeMMNvc6upBdDzXqfPji0AVSRx4oRz6Q1SagI/5VI=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 17:07:01,Staking Rewards,,,RWA,478.048101,ALGO,0.002,Combined Group - imI/YLKR7M4ayH97Bfoq19Kr5bcf+w+0y8gD+8+H8lg=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 17:07:03,Staking Rewards,,,ALGO,0.000137,ALGO,0.002,Combined Group - IcAQYurdC8VS4InEXlArlTofGw4HkZJW9gonmHKz9fs=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 17:07:15,Staking Rewards,,,NIKO,0.210053,ALGO,0.002,Combined Group - Et9pSg9nY6/IJTievaTvpda4xS3FXoz/KGtlfm4Q1yo=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 17:07:18,Staking Rewards,,,COOP,0.017437,ALGO,0.002,Combined Group - KUvrU+VcYqab/8WI8yfw/oQzcqO6AONonLPa1mVKPSI=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 17:07:21,Staking Rewards,,,RWA,6.227613,ALGO,0.002,Combined Group - YAPfMa/k4c67wPOcQFC3XqdMf0C+LP5cKPfCihhAhjo=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-04 17:07:52,Add Liquidity,NIKO,53.830698,,,,,(Group- O3bFr...) - PXJ5T4DLWPT2MORKCWDKITXQZOHSSMSCH7673KPRVNRZYLHGZVPQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-04 17:07:52,Add Liquidity,ALGO,0.198718,,,,,(Group- O3bFr...) - FPIW5EOA3W6YK3OBJ376EAACVOVIG63SVJYKBB62MHR4ZT2YP4OA,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-04 17:07:52,Receive LP Tokens,,,NIKO/ALGO LP Token,2.790401,ALGO,0.005,Combined Group - O3bFrdYIKrHhrYDGCRwMWsFVawUV1uQBImhRQtZtwjI=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-05-04 17:08:13,Fee,,,,,ALGO,0.001,2SYIGVFNNLO5B6VL4EESWQ3RFHO7YUHEMD5JHNIDSJ2SN5QGY5MA,Sender,Algorand Network
 2024-05-04 17:08:39,Fee,,,,,ALGO,0.001,3WGCFRURPX3H7EGB3SCAA6PLWCQHLEKKNVNTU6K2CGU2TK5DQ2OA,Sender,Algorand Network
-2024-05-04 17:09:10,Send,RWA,496.365525,,,,,(Group- 0IRPX...) - HI4YFO3L2RNV4CKV7BTYE5QQZKM3MFX3FS2YA6KTUTNMO7S7GA6A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - RWA/ALGO Liquidity Pool
-2024-05-04 17:09:10,Receive,,,TMPOOL2,5.533683,,,(Group- 0IRPX...) - InnerTxn #1 - 7YWS5...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,BUVR5SLDE3LNKNTT6RL72HW2HS2YLB72XONEJQA2C3VOZXQG3PZYCBP65M
-2024-05-04 17:09:10,Fee,,,,,ALGO,0.004,Group Combined Fees - 0IRPXwGBeuXhcj4SloZt5AFNlAz3PbgdV6M/HEN1J+0=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2024-05-04 17:09:33,Send,COOP,0.408137,,,,,(Group- ++2dW...) - 7WYFG6LSAVAYBKJ72T4XVO7FHXV5XJJ5LRU2G3V3J423TQIAF46Q,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-05-04 17:09:33,Receive,,,TMPOOL2,0.004087,,,(Group- ++2dW...) - InnerTxn #1 - QUJCC...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,UOOAX2RGODMLGLFT3DKI4A6RM5CM6ZSPRVPUVWNX5A7JU3PL2UTETKWHU4
-2024-05-04 17:09:33,Fee,,,,,ALGO,0.004,Group Combined Fees - ++2dWpzgtF+3bF7hKVm0CrWvnMCQZBblf+9TeK9l6l8=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
+2024-05-04 17:09:10,Add Liquidity,RWA,496.365525,,,,,(Group- 0IRPX...) - HI4YFO3L2RNV4CKV7BTYE5QQZKM3MFX3FS2YA6KTUTNMO7S7GA6A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-04 17:09:10,Receive LP Tokens,,,RWA/ALGO LP Token,5.533683,ALGO,0.004,Combined Group - 0IRPXwGBeuXhcj4SloZt5AFNlAz3PbgdV6M/HEN1J+0=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2024-05-04 17:09:33,Add Liquidity,COOP,0.408137,,,,,(Group- ++2dW...) - 7WYFG6LSAVAYBKJ72T4XVO7FHXV5XJJ5LRU2G3V3J423TQIAF46Q,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-04 17:09:33,Receive LP Tokens,,,TMPOOL2,0.004087,ALGO,0.004,Combined Group - ++2dWpzgtF+3bF7hKVm0CrWvnMCQZBblf+9TeK9l6l8=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
 2024-05-04 17:09:54,Fee,,,,,ALGO,0.001,WHSWFYRKFMIEOHRRQP4J7KQBKSIMNEZHXWYPF6A5ZNLYS4DS2VWQ,Sender,Algorand Network
 2024-05-04 17:10:17,Fee,,,,,ALGO,0.001,53R6OLZQ5TCZYI6RFVDOW2SJZBSJWEB37F5G7F6VFVGRLF2H7D6Q,Sender,Algorand Network
-2024-05-04 17:13:04,Send,SOCKS,5764.690462,,,,,(Group- ArZnT...) - X2JHZNL6NPTC7HPJQZBAQVBLOSHSSDZ6X5SE7ZJ3E5OH7F3S5FDQ,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,R7NH33WM7X74BQX5QKYHNF2YOKIIUXF6ZLSZWLRKICGSXTKA2A6VWCJTDE
-2024-05-04 17:13:04,Send,Tacos,1115187.,,,,,(Group- ArZnT...) - LR3HG65XRLOYYWAEHH4LGDKR4E4UO637C3IHQOXPRLIQRZBHCURQ,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,R7NH33WM7X74BQX5QKYHNF2YOKIIUXF6ZLSZWLRKICGSXTKA2A6VWCJTDE
-2024-05-04 17:13:04,Receive,,,TMPOOL2,83.25411,,,(Group- ArZnT...) - InnerTxn #1 - 5DO2Y...,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,R7NH33WM7X74BQX5QKYHNF2YOKIIUXF6ZLSZWLRKICGSXTKA2A6VWCJTDE
-2024-05-04 17:13:04,Fee,,,,,ALGO,0.006,Group Combined Fees - ArZnT1Z9wAmxfg6bEo+AFAdyp+PAzy56n648Bmcg0KQ=,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2024-05-04 17:14:39,Send,VEST,67.016589,,,,,(Group- FPSaF...) - RK3KOKY3HIO55HFTGSQ3XK2KZJ3UPDJ2HUAJJYKMZZWAAPFMCNVQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,TQVNLFT3IYOCFPRFJ4U6Z24H6NUN5MLIUYDES4CAZ4OVZE4D2GUQGP5NJE
-2024-05-04 17:14:39,Receive,,,TMPOOL2,108.715796,,,(Group- FPSaF...) - InnerTxn #1 - 7VIWZ...,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,TQVNLFT3IYOCFPRFJ4U6Z24H6NUN5MLIUYDES4CAZ4OVZE4D2GUQGP5NJE
-2024-05-04 17:14:39,Fee,,,,,ALGO,0.005,Group Combined Fees - FPSaFjlcLKvKbqZZzsfONKf49XUCJli+gXhC7BKTipM=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2024-05-04 17:17:00,Send,OPUL,4.56709036,,,,,(Group- rSaAk...) - EKGQ46HDXNAX2OCU3ZKHL22VMOC2LDBXM7Q42M7ZQYRW7LNVSTQA,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,Tinyman - OPUL/ALGO Liquidity Pool
-2024-05-04 17:17:00,Receive,,,ALGO,3.856932,,,(Group- rSaAk...) - InnerTxn #1 - 5O5BC...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,6JRMS5GWPSRHBDKNWO46PDVMOLWYURW2VXZEWBR2QOKHOFNR2VLAFDU3TU
-2024-05-04 17:17:00,Fee,,,,,ALGO,0.003,Group Combined Fees - rSaAkbx6CmkvvoErq9BJ/DUO+tqBm1RtkZilkd7mA9U=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
-2024-05-04 17:17:17,Send,Peps,10758.579169,,,,,(Group- 5kxow...) - 72YBG4BU5FF6WEDHOVKIPYMPY7NI7ZZAGKIRLPO2NQQ3RXP26IUQ,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,Tinyman - Peps/ALGO Liquidity Pool
-2024-05-04 17:17:17,Receive,,,ALGO,2.464589,,,(Group- 5kxow...) - InnerTxn #1 - K2WLU...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,JTQTT4HQPNZXJJXDTXJUPZDF7ESRO2C66ESTOMCSBZ5NOMDTSGO2XCKDRM
-2024-05-04 17:17:17,Fee,,,,,ALGO,0.003,Group Combined Fees - 5kxowWyCXRQSB0ae/2sb2jfg+2WLUxhmgG17aAxtszM=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
+2024-05-04 17:13:04,Add Liquidity,SOCKS,5764.690462,,,,,(Group- ArZnT...) - X2JHZNL6NPTC7HPJQZBAQVBLOSHSSDZ6X5SE7ZJ3E5OH7F3S5FDQ,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-04 17:13:04,Add Liquidity,Tacos,1115187.,,,,,(Group- ArZnT...) - LR3HG65XRLOYYWAEHH4LGDKR4E4UO637C3IHQOXPRLIQRZBHCURQ,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-04 17:13:04,Receive LP Tokens,,,TMPOOL2,83.25411,ALGO,0.006,Combined Group - ArZnT1Z9wAmxfg6bEo+AFAdyp+PAzy56n648Bmcg0KQ=,4 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2024-05-04 17:14:39,Add Liquidity,VEST,67.016589,,,,,(Group- FPSaF...) - RK3KOKY3HIO55HFTGSQ3XK2KZJ3UPDJ2HUAJJYKMZZWAAPFMCNVQ,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-04 17:14:39,Receive LP Tokens,,,TMPOOL2,108.715796,ALGO,0.005,Combined Group - FPSaFjlcLKvKbqZZzsfONKf49XUCJli+gXhC7BKTipM=,3 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2024-05-04 17:17:00,Swap,OPUL,4.56709036,ALGO,3.856932,ALGO,0.003,Combined Group - rSaAkbx6CmkvvoErq9BJ/DUO+tqBm1RtkZilkd7mA9U=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
+2024-05-04 17:17:17,Swap,Peps,10758.579169,ALGO,2.464589,ALGO,0.003,Combined Group - 5kxowWyCXRQSB0ae/2sb2jfg+2WLUxhmgG17aAxtszM=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
 2024-05-04 17:17:40,Send,ALGO,6.,,,,,(Group- tIQxR...) - K7CU4VN6S5AXBI3S5RODXA2DCRMMPJ2COMZFIF7FXEWNZGMLBZMQ,2 txns.  ,G6B5L2B3GSLJQTC5THSGSJMTJ4EN3SBF3IW5PI7XEEKYH6WXN6UGY4XAXQ
 2024-05-04 17:17:40,Fee,,,,,ALGO,0.002,Group Combined Fees - tIQxRg63DRUumMjCo+yYoJ5Ot5WnEouPea4uaqPiPuE=,2 txns. ,Algorand Network
-2024-05-04 17:20:00,Receive,,,TMPOOL2,146.456913,,,(Group- i/11W...) - InnerTxn #1 - QVF2A...,2 txns.  ,G6B5L2B3GSLJQTC5THSGSJMTJ4EN3SBF3IW5PI7XEEKYH6WXN6UGY4XAXQ
+2024-05-04 17:20:00,Receive,,,ORA/ALGO LP Token,146.456913,,,(Group- i/11W...) - InnerTxn #1 - QVF2A...,2 txns.  ,G6B5L2B3GSLJQTC5THSGSJMTJ4EN3SBF3IW5PI7XEEKYH6WXN6UGY4XAXQ
 2024-05-04 17:20:00,Fee,,,,,ALGO,0.004,Group Combined Fees - i/11WeGMQpYFhiDWlco162OklRY1Vyp1tEoXTZ5j34Y=,2 txns. ,Algorand Network
 2024-05-04 17:20:58,Fee,,,,,ALGO,0.001,KKY4KF4GFEUMLGMZVTFSIAVELEQGK2DUPBYQRXRXX7QXWE6G72RQ,Sender,Algorand Network
 2024-05-04 17:21:21,Fee,,,,,ALGO,0.001,TZI5MI66HVM7LMI4NSEWF22ZHDTS3JJOK6RQSPZGNFNRGHE3E56A,Sender,Algorand Network
-2024-05-11 11:33:29,Receive,,,COOP,2.319727,,,(Group- At9mL...) - VLE5YDPCZXOVZKNGWPLUDF4GBLAWT6UKPAL5IYYQQORE5JN7VN6Q,2 txns. Tinyman : Tinyman Staking : Claim ,ZPS2P2643BPJAZ7YJ65ESLKPEAUCJKT7KJYVHUHQMYG7XKGPGGY3N4VUAE
-2024-05-11 11:33:29,Fee,,,,,ALGO,0.002,Group Combined Fees - At9mLDSc42BDl1gj9haQ17UVS43aOBSf88Oj7fXUd6U=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-11 11:33:32,Receive,,,NIKO,115.590607,,,(Group- NsfoM...) - ZG47JBXJ5SK367KBOBN7R5VBLKTKHCHTS6YNZ2H6IPHFQULC4CHA,2 txns. Tinyman : Tinyman Staking : Claim ,PBO6R6I2GYPTQNHOMOTWLNOCSGKLYYPE6HXUULZA4DGRCHWA6OFXENTP7U
-2024-05-11 11:33:32,Fee,,,,,ALGO,0.002,Group Combined Fees - NsfoMLi/tdXFuquJy7PIEhrZ5Pha4No8g9iMV5qvcr8=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-11 11:33:38,Receive,,,RWA,1038.547138,,,(Group- spHvC...) - MWMQCTOGSPK7LWPSUCTW6FFSPB2UUQICWGGYGODWJJHMDEY6R3CA,2 txns. Tinyman : Tinyman Staking : Claim ,4HGYV2NV6JBMKSG3OCUBVFN5O2E2FIQPWO5P4TAMJ3TYYCYCQJA27PE6RE
-2024-05-11 11:33:38,Fee,,,,,ALGO,0.002,Group Combined Fees - spHvCLufe6QiOkvpaeIq8ti/gJ586DD59HZ5PnvyDQk=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-11 11:33:52,Receive,,,NIKO,2.061869,,,(Group- gd/aq...) - A34JHVHPDH2RP3OXFWJ36FA4NTLB6X7DJOHXCISIBHWFETJFUO7Q,2 txns. Tinyman : Tinyman Staking : Claim ,3MMC7JEOKPAT6M3WOZ6OAQD3BASIM2XVHPJHWIEAAUZOWOPYFBF2HX5JOM
-2024-05-11 11:33:52,Fee,,,,,ALGO,0.002,Group Combined Fees - gd/aqqdTNwyM+uK2RLQNhix0QB5Px1WRZBqblSS3nww=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-11 11:34:01,Receive,,,RWA,123.754721,,,(Group- kFJt+...) - VZZN7FZMHIYXYDYCL67T4AYFVMBVKA4BUKGPAVIDLLG6F4CBG2WA,2 txns. Tinyman : Tinyman Staking : Claim ,4HGYV2NV6JBMKSG3OCUBVFN5O2E2FIQPWO5P4TAMJ3TYYCYCQJA27PE6RE
-2024-05-11 11:34:01,Fee,,,,,ALGO,0.002,Group Combined Fees - kFJt+PurS7bbWaEKJ7ZuXzGUNfv7UFS6tzwUdxI4itw=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-11 11:34:07,Receive,,,COOP,0.118407,,,(Group- qwWzL...) - FKV5YAHJD7KOUCB6H3MOJ2QVYVSBGTQ5UYQP3RW4Q57IXBYNOO7A,2 txns. Tinyman : Tinyman Staking : Claim ,ZTM6SGI2R5TKFYZAQEXE2WAQGJC6JDQD2RBBG7PP7SFAQMK3L6GOHUTX4I
-2024-05-11 11:34:07,Fee,,,,,ALGO,0.002,Group Combined Fees - qwWzLS/b7musgQg3jYZmMoTuf3Gk+kXmrsMYbLiHpLY=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-11 11:34:15,Receive,,,RWA,42.289861,,,(Group- idi2o...) - WONAXETDUGSZE6ZNIEUAWYCV5OWOXY6763ZLYMJCDBH5QF23AIYQ,2 txns. Tinyman : Tinyman Staking : Claim ,UAABM22A2V4AZY5NX2SZTRP2WFGEPTSNJQXFOX3DO7ZNFCF6WEHQYG6O5I
-2024-05-11 11:34:15,Fee,,,,,ALGO,0.002,Group Combined Fees - idi2oNcqmC9uE7UL2lpEpzMymCNv8dcajkURF4vlnjE=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-05-11 11:34:46,Send,NIKO,117.652476,,,,,(Group- p2727...) - AEKR6EPLDHMKNYX5HSBVUIGZ523JKAHYQKQHY4IB7RL6ITHZMB6A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman - NIKO/ALGO Liquidity Pool
-2024-05-11 11:34:46,Receive,,,TMPOOL2,2.894301,,,(Group- p2727...) - InnerTxn #1 - 7O4GX...,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,7IMFEQHIZ4VKBEY2Y4QFJQU7IQ6ZTBEJK5VEVV3ZPHDPA4MH6UFRFRK5SQ
-2024-05-11 11:34:46,Fee,,,,,ALGO,0.004,Group Combined Fees - p2727N5/NlGtnG0Fl/zosK0uy2rbyKSe3AYUBaRZ5pE=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Algorand Network
-2024-05-11 13:19:31,Send,TMPOOL2,4065.535962,,,,,(Group- p+QrY...) - XF5H6NMKP3QOQAAM26UHRRXQIIQEH4BEETO43WHKM4PXI5K34TMQ,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - OTSDGFKD/ALGO Liquidity Pool
-2024-05-11 13:19:31,Receive,,,ALGO,95.668108,,,(Group- p+QrY...) - InnerTxn #1 - C6BPF...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,XTX2ZALKUVHUTMGQXHEMD6WXOBZQ47LIHKJ3D3KO63LVJEFFD4GZLL4BMA
-2024-05-11 13:19:31,Fee,,,,,ALGO,0.004,Group Combined Fees - p+QrYfj52PVonVNABoMBaXKdnzvA+yZB3FBWGQ3hHOM=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2024-05-11 13:19:57,Send,TMPOOL2,146.456913,,,,,(Group- EF7GI...) - LLK3LXDLYTZMVVNAERXVFBOIKTE3H4S7CLM5DLC2YTTBMLX6CMMA,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - ORA/ALGO Liquidity Pool
-2024-05-11 13:19:57,Receive,,,ALGO,30.344015,,,(Group- EF7GI...) - InnerTxn #1 - VDDOV...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,TRCEY5UZGTATGTF5K3U42IMDT467D4EHV7S5MYJBMLMYARYJOZFATORMUM
-2024-05-11 13:19:57,Fee,,,,,ALGO,0.004,Group Combined Fees - EF7GIsGVzGLRzo1XQxaCmMguFEakdbP8aneP1siWeFw=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
+2024-05-11 11:33:29,Staking Rewards,,,COOP,2.319727,ALGO,0.002,Combined Group - At9mLDSc42BDl1gj9haQ17UVS43aOBSf88Oj7fXUd6U=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-11 11:33:32,Staking Rewards,,,NIKO,115.590607,ALGO,0.002,Combined Group - NsfoMLi/tdXFuquJy7PIEhrZ5Pha4No8g9iMV5qvcr8=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-11 11:33:38,Staking Rewards,,,RWA,1038.547138,ALGO,0.002,Combined Group - spHvCLufe6QiOkvpaeIq8ti/gJ586DD59HZ5PnvyDQk=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-11 11:33:52,Staking Rewards,,,NIKO,2.061869,ALGO,0.002,Combined Group - gd/aqqdTNwyM+uK2RLQNhix0QB5Px1WRZBqblSS3nww=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-11 11:34:01,Staking Rewards,,,RWA,123.754721,ALGO,0.002,Combined Group - kFJt+PurS7bbWaEKJ7ZuXzGUNfv7UFS6tzwUdxI4itw=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-11 11:34:07,Staking Rewards,,,COOP,0.118407,ALGO,0.002,Combined Group - qwWzLS/b7musgQg3jYZmMoTuf3Gk+kXmrsMYbLiHpLY=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-11 11:34:15,Staking Rewards,,,RWA,42.289861,ALGO,0.002,Combined Group - idi2oNcqmC9uE7UL2lpEpzMymCNv8dcajkURF4vlnjE=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-05-11 11:34:46,Add Liquidity,NIKO,117.652476,,,,,(Group- p2727...) - AEKR6EPLDHMKNYX5HSBVUIGZ523JKAHYQKQHY4IB7RL6ITHZMB6A,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity ,Tinyman
+2024-05-11 11:34:46,Receive LP Tokens,,,NIKO/ALGO LP Token,2.894301,ALGO,0.004,Combined Group - p2727N5/NlGtnG0Fl/zosK0uy2rbyKSe3AYUBaRZ5pE=,2 txns. Tinyman : Tinyman AMM v2 : Add Liquidity,Tinyman
+2024-05-11 13:19:31,Remove Liquidity,,,ALGO,95.668108,,,(Group- p+QrY...) - InnerTxn #1 - C6BPF...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2024-05-11 13:19:31,Return LP Tokens,OTSDGFKD/ALGO LP Token,4065.535962,,,ALGO,0.004,Combined Group - p+QrYfj52PVonVNABoMBaXKdnzvA+yZB3FBWGQ3hHOM=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
+2024-05-11 13:19:57,Remove Liquidity,,,ALGO,30.344015,,,(Group- EF7GI...) - InnerTxn #1 - VDDOV...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2024-05-11 13:19:57,Return LP Tokens,ORA/ALGO LP Token,146.456913,,,ALGO,0.004,Combined Group - EF7GIsGVzGLRzo1XQxaCmMguFEakdbP8aneP1siWeFw=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
 2024-05-11 13:22:15,Send,ALGO,122.49,,,,,(Group- n7TRE...) - HK62AABYETWK3I5NRPVQMOZLIBESVZEBUTD2XYRAZ426KZ3436KA,5 txns.  ,COOPLFOESCTQJVLSFKAA4QURNBDZGMRYJVRH7BRRREB7FFZSHIIA4AVIBE
 2024-05-11 13:22:15,Send,ALGO,2.5,,,,,(Group- n7TRE...) - 2BIK4KETP5XBCZN2TK5M2PRNUS26AINOWMMHM7I26X5HK3JF5B7A,5 txns.  ,XNFT36FUCFRR6CK675FW4BEBCCCOJ4HOSMGCN6J2W6ZMB34KM2ENTNQCP4
 2024-05-11 13:22:15,Send,ALGO,0.01,,,,,(Group- n7TRE...) - LDTTKRSKXJ6S2DOQG5VELWUX3Z7Z7SX4WRFNUU6L4I2FVOMFNEBA,5 txns.  ,PXGIPTNTWYTUPUPFDBYQE4ZE3FOUDH3MGHU72GVBZ46PB44YT24SMIRAOI
@@ -1143,13 +989,11 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2024-05-20 08:47:12,Fee,,,,,ALGO,0.053,Group Combined Fees - Rv6LQz6PIRmiPx2bOdImzQOsjRoC3Tr4vFZcsqmaaiM=,2 txns. Alammex : appDB match : Swap,Algorand Network
 2024-05-20 08:48:25,Send,ALGO,33.,,,,,(Group- 45DES...) - RTOIKI3RCC3BPYGTOP5O3J2FBJI2LYMYYM2SR24S6OBPC5MQYJQQ,2 txns.  ,G6B5L2B3GSLJQTC5THSGSJMTJ4EN3SBF3IW5PI7XEEKYH6WXN6UGY4XAXQ
 2024-05-20 08:48:25,Fee,,,,,ALGO,0.002,Group Combined Fees - 45DESqRENAUIXqjDfWBPFUCJrOpCO0ogwzx3GL+xa0s=,2 txns. ,Algorand Network
-2024-05-20 08:57:19,Receive,,,TMPOOL2,155.201217,,,(Group- nyqnG...) - InnerTxn #1 - A64PB...,2 txns.  ,G6B5L2B3GSLJQTC5THSGSJMTJ4EN3SBF3IW5PI7XEEKYH6WXN6UGY4XAXQ
+2024-05-20 08:57:19,Receive,,,ORA/ALGO LP Token,155.201217,,,(Group- nyqnG...) - InnerTxn #1 - A64PB...,2 txns.  ,G6B5L2B3GSLJQTC5THSGSJMTJ4EN3SBF3IW5PI7XEEKYH6WXN6UGY4XAXQ
 2024-05-20 08:57:19,Fee,,,,,ALGO,0.004,Group Combined Fees - nyqnGgi6LZdkLFOLIspQzVgzBN5BeI++l5Kxp3sYbiM=,2 txns. ,Algorand Network
 2024-05-22 05:32:29,Receive,,,CYCLE,2.,,,KE2BLJIHXXDIAO3RNKHQ3ND427TJGFMPCGUBNOTJC2GICDSRN3YA,Receiver,COOPY5DFW3N2HGAZPYJU5YSHLWWI3FEHWKNK6RHAJAVTO3IG3PIA3FAIRY
-2024-05-23 17:50:37,Send,CYCLE,2.,,,,,(Group- w+jeO...) - BN7YXLAJV4L5SZLABAQQBROZH6LB5Z3WVGY77XRQVKI63EWUUMQQ,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,Tinyman - CYCLE/ALGO Liquidity Pool
-2024-05-23 17:50:37,Receive,,,ALGO,6.984607,,,(Group- w+jeO...) - InnerTxn #1 - LF3E7...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,VJXBRZ6QEJAUP5CD6SRFJX65ZEA6J5X47MSXYBVDPHLGA6EMVKV6WBDLGE
-2024-05-23 17:50:37,Fee,,,,,ALGO,0.003,Group Combined Fees - w+jeOjI8yxzu3niPJOYpcGV7H4pR/OB4X7YnKPtQAjI=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
-2024-05-23 17:50:43,Send,ALGO,0.032009,,,ALGO,0.001,RU6BMXYRHR2TYMDDPTQOYANPMO6FEASDLNM44PKVKVOLOJU5XZFQ,Sender,Defly - Fee Sink
+2024-05-23 17:50:37,Swap,CYCLE,2.,ALGO,6.984607,ALGO,0.003,Combined Group - w+jeOjI8yxzu3niPJOYpcGV7H4pR/OB4X7YnKPtQAjI=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
+2024-05-23 17:50:43,Send,ALGO,0.032009,,,ALGO,0.001,RU6BMXYRHR2TYMDDPTQOYANPMO6FEASDLNM44PKVKVOLOJU5XZFQ,Sender,YWXUJAXOTCSHTIUFHTVP5P47VHJ4GOWTLPVOQHOPV7K3RWU5T2ZCFSOYM4
 2024-05-24 19:05:19,Fee,,,,,ALGO,0.001,IBNJB2NM356BBOGOAMTM5CBRTXT4R5M6P6R7YLALB3XEHMW3APXQ,Sender,Algorand Network
 2024-05-24 19:05:53,Fee,,,,,ALGO,0.001,HVOSQ2TL5EM2DR42KBPFJ5JNSD5TPBXAH4L6XLMVGO7X65QV7QQQ,Sender,Algorand Network
 2024-05-24 19:06:36,Fee,,,,,ALGO,0.001,GHGCT2IJ27SGNEDVULO2IHGCBGDFZDRVINGLW723QK3RUYKBGZUQ,Sender,Algorand Network
@@ -1157,66 +1001,55 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2024-06-01 04:36:56,Receive,,,NIKO,269.179004,,,(Group- nrWmd...) - PQIC3CUXL5XUUSNWQTGGJGNILY4PTSVPHSQJ5VHYE3BJ2L6IBNJA,1 txns.  ,RI7ECDF2VQRYEX3EGXVWVTQU5CH72Y5QRXFQ2YHP54P662TMMUMPRTJZ54
 2024-06-08 11:44:23,Send,ALGO,7.2,,,,,(Group- BTm8+...) - JGKFE6GPEBLSESGNGL2SHY3GXKPM45IU63H65GW3DORN4UVEACAQ,2 txns.  ,G6B5L2B3GSLJQTC5THSGSJMTJ4EN3SBF3IW5PI7XEEKYH6WXN6UGY4XAXQ
 2024-06-08 11:44:23,Fee,,,,,ALGO,0.002,Group Combined Fees - BTm8+qqQgsBy4igFAg84T/V8c3ITv5vOQBbT6BCw4mc=,2 txns. ,Algorand Network
-2024-06-08 11:53:38,Receive,,,TMPOOL2,33.070597,,,(Group- vAQ+/...) - InnerTxn #1 - V66MM...,2 txns.  ,G6B5L2B3GSLJQTC5THSGSJMTJ4EN3SBF3IW5PI7XEEKYH6WXN6UGY4XAXQ
+2024-06-08 11:53:38,Receive,,,ORA/ALGO LP Token,33.070597,,,(Group- vAQ+/...) - InnerTxn #1 - V66MM...,2 txns.  ,G6B5L2B3GSLJQTC5THSGSJMTJ4EN3SBF3IW5PI7XEEKYH6WXN6UGY4XAXQ
 2024-06-08 11:53:38,Fee,,,,,ALGO,0.004,Group Combined Fees - vAQ+/1r4ia6TQQmp6sm1wpHwGd9peiSwlfpHGV/7UeY=,2 txns. ,Algorand Network
 2024-06-08 11:54:24,Fee,,,,,ALGO,0.001,HQAMLT4QBDVUK7GD72LXKQHR36QEYA7X2KMWHPPNFIESF34MBYXA,Sender,Algorand Network
 2024-06-08 11:54:44,Fee,,,,,ALGO,0.001,JAKJXHJ4R3SLU3KPIIMLNOBHQPBJFXJLPY5WFS3NYIYNRPO4Z2TQ,Sender,Algorand Network
 2024-06-08 11:58:41,Receive,,,ALGO,0.000095,,,(Group- W6pQp...) - RURNIDZJV6MR7KXJUC7SULVOXTCHZKUFYUMYKXZ72QRSODBWVLCA,1 txns.  ,DU6IXM56DGFVKMM7CVDYYT4GAKEQNNNGQSMDMMDU7U575NIE73OADEH5YM
-2024-06-08 11:58:46,Receive,,,ALGO,0.000013,,,(Group- 5EX+z...) - 5AOEVIXNB2T36UA4BVNXPG5N5OKOCPMFZDR2Q5OLG7LE7YX3CO6Q,1 txns.  ,D13 - Scam Warning
+2024-06-08 11:58:46,Spam,,,ALGO,0.000013,,,(Group- 5EX+z...) - 5AOEVIXNB2T36UA4BVNXPG5N5OKOCPMFZDR2Q5OLG7LE7YX3CO6Q,1 txns.  ,D13 - Scam Warning Bot
 2024-06-08 11:59:27,Receive,,,ALGO,0.000064,,,(Group- qGrZ4...) - TLZDAI2QGBQ5B4Z6ER44Z76X3AZMQDFSSHOAMDZPTFEVX4A6CI6Q,1 txns.  ,SQAU4ZWYV6QCHJDDLMGLO2PDYGECCPXBX4K7U5N23IXYHVCM7OAGK22ALE
-2024-06-08 11:59:41,Receive,,,ALGO,0.000013,,,(Group- vyvHt...) - RPD6EJUWKRSHNSHSU466L3MSC7N63NWZ3T3PBY6URES7PYNHJHFQ,1 txns.  ,D13 - Scam Warning
+2024-06-08 11:59:41,Spam,,,ALGO,0.000013,,,(Group- vyvHt...) - RPD6EJUWKRSHNSHSU466L3MSC7N63NWZ3T3PBY6URES7PYNHJHFQ,1 txns.  ,D13 - Scam Warning Bot
 2024-06-08 11:59:44,Receive,,,ALGO,0.000061,,,(Group- Q4MbA...) - HDP6MA6XBKBVXRWZ4HETKT2SLO634M7IPNZSHAYRLOWO73DXPWXA,1 txns.  ,43W26RLISCPSUCI424W2ZN3S4HQDHNX2FKKY5KJ46R3JDXHO6ZPXICNQJ4
-2024-06-08 11:59:56,Receive,,,ALGO,0.000013,,,(Group- /nRTf...) - ZSL2RQWK4R64ZYXSUZQMBXDXEG2TOKS75ISD7GLF3CBHEIXE24CQ,1 txns.  ,D13 - Scam Warning
+2024-06-08 11:59:56,Spam,,,ALGO,0.000013,,,(Group- /nRTf...) - ZSL2RQWK4R64ZYXSUZQMBXDXEG2TOKS75ISD7GLF3CBHEIXE24CQ,1 txns.  ,D13 - Scam Warning Bot
 2024-06-08 12:31:47,Receive,,,NIKO,132.450331,,,(Group- IcXo8...) - AR6PONMK2UUTRWYO6MVUQSQT2IDKVBMYDE22TR6LELRHO3IMBG7Q,1 txns.  ,RI7ECDF2VQRYEX3EGXVWVTQU5CH72Y5QRXFQ2YHP54P662TMMUMPRTJZ54
 2024-06-15 04:02:10,Receive,,,NIKO,132.275132,,,(Group- joR+/...) - MM535I4XLUGZHJD7WBTGCACELJRJQ7HOV54VJXML666Z7SVG64WQ,1 txns.  ,RI7ECDF2VQRYEX3EGXVWVTQU5CH72Y5QRXFQ2YHP54P662TMMUMPRTJZ54
 2024-06-22 03:54:00,Receive,,,NIKO,131.752305,,,(Group- Uuuoq...) - DF65V2EDPVOORNBIRB4NXVO6B4MT5NKGT2KNE5R4XZONZ2CHRUWA,1 txns.  ,RI7ECDF2VQRYEX3EGXVWVTQU5CH72Y5QRXFQ2YHP54P662TMMUMPRTJZ54
 2024-06-29 03:42:55,Receive,,,NIKO,132.625994,,,(Group- nF3yt...) - ET6EFPDID3SLZE6T2Y7CY3TXT46CFMGXWAMI4VQ65EMDSLA7MNRA,1 txns.  ,RI7ECDF2VQRYEX3EGXVWVTQU5CH72Y5QRXFQ2YHP54P662TMMUMPRTJZ54
-2024-06-29 16:40:18,Send,TMPOOL2,83.25411,,,,,(Group- lrX+a...) - N45PO5FXP6ZUGLANBOMWAXW6M6SGR6LIDYSSZBIF2GQ72SAONG7Q,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,R7NH33WM7X74BQX5QKYHNF2YOKIIUXF6ZLSZWLRKICGSXTKA2A6VWCJTDE
-2024-06-29 16:40:18,Receive,,,Tacos,1599887.,,,(Group- lrX+a...) - InnerTxn #1 - 2IIX6...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,R7NH33WM7X74BQX5QKYHNF2YOKIIUXF6ZLSZWLRKICGSXTKA2A6VWCJTDE
-2024-06-29 16:40:18,Fee,,,,,ALGO,0.004,Group Combined Fees - lrX+awlXAK4QltR4c4utNoxo7neOgR3yJNnNXff/2XA=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2024-06-29 16:40:44,Receive,,,RWA,324.359302,,,(Group- oelM6...) - 7QXUCB2E45BFHB664NYBDA4XWC67SRTXBH52PAN2BZNWVPVU2LBQ,2 txns. Tinyman : Tinyman Staking : Claim ,UAABM22A2V4AZY5NX2SZTRP2WFGEPTSNJQXFOX3DO7ZNFCF6WEHQYG6O5I
-2024-06-29 16:40:44,Fee,,,,,ALGO,0.002,Group Combined Fees - oelM6OCYJAQ0nKlGKN5Lcry7F8Wuoji/DljEtpeloXw=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-06-29 16:40:50,Receive,,,COOP,0.90817,,,(Group- yCtR2...) - YPRVYZHPGEXH5N6QXYYJ6UYIANRU23F5PGEFJQTRB4POVUHAXF6A,2 txns. Tinyman : Tinyman Staking : Claim ,ZTM6SGI2R5TKFYZAQEXE2WAQGJC6JDQD2RBBG7PP7SFAQMK3L6GOHUTX4I
-2024-06-29 16:40:50,Fee,,,,,ALGO,0.002,Group Combined Fees - yCtR22jTAa6+eU68FUtjpxU1vkeM9KSAOBtQOzwlLYE=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-06-29 16:40:52,Receive,,,RWA,895.200955,,,(Group- BMf28...) - 4SYFPIJRASW7HNWMNCRK7K5V7A7N7UDUC4NIWZVZGO4PRS7B3TEA,2 txns. Tinyman : Tinyman Staking : Claim ,4HGYV2NV6JBMKSG3OCUBVFN5O2E2FIQPWO5P4TAMJ3TYYCYCQJA27PE6RE
-2024-06-29 16:40:52,Fee,,,,,ALGO,0.002,Group Combined Fees - BMf28f7CkmG8leNWKX983OLFGr+VijIhnBkZ0K1oZvM=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-06-29 16:40:55,Receive,,,ALGO,0.83764,,,(Group- PfPy8...) - CFI65ZM6K2WKCCPEIYLPV2O6MUWEDVOFTPFZSV63DQNTI4BFYVUQ,2 txns. Tinyman : Tinyman Staking : Claim ,CAXKMSK27S3UBFF6DAQR7MWGCKYSJKNN3NE6OHLEECSLK7MJYKS6D6Y6FQ
-2024-06-29 16:40:55,Fee,,,,,ALGO,0.002,Group Combined Fees - PfPy8BD1az0lRf8jPpYyHCoV/ITdHy3sxxKSKjuHTMs=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-06-29 16:41:12,Receive,,,NIKO,16.919561,,,(Group- zryDM...) - TR6FPLIJJIPLDBHKONZA4R4O7MMKW2MDNK527T73YBMBX3CQBBHQ,2 txns. Tinyman : Tinyman Staking : Claim ,3MMC7JEOKPAT6M3WOZ6OAQD3BASIM2XVHPJHWIEAAUZOWOPYFBF2HX5JOM
-2024-06-29 16:41:12,Fee,,,,,ALGO,0.002,Group Combined Fees - zryDM988W87D4ntWTama/UWWHl0g7N4JJUwTHC8Kzpw=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
-2024-06-29 16:41:24,Receive,,,ALGO,0.01221,,,(Group- ypA1V...) - REEZWHWW6ZQRLJFMMX3ZKHCWW54L2C4GQBSTM5AG3CBHFI7AXW3A,2 txns. Tinyman : Tinyman Staking : Claim ,CAXKMSK27S3UBFF6DAQR7MWGCKYSJKNN3NE6OHLEECSLK7MJYKS6D6Y6FQ
-2024-06-29 16:41:24,Fee,,,,,ALGO,0.002,Group Combined Fees - ypA1VU9o4VCKZU08yaOGxtgHOjgHhp/ZIf6qAJoh1cM=,2 txns. Tinyman : Tinyman Staking : Claim,Algorand Network
+2024-06-29 16:40:18,Remove Liquidity,,,Tacos,1599887.,,,(Group- lrX+a...) - InnerTxn #1 - 2IIX6...,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman
+2024-06-29 16:40:18,Return LP Tokens,TMPOOL2,83.25411,,,ALGO,0.004,Combined Group - lrX+awlXAK4QltR4c4utNoxo7neOgR3yJNnNXff/2XA=,2 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Tinyman
+2024-06-29 16:40:44,Staking Rewards,,,RWA,324.359302,ALGO,0.002,Combined Group - oelM6OCYJAQ0nKlGKN5Lcry7F8Wuoji/DljEtpeloXw=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-06-29 16:40:50,Staking Rewards,,,COOP,0.90817,ALGO,0.002,Combined Group - yCtR22jTAa6+eU68FUtjpxU1vkeM9KSAOBtQOzwlLYE=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-06-29 16:40:52,Staking Rewards,,,RWA,895.200955,ALGO,0.002,Combined Group - BMf28f7CkmG8leNWKX983OLFGr+VijIhnBkZ0K1oZvM=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-06-29 16:40:55,Staking Rewards,,,ALGO,0.83764,ALGO,0.002,Combined Group - PfPy8BD1az0lRf8jPpYyHCoV/ITdHy3sxxKSKjuHTMs=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-06-29 16:41:12,Staking Rewards,,,NIKO,16.919561,ALGO,0.002,Combined Group - zryDM988W87D4ntWTama/UWWHl0g7N4JJUwTHC8Kzpw=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
+2024-06-29 16:41:24,Staking Rewards,,,ALGO,0.01221,ALGO,0.002,Combined Group - ypA1VU9o4VCKZU08yaOGxtgHOjgHhp/ZIf6qAJoh1cM=,2 txns. Tinyman : Tinyman Staking : Claim,Tinyman
 2024-06-29 16:46:04,Send,Tacos,1599887.,,,,,(Group- PLL6t...) - RYV3Z45TXHDUAGR7PZAKLWMFUOUO6JVVZZW3S7LXMCKQJPXMRMCA,3 txns. Folks Finance :  :  ,WQLJ42OMKFOYGEWIPMEK3P4QP63DRIOJ5ADC7L3LIOPJFPV7BG2YRSWJ4I
 2024-06-29 16:46:04,Receive,,,ALGO,19.733419,,,(Group- PLL6t...) - InnerTxn #1 - X2RVU...,3 txns. Folks Finance :  :  ,WQLJ42OMKFOYGEWIPMEK3P4QP63DRIOJ5ADC7L3LIOPJFPV7BG2YRSWJ4I
 2024-06-29 16:46:04,Fee,,,,,ALGO,0.008,Group Combined Fees - PLL6tyy8Gh0o8csnC8JxkX2BewocVpjiVUKBAkW3UTo=,3 txns. Folks Finance :  : ,Algorand Network
-2024-06-29 16:47:30,Receive,,,PLP,0.096685,,,(Group- Uve9J...) - InnerTxn #1 - SB6E5...,"4 txns. Pact : Farms : Withdraw LP Tokens, Claim Rewards ",PW2WDV65JXXHGY5RO77EONQXAIFK2U4W5YYOKS4ETQLSSGJULDKP4D6FME
+2024-06-29 16:47:30,Receive,,,COOP/ALGO LP Token,0.096685,,,(Group- Uve9J...) - InnerTxn #1 - SB6E5...,"4 txns. Pact : Farms : Withdraw LP Tokens, Claim Rewards ",PW2WDV65JXXHGY5RO77EONQXAIFK2U4W5YYOKS4ETQLSSGJULDKP4D6FME
 2024-06-29 16:47:30,Receive,,,ALGO,0.300394,,,(Group- Uve9J...) - InnerTxn #1 - TRVRB...,"4 txns. Pact : Farms : Withdraw LP Tokens, Claim Rewards ",EYFNWMYLC7SNJ6JHAI4GG5PIVE2C4USK3ZWAX7H6EFJRFI2S622YOLKX3Y
 2024-06-29 16:47:30,Receive,,,COOP,0.071515,,,(Group- Uve9J...) - InnerTxn #2 - TRVRB...,"4 txns. Pact : Farms : Withdraw LP Tokens, Claim Rewards ",EYFNWMYLC7SNJ6JHAI4GG5PIVE2C4USK3ZWAX7H6EFJRFI2S622YOLKX3Y
 2024-06-29 16:47:30,Fee,,,,,ALGO,0.011,Group Combined Fees - Uve9JKeVnT8APxTsd9pSVp/R0o9wZRxa3SUBqaP+CaU=,"4 txns. Pact : Farms : Withdraw LP Tokens, Claim Rewards",Algorand Network
 2024-06-29 16:48:30,Send,ALGO,1.,,,,,(Group- mxVI+...) - QGKJAYACUTRZDD6SG4ZIW5V4QVAB5VA25PXPJZMDJK6MRY5O46QA,3 txns. Pact : Swap Aggregator : Swap ,MOX6YP7PLM2OTMCVCLXNI3E7GQNU7ZA4AWONKP5ONYDDTFCXHPV5Z4XYZ4
 2024-06-29 16:48:30,Receive,,,xUSD,0.141835,,,(Group- mxVI+...) - InnerTxn #1 - JBQDT...,3 txns. Pact : Swap Aggregator : Swap ,MOX6YP7PLM2OTMCVCLXNI3E7GQNU7ZA4AWONKP5ONYDDTFCXHPV5Z4XYZ4
 2024-06-29 16:48:30,Fee,,,,,ALGO,0.014,Group Combined Fees - mxVI+mk/VvSvG2jis+fpVrinCX7jWMbOvQA2iccrkPk=,3 txns. Pact : Swap Aggregator : Swap,Algorand Network
-2024-06-29 16:48:56,Send,ALGO,1.014053,,,,,(Group- WuzAB...) - B3Q6LYXU6OXMX7VGXXKQGN5FYSTYAZL4VVMIWD3ZX2K5LKOHPO5Q,4 txns. Pact : appDB match : xUSD/ALGO Liquidity Pool ,CBIIQJI4GLROMZQSHVUMXNOFY3HAMZF53AASVQNAGL5CIR2EDSHLUADPO4
-2024-06-29 16:48:56,Send,xUSD,0.141835,,,,,(Group- WuzAB...) - UQCNLGOO2JCMEC5AUUXG7TLQKQOX2DBKS6QWY4HUSRULUYZ6PMXQ,4 txns. Pact : appDB match : xUSD/ALGO Liquidity Pool ,CBIIQJI4GLROMZQSHVUMXNOFY3HAMZF53AASVQNAGL5CIR2EDSHLUADPO4
-2024-06-29 16:48:56,Receive,,,PLP,0.001447,,,(Group- WuzAB...) - InnerTxn #1 - YEG6L...,4 txns. Pact : appDB match : xUSD/ALGO Liquidity Pool ,CBIIQJI4GLROMZQSHVUMXNOFY3HAMZF53AASVQNAGL5CIR2EDSHLUADPO4
+2024-06-29 16:48:56,Send,ALGO,1.014053,,,,,(Group- WuzAB...) - B3Q6LYXU6OXMX7VGXXKQGN5FYSTYAZL4VVMIWD3ZX2K5LKOHPO5Q,4 txns. Pact : appDB match : xUSD/ALGO Liquidity Pool ,Pact - xUSD/ALGO Liquidity Pool
+2024-06-29 16:48:56,Send,xUSD,0.141835,,,,,(Group- WuzAB...) - UQCNLGOO2JCMEC5AUUXG7TLQKQOX2DBKS6QWY4HUSRULUYZ6PMXQ,4 txns. Pact : appDB match : xUSD/ALGO Liquidity Pool ,Pact - xUSD/ALGO Liquidity Pool
+2024-06-29 16:48:56,Receive,,,xUSD/ALGO LP Token,0.001447,,,(Group- WuzAB...) - InnerTxn #1 - YEG6L...,4 txns. Pact : appDB match : xUSD/ALGO Liquidity Pool ,CBIIQJI4GLROMZQSHVUMXNOFY3HAMZF53AASVQNAGL5CIR2EDSHLUADPO4
 2024-06-29 16:48:56,Fee,,,,,ALGO,0.006,Group Combined Fees - WuzABAhcoPOb1cr3xa/9t+rJ6I1IPerWHQuGd0lbnIc=,4 txns. Pact : appDB match : xUSD/ALGO Liquidity Pool,Algorand Network
 2024-06-29 16:50:08,Send,ALGO,0.345517,,,,,(Group- 0/DsS...) - XVPKXTTHYZ33F76IWRD5MH74XZDJMY5OP5SBZVPASDN5O6B4S5QQ,"7 txns. Pact : Pact Swap : Swap, Add Liquidity ",Pact - USDC/ALGO Liquidity Pool
 2024-06-29 16:50:08,Receive,,,USDC,0.048707,,,(Group- 0/DsS...) - InnerTxn #1 - PAC4V...,"7 txns. Pact : Pact Swap : Swap, Add Liquidity ",JWOUUZ7YJJ42EHPRGW2NG64LZNUHNMWK7D5TE36GF6P6P2FXHGPZ42V2AE
 2024-06-29 16:50:08,Send,ALGO,0.344483,,,,,(Group- 0/DsS...) - 3BWOGRK3KGA776CBPYVWFHQSUSDENHIXJCNHY43REE4OD3YSUD3Q,"7 txns. Pact : Pact Swap : Swap, Add Liquidity ",Pact - USDC/ALGO Liquidity Pool
 2024-06-29 16:50:08,Send,USDC,0.048706,,,,,(Group- 0/DsS...) - H6G5EJQGX3BTJXRFZYAC6EHL2K3UQLDMTF5DYI7OFS5KNREZDI7Q,"7 txns. Pact : Pact Swap : Swap, Add Liquidity ",Pact - USDC/ALGO Liquidity Pool
-2024-06-29 16:50:08,Receive,,,PLP,0.114549,,,(Group- 0/DsS...) - InnerTxn #1 - TI6Y5...,"7 txns. Pact : Pact Swap : Swap, Add Liquidity ",JWOUUZ7YJJ42EHPRGW2NG64LZNUHNMWK7D5TE36GF6P6P2FXHGPZ42V2AE
+2024-06-29 16:50:08,Receive,,,USDC/ALGO LP Token,0.114549,,,(Group- 0/DsS...) - InnerTxn #1 - TI6Y5...,"7 txns. Pact : Pact Swap : Swap, Add Liquidity ",JWOUUZ7YJJ42EHPRGW2NG64LZNUHNMWK7D5TE36GF6P6P2FXHGPZ42V2AE
 2024-06-29 16:50:08,Receive,,,ALGO,0.000013,,,(Group- 0/DsS...) - InnerTxn #2 - TI6Y5...,"7 txns. Pact : Pact Swap : Swap, Add Liquidity ",JWOUUZ7YJJ42EHPRGW2NG64LZNUHNMWK7D5TE36GF6P6P2FXHGPZ42V2AE
 2024-06-29 16:50:08,Fee,,,,,ALGO,0.01,Group Combined Fees - 0/DsSyP5y0hDqt5c/E39ByxJvY9vmiJjN0kLdR8Q1Lg=,"7 txns. Pact : Pact Swap : Swap, Add Liquidity",Algorand Network
-2024-06-29 17:33:33,Send,TMPOOL2,188.271814,,,,,(Group- XxIBr...) - HYOVH6IG6GCYGZJ2GDY27IUDKFZBAIGPZ3ZEPGHI6ZUS776DBLTA,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - ORA/ALGO Liquidity Pool
+2024-06-29 17:33:33,Send,ORA/ALGO LP Token,188.271814,,,,,(Group- XxIBr...) - HYOVH6IG6GCYGZJ2GDY27IUDKFZBAIGPZ3ZEPGHI6ZUS776DBLTA,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,Tinyman - ORA/ALGO Liquidity Pool
 2024-06-29 17:33:33,Receive,,,ORA,46.24732848,,,(Group- XxIBr...) - InnerTxn #1 - SURFT...,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity ,TRCEY5UZGTATGTF5K3U42IMDT467D4EHV7S5MYJBMLMYARYJOZFATORMUM
 2024-06-29 17:33:33,Fee,,,,,ALGO,0.005,Group Combined Fees - XxIBrOD8F+/kmUCMxLwNzyaIRWdBcb6rAmL7kM5BORM=,3 txns. Tinyman : Tinyman AMM v2 : Remove Liquidity,Algorand Network
-2024-06-29 17:35:35,Send,ORA,46.24732848,,,,,(Group- XbLJg...) - XZHUEPBB34X7TQXW4PEDFP4NQU5V3S5CGSEHOEGWBP2ACSKV4IEQ,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,V34RGCPO7ZOU2LUE2N54AGDUW3JLNGFBAPRVTJVAFVQTRHEXGKHJD6J35Q
-2024-06-29 17:35:35,Receive,,,PEPE,492550.1805,,,(Group- XbLJg...) - InnerTxn #1 - 3IT22...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,V34RGCPO7ZOU2LUE2N54AGDUW3JLNGFBAPRVTJVAFVQTRHEXGKHJD6J35Q
-2024-06-29 17:35:35,Fee,,,,,ALGO,0.009,Group Combined Fees - XbLJg69lvo1e60NODCC+8MBR5ved47GGKQlDjenprAM=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
-2024-06-29 17:40:07,Send,PEPE,123137.5451,,,,,(Group- wcOUN...) - ABDHCPCD6XTAK4ED63A7GVCRALCSP7SPZAJGI525O6E4SKPTOAVA,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,CQH5D4UKLLYL2IDC7BLBOS6X34KWMHCO2EJUF427OEUQWKL7PKY5PUEDPA
-2024-06-29 17:40:07,Receive,,,COOP,52.318068,,,(Group- wcOUN...) - InnerTxn #1 - 62R56...,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ,CQH5D4UKLLYL2IDC7BLBOS6X34KWMHCO2EJUF427OEUQWKL7PKY5PUEDPA
-2024-06-29 17:40:07,Fee,,,,,ALGO,0.003,Group Combined Fees - wcOUNdo3yj5lwXJFWT9ABswaC6U+wM28+vbm9HZt3SA=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Algorand Network
-2024-06-29 17:40:13,Send,ALGO,0.035241,,,ALGO,0.001,W7S6G62LVXCCJ7MXSOCP63FKU6YMPS46E6SBVVR7P5AQBW6MGMXA,Sender,Defly - Fee Sink
+2024-06-29 17:35:35,Swap,ORA,46.24732848,PEPE,492550.1805,ALGO,0.009,Combined Group - XbLJg69lvo1e60NODCC+8MBR5ved47GGKQlDjenprAM=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
+2024-06-29 17:40:07,Swap,PEPE,123137.5451,COOP,52.318068,ALGO,0.003,Combined Group - wcOUNdo3yj5lwXJFWT9ABswaC6U+wM28+vbm9HZt3SA=,2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell),Tinyman
+2024-06-29 17:40:13,Send,ALGO,0.035241,,,ALGO,0.001,W7S6G62LVXCCJ7MXSOCP63FKU6YMPS46E6SBVVR7P5AQBW6MGMXA,Sender,YWXUJAXOTCSHTIUFHTVP5P47VHJ4GOWTLPVOQHOPV7K3RWU5T2ZCFSOYM4
 2024-06-29 17:40:44,Send,PEPE,123137.545,,,,,(Group- HdAsf...) - FDCI35HWGITVVKHW5S2BQVCXAS2K5W532FQOBJIDRJTLQCDDARIQ,2 txns. Alammex : appDB match : Swap ,G2QORAZT2JGNTLYKSDDEMMFKA74UYWM353EYYZBSRVXEFJI3IOYIEDLEPY
 2024-06-29 17:40:44,Receive,,,AKTA,1581.876108,,,(Group- HdAsf...) - InnerTxn #1 - QCU7U...,2 txns. Alammex : appDB match : Swap ,G2QORAZT2JGNTLYKSDDEMMFKA74UYWM353EYYZBSRVXEFJI3IOYIEDLEPY
 2024-06-29 17:40:44,Fee,,,,,ALGO,0.04,Group Combined Fees - HdAsfbmapSPlaiANsbRyL9ROo7wES8ooKHTha6BhtSk=,2 txns. Alammex : appDB match : Swap,Algorand Network
