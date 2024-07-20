@@ -42,7 +42,7 @@ def main():
     exportFunctions.saveDB(db)
 
     #this exports the stored txn rows. currently supports 'csv' and 'print'
-    exportFunctions.outputRows('csv', db, '')
+    exportFunctions.outputRows('csv', db, 'Algofi')
     
 
 
