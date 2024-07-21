@@ -19,20 +19,18 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2022-06-04 18:43:18,Fee,,,,,ALGO,0.001,BOI777TTQBSXG5L6ZGFSA75YTYAT7BOAAFKSDQWBZVWDRUZYW7UQ,Sender,Algorand Network
 2022-06-04 18:44:32,Fee,,,,,ALGO,0.001,U7XX76PMWENSTVGRN5NNDVBS3Q4Z27KJSYUBCKFUGQMQVQ7HPMLA,Asset Opt in/out,Algorand Network
 2022-06-04 18:45:11,Swap,ALGO,0.1,YLDY,35.839644,ALGO,0.004,Combined Group - TF+8biA9fNL+fyUBWRO9/FHGZDrFUH6aGV9s8RKuywM=,4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Sell),Tinyman
-2022-06-04 18:45:33,Receive,,,YLDY,0.362016,ALGO,0.003,Combined Group - jUNkiYamV7ORp9DbhTcS25DOtMQSkomV7rkna1q538o=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-04 18:45:33,Receive Slippage,,,YLDY,0.362016,ALGO,0.003,Combined Group - jUNkiYamV7ORp9DbhTcS25DOtMQSkomV7rkna1q538o=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
 2022-06-04 18:45:54,Fee,,,,,ALGO,0.001,4IG4DB753EBCYWQY7CO4ROZYRMSOK3ZPGAFJHGQLX2AGF4S3CEAA,Asset Opt in/out,Algorand Network
 2022-06-04 18:46:20,Add Liquidity,YLDY,36.201657,,,,,(Group- B0KST...) - NNZT6SXWVB3WKDPT6XA2AZNXTPWPJEFNPS2KRARQQBXDD7DNHF4A,5 txns. Tinyman : Tinyman AMM v1/1.1 : Add Liquidity ,Tinyman
 2022-06-04 18:46:20,Add Liquidity,ALGO,0.0997,,,,,(Group- B0KST...) - YTHMXOFNW5R6CDLMNXJNNYG7Z5HUX7XKUFJXTYBV5AOUZI2GHAZA,5 txns. Tinyman : Tinyman AMM v1/1.1 : Add Liquidity ,Tinyman
 2022-06-04 18:46:20,Receive LP Tokens,,,YLDY/ALGO LP Token,1.475949,ALGO,0.005,Combined Group - B0KSTQ5lJ2G4Zjzd/K1fJgSPg62BNO/jWs78wjkQeMc=,5 txns. Tinyman : Tinyman AMM v1/1.1 : Add Liquidity,Tinyman
-2022-06-04 18:46:38,Receive,,,YLDY/ALGO LP Token,0.014909,ALGO,0.003,Combined Group - CQE9QtLKS9a6oJr/z70qOyY/NnTCOKTnvI8FM228oyk=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-04 18:46:38,Receive Slippage,,,YLDY/ALGO LP Token,0.014909,ALGO,0.003,Combined Group - CQE9QtLKS9a6oJr/z70qOyY/NnTCOKTnvI8FM228oyk=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
 2022-06-04 18:50:45,Swap,ALGO,1.,goMINT,8.03323,ALGO,0.004,Combined Group - +NfRRdfhExu91LWo0fi++PTYwWqMyQ9w+aAz7G5USkQ=,3 txns. Pact : Pact Swap : Swap,Pact
-2022-06-04 18:54:09,Send,goMINT,4.026654,,,,,(Group- s0Nsm...) - VNYBLJHBI4YVSKQQMXA7KMXC6OLHQ7B7YG667G4NCTL6YJ7A2XTQ,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity ",Algofi - goMINT/ALGO Liquidity Pool
-2022-06-04 18:54:09,Receive,,,ALGO,0.499882,,,(Group- s0Nsm...) - InnerTxn #1 - HBO5Z...,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity ",DXBVXIBRP7KYLTHFRWLDHT2PCRK2IEKVH7WFSECFQ7WHHAYN6RUWGTM4VM
-2022-06-04 18:54:09,Send,ALGO,0.499892,,,,,(Group- s0Nsm...) - OPEB5CTDUXRSTTHHZLITWNPJNVJZ6X2KGKSEJZJCVWPY6E77RCHQ,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity ",Algofi - goMINT/ALGO Liquidity Pool
-2022-06-04 18:54:09,Send,goMINT,4.006576,,,,,(Group- s0Nsm...) - RWFT36W5TEW5VRKSSFF3LBLGNX2XZKI6VHXSWRNY3VY4GLY4ZYUA,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity ",Algofi - goMINT/ALGO Liquidity Pool
-2022-06-04 18:54:09,Receive,,,goMINT/ALGO LP Token,1.409847,,,(Group- s0Nsm...) - InnerTxn #1 - MVPXY...,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity ",DXBVXIBRP7KYLTHFRWLDHT2PCRK2IEKVH7WFSECFQ7WHHAYN6RUWGTM4VM
-2022-06-04 18:54:09,Receive,,,ALGO,0.001255,,,(Group- s0Nsm...) - InnerTxn #1 - MYOKM...,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity ",DXBVXIBRP7KYLTHFRWLDHT2PCRK2IEKVH7WFSECFQ7WHHAYN6RUWGTM4VM
-2022-06-04 18:54:09,Fee,,,,,ALGO,0.011,Group Combined Fees - s0Nsmh2bXt5LLrGE1836o42wmz1fJ2sTXwrpVqohKT4=,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity",Algorand Network
+2022-06-04 18:54:09,Swap,goMINT,4.026654,ALGO,0.499882,,,Swap Row - Combined Group - s0Nsmh2bXt5LLrGE1836o42wmz1fJ2sTXwrpVqohKT4=,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity",Algofi
+2022-06-04 18:54:09,Add Liquidity,ALGO,0.499892,,,,,(Group- s0Nsm...) - OPEB5CTDUXRSTTHHZLITWNPJNVJZ6X2KGKSEJZJCVWPY6E77RCHQ,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity ",Algofi
+2022-06-04 18:54:09,Add Liquidity,goMINT,4.006576,,,,,(Group- s0Nsm...) - RWFT36W5TEW5VRKSSFF3LBLGNX2XZKI6VHXSWRNY3VY4GLY4ZYUA,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity ",Algofi
+2022-06-04 18:54:09,Receive LP Tokens,,,goMINT/ALGO LP Token,1.409847,ALGO,0.011,Combined Group - s0Nsmh2bXt5LLrGE1836o42wmz1fJ2sTXwrpVqohKT4=,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity",Algofi
+2022-06-04 18:54:09,Receive Slippage,,,ALGO,0.001255,,,(Group- s0Nsm...) - InnerTxn #1 - MYOKM...,"8 txns. Algofi : AMM : Swap (Sell), Add Liquidity ",Algofi
 2022-06-04 19:03:39,Send,ALGO,1.38,,,,,(Group- PSUxD...) - 226YKMUCHTVNWB2CRHWMFQTUOCUN3RTL2LYKEQ7AQ34EXFOLUDTQ,5 txns. AlgoDEX : appDB match : Sell (Order book) ,ALGXS4BP2CPA3SCKFZ2IKU77Q3TWU6GSU2XYXBBX5A25DQ6HAOQHXVYKZ4
 2022-06-04 19:03:39,Receive,,,ALGX,98.578469,,,(Group- PSUxD...) - NNZHTRIO4FS6NH432OEDLV25GIDUOFCFIUF6UR5KVJEZLD3WE7PQ,5 txns. AlgoDEX : appDB match : Sell (Order book) ,6DXT44O4WXIALW5BU7CJAVTRSW2X5KGBO5KOYJ4QCKNOQYHPRZBGZU4YFI
 2022-06-04 19:03:39,Send,ALGO,0.002,,,,,(Group- PSUxD...) - 3TWAVVYK3IRYGSXHDNRHBWKZYYANTSONYSH4VASERUF4SUS37J5A,5 txns. AlgoDEX : appDB match : Sell (Order book) ,6DXT44O4WXIALW5BU7CJAVTRSW2X5KGBO5KOYJ4QCKNOQYHPRZBGZU4YFI
@@ -41,8 +39,8 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2022-06-04 19:07:08,Send,ALGX,8.578469,,,,,(Group- 6D8na...) - 2WL7BU2QKDN2OMFEJ7RVXFKIGICRO5KZGLQA3Y72MC2NMQU3F7OA,4 txns. AlgoDEX : appDB match : Buy (Order book) ,TKVLWD7YWACPDT23XUIKFXHFWKN4VQADGERRGAGQ4QTIWG777MFGPEON5A
 2022-06-04 19:07:08,Send,ALGO,0.002,,,,,(Group- 6D8na...) - R7UVA3HT234NNDX3GRDIOSUQY7GUQITNWUELG5QKKQZLKH5JT3HQ,4 txns. AlgoDEX : appDB match : Buy (Order book) ,QUVZE6KNJ5XTEPRCO5TORFFX634ONRSMJEIIALISNGCWDUYRHS5K5IRRY4
 2022-06-04 19:07:08,Fee,,,,,ALGO,0.002,Group Combined Fees - 6D8naC2Lh6hrv0OFPtHcPQ9/2WHcUjbOui4YLWldebc=,4 txns. AlgoDEX : appDB match : Buy (Order book),Algorand Network
-2022-06-04 19:11:41,Receive,,,ALGO,0.006849,,,(Group- jg9BG...) - InnerTxn #1 - FJAPM...,4 txns. Algofi : AMM : Swap (Buy) ,XAIN3ZZRUVMPN7JP6O3X5BSAPKKEOJ4HUPFHBCG72ABRJHAIPHUW7OF42Y
-2022-06-04 19:11:41,Swap,ALGO,1.377212,STKE,100.,ALGO,0.006,Combined Group - jg9BGWTOnwdai2wSPAEdQguJUb2Hi4aEUXQ2NaLGYfE=,4 txns. Algofi : AMM : Swap (Buy),AlgoFi
+2022-06-04 19:11:41,Swap,ALGO,1.377212,STKE,100.,ALGO,0.006,Combined Group - jg9BGWTOnwdai2wSPAEdQguJUb2Hi4aEUXQ2NaLGYfE=,4 txns. Algofi : AMM : Swap (Buy),Algofi
+2022-06-04 19:11:41,Receive Slippage,,,ALGO,0.006849,,,(Group- jg9BG...) - InnerTxn #1 - FJAPM...,4 txns. Algofi : AMM : Swap (Buy) ,Algofi
 2022-06-04 19:13:08,Send,,,,,ALGO,0.001,MUYYD6Z3DIBP74OUEX7WKUMKAN2NXPW4TXT72NQVY3TEIDGJCOOA,Sender,AlgoStake - Airdrop wallet
 2022-06-05 09:21:19,Send,ALGO,0.5,,,,,(Group- Z/Q0U...) - JIBCQEL55RLDMNLXQRF7MTZJPTQQANAJ6UD5M3ORUSZ55XYGGRXQ,2 txns.  ,BJI5IM6OQ7PNRBNU254STJOXXEEQP4DLSFFV55R67P2IIH6COSINHJ6RXQ
 2022-06-05 09:21:19,Send,ALGX,10.,,,,,(Group- Z/Q0U...) - CHQSVRRI4OCSMOOFASUHRE42EVUYR5UHIV666YYE2MZSL4MPGZ3A,2 txns.  ,BJI5IM6OQ7PNRBNU254STJOXXEEQP4DLSFFV55R67P2IIH6COSINHJ6RXQ
@@ -53,7 +51,7 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2022-06-05 09:30:09,Receive,,,ALGO,0.03375,,,(Group- //NPV...) - RB3HMLV5G3I7ETDMWBYXSSE3PO63HHVXBEHUQT7DTNCYROC57OOQ,4 txns. AlgoDEX : appDB match : Sell (Order book) ,YQRPPRZDQXPI6KP7JLACIZ3HUGXHHQSLJD2W6D7IWOVKUJ7GVQIJD6EJYI
 2022-06-05 11:39:41,Fee,,,,,ALGO,0.001,EVZUYMI4GYLP7N42JDGK4EF2BG2OV7WECX4UYGCKHYMSNKNODVUA,Asset Opt in/out,Algorand Network
 2022-06-05 11:41:04,Swap,ALGO,1.843011,AFD,1000.,ALGO,0.004,Combined Group - WHDFJQ3f1YUFDiE/2q2ZJdw+vODv6DcyMO/X0KCps3w=,4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Buy),Tinyman
-2022-06-05 11:41:22,Receive,,,ALGO,0.018245,ALGO,0.003,Combined Group - WbqBm+YFMOlP3wN/2gcKlMX1in2f6oW2MRYnwbe0nCU=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-05 11:41:22,Receive Slippage,,,ALGO,0.018245,ALGO,0.003,Combined Group - WbqBm+YFMOlP3wN/2gcKlMX1in2f6oW2MRYnwbe0nCU=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
 2022-06-06 09:05:41,Airdrop,,,AFD,2.,,,EWEX62RK4IEWBTPKI6ODW4B6WMVX2IG74EUD7E3FW7R4CLOJKQ2A,Receiver,Algorand Faucet Drops - Airdrop wallet
 2022-06-07 09:05:41,Airdrop,,,AFD,2.004,,,PFG7T6X2S2W5KUCPKOLBR56O3NVRAIXIWDY4XGXEW6K5R6NJDV3Q,Receiver,Algorand Faucet Drops - Airdrop wallet
 2022-06-08 02:11:30,Airdrop,,,STKE,0.22,,,UU2BG77THAYLMHMDL473TQOE433XR5W4L6G3AYQH5L26PNZCYVBA,Receiver,AlgoStake - Airdrop wallet
@@ -74,24 +72,21 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2022-06-11 19:38:12,Remove Liquidity,,,YLDY,2.601579,,,(Group- Z+YC2...) - NKFUQ4KXGBPWYJKV7YA6BYI2KQCUJZRICBIWOGSFKGCJZAXIJ5RA,5 txns. Tinyman : Tinyman AMM v1/1.1 : Remove Liquidity ,Tinyman
 2022-06-11 19:38:12,Remove Liquidity,,,ALGO,0.006136,,,(Group- Z+YC2...) - 6J56KH5CWMHPNICN5YMX65X4YVUCHET2VIP7BT5ST7ZJ7XQ5D27A,5 txns. Tinyman : Tinyman AMM v1/1.1 : Remove Liquidity ,Tinyman
 2022-06-11 19:38:12,Return LP Tokens,YLDY/ALGO LP Token,0.1,,,ALGO,0.005,Combined Group - Z+YC2NY7YDORQcdbsYVh9KNX+lEJreF0HLnuSdAt0oQ=,5 txns. Tinyman : Tinyman AMM v1/1.1 : Remove Liquidity,Tinyman
-2022-06-11 19:40:18,Receive,,,YLDY,0.026279,ALGO,0.003,Combined Group - zR3PJr9C9A2n9qJXwYC/wksLCyuKjc/129+kHXYGn0w=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
-2022-06-11 19:40:27,Receive,,,ALGO,0.000062,ALGO,0.003,Combined Group - kwaLRAgyfClSLuSkWFhJYLVN3sC0xqqdD0I61srj0D4=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-11 19:40:18,Receive Slippage,,,YLDY,0.026279,ALGO,0.003,Combined Group - zR3PJr9C9A2n9qJXwYC/wksLCyuKjc/129+kHXYGn0w=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-11 19:40:27,Receive Slippage,,,ALGO,0.000062,ALGO,0.003,Combined Group - kwaLRAgyfClSLuSkWFhJYLVN3sC0xqqdD0I61srj0D4=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
 2022-06-11 19:41:59,Staking Rewards,,,YLDY,0.020282,ALGO,0.003,Combined Group - pqQXNBCmS12LqvcdQGHdgH4gSr6comaBxCOPBwfhoHs=,2 txns. Yieldly : T5 Staking : Claim,Yieldly
 2022-06-12 09:05:37,Airdrop,,,AFD,2.02412032,,,UNAYG4ARALRQ7ECUDUPSSGGAIG3JXXLOUVR5TTKZAFOF7FSDCOWQ,Receiver,Algorand Faucet Drops - Airdrop wallet
 2022-06-12 09:14:51,Fee,,,,,ALGO,0.001,O4KWARI6PZ26AHBUU3TSS4O3A6IEZBMPYOGAIMZL24QEGV3YRMZA,Asset Opt in/out,Algorand Network
 2022-06-12 09:15:12,Swap,ALGO,0.152537,ALGF,10.,ALGO,0.004,Combined Group - ZzB5XTSJLNgxBTaOz5I1dyYN8pq953wksBbwQEq2kEg=,4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Buy),Tinyman
-2022-06-12 09:15:34,Receive,,,ALGO,0.001509,ALGO,0.003,Combined Group - d4XqZASqL4YcHVoW3yPSEG8a0MbCT1fmK0856SEaFEw=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-12 09:15:34,Receive Slippage,,,ALGO,0.001509,ALGO,0.003,Combined Group - d4XqZASqL4YcHVoW3yPSEG8a0MbCT1fmK0856SEaFEw=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
 2022-06-12 09:16:39,Fee,,,,,ALGO,0.001,GNTLJPYXCMEQYWT33TQFEM77Z6NSVOJFQE4FEKJRHOSFG6RDG6OQ,Sender,Algorand Network
 2022-06-12 09:17:31,Staking Deposit,ALGF,10.,,,ALGO,0.002,Combined Group - B1rWxyoLSIJVGMUEbO1ovEgbVCFGlY+uBudjjT4LxZY=,2 txns. AlgoFund : Staking : Deposit,Algofund
 2022-06-12 09:20:03,Staking Withdrawal,,,ALGF,0.01,ALGO,0.003,Combined Group - vpZnh6XZdsC8hGsoPQGV332e/JhvW1ep+Phosd1PpEk=,2 txns. AlgoFund : Staking : Withdrawal,Algofund
 2022-06-12 19:30:27,Staking Rewards,,,ALGF,0.001714,ALGO,0.003,Combined Group - qoYyISCFfL2RpQ4KLdQhYUb5YJknPfOjRnKTExWVCSg=,2 txns. AlgoFund : Staking : Claim,Algofund
 2022-06-12 19:38:41,Fee,,,,,ALGO,0.004,Group Combined Fees - hAxftNPWIaBt0vD4XItaeKdEUGj3AVY3UnexSZjpitA=,4 txns. ,Algorand Network
-2022-06-12 19:39:29,Send,ALGO,3.199,,,,,(Group- ixh7x...) - Q7LSRYOQTLZTM2PL4VYHDFRAAMMEASBI5YPNRVCFCJE35K5GRHUQ,2 txns. Algofi : Lending Market v1 : Initialize Account ,RUZXG4BZBT2KLLCXYWZRXX36JAUX7CTPZ26YCA34ZU35OATU7IRFPNWFDM
-2022-06-12 19:39:29,Fee,,,,,ALGO,0.002,Group Combined Fees - ixh7xXKiP7crcybGivM+tTsiEVrLFNT/UTmM1tMd3fE=,2 txns. Algofi : Lending Market v1 : Initialize Account,Algorand Network
-2022-06-12 19:40:25,Send,ALGO,5.,,,,,(Group- kQWrt...) - 26TTF5X7ZID3UGC5A7FAE6OIRUUE5GHJJ55ZIVNOB3MHWVTXQA2A,15 txns. Algofi : Lending Market v1 : Mint to Collateral ,TY5N6G67JWHSMWFFFZ252FXWKLRO5UZLBEJ4LGV7TPR5PVSKPLDWH3YRXU
-2022-06-12 19:40:25,Fee,,,,,ALGO,0.016,Group Combined Fees - kQWrt813P0KB8nG67DUcsbYBvHZCNW2XRi4PvtQbjjA=,15 txns. Algofi : Lending Market v1 : Mint to Collateral,Algorand Network
-2022-06-12 19:41:25,Receive,,,STBL,0.1,,,(Group- m6qOM...) - InnerTxn #1 - 6HUIM...,14 txns. Algofi : Lending Market v1 : Borrow ,OPY7XNB5LVMECF3PHJGQV2U33LZPM5FBUXA3JJPHANAG5B7GEYUPZJVYRE
-2022-06-12 19:41:25,Fee,,,,,ALGO,0.015,Group Combined Fees - m6qOMW5lvos/2fBnQvP7bsfrFmmCDTJKmNqofNo9e08=,14 txns. Algofi : Lending Market v1 : Borrow,Algorand Network
+2022-06-12 19:39:29,Deposit,ALGO,3.199,,,ALGO,0.002,Combined Group - ixh7xXKiP7crcybGivM+tTsiEVrLFNT/UTmM1tMd3fE=,2 txns. Algofi : Lending Market v1 : Initialize Account,Algofi - Initialize Escrow
+2022-06-12 19:40:25,Collateral Deposit,ALGO,5.,,,ALGO,0.016,Combined Group - kQWrt813P0KB8nG67DUcsbYBvHZCNW2XRi4PvtQbjjA=,15 txns. Algofi : Lending Market v1 : Mint to Collateral,Algofi
+2022-06-12 19:41:25,Borrow,,,STBL,0.1,ALGO,0.015,Combined Group - m6qOMW5lvos/2fBnQvP7bsfrFmmCDTJKmNqofNo9e08=,14 txns. Algofi : Lending Market v1 : Borrow,Algofi
 2022-06-13 09:05:39,Airdrop,,,AFD,2.02816856,,,6T47DOAFF37UYLNKJLU6WEAE6RX2JBDCTH6MJDK3QM4PLCGHMWLQ,Receiver,Algorand Faucet Drops - Airdrop wallet
 2022-06-14 03:17:42,Receive,,,ALGO,5.,,,ZG2SLY7KHOFPBTNOXNMQBR62XBFH4QIGEQLPKB4ME7FKJDC6YVLQ,Receiver,R6HMZIHUFPPFOOKO2ZBFA3M5ZGZ27ON67BOAIPTPQRPICNV75BWDLNFALE
 2022-06-14 09:05:41,Airdrop,,,AFD,2.03222489,,,5K432FYRGKI34ECJUIAWFLHV4G5YMYTDYUN3T5LL5QCUQ5F6D5UQ,Receiver,Algorand Faucet Drops - Airdrop wallet
@@ -114,7 +109,7 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2022-06-14 18:39:04,Send,USDt,0.05,,,,,(Group- VsRf3...) - SKVZYOOEAKOXES67CNQ4HT57I76646K6SEH2MKGNSUD7TJW7CO4Q,4 txns. Folks Finance : appDB match : USDt (Pool) ,CO73GSVE53EEHFAKFTVKIJKKYZ52SJ24EJUKCH5ZUMHVIQYLAT7W5QQ2Y4
 2022-06-14 18:39:04,Fee,,,,,ALGO,0.008,Group Combined Fees - VsRf3DJ9kiKtKLwle40CKXYjUquLZTE6EJWpu97lUeA=,4 txns. Folks Finance : appDB match : USDt (Pool),Algorand Network
 2022-06-14 18:41:24,Send,ALGO,0.33296,,,,,(Group- xFBXD...) - NQVDLRD2P6FRXCK5USFVY4XX2S3G4PAZKPOI3KKC75VO3P7C44IQ,2 txns. Pact : appDB match : USDt/ALGO Liquidity Pool ,Pact - USDt/ALGO Liquidity Pool
-2022-06-14 18:41:24,Receive,,,USDt,0.1,,,(Group- xFBXD...) - InnerTxn #1 - GNACV...,2 txns. Pact : appDB match : USDt/ALGO Liquidity Pool ,KIQDDU4KRXFMUBMLQ75VN5R6RVQHNGHCEX43VSPYHGHBNW27AFNGEZ7EY4
+2022-06-14 18:41:24,Receive,,,USDt,0.1,,,(Group- xFBXD...) - InnerTxn #1 - GNACV...,2 txns. Pact : appDB match : USDt/ALGO Liquidity Pool ,Pact - USDt/ALGO Liquidity Pool
 2022-06-14 18:41:24,Fee,,,,,ALGO,0.003,Group Combined Fees - xFBXDFCuE3ijBAVunDEEh/5yehN+4THfX/Q6d7M4TJE=,2 txns. Pact : appDB match : USDt/ALGO Liquidity Pool,Algorand Network
 2022-06-14 18:41:54,Receive,,,frUSDt,0.000001,,,(Group- GbRqS...) - InnerTxn #1 - P6ENB...,4 txns. Folks Finance : appDB match : USDt (Pool) ,CO73GSVE53EEHFAKFTVKIJKKYZ52SJ24EJUKCH5ZUMHVIQYLAT7W5QQ2Y4
 2022-06-14 18:41:54,Receive,,,USDt,0.000002,,,(Group- GbRqS...) - InnerTxn #2 - P6ENB...,4 txns. Folks Finance : appDB match : USDt (Pool) ,CO73GSVE53EEHFAKFTVKIJKKYZ52SJ24EJUKCH5ZUMHVIQYLAT7W5QQ2Y4
@@ -140,11 +135,8 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2022-06-19 15:22:34,Staking Rewards,,,YLDY,0.338097,ALGO,0.003,Combined Group - yAdWa6rWRgThah6ZnKa49Dk+pITYyHAh6bchs7QjYHw=,2 txns. Yieldly : T5 Staking : Claim,Yieldly
 2022-06-19 15:24:14,Staking Rewards,,,YLDY,0.000053,ALGO,0.006,Combined Group - +ch4M/3PylO0tDwk9alG4hFdz5/q9hOQgQ7/XJw25vg=,6 txns. Yieldly : T3 Staking : Claim,Yieldly
 2022-06-19 15:25:11,Staking Deposit,YLDY,2.98629,,,ALGO,0.003,Combined Group - +Vd56HwCG/A5QglGoVCx6V55HBuNQGqkrOIAr3WQ7FM=,3 txns. Yieldly : T3 Staking : Deposit,Yieldly
-2022-06-19 18:06:08,Send,ALGO,0.078272,,,,,(Group- CvARD...) - BUT3KVRK4U5UEVMFQEPS7CLBI5K6NELZW5FHTB6FPEHQPJATNCOA,2 txns. Pact : Pact Swap : Swap ,Pact - goBTC/ALGO Liquidity Pool
-2022-06-19 18:06:08,Receive,,,goBTC,0.00000123,,,(Group- CvARD...) - InnerTxn #1 - S4WQN...,2 txns. Pact : Pact Swap : Swap ,MUGDC5IFPGEJQLZWYTDTBKPZMWQS6ALNJ7RKQT5CYASSGMKBE6VETMEDK4
-2022-06-19 18:06:08,Fee,,,,,ALGO,0.003,Group Combined Fees - CvARD13Orm8SqY+2N+OT3+TQX8XeljnoJUkVQU9TUjY=,2 txns. Pact : Pact Swap : Swap,Algorand Network
-2022-06-19 18:06:47,Send,goBTC,0.00000123,,,,,(Group- OXH4D...) - 5N3IJWVXGSJ4HVFE5N2MLAILZVCYP3QBSYSKFSMY5MXWCE25MAGA,15 txns. Algofi : Lending Market v1 : Mint to Collateral ,W5UCMHDSTGKWBOV6YVLDVPJGPE4L4ISTU6TGXC7WRF63Y7GOVFOBUNJB5Q
-2022-06-19 18:06:47,Fee,,,,,ALGO,0.016,Group Combined Fees - OXH4DD1er9WWWdGATrgfXrRSKuWw9zfK7KJxiQHfDDQ=,15 txns. Algofi : Lending Market v1 : Mint to Collateral,Algorand Network
+2022-06-19 18:06:08,Swap,ALGO,0.078272,goBTC,0.00000123,ALGO,0.003,Combined Group - CvARD13Orm8SqY+2N+OT3+TQX8XeljnoJUkVQU9TUjY=,2 txns. Pact : Pact Swap : Swap,Pact
+2022-06-19 18:06:47,Collateral Deposit,goBTC,0.00000123,,,ALGO,0.016,Combined Group - OXH4DD1er9WWWdGATrgfXrRSKuWw9zfK7KJxiQHfDDQ=,15 txns. Algofi : Lending Market v1 : Mint to Collateral,Algofi
 2022-06-20 09:05:37,Airdrop,,,AFD,2.05673385,,,WA5UCNWUYMFSBQMBGBGHDTL2DWXUMSZYQX4A42YDXYOH5E6WMPGA,Receiver,Algorand Faucet Drops - Airdrop wallet
 2022-06-21 09:05:39,Airdrop,,,AFD,2.06084732,,,LFWM7WIFAP5PWY6YLENUJ3ETOD7ZJRGHIJLGYHEERQPQBXPNQYIQ,Receiver,Algorand Faucet Drops - Airdrop wallet
 2022-06-22 09:05:38,Airdrop,,,AFD,2.06496901,,,PUTGT6GGKV4S5VVL7FX5B2HU4JDZECUIOMGK7SZYZFALHPN3MDCA,Receiver,Algorand Faucet Drops - Airdrop wallet
@@ -183,18 +175,17 @@ time,type,sentCurrency,sentQuantity,receivedCurrency,receivedQuantity,feeCurrenc
 2022-06-25 07:26:00,Send,,,,,ALGO,0.001,JDJSN7PUU43465VBY6OAY2QOWDJUTJQS727DLA46BPSL5H6WTBBQ,Sender,Tinyman - YLDY/ALGO Liquidity Pool
 2022-06-25 07:26:04,Send,,,,,ALGO,0.001,7XQAXUG4CL5LHPUHLUGDSNUOMSDQXC42OXHNSYFO2NFKW4ZHAV7A,Sender,6SSWYFBRAGM5HMCANECPENBJWOV6UM3O54DYGRNK7GRCHU4QW2ZQJUPYNI
 2022-06-25 07:28:51,Swap,ALGF,10.028692,ALGO,0.136954,ALGO,0.004,Combined Group - INaJ7kWFXoNiWEzNkVkzKHfMi9oQTPAfZQPuKmM4ADo=,4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Sell),Tinyman
-2022-06-25 07:29:21,Receive,,,ALGO,0.010958,ALGO,0.003,Combined Group - L3YUK/wV4TvcMSGv/obxaIJpikTw8sig88rWMz6EF4o=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
-2022-06-25 07:29:21,Receive,,,ALGO,0.001633,ALGO,0.003,Combined Group - 6ciVYo6YyBFAMBn9IjdfwDm2bFUrP638yHL2ML8KYsc=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
-2022-06-25 07:29:21,Receive,,,ALGO,0.017028,ALGO,0.003,Combined Group - DdQRgoCABW6DBblRaUIhaXPVPO0kiDNw378oonm92OA=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
-2022-06-25 07:29:21,Receive,,,ALGO,0.009196,ALGO,0.003,Combined Group - cYD3ZM+prhbJVtRiHmFoiq3erF7bwLrP7z3vcKwfISo=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
-2022-06-25 07:29:21,Receive,,,ALGO,0.002819,ALGO,0.003,Combined Group - EOUCA3B+pHWzpDZuZjMSxx7OhwzR1vZsos5RaZlQLFI=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
-2022-06-25 07:29:21,Receive,,,ALGO,0.001383,ALGO,0.003,Combined Group - l3LKI3t5zvfpOlHPomJ5YArdB5Iwd15uKjpOqTryPqc=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-25 07:29:21,Receive Slippage,,,ALGO,0.010958,ALGO,0.003,Combined Group - L3YUK/wV4TvcMSGv/obxaIJpikTw8sig88rWMz6EF4o=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-25 07:29:21,Receive Slippage,,,ALGO,0.001633,ALGO,0.003,Combined Group - 6ciVYo6YyBFAMBn9IjdfwDm2bFUrP638yHL2ML8KYsc=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-25 07:29:21,Receive Slippage,,,ALGO,0.017028,ALGO,0.003,Combined Group - DdQRgoCABW6DBblRaUIhaXPVPO0kiDNw378oonm92OA=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-25 07:29:21,Receive Slippage,,,ALGO,0.009196,ALGO,0.003,Combined Group - cYD3ZM+prhbJVtRiHmFoiq3erF7bwLrP7z3vcKwfISo=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-25 07:29:21,Receive Slippage,,,ALGO,0.002819,ALGO,0.003,Combined Group - EOUCA3B+pHWzpDZuZjMSxx7OhwzR1vZsos5RaZlQLFI=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-25 07:29:21,Receive Slippage,,,ALGO,0.001383,ALGO,0.003,Combined Group - l3LKI3t5zvfpOlHPomJ5YArdB5Iwd15uKjpOqTryPqc=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
 2022-06-25 07:29:47,Fee,,,,,ALGO,0.001,5ZM5TT4RFBGJLXBYDHKHUMPQXGY4RQSZ6L2VS2N2A7TX6YNDBMTQ,Asset Opt in/out,Algorand Network
-2022-06-25 07:30:05,Receive,,,YLDY,0.40209,ALGO,0.003,Combined Group - iQAHkcmS0C+cjAAd6BdfxFk+D5BUiIPhjbcQ7KyCRdM=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-25 07:30:05,Receive Slippage,,,YLDY,0.40209,ALGO,0.003,Combined Group - iQAHkcmS0C+cjAAd6BdfxFk+D5BUiIPhjbcQ7KyCRdM=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
 2022-06-25 07:30:31,Swap,YLDY,0.40209,ALGO,0.00078,ALGO,0.004,Combined Group - 4JCajOmfqnEpO7Cs+pVdWGBiI1dwieMXrtq2vglluoc=,4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Sell),Tinyman
-2022-06-25 07:30:48,Receive,,,ALGO,0.000007,ALGO,0.003,Combined Group - 1Y3j8zBh2Hr9XZr60HpZV1dqzVF7UDsrc2AGP1HmtoI=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
-2022-06-25 07:32:16,Receive,,,ALGO,4.63,,,(Group- w0uq6...) - InnerTxn #1 - 344P5...,14 txns. Algofi : Lending Market v1 : Remove Collateral ,TY5N6G67JWHSMWFFFZ252FXWKLRO5UZLBEJ4LGV7TPR5PVSKPLDWH3YRXU
-2022-06-25 07:32:16,Fee,,,,,ALGO,0.015,Group Combined Fees - w0uq6O1RaN0B36VlFvMySKrKq02pz6jHNKhd8/o0dpw=,14 txns. Algofi : Lending Market v1 : Remove Collateral,Algorand Network
+2022-06-25 07:30:48,Receive Slippage,,,ALGO,0.000007,ALGO,0.003,Combined Group - 1Y3j8zBh2Hr9XZr60HpZV1dqzVF7UDsrc2AGP1HmtoI=,3 txns. Tinyman : Tinyman AMM v1/1.1 : Redeem Slippage,Tinyman
+2022-06-25 07:32:16,Collateral Withdrawal,,,ALGO,4.63,ALGO,0.015,Combined Group - w0uq6O1RaN0B36VlFvMySKrKq02pz6jHNKhd8/o0dpw=,14 txns. Algofi : Lending Market v1 : Remove Collateral,Algofi
 2022-07-06 04:59:28,Send,ALGO,1.,,,ALGO,0.001,OBUHBR6B6JE56IUCXQIL3S5TZPA2WRRFWEXBVFSGKGZOPXY6S33Q,Sender,QA3JUAAREGMBLMYICNFYLKF3J2RWZQF2QQ6WLB2FTNZXYYWHOT2F65WC5E
 2022-07-06 05:17:56,Fee,,,,,ALGO,0.001,YWKNQAJD3ZGHNYOLBOADAWRR5TJVXHIJUARBK3HGET22QAPNKVKA,Asset Opt in/out,Algorand Network
 2022-07-06 05:18:13,Receive,,,PEARL,1.,,,RVDG5VG24V6XQBIQ7YRZYG475YBJXVDKHAZTFHLF7SJ3SIUCBAGA,Receiver,QA3JUAAREGMBLMYICNFYLKF3J2RWZQF2QQ6WLB2FTNZXYYWHOT2F65WC5E

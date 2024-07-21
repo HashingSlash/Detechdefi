@@ -53,7 +53,7 @@ def returnAssetMovements(rawTxn, txnSpecs, walletID, txnToReturn):
 
     return txnToReturn
 
-def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description):
+def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description, mainDB):
     txnTypeDetail = returnTxnTypeInfo()
     if 'inner-txns' in rawTxn:
         for innerTxn in rawTxn['inner-txns']:
@@ -66,9 +66,11 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description):
                 processedInner['id'] = '(Group- ' + str(rawTxn['group'][:5]) + '...) - ' + processedInner['id']
             processedInner['description'] = description
 
+            if processedInner['txn partner'] in mainDB['addressBook']: processedInner['txn partner'] = mainDB['addressBook'][processedInner['txn partner']]['name'] + ' - ' + mainDB['addressBook'][processedInner['txn partner']]['usage']
+
             if processedInner['sentQuantity'] + processedInner['receivedQuantity'] !=0:
                 innerTxns.append(processedInner)
-            innerTxns = returnInnerTxns(innerTxn, walletID, innerTxns, str('Inner ' + refID), description + ' ')
+            innerTxns = returnInnerTxns(innerTxn, walletID, innerTxns, str('Inner ' + refID), description + ' ', mainDB)
 
 
     return innerTxns
@@ -176,13 +178,14 @@ def buildSingleRow(rawTxn, mainDB, description):
 
     if singleTxn['type'] == 'Receive' and singleTxn['txn partner'] in ['Algorand Faucet Drops - Airdrop wallet',
                                                                        'AlgoStake - Airdrop wallet',
-                                                                       'AKITA - Airdrop wallet']:
+                                                                       'AKITA - Airdrop wallet',
+                                                                       'NIKO - Airdrop wallet']:
         singleTxn['type'] = 'Airdrop'
     elif singleTxn['type'] == 'Receive' and singleTxn['txn partner'] == 'D13 - Scam Warning Bot': singleTxn['type'] = 'Spam'
     txnList = [singleTxn] 
 
 
-    innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description)
+    innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description, mainDB)
     for innerTxn in innerTxns:
         txnList.append(innerTxn)
 
@@ -282,14 +285,18 @@ def convertCurrency(figureToConvert, decimals):
 
 def convertAssetInfo(convertTxn, assetDB):
 
+    bannedTokenTickers = ['TM1POOL', 'TMPOOL11', 'TMPOOL2', 'AF-POOL', 'NFD']
+
 
     if 'sentQuantity' in convertTxn and convertTxn['sentQuantity'] >= 0:
         if convertTxn['sentCurrency'] == 'ALGO':
             convertTxn['sentQuantity'] = convertCurrency(int(convertTxn['sentQuantity']), 6)
         elif convertTxn['sentCurrency'] != '':
-
-            convertTxn['sentQuantity'] = convertCurrency(int(convertTxn['sentQuantity']), int(assetDB[str(convertTxn['sentCurrency'])]['decimals']))
-            convertTxn['sentCurrency'] = assetDB[str(convertTxn['sentCurrency'])]['ticker']
+            asaID = str(convertTxn['sentCurrency'])
+            convertTxn['sentQuantity'] = convertCurrency(int(convertTxn['sentQuantity']), int(assetDB[asaID]['decimals']))
+            convertTxn['sentCurrency'] = assetDB[asaID]['ticker']
+            if convertTxn['sentCurrency'] in bannedTokenTickers:
+                convertTxn['sentCurrency'] = assetDB[asaID]['name']
             
 
 
@@ -297,8 +304,11 @@ def convertAssetInfo(convertTxn, assetDB):
         if convertTxn['receivedCurrency'] == 'ALGO':
             convertTxn['receivedQuantity'] = convertCurrency(int(convertTxn['receivedQuantity']), 6)
         elif convertTxn['receivedCurrency'] != '':
-            convertTxn['receivedQuantity'] = convertCurrency(int(convertTxn['receivedQuantity']), int(assetDB[str(convertTxn['receivedCurrency'])]['decimals']))
-            convertTxn['receivedCurrency'] = assetDB[str(convertTxn['receivedCurrency'])]['ticker']
+            asaID = str(convertTxn['receivedCurrency'])
+            convertTxn['receivedQuantity'] = convertCurrency(int(convertTxn['receivedQuantity']), int(assetDB[asaID]['decimals']))
+            convertTxn['receivedCurrency'] = assetDB[asaID]['ticker']
+            if convertTxn['receivedCurrency'] in bannedTokenTickers:
+                convertTxn['receivedCurrency'] = assetDB[asaID]['name']
 
 
     if 'feeCurrency' in convertTxn and convertTxn['feeQuantity'] >= 0:

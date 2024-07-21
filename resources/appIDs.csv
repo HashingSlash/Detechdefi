@@ -125,6 +125,7 @@ ID,platform,appName
 1109207898,Pact,ALGX/ALGO Liquidity Pool
 1109641718,Cometa,AWT-ALGO LP > AWT
 1110082577,Cometa,CPV-Finite LP > Finite
+1110355161,Pact,DBD/ALGO Liquidity Pool
 1110651519,Cometa,Tendies-ALGO LP > Tendies
 1110655047,Cometa,Tendies > Tendies
 1110828764,Cometa,PRSMS-ALGO LP > PRSMS
@@ -135,6 +136,7 @@ ID,platform,appName
 1117503936,Cometa,ZONE > ZONE
 1117565078,Cometa,COOP > ABCA
 1117572914,Cometa,PEPE > ABCA
+1118067916,Pact,WOOD/ALGO Liquidity Pool
 1118358790,Pact,OTSDHBVA/ALGO Liquidity Pool
 1120031333,Pact,AWT/ALGO Liquidity Pool
 1120347547,Humble Swap,THC/ALGO Liquidity Pool
@@ -227,6 +229,7 @@ ID,platform,appName
 1205778312,Humble Swap,BAG/ALGO Liquidity Pool
 1205810547,Pact,mALGO/ALGO Liquidity Pool
 1209609707,Humble Swap,F!ya/ALGO Liquidity Pool
+1211038470,Humble Swap,PURRS/ALGO Liquidity Pool
 1211924623,Humble Swap,LAGOS/ALGO Liquidity Pool
 1216477532,Pact,SHS/ALGO Liquidity Pool
 1218696792,Humble Swap,SHS/ALGO Liquidity Pool
@@ -239,6 +242,7 @@ ID,platform,appName
 1245526187,Humble Swap,Labrador/ALGO Liquidity Pool
 1246622676,Pact,SKYE/ALGO Liquidity Pool
 1249311784,Pact,EURS/ALGO Liquidity Pool
+1264329431,Pact,WBTC/ALGO Liquidity Pool
 1269244982,Humble Swap,CARD/ALGO Liquidity Pool
 1276819581,Pact,Peps/ALGO Liquidity Pool
 1276828633,Humble Swap,Peps/ALGO Liquidity Pool
@@ -587,6 +591,7 @@ ID,platform,appName
 905394932,Humble Swap,USDN/ALGO Liquidity Pool
 906655543,Algofi,BANK/ALGO Liquidity Pool
 906740444,Pact,BANK/ALGO Liquidity Pool
+906746697,Humble Swap,BANK/ALGO Liquidity Pool
 909237025,Humble Swap,ALC/ALGO Liquidity Pool
 909709184,Cometa,ALC > SUPER + ALGO
 909710478,Cometa,SUPER > ALC + ALGO
@@ -637,6 +642,7 @@ ID,platform,appName
 975485279,Cometa,Dossa > Dossa
 978389296,Cometa,ALCH-ALGO LP > AGOLD + ALGO
 985089418,Pact,gALGO/ALGO Liquidity Pool
+988126141,Humble Swap,MARE/ALGO Liquidity Pool
 989729140,Humble Swap,G$G/ALGO Liquidity Pool
 994914576,Humble Swap,A$A/ALGO Liquidity Pool
 994917208,Humble Swap,L$A/ALGO Liquidity Pool
