@@ -156,6 +156,8 @@ def initMainDB():
             walletID = tempDB['wallet']
         else:
             tempDB = None
+        if tempDB != None and input('Rebuild database (Y/N): ').upper() == 'Y':
+            tempDB = None
     except IOError: #database load failed. prompt user to input wallet address to init new database
         tempDB = None
 
@@ -163,9 +165,7 @@ def initMainDB():
         walletID = input('Paste wallet address: ')
     if tempDB == None:
 
-        if input('Compress groups?(Y/N): ').upper() == 'Y':
-            combineRows = True
-        else: combineRows = False    
+        combineRows = True
 
         ####                Init db
         #   Using db as a main dictionary to hold all relevant data as sub-dictionaries.
