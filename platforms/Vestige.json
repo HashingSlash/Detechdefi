@@ -1,8 +1,7 @@
 {
-  "Swap Aggregator": {
+  "Swap Aggregator 9225": {
     "IDs": [
-      "1026089225",
-      "1222048105"
+      "1026089225"
     ],
     "functions": {
       "Swap": {
@@ -14,15 +13,14 @@
       }
     }
   },
-  "dApp Group Name 2": {
+  "Swap Aggregator 8105": {
     "IDs": [
-      "111",
-      "222"
+      "1222048105"
     ],
     "functions": {
       "Swap": {
         "appArgs": [
-          ""
+          "NhyEdw=="
         ]
       }
     }

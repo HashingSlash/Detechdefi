@@ -155,7 +155,8 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                             '4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Sell) '] :
         groupTxnList = swapGroup(groupTxnList[1], groupTxnList[2], None, [groupTxnList[0]], 'Tinyman', comboRow, groupTxnList)
         #fastProcess = True
-    elif len(groupTxnList) == 2 and groupDescription == '2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ':
+    elif len(groupTxnList) == 2 and groupDescription in ['2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ',
+                                                         '3 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ']:
         groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, [], 'Tinyman', comboRow, groupTxnList)
         #fastProcess = True
     elif len(groupTxnList) == 3 and groupDescription == '2 txns. Tinyman : Tinyman AMM v2 : Swap (Buy) ':
@@ -434,11 +435,10 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                                      feeRowList=None,
                                      platform='Pact', ComboRow=comboRow)
     
-
-        
-
-
-
+    
+    elif len(groupTxnList) == 2:
+        if ' : Swap Aggregator 9225 : Swap' in groupDescription or ': Swap Aggregator 8105 : Swap' in groupDescription:
+            groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Vestige', comboRow, [])
 
 
     ####Slow solve    
