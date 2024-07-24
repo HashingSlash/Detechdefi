@@ -33,6 +33,7 @@ ID,platform,appName
 1035193551,Cometa,ALCH-ALGO LP > AGOLD
 1035503264,Cometa,ROOBZ > ROOBZ
 1037562315,Humble Swap,AIINU/ALGO Liquidity Pool
+1039471227,Pact,FRACC/ALGO Liquidity Pool
 1041196059,Cometa,ROOBZ-MOIST LP > ROOBZ
 1041908808,Cometa,ASASTATS > ASASTATS
 1042332502,Pact,BLAPU/ALGO Liquidity Pool
@@ -45,6 +46,7 @@ ID,platform,appName
 1049854585,Cometa,KC-ALGO LP > Planets
 1050202752,Pact,RAWR/ALGO Liquidity Pool
 1050642641,Cometa,Lions > Lions + ALGO
+1050940642,Humble Swap,ONE/ALGO Liquidity Pool
 1054389086,Cometa,IAQ > IAQ
 1055369743,Humble Swap,VSM/ALGO Liquidity Pool
 1055495908,Cometa,Choice > USDC + ALGO
@@ -254,6 +256,7 @@ ID,platform,appName
 1246622676,Pact,SKYE/ALGO Liquidity Pool
 1249311784,Pact,EURS/ALGO Liquidity Pool
 1257876755,Pact,PDAT/ALGO Liquidity Pool
+1260625452,Pact,Labrador/ALGO Liquidity Pool
 1264329431,Pact,WBTC/ALGO Liquidity Pool
 1269244982,Humble Swap,CARD/ALGO Liquidity Pool
 1276819581,Pact,Peps/ALGO Liquidity Pool
@@ -379,6 +382,7 @@ ID,platform,appName
 607686682,Algofi,AKTA/ALGO Liquidity Pool
 607692965,Algofi,STKE/ALGO Liquidity Pool
 607696379,Algofi,HDL/ALGO Liquidity Pool
+607700928,Algofi,ARCC/ALGO Liquidity Pool
 607706595,Algofi,chip/ALGO Liquidity Pool
 609492331,Yieldly,YLDY > WBLN Staking
 609496314,Yieldly,YLDY/WBLN LP > YLDY Staking
@@ -469,6 +473,7 @@ ID,platform,appName
 688675907,Algofi,VYBE/ALGO Liquidity Pool
 689185988,Folks Finance,Oracle Adapter
 689594845,Pact,SVANSY/ALGO Liquidity Pool
+692053574,Pact,GARD/ALGO Liquidity Pool
 694405065,Folks Finance,goETH (Pool)
 694464549,Folks Finance,gALGO3 (Pool)
 694505855,Folks Finance,gALGO-USDC Market

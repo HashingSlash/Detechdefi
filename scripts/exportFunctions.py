@@ -43,7 +43,8 @@ def outputRows(function, mainDB, soloPrint):
                         if firstRow == True:
                             writer.writerow(header)
                             firstRow = False
-                        writer.writerow(row)
+                        if row[3] != '' or row[5] != '' or row[7] != '':
+                            writer.writerow(row)
 
     if function == 'csv':
         file.close()

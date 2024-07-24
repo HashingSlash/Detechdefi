@@ -33,7 +33,7 @@ def addLiquidity(swapRows, addRowList, poolReceiptRow, slippageRows, feeRowList,
         swapRow['time'] = ComboRow['time']
         swapRow['description'] = ComboRow['description']
         swapRow['txn partner'] = platform
-        swapRow = (swapGroup(swapRows[0], swapRows[1], None, None, 'Algofi', swapRow, []))
+        swapRow = (swapGroup(swapRows[0], swapRows[1], None, None, platform, swapRow, []))
         processedGroupRows.append(swapRow[0])
 
     ComboRow['txn partner'] = platform
@@ -152,7 +152,7 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
 
     ####                single SWAPS
     if len(groupTxnList) > 2 and groupDescription in ['4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Buy) ',
-                            '4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Sell) '] :
+                                                    '4 txns. Tinyman : Tinyman AMM v1/1.1 : Swap (Sell) '] :
         groupTxnList = swapGroup(groupTxnList[1], groupTxnList[2], None, [groupTxnList[0]], 'Tinyman', comboRow, groupTxnList)
         #fastProcess = True
     elif len(groupTxnList) == 2 and groupDescription in ['2 txns. Tinyman : Tinyman AMM v2 : Swap (Sell) ',
@@ -436,8 +436,9 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                                      platform='Pact', ComboRow=comboRow)
     
     
-    elif len(groupTxnList) == 2:
-        if ' : Swap Aggregator 9225 : Swap' in groupDescription or ': Swap Aggregator 8105 : Swap' in groupDescription:
+
+####                VESTIGE             --------------------------------------------------------------------------------------
+    elif len(groupTxnList) == 2 and (' : Swap Aggregator 9225 : Swap' in groupDescription or ': Swap Aggregator 8105 : Swap' in groupDescription):
             groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Vestige', comboRow, [])
 
 
@@ -447,20 +448,12 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
             if txn == groupTxnList[0]:
                 groupDescription = txn['description']
 
-
-
-
-
-    if removeQue != []:
-        for removeTxn in removeQue:
-            groupTxnList.remove(removeTxn)
-
     if comboRow['sentQuantity'] != 0 or comboRow['receivedQuantity'] != 0 or comboRow['feeQuantity'] != 0:
-            if comboRow['sentQuantity'] == 0 and comboRow['receivedQuantity'] == 0:
-                comboRow['type'] = 'Fee'
-                comboRow['id'] = 'Group Combined Fees - ' + groupID
-                comboRow['txn partner'] = 'Algorand Network'
-            groupTxnList.append(comboRow)
+        if comboRow['sentQuantity'] == 0 and comboRow['receivedQuantity'] == 0:
+            comboRow['type'] = 'Fee'
+            comboRow['id'] = 'Group Combined Fees - ' + groupID
+            comboRow['txn partner'] = 'Algorand Network'
+        groupTxnList.append(comboRow)
 
 
 

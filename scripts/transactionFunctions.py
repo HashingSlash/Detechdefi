@@ -121,7 +121,7 @@ def buildGroupRow(groupID, mainDB, combineRows):
                         else:
                             groupTxnList.append(txn)
 
-    if combineRows == True:# and len(groupTxnList) > 0:
+    if combineRows == True and len(groupTxnList) > 0:
         
 
         groupTxnList = groupCombiningFunctions.specificGroupHandler(groupTxnList, comboRow, groupID)
@@ -179,7 +179,8 @@ def buildSingleRow(rawTxn, mainDB, description):
     if singleTxn['type'] == 'Receive' and singleTxn['txn partner'] in ['Algorand Faucet Drops - Airdrop wallet',
                                                                        'AlgoStake - Airdrop wallet',
                                                                        'AKITA - Airdrop wallet',
-                                                                       'NIKO - Airdrop wallet']:
+                                                                       'NIKO - Airdrop wallet',
+                                                                       'Dark Coin - Rewards System']:
         singleTxn['type'] = 'Airdrop'
     elif singleTxn['type'] == 'Receive' and singleTxn['txn partner'] == 'D13 - Scam Warning Bot': singleTxn['type'] = 'Spam'
     txnList = [singleTxn] 
@@ -262,11 +263,11 @@ def assembleTransactions(mainDB, testing):
 
         for row in roundRows:
             
-            if row['sentCurrency'] not in commonPrices and row['receivedCurrency'] not in commonPrices:
-                if row['sentCurrency'] != '': mainDB['prices'] = logPriceCheck(pricesToCheck, str(row['sentCurrency']), str(rawTxn['confirmed-round']))
-                if row['receivedCurrency'] != '': mainDB['prices'] = logPriceCheck(pricesToCheck, str(row['receivedCurrency']), str(rawTxn['confirmed-round']))
-            if row['feeCurrency'] not in commonPrices:
-                if row['feeCurrency'] != '': mainDB['prices'] = logPriceCheck(pricesToCheck, str(row['feeCurrency']), str(rawTxn['confirmed-round']))
+            #if row['sentCurrency'] not in commonPrices and row['receivedCurrency'] not in commonPrices:
+            #    if row['sentCurrency'] != '': mainDB['prices'] = logPriceCheck(pricesToCheck, str(row['sentCurrency']), str(rawTxn['confirmed-round']))
+            #    if row['receivedCurrency'] != '': mainDB['prices'] = logPriceCheck(pricesToCheck, str(row['receivedCurrency']), str(rawTxn['confirmed-round']))
+            #if row['feeCurrency'] not in commonPrices:
+            #    if row['feeCurrency'] != '': mainDB['prices'] = logPriceCheck(pricesToCheck, str(row['feeCurrency']), str(rawTxn['confirmed-round']))
             
 
 
