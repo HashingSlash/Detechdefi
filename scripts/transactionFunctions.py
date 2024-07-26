@@ -83,7 +83,7 @@ def buildGroupRow(groupID, mainDB, combineRows):
     txnTypeDetail = returnTxnTypeInfo()
 
     if groupEntry['platform'] != '':
-        description = description + str(groupEntry['platform']) + ' : ' + groupEntry['appGroup'] + ' : ' + str(groupEntry['action'])
+        description = str(groupEntry['platform']) + ' : ' + groupEntry['appGroup'] + ' : ' + str(groupEntry['action'])
 
 
     groupTime = str(datetime.datetime.fromtimestamp(groupEntry['round-time']))
