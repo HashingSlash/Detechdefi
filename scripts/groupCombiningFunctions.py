@@ -26,6 +26,7 @@ def swapGroup(sellRow, buyRow, slippageRows, feeRowList, platform, ComboRow, com
 def addLiquidity(swapRows, addRowList, poolReceiptRow, slippageRows, feeRowList, platform, ComboRow):
     processedGroupRows = []
     swapRow = None
+    groupLink = ComboRow['link']
 
     if swapRows != None:
         swapRow = transactionFunctions.returnEmptyTxn()
@@ -42,6 +43,7 @@ def addLiquidity(swapRows, addRowList, poolReceiptRow, slippageRows, feeRowList,
     for addRow in addRowList:
         addRow['type'] = 'Add Liquidity'
         addRow['txn partner'] = platform
+        addRow['link'] = ComboRow['link']
         processedGroupRows.append(addRow)
     if feeRowList != None:
         for feeRow in feeRowList:
@@ -121,16 +123,17 @@ def depositAssets(depositRows, slippageRows, feeRows, platform, type, ComboRow, 
             if feeTxn['sentQuantity'] > 0 and feeTxn['sentCurrency'] == "ALGO":
                 ComboRow['feeQuantity'] = ComboRow['feeQuantity'] + feeTxn['sentQuantity']
 
-    for depositTxn in depositRows:
-        if depositTxn['sentQuantity'] > 0:
-            if ComboRow['sentQuantity'] > 0:
-                depositTxn['txn partner'] = platform
-                depositTxn['type'] = type
-                processedGroupRows.append(depositTxn)
-            else:
-                ComboRow['sentQuantity'] = depositTxn['sentQuantity']
-                ComboRow['sentCurrency'] = depositTxn['sentCurrency']
-    processedGroupRows.append(ComboRow)
+    if depositRows != None:
+        for depositTxn in depositRows:
+            if depositTxn['sentQuantity'] > 0:
+                if ComboRow['sentQuantity'] > 0:
+                    depositTxn['txn partner'] = platform
+                    depositTxn['type'] = type
+                    processedGroupRows.append(depositTxn)
+                else:
+                    ComboRow['sentQuantity'] = depositTxn['sentQuantity']
+                    ComboRow['sentCurrency'] = depositTxn['sentCurrency']
+        processedGroupRows.append(ComboRow)
     return processedGroupRows
 
 
@@ -141,6 +144,9 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
     initGroupList = groupTxnList
     removeQue = []
     OriginalFolksGroup = None
+
+    groupLink = comboRow['link']
+
     try:
         firstTxn = groupTxnList[0]
         groupDescription = firstTxn['description']
@@ -309,6 +315,26 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                                      feeRowList=None,
                                      platform='Algofi', ComboRow=comboRow)
 
+    elif groupDescription in ['Algofi : Lending Pool : Swap (Buy), Zap '] and len(groupTxnList) == 6:
+        groupTxnList = addLiquidity(swapRows=[groupTxnList[0], groupTxnList[2]],
+                                    addRowList=[groupTxnList[3], groupTxnList[4]],
+                                     poolReceiptRow=groupTxnList[5],
+                                     slippageRows=[groupTxnList[1]],
+                                     feeRowList=None,
+                                     platform='Algofi', ComboRow=comboRow)
+
+
+    elif groupDescription in ['Algofi : Lending Pool : Swap (Buy), Zap '] and len(groupTxnList) == 7:
+        groupTxnList = addLiquidity(swapRows=[groupTxnList[0],groupTxnList[2]],
+                                    addRowList=[groupTxnList[3],groupTxnList[4]],
+                                     poolReceiptRow=groupTxnList[5],
+                                     slippageRows=[groupTxnList[1], groupTxnList[6]],
+                                     feeRowList=None,
+                                     platform='Algofi', ComboRow=comboRow)
+
+
+
+
 
 
     elif groupDescription in ['Algofi : AMM : Remove Liquidity '] and len(groupTxnList) == 3:
@@ -325,7 +351,7 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                              'Algofi : Lending Market v1 : Initialize Account ',
                              'Algofi : Staking v1 : Initialize Account ']:
         if len(groupTxnList) == 1:
-            groupTxnList = depositAssets(depositRows=[groupTxnList[0]],slippageRows=None, feeRows=None, platform='Algofi - Initialize Escrow', type='Deposit', ComboRow=comboRow, groupToProcess=[])
+            groupTxnList = depositAssets(depositRows=[groupTxnList[0]],slippageRows=None, feeRows=None, platform='Algofi - Inital Escrow', type='Deposit', ComboRow=comboRow, groupToProcess=[])
 
     elif groupDescription in ['Algofi : Lending Market v2 : Add to Collateral ',
                               'Algofi : Lending Market v1 : Mint to Collateral ']:
@@ -348,6 +374,8 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
         elif len(groupTxnList) == 2:
             groupTxnList = depositAssets(depositRows=[groupTxnList[1]],slippageRows=[groupTxnList[0]], feeRows=None, platform='Algofi', type='Repayment', ComboRow=comboRow, groupToProcess=[])
 
+
+
     elif groupDescription in ['Algofi : Staking v1 : Claim Rewards ',
                               'Algofi : Staking v2 : Claim Rewards ',
                               'Algofi : Lending Market v1 : Claim Rewards ']:
@@ -356,9 +384,12 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
         if len(groupTxnList) == 2:
             groupTxnList = claimAssets(receiveRows=[groupTxnList[0], groupTxnList[1]], feeRows=None, platform='Algofi', type='Staking Rewards',ComboRow=comboRow, groupToProcess=[])
        
-    elif groupDescription in ['Algofi : Staking v1 : Deposit Stake ']:
+    elif groupDescription in ['Algofi : Staking v1 : Deposit Stake ',
+                              'Algofi : Staking v2 : Deposit Stake ']:
         if len(groupTxnList) == 1:
             groupTxnList = depositAssets(depositRows=[groupTxnList[0]],slippageRows=None, feeRows=None, platform='Algofi', type='Staking Deposit', ComboRow=comboRow, groupToProcess=[])
+
+
 
     elif groupDescription in ['Algofi : Staking v1 : Withdraw Stake ']:
         if len(groupTxnList) == 1:
@@ -417,6 +448,11 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
 
 ####                FOLKS               --------------------------------------------------------------------------------------
 
+    elif groupDescription == 'Folks Finance : Swap Aggregator : Swap ' and len(groupTxnList) == 2:
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Folks Finance', comboRow, [])
+
+
+
     elif groupDescription == 'Folks Finance : Folks Finance v1 : Deposit ' and len(groupTxnList) == 2:
         folksReceiptRow = groupTxnList[0]
         folksReceiptRow['type'] = 'Receive LP Tokens'
@@ -425,7 +461,7 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                                      platform='Folks Finance', type='Deposit Collateral', ComboRow=comboRow, groupToProcess=[folksReceiptRow])
 
     elif groupDescription == 'Folks Finance : Folks Finance v1 : Open Account ' and len(groupTxnList) == 1:
-        groupTxnList = depositAssets(depositRows=[groupTxnList[0]],slippageRows=None, feeRows=None, platform='Folks Finance - Initialize Escrow', type='Deposit', ComboRow=comboRow, groupToProcess=[])
+        groupTxnList = depositAssets(depositRows=[groupTxnList[0]],slippageRows=None, feeRows=None, platform='Folks Finance - Initial Escrow', type='Deposit', ComboRow=comboRow, groupToProcess=[])
 
     elif groupDescription in ['Folks Finance : Folks Finance v1 : Borrow ',
                               'Pact, Folks Finance : Folks Finance v1 : Borrow '] and len(groupTxnList) == 2:
@@ -487,8 +523,6 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                                      type='Repayment', ComboRow=comboRow, groupToProcess=[folksRewardRow])
 
     elif groupDescription == 'Folks Finance : Folks Finance v1 : Rewards Instant ':
-        
-        
         if len(groupTxnList) == 2:
             folksReceiptRow = groupTxnList[1]
             groupTxnList = removeLiquidity(receiveRowList=[groupTxnList[0]], poolReceiptRow=folksReceiptRow, slippageRows=None, feeRowList=None, platform='Folks Finance', ComboRow=comboRow)
@@ -501,10 +535,29 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
 
 
 
+    ####                DEFLEX              ---------------------------------------------------------------
+    elif groupDescription == 'Deflex : Swap Aggregator : Swap ' and len(groupTxnList) == 2:
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Deflex', comboRow, groupTxnList)
+
+    
+    elif groupDescription == 'Deflex : Swap Aggregator : Swap ' and len(groupTxnList) == 4:
+        groupTxnList = swapGroup(groupTxnList[1], groupTxnList[3], None, [groupTxnList[0], groupTxnList[2]], 'Deflex', comboRow, groupTxnList)
+
+
+
+
+
+
+
+
+
+
+
     ####Slow solve    
     if initGroupList == groupTxnList:
         for txn in groupTxnList:
             if txn == groupTxnList[0]:
+                txn['link'] = groupLink
                 groupDescription = txn['description']
 
     if comboRow['sentQuantity'] != 0 or comboRow['receivedQuantity'] != 0 or comboRow['feeQuantity'] != 0:
@@ -512,6 +565,7 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
             comboRow['type'] = 'Fee'
             comboRow['id'] = 'Group Combined Fees - ' + groupID
             comboRow['txn partner'] = 'Algorand Network'
+            #comboRow['link'] = groupLink
         groupTxnList.append(comboRow)
 
 

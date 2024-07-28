@@ -14,6 +14,7 @@ ID,platform,appName
 1010455667,Cometa,Dossa-ALGO LP > Dossa
 1010907359,Cometa,KITSU > KITSU
 1011429453,Humble Swap,TRTS/ALGO Liquidity Pool
+1015678698,Humble Swap,WAR/ALGO Liquidity Pool
 1015956588,Cometa,META-ALGO LP > META
 1017214463,Cometa,STAR > STAR
 1017930378,Cometa,OPYX-ALGO LP > META + ALGO
@@ -140,6 +141,7 @@ ID,platform,appName
 1111551086,Cometa,CARDI-ALGO LP > CARDI
 1111685582,Cometa,BOYS-ALGO LP > BOYS
 1111863028,Cometa,Tendies-PEPE LP > Tendies
+1112546230,Pact,POLYN/ALGO Liquidity Pool
 1116886430,Humble Swap,PEPE/ALGO Liquidity Pool
 1117503936,Cometa,ZONE > ZONE
 1117565078,Cometa,COOP > ABCA
@@ -209,6 +211,8 @@ ID,platform,appName
 1169815165,Cometa,META > META
 1171121442,Pact,SOL/ALGO Liquidity Pool
 1171223374,Pact,X-NFT/ALGO Liquidity Pool
+1171308792,Pact,APRN/ALGO Liquidity Pool
+1171447608,Humble Swap,APRN/ALGO Liquidity Pool
 1176253261,Cometa,OMNI-ALGO LP > OMNI
 1176342175,Cometa,META-AKTA LP > META
 1177264879,Cometa,COOP-USDC LP > COOP
@@ -257,9 +261,11 @@ ID,platform,appName
 1245526187,Humble Swap,Labrador/ALGO Liquidity Pool
 1246622676,Pact,SKYE/ALGO Liquidity Pool
 1249311784,Pact,EURS/ALGO Liquidity Pool
+1249312710,Pact,EURS/ALGO Liquidity Pool
 1257876755,Pact,PDAT/ALGO Liquidity Pool
 1260384612,Humble Swap,REGGS/ALGO Liquidity Pool
 1260625452,Pact,Labrador/ALGO Liquidity Pool
+1261500126,Humble Swap,APRN2.0/ALGO Liquidity Pool
 1264329431,Pact,WBTC/ALGO Liquidity Pool
 1269244982,Humble Swap,CARD/ALGO Liquidity Pool
 1276819581,Pact,Peps/ALGO Liquidity Pool
@@ -311,6 +317,7 @@ ID,platform,appName
 1789680411,Pact,CYCLE/ALGO Liquidity Pool
 1799991128,Pact,$/ALGO Liquidity Pool
 1800918760,Pact,META/ALGO Liquidity Pool
+1818356528,Pact,M.A.G.A./ALGO Liquidity Pool
 1821812100,Pact,COSG/ALGO Liquidity Pool
 1878593684,Pact,ART/ALGO Liquidity Pool
 1891177342,Humble Swap,DUB/ALGO Liquidity Pool
@@ -401,6 +408,7 @@ ID,platform,appName
 612930908,Algofi,GEMS/ALGO Liquidity Pool
 613209438,Algofi,Planets/ALGO Liquidity Pool
 613210847,Algofi,OPUL/ALGO Liquidity Pool
+613211274,Algofi,ACORN/ALGO Liquidity Pool
 613217007,Algofi,USDt/ALGO Liquidity Pool
 613218975,Algofi,TREES/ALGO Liquidity Pool
 613228734,Algofi,SCOUT/ALGO Liquidity Pool
@@ -460,6 +468,7 @@ ID,platform,appName
 665087134,Pact,OCTO/ALGO Liquidity Pool
 667170441,Pact,USDt/ALGO Liquidity Pool
 667424705,AlgoFund,ALGF/NURD LP >  Staking
+668286741,Pact,MCAU/ALGO Liquidity Pool
 669418500,Pact,STKE/ALGO Liquidity Pool
 674526408,Algofi,OPUL (Market contract)
 674527132,Algofi,OPUL (Manager contract)
@@ -526,6 +535,7 @@ ID,platform,appName
 760937186,NFDomains,Registry
 763505831,Algofi,ALVA/ALGO Liquidity Pool
 773172535,Humble Swap,chip/ALGO Liquidity Pool
+776405081,Pact,$Drakk/ALGO Liquidity Pool
 776638293,Algofi,KBX/ALGO Liquidity Pool
 777623301,Humble Swap,YLDY/ALGO Liquidity Pool
 777628254,Humble Swap,USDC/ALGO Liquidity Pool

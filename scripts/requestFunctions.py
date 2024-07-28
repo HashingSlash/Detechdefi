@@ -126,4 +126,12 @@ def requestAMMPools(tempDB):
     print('AMM Pool data request to Vestige: Complete\n')
     return tempDB
 
+def requestAddressNFDData(address):
+    response = requests.get("https://api.nf.domains/nfd/lookup?address=" + address).json()
+    if address in response:
+        return response[address]['name']
+    
+def requestNFDAddressData(NFD):
+    response = requests.get("https://api.nf.domains/nfd/" + NFD).json()
 
+    return response['owner']

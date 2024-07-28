@@ -14,7 +14,8 @@ def returnEmptyTxn():
                 'feeQuantity' : 0,
                 'id' : '',
                 'description' : '',
-                'txn partner' : ''}
+                'txn partner' : '',
+                'link':''}
     return emptyTxn
 
 def returnTxnTypeInfo():
@@ -53,7 +54,7 @@ def returnAssetMovements(rawTxn, txnSpecs, walletID, txnToReturn):
 
     return txnToReturn
 
-def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description, mainDB):
+def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description, txnID, mainDB):
     txnTypeDetail = returnTxnTypeInfo()
     if 'inner-txns' in rawTxn:
         for innerTxn in rawTxn['inner-txns']:
@@ -62,6 +63,7 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description, mainDB):
 
             processedInner['time'] = str(datetime.datetime.fromtimestamp(rawTxn['round-time']))
             processedInner['id'] = 'InnerTxn #' + str(len(innerTxns) + 1) + ' - ' + refID + '...'
+            processedInner['link'] = 'https://lora.algokit.io/mainnet/transaction/' + txnID
             if 'group' in rawTxn: 
                 processedInner['id'] = '(Group- ' + str(rawTxn['group'][:5]) + '...) - ' + processedInner['id']
             processedInner['description'] = description
@@ -70,7 +72,7 @@ def returnInnerTxns(rawTxn, walletID, innerTxns, refID, description, mainDB):
 
             if processedInner['sentQuantity'] + processedInner['receivedQuantity'] !=0:
                 innerTxns.append(processedInner)
-            innerTxns = returnInnerTxns(innerTxn, walletID, innerTxns, str('Inner ' + refID), description + ' ', mainDB)
+            innerTxns = returnInnerTxns(innerTxn, walletID, innerTxns, str('Inner ' + refID), description + ' ', txnID, mainDB)
 
 
     return innerTxns
@@ -90,6 +92,7 @@ def buildGroupRow(groupID, mainDB, combineRows):
     comboRow['time'] = groupTime
     comboRow['description'] = description
     comboRow['id'] = 'Combined Group - ' + groupID
+    comboRow['link'] = 'https://allo.info/tx/group/' + groupID
     comboFeeRow = comboRow
     
 
@@ -102,6 +105,7 @@ def buildGroupRow(groupID, mainDB, combineRows):
         txnNumber += 1
 
         for txn in buildSingleRow(mainDB['rawTxns'][txnID], mainDB, description + ' '):
+            txn['link'] = 'https://lora.algokit.io/mainnet/transaction/' + txnID
             if txn['sentQuantity'] != 0 or txn['receivedQuantity'] != 0 or txn['feeQuantity'] != 0:
 
                 if combineRows == False:
@@ -146,6 +150,8 @@ def buildSingleRow(rawTxn, mainDB, description):
         group = False
         singleTxn['id'] = rawTxn['id']
 
+    singleTxn['link'] = 'https://lora.algokit.io/mainnet/transaction/' + singleTxn['id']
+
     if singleTxn['type'] == '': singleTxn['type'] = rawTxn['tx-type']
 
     if rawTxn['sender'] == mainDB['wallet']:
@@ -182,11 +188,16 @@ def buildSingleRow(rawTxn, mainDB, description):
                                                                        'NIKO - Airdrop wallet',
                                                                        'Dark Coin - Rewards System']:
         singleTxn['type'] = 'Airdrop'
+        singleTxn['description'] = 'Airdrop'
     elif singleTxn['type'] == 'Receive' and singleTxn['txn partner'] == 'D13 - Scam Warning Bot': singleTxn['type'] = 'Spam'
+    elif singleTxn['type'] == 'Send' and singleTxn['txn partner'] == 'Defly - Fee Sink':
+        singleTxn['type'] = 'Fee'
+        singleTxn['txn partner'] = 'Defly'
+        singleTxn['description'] = 'Fee paid to Defly for swap'
     txnList = [singleTxn] 
 
 
-    innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description, mainDB)
+    innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description, rawTxn['id'], mainDB)
     for innerTxn in innerTxns:
         txnList.append(innerTxn)
 
@@ -286,7 +297,7 @@ def convertCurrency(figureToConvert, decimals):
 
 def convertAssetInfo(convertTxn, assetDB):
 
-    bannedTokenTickers = ['TM1POOL', 'TMPOOL11', 'TMPOOL2', 'AF-POOL', 'NFD']
+    bannedTokenTickers = ['TM1POOL', 'TMPOOL11', 'TMPOOL2', 'AF-POOL', 'AF-BANK', 'NFD']
 
 
     if 'sentQuantity' in convertTxn and convertTxn['sentQuantity'] >= 0:

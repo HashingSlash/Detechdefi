@@ -4,7 +4,6 @@ import json
 import csv
 
 
-
 def appendToEmbeddedList(list, entry):
     #im sure there is a more affective way to do this
     #however this saved a lot of redundancy for now
@@ -152,7 +151,7 @@ def initMainDB():
         #print('Loaded main database')
         #print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
         inFile.close()
-        if input('Use wallet ' + tempDB['wallet'][:7] + ' ? (Y/N): ').upper() == 'Y':
+        if input('Change wallet from: ' + tempDB['walletName'] + ' ? (Y/N): ').upper() != 'Y':
             walletID = tempDB['wallet']
         else:
             tempDB = None
@@ -162,34 +161,49 @@ def initMainDB():
         tempDB = None
 
     if walletID == None:
-        walletID = input('Paste wallet address: ')
+        walletID = input('Wallet address or NFD: ')
     if tempDB == None:
-
         combineRows = True
+
+        try:
+            if walletID[-5:] == '.algo':
+                walletName = walletID
+                walletID = requestFunctions.requestNFDAddressData(walletName)
+            walletName = requestFunctions.requestAddressNFDData(walletID)
+        except:
+            walletName = walletID[:7]
+
 
         ####                Init db
         #   Using db as a main dictionary to hold all relevant data as sub-dictionaries.
         print('Init new database')
         tempDB = {'wallet':walletID,     #str    - wallet public key (address)
+            'walletName':walletName,
             'combineRows': combineRows,
             'rawTxns': {},             #transaction id : raw/'on-chain' transaction data}
             'txnRounds': {},           #
             'groups': {},              #group txn data, for automated group txn identifaction
-            'assets': initAssetDB({}), #Mainnet asset data such as tickers, IDs, names, decimals.
-            'apps': initAppDB({}),
-            'addressBook': initAddressDB({})}     #mainnet app IDs. This helps identify some txn groups
+            'assets': {}, #Mainnet asset data such as tickers, IDs, names, decimals.
+            'apps': {},
+            'addressBook': {}}     #mainnet app IDs. This helps identify some txn groups
         
         #below script checks and adds current popular assets via Vestige API calls
         tempDB['assets'] = requestFunctions.requestManyAssets(tempDB['assets'])
         #print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
 
-
-        if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
-            tempDB = requestFunctions.requestAMMPools(tempDB)
+    
+        
 
     else:
         tempDB['txnRounds'] = {}
         tempDB['groups'] = {}
+
+    tempDB['assets'] = initAssetDB({})
+    tempDB['apps'] = initAppDB({})
+    tempDB['addressBook'] = initAddressDB({})
+
+    if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
+        tempDB = requestFunctions.requestAMMPools(tempDB)
 
     return tempDB
 
