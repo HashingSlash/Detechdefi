@@ -134,4 +134,4 @@ def requestAddressNFDData(address):
 def requestNFDAddressData(NFD):
     response = requests.get("https://api.nf.domains/nfd/" + NFD).json()
 
-    return response['owner']
+    return response

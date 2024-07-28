@@ -143,6 +143,7 @@ def initAddressDB(tempAddressDB):
     return tempAddressDB
 
 def initMainDB():
+    NFDData = None
     #either load previous database or build a new one
     walletID = None
     try:
@@ -164,12 +165,17 @@ def initMainDB():
         walletID = input('Wallet address or NFD: ')
     if tempDB == None:
         combineRows = True
-
+        NFDData = None
         try:
             if walletID[-5:] == '.algo':
                 walletName = walletID
-                walletID = requestFunctions.requestNFDAddressData(walletName)
-            walletName = requestFunctions.requestAddressNFDData(walletID)
+                NFDData = requestFunctions.requestNFDAddressData(walletName)
+                walletID = NFDData['owner']
+            else:
+                try:
+                    walletName = requestFunctions.requestAddressNFDData(walletID)
+                except:
+                    walletName = walletID[:7]
         except:
             walletName = walletID[:7]
 
@@ -201,6 +207,15 @@ def initMainDB():
     tempDB['assets'] = initAssetDB({})
     tempDB['apps'] = initAppDB({})
     tempDB['addressBook'] = initAddressDB({})
+
+    if NFDData != None:
+        if NFDData['appID'] not in tempDB['apps']:
+            tempDB['apps'][str(NFDData['appID'])] = {"platform":'NF Domains',"appName":NFDData['name']}
+        if NFDData['asaID'] not in tempDB['assets']:
+            tempDB['assets'][str(NFDData['asaID'])] = requestFunctions.requestSingleAsset(NFDData['asaID'])
+        if NFDData['nfdAccount'] not in tempDB['addressBook']:
+            tempDB['addressBook'][NFDData['nfdAccount']] = {"name":'NF Domains','usage': str(NFDData['name'] + 'Vault')}
+
 
     if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
         tempDB = requestFunctions.requestAMMPools(tempDB)
