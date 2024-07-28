@@ -10,4 +10,7 @@ scripts/__pycache__/requestFunctions.cpython-312.pyc
 scripts/__pycache__/exportFunctions.cpython-312.pyc
 scripts/__pycache__/diagnosisFunctions.cpython-312.pyc
 scripts/__pycache__/databaseFunctions.cpython-312.pyc
-
+output/*
+resources/addressBook.csv
+resources/appIDs.csv
+resources/assets.csv
