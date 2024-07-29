@@ -269,32 +269,26 @@
     }
   },
   "Nanoswap": {
-    "IDs": [],
+    "IDs": ["1037244457"],
     "functions": {
       "Swap (Sell)": {
         "appArgs": [
-          ""
+          "c3dhcF9leGFjdF9mb3I="
         ]
       },
       "Swap (Buy)": {
         "appArgs": [
-          ""
-        ]
-      },
-      "Add Liquidity": {
-        "appArgs": [
-          ""
+          "c3dhcF9mb3JfZXhhY3Q="
         ]
       },
       "Remove Liquidity": {
         "appArgs": [
-          ""
+          "YnVybl9zdGVwXzE="
         ]
       },
-      "Zap": {
+      "Add Liquidity": {
         "appArgs": [
-          "",
-          ""
+          "cG9vbF9zdGVwXzE="
         ]
       }
     }
@@ -326,10 +320,9 @@
           "YnVybl9zdGVwXzE="
         ]
       },
-      "Zap": {
+      "Add Liquidity": {
         "appArgs": [
-          "c3dhcF9zdGVwXzI=",
-          "cG9vbF9zdGVwXzI="
+          "cG9vbF9zdGVwXzE="
         ]
       }
     }

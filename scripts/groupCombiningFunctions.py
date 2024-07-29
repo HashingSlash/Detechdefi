@@ -51,7 +51,7 @@ def addLiquidity(swapRows, addRowList, poolReceiptRow, slippageRows, feeRowList,
 
     ComboRow['receivedQuantity'] = poolReceiptRow['receivedQuantity']
     ComboRow['receivedCurrency'] = poolReceiptRow['receivedCurrency']
-    processedGroupRows.append(ComboRow)
+    
 
     if slippageRows != None:
         for slippageRow in slippageRows:
@@ -59,7 +59,7 @@ def addLiquidity(swapRows, addRowList, poolReceiptRow, slippageRows, feeRowList,
             slippageRow['type'] = 'Receive Slippage'
             processedGroupRows.append(slippageRow)
 
-
+    processedGroupRows.append(ComboRow)
     return processedGroupRows
 
 def removeLiquidity(receiveRowList, poolReceiptRow, slippageRows, feeRowList, platform, ComboRow):
@@ -76,12 +76,13 @@ def removeLiquidity(receiveRowList, poolReceiptRow, slippageRows, feeRowList, pl
             ComboRow['feeQuantity'] = ComboRow['feeQuantity'] + feeRow['sentQuantity']
     ComboRow['sentQuantity'] = poolReceiptRow['sentQuantity']
     ComboRow['sentCurrency'] = poolReceiptRow['sentCurrency']
-    processedGroupRows.append(ComboRow)
+    
     if slippageRows != None:
         for slippageRow in slippageRows:
             slippageRow['txn partner'] = platform
             slippageRow['type'] = 'Receive Slippage'
             processedGroupRows.append(slippageRow)
+    processedGroupRows.append(ComboRow)
     return processedGroupRows
 
 def claimAssets(receiveRows, feeRows, platform, type, ComboRow, groupToProcess):
@@ -322,8 +323,8 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                                      slippageRows=[groupTxnList[1]],
                                      feeRowList=None,
                                      platform='Algofi', ComboRow=comboRow)
-
-
+#
+#
     elif groupDescription in ['Algofi : Lending Pool : Swap (Buy), Zap '] and len(groupTxnList) == 7:
         groupTxnList = addLiquidity(swapRows=[groupTxnList[0],groupTxnList[2]],
                                     addRowList=[groupTxnList[3],groupTxnList[4]],
