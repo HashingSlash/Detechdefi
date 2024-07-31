@@ -186,7 +186,8 @@ def buildSingleRow(rawTxn, mainDB, description):
                                                                        'AlgoStake - Airdrop wallet',
                                                                        'AKITA - Airdrop wallet',
                                                                        'NIKO - Airdrop wallet',
-                                                                       'Dark Coin - Rewards System']:
+                                                                       'Dark Coin - Rewards System',
+                                                                       'Tinyman - TINY Airdrop']:
         singleTxn['type'] = 'Airdrop'
         singleTxn['description'] = 'Airdrop'
     elif singleTxn['type'] == 'Receive' and singleTxn['txn partner'] == 'D13 - Scam Warning Bot': singleTxn['type'] = 'Spam'

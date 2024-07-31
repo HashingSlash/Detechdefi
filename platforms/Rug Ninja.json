@@ -1,0 +1,24 @@
+{
+  "Rug Ninja Trading": {
+    "IDs": [
+      "2020762574"
+    ],
+    "functions": {
+      "Purchase": {
+        "appArgs": [
+          "ul43GA=="
+        ]
+      },
+      "Sell": {
+        "appArgs": [
+          "ymo5EA=="
+        ]
+      },
+      "Claim": {
+        "appArgs": [
+          "VJurBg=="
+        ]
+      }
+    }
+  }
+}
