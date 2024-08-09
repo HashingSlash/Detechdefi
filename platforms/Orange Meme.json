@@ -1,5 +1,5 @@
 {
-  "ORA Mining": {
+  "ORA CLI Mining": {
     "IDs": [
       "1284326447"
     ],
@@ -7,6 +7,23 @@
       "Mining Txns": {
         "appArgs": [
           "qyNwzA=="
+        ]
+      }
+    }
+  },
+  "ORA webGUI Mining": {
+    "IDs": [
+      "1439234347"
+    ],
+    "functions": {
+      "Deposit for mining": {
+        "appArgs": [
+          "kuA7HA=="
+        ]
+      },
+      "Withdraw": {
+        "appArgs": [
+          "466yXA=="
         ]
       }
     }

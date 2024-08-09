@@ -31,7 +31,7 @@ def returnTxnTypeInfo():
 def returnAssetMovements(rawTxn, txnSpecs, walletID, txnToReturn):
 
     if rawTxn['sender'] == walletID:
-        if rawTxn['tx-type'] in ['pay', 'axfer'] and txnSpecs['amount'] != 0:
+        if rawTxn['tx-type'] in ['pay', 'axfer', 'acfg'] and txnSpecs['amount'] != 0:
             txnToReturn['sentQuantity'] = txnSpecs['amount']
             if rawTxn['tx-type'] == 'pay':
                 txnToReturn['sentCurrency'] = 'ALGO'
@@ -181,6 +181,16 @@ def buildSingleRow(rawTxn, mainDB, description):
     if rawTxn['tx-type'] == 'appl':
         singleTxn['type'] = 'Fee'
         singleTxn['txn partner'] = 'Algorand Network'
+    elif rawTxn['tx-type'] == 'acfg':
+        singleTxn['type'] = 'Asset Management'
+        singleTxn['txn partner'] = 'Algorand Network'
+
+
+####
+####
+####                EXCEPTIONS AND INTERVENTIONS
+####
+
 
     if singleTxn['type'] == 'Receive' and singleTxn['txn partner'] in ['Algorand Faucet Drops - Airdrop wallet',
                                                                        'AlgoStake - Airdrop wallet',
@@ -196,6 +206,15 @@ def buildSingleRow(rawTxn, mainDB, description):
         singleTxn['txn partner'] = 'Defly'
         singleTxn['description'] = 'Fee paid to Defly for swap'
     txnList = [singleTxn] 
+
+
+####
+####
+####
+####
+####
+
+
 
 
     innerTxns = returnInnerTxns(rawTxn, mainDB['wallet'], [], rawTxn['id'][:5], description, rawTxn['id'], mainDB)
