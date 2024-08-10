@@ -1,5 +1,4 @@
 ID,platform,appName
-,,
 1000708709,Cometa,META-ALGO LP > META
 1002541853,Tinyman,geekdad1/ALGO Liquidity Pool
 1003712890,Pact,Leaf/ALGO Liquidity Pool
@@ -60,6 +59,7 @@ ID,platform,appName
 1066704590,Cometa,VYBE > VYBE
 1068733153,Cometa,BANANA-ALGO LP > BANANA
 1070829015,Cometa,META-ALGO LP > META
+1072671015,Humble Swap,TEAR/ALGO Liquidity Pool
 1072765779,Cometa,Choice > Choice + ALGO
 1072948743,Pact,goMINT/ALGO Liquidity Pool
 1073557308,Pact,USDC/ALGO Liquidity Pool
@@ -181,11 +181,13 @@ ID,platform,appName
 1142174481,Cometa,COOP-USDC LP > COOP
 1142175659,Cometa,COOP-goETH LP > COOP
 1142176474,Cometa,COOP-goBTC LP > COOP
+1143076733,Pact,SVANSY/ALGO Liquidity Pool
 1144469745,Pact,DBD/ALGO Liquidity Pool
 1147715054,Cometa,GORA-META LP > META
 1151234186,Cometa,GRAMO-ALGO LP > GRAMO + ALGO
 1151469553,Pact,gALGO/ALGO Liquidity Pool
 1151905109,Cometa,CARDI-ALGO LP > CARDI
+1153146998,Pact,TEAR/ALGO Liquidity Pool
 1154752232,Cometa,META-goBTC LP > META
 1157973874,Cometa,COOP > META
 1158097088,Cometa,KC-COOP LP > KC
@@ -211,6 +213,7 @@ ID,platform,appName
 1177264879,Cometa,COOP-USDC LP > COOP
 1179190164,Humble Swap,OTSDHBVA/ALGO Liquidity Pool
 1180061595,Pact,EXP/ALGO Liquidity Pool
+1180065710,Pact,EXP/ALGO Liquidity Pool
 1181571081,Cometa,COOP > META
 1181631706,Cometa,DHARM-META LP > META
 1182281219,Cometa,META-USDC LP > META
@@ -240,10 +243,12 @@ ID,platform,appName
 1205778312,Humble Swap,BAG/ALGO Liquidity Pool
 1205810547,Pact,mALGO/ALGO Liquidity Pool
 1211038470,Humble Swap,PURRS/ALGO Liquidity Pool
+1211924623,Humble Swap,LAGOS/ALGO Liquidity Pool
 1213116486,Humble Swap,GOLD$/ALGO Liquidity Pool
 1216477532,Pact,SHS/ALGO Liquidity Pool
 1218696792,Humble Swap,SHS/ALGO Liquidity Pool
 1222048105,Vestige,Swap
+1227997859,Alammex,Swap Router
 1228845900,Pact,PRSMS/ALGO Liquidity Pool
 1236621697,Humble Swap,algodots/ALGO Liquidity Pool
 1244947358,Pact,Gold/ALGO Liquidity Pool
@@ -267,12 +272,14 @@ ID,platform,appName
 1357142656,Humble Swap,ORA/ALGO Liquidity Pool
 1390817541,Pact,Max/ALGO Liquidity Pool
 1394823840,Humble Swap,voi/ALGO Liquidity Pool
+1398644228,Humble Swap,EURS/ALGO Liquidity Pool
 1399943007,Humble Swap,ROYAL/ALGO Liquidity Pool
 1402290318,Pact,OUTSYDE/ALGO Liquidity Pool
 1403971448,Pact,Hsed/ALGO Liquidity Pool
 1423064897,Pact,BPM/ALGO Liquidity Pool
 1450388322,Humble Swap,PURR/ALGO Liquidity Pool
 1450405653,Pact,PURR/ALGO Liquidity Pool
+1612986302,Pact,OUTSYDE/ALGO Liquidity Pool
 1632455553,Pact,MemO/ALGO Liquidity Pool
 1662330335,Pact,CARD/ALGO Liquidity Pool
 1691344095,Pact,A200/ALGO Liquidity Pool
@@ -290,6 +297,7 @@ ID,platform,appName
 1780459930,Pact,CIG/ALGO Liquidity Pool
 1784514001,Pact,CCC/ALGO Liquidity Pool
 1789680411,Pact,CYCLE/ALGO Liquidity Pool
+1799991128,Pact,$/ALGO Liquidity Pool
 1800918760,Pact,META/ALGO Liquidity Pool
 1818447192,Pact,BBTV/ALGO Liquidity Pool
 1878593684,Pact,ART/ALGO Liquidity Pool
@@ -376,6 +384,7 @@ ID,platform,appName
 611804624,Algofi,STBL/ALGO LP Staking (Manager contract)
 611867642,Algofi,STBL/USDC LP Staking Market
 611869320,Algofi,STBL/USDC LP Staking Manager
+612009411,Algofi,MoonX/ALGO Liquidity Pool
 612897573,Algofi,USDt/ALGO Liquidity Pool
 612930908,Algofi,GEMS/ALGO Liquidity Pool
 613193782,Algofi,USDC/ALGO Liquidity Pool
@@ -385,11 +394,13 @@ ID,platform,appName
 613217007,Algofi,USDt/ALGO Liquidity Pool
 613228734,Algofi,SCOUT/ALGO Liquidity Pool
 613236122,Algofi,Block/ALGO Liquidity Pool
+613275177,Algofi,AGNR/ALGO Liquidity Pool
 613324698,Algofi,TinyLock/ALGO Liquidity Pool
 613339906,Algofi,Tacos/ALGO Liquidity Pool
 617707129,Yieldly,YLDY > DPANDA Staking
 617728717,Yieldly,YLDY/DPANDA LP > YLDY Staking
 619678973,Algofi,Doggo/ALGO Liquidity Pool
+620170666,Algofi,BANAAN/ALGO Liquidity Pool
 620592786,Yieldly,Unknown YLDY/CRSD App
 620601402,Yieldly,YLDY/CRSD LP > YLDY Staking
 620995314,Pact,USDC/ALGO Liquidity Pool
@@ -406,6 +417,7 @@ ID,platform,appName
 630147266,AlgoFund,ALGF/ALGO LP > ALGF Staking
 634476613,Algofi,MAGM/ALGO Liquidity Pool
 635146381,Pact,OPUL/ALGO Liquidity Pool
+636072212,Algofi,LTBX/ALGO Liquidity Pool
 638262233,Algofi,Finite/ALGO Liquidity Pool
 639541260,Pact,YLDY/ALGO Liquidity Pool
 640481749,Algofi,ZONE/ALGO Liquidity Pool
@@ -446,6 +458,7 @@ ID,platform,appName
 686875498,Folks Finance,USDt (Rewards aggregator)
 686876641,Folks Finance,goBTC (Rewards aggregator)
 689185988,Folks Finance,Oracle Adapter
+689594845,Pact,SVANSY/ALGO Liquidity Pool
 692053574,Pact,GARD/ALGO Liquidity Pool
 694405065,Folks Finance,goETH (Pool)
 694464549,Folks Finance,gALGO3 (Pool)
@@ -470,6 +483,7 @@ ID,platform,appName
 714154757,Pact,DUB/ALGO Liquidity Pool
 717256390,Yieldly,YLDY > ALCH Staking
 717264841,Yieldly,ALCH/YLDY LP > YLDY Staking
+717748703,Pact,GHOST/ALGO Liquidity Pool
 723769037,Pact,AKTA/ALGO Liquidity Pool
 724988424,Yieldly,CHOICE/YLDY LP > YLDY Staking
 725020782,Yieldly,CHOICE > CHOICE Staking
@@ -489,6 +503,7 @@ ID,platform,appName
 760823873,Algofi,ALGX/ALGO Liquidity Pool
 760937186,NFDomains,Registry
 761071746,Pact,Butts/ALGO Liquidity Pool
+762152301,Pact,ARBT/ALGO Liquidity Pool
 773172535,Humble Swap,chip/ALGO Liquidity Pool
 776405081,Pact,$Drakk/ALGO Liquidity Pool
 776638293,Algofi,KBX/ALGO Liquidity Pool
@@ -519,6 +534,7 @@ ID,platform,appName
 794419858,Pact,MOIST/ALGO Liquidity Pool
 794422115,Algofi,MOIST/ALGO Liquidity Pool
 794422646,Humble Swap,MOIST/ALGO Liquidity Pool
+794800381,Pact,gALGO/ALGO Liquidity Pool
 794882684,Pact,gALGO/ALGO Liquidity Pool
 796188450,Humble Swap,Planets/ALGO Liquidity Pool
 801613881,Pact,GARD/ALGO Liquidity Pool
@@ -527,10 +543,13 @@ ID,platform,appName
 805930289,Humble Swap,WORMHOLE/ALGO Liquidity Pool
 810055776,Pact,LOX/ALGO Liquidity Pool
 810072531,Humble Swap,GHOST/ALGO Liquidity Pool
+810471020,Algofi,LOX/ALGO Liquidity Pool
+810538564,Pact,LOX/ALGO Liquidity Pool
 810984430,Pact,Block/ALGO Liquidity Pool
 810991930,Humble Swap,Block/ALGO Liquidity Pool
 811067896,Humble Swap,Xoge/ALGO Liquidity Pool
 813837623,Algofi,gALGO/ALGO Liquidity Pool
+814984663,Pact,TEAR/ALGO Liquidity Pool
 815288006,NF Domains,hashingslash.algo
 818176933,Algofi,Lending Protocol V2 (Manager contract)
 818179346,Algofi,Lending Protocol V2 (Market contract)

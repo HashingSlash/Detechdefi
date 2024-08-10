@@ -11,6 +11,18 @@
       }
     }
   },
+  "Alammex Aggregator": {
+    "IDs": [
+      "1227997859"
+    ],
+    "functions": {
+      "Swap": {
+        "appArgs": [
+          "EzRH8w=="
+        ]
+      }
+    }
+  },
   "Limit Orders": {
     "IDs": [
       "949209670"

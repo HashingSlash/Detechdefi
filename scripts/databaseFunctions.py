@@ -214,7 +214,7 @@ def initMainDB():
         if NFDData['asaID'] not in tempDB['assets']:
             tempDB['assets'][str(NFDData['asaID'])] = requestFunctions.requestSingleAsset(NFDData['asaID'])
         if NFDData['nfdAccount'] not in tempDB['addressBook']:
-            tempDB['addressBook'][NFDData['nfdAccount']] = {"name":'NF Domains','usage': str(NFDData['name'] + ' Vault')}
+            tempDB['addressBook'][NFDData['nfdAccount']] = {"name":'NF Domains','usage': str(NFDData['name'])}
 
 
     if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':

@@ -292,7 +292,8 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
     elif groupDescription in ['Algofi : Lending Pool : Swap (Buy) '] and len(groupTxnList) == 3:
         groupTxnList = swapGroup(groupTxnList[0], groupTxnList[2], [groupTxnList[1]], [], 'Algofi', comboRow, groupTxnList)
 
-    elif groupDescription in ['Algofi : AMM : Add Liquidity '] and len(groupTxnList) == 3:
+    elif groupDescription in ['Algofi : AMM : Add Liquidity ',
+                              'Algofi : Lending Pool : Add Liquidity '] and len(groupTxnList) == 3:
         groupTxnList = addLiquidity(swapRows=None, addRowList=[groupTxnList[0], groupTxnList[1]],
                                      poolReceiptRow=groupTxnList[2],
                                      slippageRows=None,
@@ -321,6 +322,14 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                                      slippageRows=[groupTxnList[5]],
                                      feeRowList=None,
                                      platform='Algofi', ComboRow=comboRow)
+        
+    elif groupDescription in ['Algofi : Nanoswap, Lending Pool : Swap (Buy), Add Liquidity '] and len(groupTxnList) == 6:
+        groupTxnList = addLiquidity(swapRows=[groupTxnList[0], groupTxnList[1]],
+                                    addRowList=[groupTxnList[3], groupTxnList[4]],
+                                     poolReceiptRow=groupTxnList[5],
+                                     slippageRows=[groupTxnList[2]],
+                                     feeRowList=None,
+                                     platform='Algofi', ComboRow=comboRow)
 
     elif groupDescription in ['Algofi : Lending Pool : Swap (Buy), Zap ',
                               'Algofi : Lending Pool : Swap (Buy), Add Liquidity '] and len(groupTxnList) == 6:
@@ -342,7 +351,8 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                                      platform='Algofi', ComboRow=comboRow)
 
 
-    elif groupDescription in ['Algofi : Lending Pool : Swap (Buy), Add Liquidity '] and len(groupTxnList) == 7:
+    elif groupDescription in ['Algofi : Lending Pool : Swap (Buy), Add Liquidity ',
+                              'Algofi : AMM : Swap (Buy), Add Liquidity '] and len(groupTxnList) == 7:
         groupTxnList = addLiquidity(swapRows=[groupTxnList[0],groupTxnList[1]],
                                     addRowList=[groupTxnList[3],groupTxnList[4]],
                                      poolReceiptRow=groupTxnList[5],
@@ -391,17 +401,24 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
         elif len(groupTxnList) == 2:
             groupTxnList = depositAssets(depositRows=[groupTxnList[1]],slippageRows=[groupTxnList[0]], feeRows=None, platform='Algofi', type='Repayment', ComboRow=comboRow, groupToProcess=[])
 
-
+    elif groupDescription in ['Algofi : Lending Market v2 : Repay ']:
+        if len(groupTxnList) == 1:
+            groupTxnList = depositAssets(depositRows=[groupTxnList[0]],slippageRows=None, feeRows=None, platform='Algofi', type='Repayment', ComboRow=comboRow, groupToProcess=[])
+        elif len(groupTxnList) == 2:
+            groupTxnList = depositAssets(depositRows=[groupTxnList[0]],slippageRows=[groupTxnList[1]], feeRows=None, platform='Algofi', type='Repayment', ComboRow=comboRow, groupToProcess=[])
 
     elif groupDescription in ['Algofi : Staking v1 : Claim Rewards ',
                               'Algofi : Staking v2 : Claim Rewards ',
-                              'Algofi : Lending Market v1 : Claim Rewards ',
-                              'Algofi : Lending Market v2 : Claim Rewards ',]:
+                              'Algofi : Lending Market v1 : Claim Rewards ']:
         if len(groupTxnList) == 1:
             groupTxnList = claimAssets(receiveRows=[groupTxnList[0]], feeRows=None, platform='Algofi', type='Staking Rewards',ComboRow=comboRow, groupToProcess=[])
         if len(groupTxnList) == 2:
             groupTxnList = claimAssets(receiveRows=[groupTxnList[0], groupTxnList[1]], feeRows=None, platform='Algofi', type='Staking Rewards',ComboRow=comboRow, groupToProcess=[])
-       
+
+    elif groupDescription in ['Algofi : Lending Market v2 : Claim Rewards ']:
+        groupTxnList = claimAssets(receiveRows=groupTxnList, feeRows=None, platform='Algofi', type='Staking Rewards',ComboRow=comboRow, groupToProcess=[])
+
+
     elif groupDescription in ['Algofi : Staking v1 : Deposit Stake ',
                               'Algofi : Staking v2 : Deposit Stake ']:
         if len(groupTxnList) == 1:
@@ -414,12 +431,13 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
             groupTxnList[0]['type'] = 'Swap'
 
 
-    elif groupDescription in ['Algofi : Staking v1 : Withdraw Stake ']:
+    elif groupDescription in ['Algofi : Staking v1 : Withdraw Stake ',
+                              'Algofi : Staking v2 : Withdraw Stake ']:
         if len(groupTxnList) == 1:
             groupTxnList = claimAssets(receiveRows=[groupTxnList[0]], feeRows=None, platform='Algofi', type='Staking Withdrawal', ComboRow=comboRow, groupToProcess=[])
-
-
-
+        if len(groupTxnList) == 3:
+            groupTxnList = swapGroup(groupTxnList[1], groupTxnList[2],None, None, 'Algofi', comboRow, [])
+            groupTxnList = claimAssets(receiveRows=[initGroupList[0]], feeRows=None, platform='Algofi', type='Staking Withdrawal', ComboRow=comboRow, groupToProcess=groupTxnList)
 
 
 ####                Pact                ---------------------------------------------------------------
@@ -565,7 +583,9 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
     elif groupDescription == 'Deflex : Swap Aggregator : Swap ' and len(groupTxnList) == 2:
         groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Deflex', comboRow, groupTxnList)
 
-    
+    elif ': Alammex Aggregator : Swap ' in groupDescription and len(groupTxnList) == 2:
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Alammex', comboRow, groupTxnList)
+
     elif groupDescription == 'Deflex : Swap Aggregator : Swap ' and len(groupTxnList) == 4:
         groupTxnList = swapGroup(groupTxnList[1], groupTxnList[3], None, [groupTxnList[0], groupTxnList[2]], 'Deflex', comboRow, groupTxnList)
 
