@@ -4,15 +4,21 @@ import scripts.transactionFunctions as transactionFunctions
 def swapGroup(sellRow, buyRow, slippageRows, feeRowList, platform, ComboRow, completeGroupRows):
     processedGroupRows = []
     ComboRow['txn partner'] = platform
-    ComboRow['type'] = 'Swap'
+    ComboRow['type'] = 'Sell'
     ComboRow['sentQuantity'] = sellRow['sentQuantity']
     ComboRow['sentCurrency'] = sellRow['sentCurrency']
     ComboRow['receivedQuantity'] = buyRow['receivedQuantity']
     ComboRow['receivedCurrency'] = buyRow['receivedCurrency']
+
+    buyRow['type'] = 'Buy'
+    buyRow['sentQuantity'] = sellRow['sentQuantity']
+    buyRow['sentCurrency'] = sellRow['sentCurrency']
+    buyRow['txn partner'] = platform
     if feeRowList != None:
         for feeRow in feeRowList:
             ComboRow['feeQuantity'] = ComboRow['feeQuantity'] + feeRow['sentQuantity']
     processedGroupRows.append(ComboRow)
+    #processedGroupRows.append(buyRow)
     if slippageRows != None:
         for slippageRow in slippageRows:
             slippageRow['type'] = 'Receive Slippage'
@@ -36,6 +42,7 @@ def addLiquidity(swapRows, addRowList, poolReceiptRow, slippageRows, feeRowList,
         swapRow['txn partner'] = platform
         swapRow = (swapGroup(swapRows[0], swapRows[1], None, None, platform, swapRow, []))
         processedGroupRows.append(swapRow[0])
+        #processedGroupRows.append(swapRow[1])
 
     ComboRow['txn partner'] = platform
     ComboRow['type'] = 'Receive LP Tokens'
@@ -161,11 +168,11 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
     ####                single SWAPS
     if len(groupTxnList) > 2 and groupDescription in ['Tinyman : Tinyman AMM v1/1.1 : Swap (Buy) ',
                                                     'Tinyman : Tinyman AMM v1/1.1 : Swap (Sell) '] :
-        groupTxnList = swapGroup(groupTxnList[1], groupTxnList[2], None, [groupTxnList[0]], 'Tinyman', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[1], groupTxnList[2], None, [groupTxnList[0]], 'Tinyman', comboRow, [])
     elif len(groupTxnList) == 2 and groupDescription == 'Tinyman : Tinyman AMM v2 : Swap (Sell) ':
-        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, [], 'Tinyman', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, [], 'Tinyman', comboRow, [])
     elif len(groupTxnList) == 3 and groupDescription == 'Tinyman : Tinyman AMM v2 : Swap (Buy) ':
-        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[2], [groupTxnList[1]], [], 'Tinyman', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[2], [groupTxnList[1]], [], 'Tinyman', comboRow, [])
 
 
     ####                Manual Slippage Claims
@@ -284,13 +291,13 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
                               'Algofi : Lending Pool : Swap (Sell) ',
                               'Algofi : Nanoswap, Lending Pool : Swap (Sell) ',
                               'Algofi :  :  '] and len(groupTxnList) == 2:
-        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, [], 'Algofi', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, [], 'Algofi', comboRow, [])
 
     elif groupDescription in ['Algofi : AMM : Swap (Buy) '] and len(groupTxnList) == 3:
-        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], [groupTxnList[2]], [], 'Algofi', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], [groupTxnList[2]], [], 'Algofi', comboRow, [])
 
     elif groupDescription in ['Algofi : Lending Pool : Swap (Buy) '] and len(groupTxnList) == 3:
-        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[2], [groupTxnList[1]], [], 'Algofi', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[2], [groupTxnList[1]], [], 'Algofi', comboRow, [])
 
     elif groupDescription in ['Algofi : AMM : Add Liquidity ',
                               'Algofi : Lending Pool : Add Liquidity '] and len(groupTxnList) == 3:
@@ -428,24 +435,27 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
             groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1],None, None, 'Algofi', comboRow, [])
             groupTxnList = depositAssets(depositRows=[initGroupList[2]],slippageRows=None, feeRows=None,
                                          platform='Algofi', type='Staking Deposit', ComboRow=comboRow, groupToProcess=groupTxnList)
-            groupTxnList[0]['type'] = 'Swap'
+            groupTxnList[0]['type'] = 'Sell'
+            #groupTxnList[1]['type'] = 'Buy'
 
 
     elif groupDescription in ['Algofi : Staking v1 : Withdraw Stake ',
                               'Algofi : Staking v2 : Withdraw Stake ']:
         if len(groupTxnList) == 1:
             groupTxnList = claimAssets(receiveRows=[groupTxnList[0]], feeRows=None, platform='Algofi', type='Staking Withdrawal', ComboRow=comboRow, groupToProcess=[])
-        if len(groupTxnList) == 3:
-            groupTxnList = swapGroup(groupTxnList[1], groupTxnList[2],None, None, 'Algofi', comboRow, [])
-            groupTxnList = claimAssets(receiveRows=[initGroupList[0]], feeRows=None, platform='Algofi', type='Staking Withdrawal', ComboRow=comboRow, groupToProcess=groupTxnList)
-
+        
+        ##something wrong here come back l8r
+        #if len(groupTxnList) == 3:
+        #    groupTxnList = swapGroup(groupTxnList[1], groupTxnList[2],None, None, 'Algofi', comboRow, [])
+        #    groupTxnList = claimAssets(receiveRows=[initGroupList[0]], feeRows=None, platform='Algofi', type='Staking Withdrawal', ComboRow=comboRow, groupToProcess=groupTxnList)
+        #    print('')
 
 ####                Pact                ---------------------------------------------------------------
     elif groupDescription in ['Pact : Pact Swap : Swap '] and len(groupTxnList) == 2:
-        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, [], 'Pact', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, [], 'Pact', comboRow, [])
 
     elif groupDescription in ['Pact : Swap Aggregator : Swap '] and len(groupTxnList) == 2:
-        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, [], 'Pact', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, [], 'Pact', comboRow, [])
     
 
     elif groupDescription in ['Pact : Pact Swap : Add Liquidity '] and len(groupTxnList) == 3:
@@ -492,8 +502,11 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
 
 ####                FOLKS               --------------------------------------------------------------------------------------
 
-    elif groupDescription == 'Folks Finance : Swap Aggregator : Swap ' and len(groupTxnList) == 2:
-        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Folks Finance', comboRow, [])
+    elif groupDescription == 'Folks Finance : Swap Aggregator : Swap ':
+        if len(groupTxnList) == 2:
+            groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Folks Finance', comboRow, [])
+        elif len(groupTxnList) == 3:
+            groupTxnList = swapGroup(groupTxnList[0], groupTxnList[2], [groupTxnList[1]], None, 'Folks Finance', comboRow, [])
 
 
 
@@ -515,8 +528,12 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
         groupTxnList = claimAssets(receiveRows=[groupTxnList[0]], feeRows=None, platform='Folks Finance', type='Borrow', ComboRow=comboRow, groupToProcess=[folksCollateralRow])
 
     elif groupDescription in ['Folks Finance : Folks Finance v1 : Increase Borrow ',
-                              'Pact, Folks Finance : Folks Finance v1 : Increase Borrow '] and len(groupTxnList) == 1:
+                              'Pact, Folks Finance : Folks Finance v1 : Increase Borrow ',
+                              'Folks Finance : Folks Finance v2 : Borrow  '] and len(groupTxnList) == 1:
         groupTxnList = claimAssets(receiveRows=[groupTxnList[0]], feeRows=None, platform='Folks Finance', type='Borrow', ComboRow=comboRow, groupToProcess=[])
+
+
+
 
     elif groupDescription == 'Folks Finance : Folks Finance v1 : Withdrawal ' and len(groupTxnList) == 2:
         folksReceiptRow = groupTxnList[1]
@@ -566,6 +583,11 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
         groupTxnList = depositAssets(depositRows=[groupTxnList[1]],slippageRows=None,feeRows=None, platform='Folks Finance',
                                      type='Repayment', ComboRow=comboRow, groupToProcess=[folksRewardRow])
 
+    elif groupDescription in ['Folks Finance : Folks Finance v2 : Repay '] and len(groupTxnList) == 2:
+        groupTxnList = depositAssets([groupTxnList[0]], [groupTxnList[1]], None, 'Folks Finance', 'Repay', comboRow, [])
+
+
+
     elif groupDescription == 'Folks Finance : Folks Finance v1 : Rewards Instant ':
         if len(groupTxnList) == 2:
             folksReceiptRow = groupTxnList[1]
@@ -577,17 +599,42 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
         groupTxnList[0]['type'] = 'Rewards'
         
 
+    elif groupDescription == 'Folks Finance : Swap Aggregator, Folks Finance v2 : Swap, Deposit, Move to Collateral ':
+        if len(groupTxnList) == 3:
+            groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Folks Finance', comboRow, [])
+            groupTxnList = depositAssets([initGroupList[2]], None, None, 'Folks Finance', 'Deposit Collateral', comboRow, groupTxnList)
+            groupTxnList[0]['type'] = 'Sell'
+            #groupTxnList[1]['type'] = 'Buy'
 
+
+    elif groupDescription == 'Folks Finance : Folks Finance v2 : Remove Collateral  ' and len(groupTxnList) == 1:
+        groupTxnList = claimAssets([groupTxnList[0]], None, 'Folks Finance', 'Withdraw Collateral', comboRow, [])
+
+    elif groupDescription == 'Folks Finance : Swap Aggregator, Folks Finance v2 : Swap, Deposit, Move to Collateral':
+        if len(groupTxnList) == 1:
+            groupTxnList == depositAssets([groupTxnList[0]], None, None, 'Folks Finance', 'Deposit Collateral', comboRow, [])
+
+    #elif groupDescription == 'Folks Finance, Pact : Pact Lending Pools : Swap ':
+    #    if len(groupTxnList) == 2:
+    #        groupTxnList == swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Folks Finance and Pact', comboRow, [])
+
+    elif groupDescription == 'Folks Finance, Pact : Pact Lending Pools : Add Liquidity ':
+        if len(groupTxnList) == 4:
+            groupTxnList = addLiquidity(None, [groupTxnList[0], groupTxnList[1]], groupTxnList[3], [groupTxnList[2]], None, 'Folks Finance and Pact', comboRow)
+
+    elif groupDescription == 'Pact, Folks Finance : Pact Lending Pools : Withdraw Liquidity ':
+        if len(groupTxnList) == 3:
+            groupTxnList = removeLiquidity([groupTxnList[1], groupTxnList[2]], groupTxnList[0], None, None, 'Folks Finance and Pact', comboRow)
 
     ####                DEFLEX              ---------------------------------------------------------------
     elif groupDescription == 'Deflex : Swap Aggregator : Swap ' and len(groupTxnList) == 2:
-        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Deflex', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Deflex', comboRow, [])
 
     elif ': Alammex Aggregator : Swap ' in groupDescription and len(groupTxnList) == 2:
-        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Alammex', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[0], groupTxnList[1], None, None, 'Alammex', comboRow, [])
 
     elif groupDescription == 'Deflex : Swap Aggregator : Swap ' and len(groupTxnList) == 4:
-        groupTxnList = swapGroup(groupTxnList[1], groupTxnList[3], None, [groupTxnList[0], groupTxnList[2]], 'Deflex', comboRow, groupTxnList)
+        groupTxnList = swapGroup(groupTxnList[1], groupTxnList[3], None, [groupTxnList[0], groupTxnList[2]], 'Deflex', comboRow, [])
 
 
 

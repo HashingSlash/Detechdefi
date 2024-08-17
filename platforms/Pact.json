@@ -98,7 +98,19 @@
     "functions": {
       "Swap": {
         "appArgs": [
-          "X9vVXQ=="
+          "97R0Vg=="
+        ]
+      },
+      "Withdraw Liquidity": {
+        "appArgs": [
+          "X9vVXQ==",
+          "9DvuYQ=="
+        ]
+      },
+      "Add Liquidity": {
+        "appArgs": [
+          "yGWKXA==",
+          "6tH4yQ=="
         ]
       }
     }

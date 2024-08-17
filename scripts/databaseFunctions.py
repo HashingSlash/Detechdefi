@@ -152,11 +152,12 @@ def initMainDB():
         #print('Loaded main database')
         #print('Asset data loaded: ' + str(len(tempDB['assets'])) + '. Application data loaded: ' + str(len(tempDB['apps'])))
         inFile.close()
-        if input('Change wallet from: ' + tempDB['walletName'] + ' ? (Y/N): ').upper() != 'Y':
+        initial_input = input('Change wallet from: ' + tempDB['walletName'] + ' ? (Y/N): ').upper()
+        if initial_input != 'Y':
             walletID = tempDB['wallet']
         else:
             tempDB = None
-        if tempDB != None and input('Rebuild database (Y/N): ').upper() == 'Y':
+        if initial_input != '' and tempDB != None and input('Rebuild database (Y/N): ').upper() == 'Y':
             tempDB = None
     except IOError: #database load failed. prompt user to input wallet address to init new database
         tempDB = None
@@ -217,7 +218,7 @@ def initMainDB():
             tempDB['addressBook'][NFDData['nfdAccount']] = {"name":'NF Domains','usage': str(NFDData['name'])}
 
 
-    if input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
+    if initial_input != '' and input('Update apps and assets via Vestige? (Y/N): ').upper() == 'Y':
         tempDB = requestFunctions.requestAMMPools(tempDB)
 
     return tempDB

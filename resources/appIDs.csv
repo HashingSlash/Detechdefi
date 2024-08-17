@@ -250,6 +250,7 @@ ID,platform,appName
 1222048105,Vestige,Swap
 1227997859,Alammex,Swap Router
 1228845900,Pact,PRSMS/ALGO Liquidity Pool
+1228855655,Pact,PRSMS/ALGO Liquidity Pool
 1236621697,Humble Swap,algodots/ALGO Liquidity Pool
 1244947358,Pact,Gold/ALGO Liquidity Pool
 1244948944,Pact,GoldDAO/ALGO Liquidity Pool
@@ -263,13 +264,16 @@ ID,platform,appName
 1269244982,Humble Swap,CARD/ALGO Liquidity Pool
 1276819581,Pact,Peps/ALGO Liquidity Pool
 1276828633,Humble Swap,Peps/ALGO Liquidity Pool
+1278133812,Pact,ROX/ALGO Liquidity Pool
 1280304358,Pact,GoldDAO/ALGO Liquidity Pool
 1281809762,Humble Swap,GAS/ALGO Liquidity Pool
 1285526644,Pact,ARBZ/ALGO Liquidity Pool
+1289254401,NF Domains,juicor.orange.algo
 1291648419,Pact,BB/ALGO Liquidity Pool
 1305843248,Pact,ARBZ/ALGO Liquidity Pool
 1330921293,Pact,ORA/ALGO Liquidity Pool
 1357142656,Humble Swap,ORA/ALGO Liquidity Pool
+1383761531,Pact,AHT/ALGO Liquidity Pool
 1390817541,Pact,Max/ALGO Liquidity Pool
 1394823840,Humble Swap,voi/ALGO Liquidity Pool
 1398644228,Humble Swap,EURS/ALGO Liquidity Pool
@@ -312,6 +316,8 @@ ID,platform,appName
 2172415643,Pact,SHINO/ALGO Liquidity Pool
 2201334127,Pact,TINY/ALGO Liquidity Pool
 2220555832,Pact,SHAME/ALGO Liquidity Pool
+2225903203,NF Domains,goldpanner.algo
+2227242548,Humble Swap,wALGO/ALGO Liquidity Pool
 233725844,Yieldly,Prize Game/Escrow
 233725848,Yieldly,Proxy Contract
 233725850,Yieldly,YLDY > YLDY + ALGO Staking
@@ -378,6 +384,7 @@ ID,platform,appName
 609492331,Yieldly,YLDY > WBLN Staking
 609496314,Yieldly,YLDY/WBLN LP > YLDY Staking
 611223170,Algofi,Choice/ALGO Liquidity Pool
+611294751,Algofi,CRSD/ALGO Liquidity Pool
 611314294,Algofi,BIRDS/ALGO Liquidity Pool
 611333481,Algofi,XET/ALGO Liquidity Pool
 611801333,Algofi,STBL/ALGO LP Staking (Market contract)
@@ -392,7 +399,9 @@ ID,platform,appName
 613210847,Algofi,OPUL/ALGO Liquidity Pool
 613211274,Algofi,ACORN/ALGO Liquidity Pool
 613217007,Algofi,USDt/ALGO Liquidity Pool
+613218975,Algofi,TREES/ALGO Liquidity Pool
 613228734,Algofi,SCOUT/ALGO Liquidity Pool
+613234692,Algofi,GP/ALGO Liquidity Pool
 613236122,Algofi,Block/ALGO Liquidity Pool
 613275177,Algofi,AGNR/ALGO Liquidity Pool
 613324698,Algofi,TinyLock/ALGO Liquidity Pool
@@ -400,6 +409,7 @@ ID,platform,appName
 617707129,Yieldly,YLDY > DPANDA Staking
 617728717,Yieldly,YLDY/DPANDA LP > YLDY Staking
 619678973,Algofi,Doggo/ALGO Liquidity Pool
+619834084,Algofi,ROO/ALGO Liquidity Pool
 620170666,Algofi,BANAAN/ALGO Liquidity Pool
 620592786,Yieldly,Unknown YLDY/CRSD App
 620601402,Yieldly,YLDY/CRSD LP > YLDY Staking
@@ -407,6 +417,7 @@ ID,platform,appName
 621155705,Pact,SMILE/ALGO Liquidity Pool
 621226880,Pact,STBL/ALGO Liquidity Pool
 621289049,Pact,DEFLY/ALGO Liquidity Pool
+621437425,Algofi,wALGO/ALGO Liquidity Pool
 621736943,Pact,TINY/ALGO Liquidity Pool
 622161819,Pact,Grand/ALGO Liquidity Pool
 624919018,Yieldly,YLDY > CRSD Staking
@@ -451,6 +462,7 @@ ID,platform,appName
 680611329,Algofi,goMINT/ALGO Liquidity Pool
 681061940,Pact,GEMS/ALGO Liquidity Pool
 682482359,Pact,goMINT/ALGO Liquidity Pool
+686224985,Pact,MAGM/ALGO Liquidity Pool
 686500029,Folks Finance,USDC (Pool)
 686500844,Folks Finance,USDt (Pool)
 686501760,Folks Finance,goBTC (Pool)
@@ -524,6 +536,7 @@ ID,platform,appName
 779181697,Yieldly,YLDY > ALGX Staking
 779198429,Yieldly,ALGX > ALGX Staking
 779655316,Humble Swap,Tacos/ALGO Liquidity Pool
+779712918,Humble Swap,KBX/ALGO Liquidity Pool
 780434326,Humble Swap,XET/ALGO Liquidity Pool
 781760847,Humble Swap,STBL/ALGO Liquidity Pool
 783216201,Humble Swap,HDL/ALGO Liquidity Pool
@@ -613,11 +626,13 @@ ID,platform,appName
 887603482,Humble Swap,SOCKS/ALGO Liquidity Pool
 888157453,Cometa,ALGO-DHARM LP > DHARM
 892052090,Cometa,META > META + ALGO
+894879292,Pact,ButCash/ALGO Liquidity Pool
 898508474,Cometa,Tacos-ALGO LP > Tacos + ALGO
 900652834,Algofi,Rewards Manager App
 900653388,Algofi,Governance Admin App
 900930380,Algofi,STBL2/BANK Lending Pool Interface
 900932886,Algofi,STBL2/BANK Lending Pool Staking
+902250674,Humble Swap,GEO/ALGO Liquidity Pool
 902926332,Cometa,Choice-USDC LP > Choice + ALGO
 904757536,Cometa,META-ALGO LP > META + ALGO
 904764074,Cometa,META-ALGO LP > META + ALGO
