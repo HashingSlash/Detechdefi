@@ -105,7 +105,7 @@ def buildGroupRow(groupID, mainDB, combineRows):
         txnNumber += 1
 
         for txn in buildSingleRow(mainDB['rawTxns'][txnID], mainDB, description + ' '):
-            txn['link'] = 'https://lora.algokit.io/mainnet/transaction/' + txnID
+            #txn['link'] = 'https://lora.algokit.io/mainnet/transaction/' + txnID
             if txn['sentQuantity'] != 0 or txn['receivedQuantity'] != 0 or txn['feeQuantity'] != 0:
 
                 if combineRows == False:

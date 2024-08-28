@@ -2,14 +2,13 @@ import scripts.diagnosisFunctions as diagnosisFunctions
 import scripts.transactionFunctions as transactionFunctions
 
 def swapGroup(sellRow, buyRow, slippageRows, feeRowList, platform, ComboRow, completeGroupRows):
-    processedGroupRows = []
+    processedGroupRows = completeGroupRows
     ComboRow['txn partner'] = platform
     ComboRow['type'] = 'Sell'
     ComboRow['sentQuantity'] = sellRow['sentQuantity']
     ComboRow['sentCurrency'] = sellRow['sentCurrency']
     ComboRow['receivedQuantity'] = buyRow['receivedQuantity']
     ComboRow['receivedCurrency'] = buyRow['receivedCurrency']
-
     buyRow['type'] = 'Buy'
     buyRow['sentQuantity'] = sellRow['sentQuantity']
     buyRow['sentCurrency'] = sellRow['sentCurrency']
@@ -650,7 +649,7 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
     if initGroupList == groupTxnList:
         for txn in groupTxnList:
             if txn == groupTxnList[0]:
-                txn['link'] = groupLink
+                #txn['link'] = groupLink
                 groupDescription = txn['description']
 
     if comboRow['sentQuantity'] != 0 or comboRow['receivedQuantity'] != 0 or comboRow['feeQuantity'] != 0:
@@ -658,7 +657,7 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
             comboRow['type'] = 'Fee'
             comboRow['id'] = 'Group Combined Fees - ' + groupID
             comboRow['txn partner'] = 'Algorand Network'
-            #comboRow['link'] = groupLink
+            comboRow['link'] = groupLink
         groupTxnList.append(comboRow)
 
 
