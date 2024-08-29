@@ -1,5 +1,6 @@
 ID,platform,appName
 1000708709,Cometa,META-ALGO LP > META
+1001347447,Humble Swap,VKN/ALGO Liquidity Pool
 1002541853,Tinyman,geekdad1/ALGO Liquidity Pool
 1003712890,Pact,Leaf/ALGO Liquidity Pool
 1004044420,Cometa,USDC-ALGO LP > META
@@ -423,6 +424,7 @@ ID,platform,appName
 620995314,Pact,USDC/ALGO Liquidity Pool
 621155705,Pact,SMILE/ALGO Liquidity Pool
 621226880,Pact,STBL/ALGO Liquidity Pool
+621252819,Pact,ACORN/ALGO Liquidity Pool
 621289049,Pact,DEFLY/ALGO Liquidity Pool
 621437425,Algofi,wALGO/ALGO Liquidity Pool
 621736943,Pact,TINY/ALGO Liquidity Pool
@@ -599,6 +601,7 @@ ID,platform,appName
 840066925,Humble Swap,EXP/ALGO Liquidity Pool
 841145020,Algofi,Lending Protocol V2 - STBL2
 841194726,Algofi,Lending V2 - STBL2/USDC LP Market
+843031269,Humble Swap,AFD/ALGO Liquidity Pool
 843061415,Opulous,Staking
 847371107,Humble Swap,DHARM/ALGO Liquidity Pool
 851412236,Cometa,YLDY-ALGO LP > META
@@ -607,6 +610,7 @@ ID,platform,appName
 855264552,Cometa,Tacos > Tacos
 855863555,Cometa,STKE-ALGO LP > META
 855885510,Pact,GARD/ALGO Liquidity Pool
+856165135,Humble Swap,BULO/ALGO Liquidity Pool
 856183130,Algofi,Lending V2 - STBL2/ALGO LP Market
 856198764,Algofi,STBL2/ALGO Lending Pool Interface
 860092495,Cometa,GARD > GARDIAN
@@ -616,6 +620,7 @@ ID,platform,appName
 860722255,Cometa,META-ALGO LP > META + ALGO
 860745155,Cometa,xSOL >  XGLI + ALGO
 860947723,Cometa,AWT-ALGO LP > AWT
+861248673,Algofi,HS/ALGO Liquidity Pool
 861615968,Cometa,BOARD-ALGO LP > BOARD + ALGO
 861736474,Cometa,BOARD > BOARD
 862980964,Cometa,META > META

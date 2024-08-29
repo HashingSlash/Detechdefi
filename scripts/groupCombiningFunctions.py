@@ -369,8 +369,7 @@ def specificGroupHandler(groupTxnList, comboRow, groupID):
 
 
     elif groupDescription in ['Algofi : AMM : Remove Liquidity ',
-                              'Algofi : Lending Pool : Remove Liquidity ',
-                              'Algofi : Nanoswap, Lending Pool : Remove Liquidity '] and len(groupTxnList) == 3:
+                              'Algofi : Lending Pool : Remove Liquidity '] and len(groupTxnList) == 3:
         groupTxnList = removeLiquidity(receiveRowList=[groupTxnList[1],groupTxnList[2]],
                                      poolReceiptRow=groupTxnList[0],
                                      slippageRows=None,
