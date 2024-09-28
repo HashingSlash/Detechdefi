@@ -161,6 +161,7 @@ def initMainDB():
             tempDB = None
     except IOError: #database load failed. prompt user to input wallet address to init new database
         tempDB = None
+        initial_input = 'Y'
 
     if walletID == None:
         walletID = input('Wallet address or NFD: ')
